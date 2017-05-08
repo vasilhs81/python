@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AirShoppingRS TimeStamp="2017-04-07T14:00:28.896Z" Version="IATA2017.1" xmlns="http://www.iata.org/IATA/EDIST/2017.1">
+    <Errors>
+        <Error Code="412" Owner="Z9">Flight Does Not Operate Between Requested Cities</Error>
+    </Errors>
+</AirShoppingRS>

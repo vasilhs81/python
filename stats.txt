@@ -1,0 +1,26 @@
+num_of_threads =5
+num_of_requests =15
+
+Total Time: 34.6010000706 seconds
+Average time per request 10.097733 secs
+Throughput 0.433513 requests per second 
+//////////////////////////////////////////
+
+num_of_threads =8
+num_of_requests =15
+Total Time: 32.006000042 seconds
+Average time per request 15.036933 secs
+Throughput 0.468662 requests per second 
+/////////////////////////////
+num_of_threads =3
+num_of_requests =100
+Total Time: 253.06400013 seconds
+Average time per request 7.433970 secs
+Throughput 0.395157 requests per second 
+/////////////////////////////
+num_of_threads =8
+num_of_requests =100
+Total Time: 202.523000002 seconds
+Average time per request 15.135380 secs
+Throughput 0.493771 requests per second 
+////////////////////////

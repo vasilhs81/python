@@ -1,0 +1,28 @@
+{
+    "emails": [
+        {
+            "value": "some@email.com"
+        }
+    ], 
+    "id": "aa10f80a-1e95-4b7b-858d-c97c631f8ce5", 
+    "meta": {
+        "created": "2017-05-08T16:32:47", 
+        "lastModified": "2017-05-08T16:32:47", 
+        "location": "http://localhost:8080/v1/Users\\aa10f80a-1e95-4b7b-858d-c97c631f8ce5"
+    }, 
+    "name": {
+        "familyName": "Last", 
+        "givenName": "First"
+    }, 
+    "phoneNumbers": [
+        {
+            "type": "work", 
+            "value": "555-555-5555"
+        }
+    ], 
+    "schemas": [
+        "urn:scim:schemas:core:1.0"
+    ], 
+    "title": "Mr.", 
+    "userName": "other_username"
+}

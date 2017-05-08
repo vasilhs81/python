@@ -1,0 +1,48 @@
+{
+    "Resources": [
+        {
+            "description": "User Account", 
+            "endpoint": "/Users", 
+            "id": "User", 
+            "name": "User", 
+            "schema": "urn:scim:schemas:core:1.0:User", 
+            "schemas": [
+                "urn:scim:schemas:core:1.0:ResourceType"
+            ]
+        }
+    ], 
+    "authenticationSchemes": [
+        {
+            "description": "Authentication using HTTP Basic", 
+            "name": "HTTP Basic", 
+            "type": "httpbasic"
+        }
+    ], 
+    "bulk": {
+        "maxOperations": 0, 
+        "maxPayloadSize": 0, 
+        "supported": false
+    }, 
+    "changePassword": {
+        "supported": false
+    }, 
+    "etag": {
+        "supported": false
+    }, 
+    "filter": {
+        "maxResults": 0, 
+        "supported": false
+    }, 
+    "patch": {
+        "supported": false
+    }, 
+    "schemas": [
+        "urn:scim:schemas:core:1.0"
+    ], 
+    "sort": {
+        "supported": false
+    }, 
+    "xmlDataFormat": {
+        "supported": false
+    }
+}
