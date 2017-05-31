@@ -15,7 +15,8 @@ class ScimObject(object):
         self.data = data
         self.response = None
         self.id = id
-        self.baseUrl = "http://localhost:8080"
+        self.baseUrl = "http://127.0.0.1:8443"
+        #self.baseUrl = "http://localhost:8080"
 
     def sendRequest(self):
         if isinstance(self,ServiceProviderConfigs) or isinstance(self,SchemasUsers) :

@@ -26,7 +26,6 @@ def calcPyaramidSum(_list, maxValue):
             index +=1
             if(index>len(_list)-1):
                 return sums
-            v = _list[index] + 1
             v = _list[index]
         _list[index] += 1
         index = 0
