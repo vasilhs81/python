@@ -1,5 +1,6 @@
 #How many 18-digit numbers n (without leading zeros) are there such that no digit occurs more than three times in n?
 
+#  Not Solved Yet
 total=0
 sumtable = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 #table = {}
@@ -16,6 +17,18 @@ def combinations(N,m):
     if N==m:
         return 1
     return fact(N)//fact(m)//fact(N-m)
+
+
+def multiCombinations(a,b):
+    sum =0
+    while True:
+        comb = combinations(a,b)
+        sum += comb
+        if comb == 1 or comb==0:
+            return sum
+        b+=1
+
+
 
 
 
@@ -67,15 +80,55 @@ def calc():
 
 #print calc()
 
+def try2():
+
+    L = 9 * 10 * 10
+
+    for i in xrange(4 , 19):
+        #L = L *10 - 9* ncr(i-1,3) - ncr(i-2,3)
+        L = L * 10 - 9* combinations(i-1,3) - 1*combinations(i-2,3)
+        #L = L * 10 - 9 * combinations(i - 1, 3)
+        # L = L * 10 - 9* multiCombinations(i-1,3) - 1*multiCombinations(i-2,3)
+
+    print L
 
 
-L = 9 * 10 * 10
 
-for i in xrange(4 , 18):
-    #L = L *10 - 9* ncr(i-1,3) - ncr(i-2,3)
-    L = L * 10 - 9* combinations(i-1,3) - combinations(i-2,3)
 
-print L
+def try3():
+    #L = 9e+17
+    L = 9
+    for i in xrange(1, 18):
+        L *= 10
+    print L
+    L1=0
+    L2=0
+    for i in xrange(4, 18):
+        L1 += combinations(17, i)
+        print i
+    print "L1= ", L1
+
+    for i in xrange(4, 19):
+        L2 += combinations(18, i)
+    print "L2= ", L2
+
+
+    L = L - L1 - 9* L2
+    print L
+
+
+try3()
+
+#########################################
+
+
+
+
+# 9!/3!*6! = 7*8*9/1*2*3
+#----
+# L4=  9 * 10 * 10 *10 -9*(3 3) = 9000 - 9 = 8991
+
+# L5 =  8991 *10 - 9 * (4 3)
 
 
 # L18 = L17 + K18

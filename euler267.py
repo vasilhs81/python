@@ -1,3 +1,23 @@
+
+
+
+# You are given a unique investment opportunity.
+#
+# Starting with £1 of capital, you can choose a fixed proportion, f, of your capital to bet on a fair coin toss repeatedly for 1000 tosses.
+#
+# Your return is double your bet for heads and you lose your bet for tails.
+#
+# For example, if f = 1/4, for the first toss you bet £0.25, and if heads comes up you win £0.5 and so then have £1.5. You then bet £0.375 and if the second toss is tails, you have £1.125.
+#
+# Choosing f to maximize your chances of having at least £1,000,000,000 after 1,000 flips, what is the chance that you become a billionaire?
+#
+# All computations are assumed to be exact (no rounding), but give your answer rounded to 12 digits behind the decimal point in the form 0.abcdefghijkl.
+
+
+# Solved (with a little help) . Run try2(). More to be done in theory..
+
+
+
 billion = 1000000000
 # choose f so that  prob(v>= billion) = max
 tosses = 1000
@@ -136,26 +156,6 @@ try2()
 
 
 
-
-def factorial(n):
-    if n < 2: return 1
-    return reduce(lambda x, y: x*y, xrange(2, int(n)+1))
-
-def prob(s, p, n):
-    x = 1.0 - p
-
-    a = n - s
-    b = s + 1
-
-    c = a + b - 1
-
-    prob = 0.0
-
-    for j in xrange(a, c + 1):
-        prob += factorial(c) / (factorial(j)*factorial(c-j)) \
-                * x**j * (1 - x)**(c-j)
-
-    return prob
 
 
 
