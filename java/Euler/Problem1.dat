@@ -1,0 +1,17 @@
+//Problem 1: No code at all
+ number of multiples of 3 are 999/3=333
+ number of multiples of 5 are 995/5=199
+ 
+ The multiples of 3 are: 3,6,9,12,.. =>arithmetic progression
+ SUM=(3+999)*333/2=166833
+ 
+ The multiples of 5 are: 5,10,15,20,.. =>arithmetic progression
+ SUM=(5+995)*199/2=99500
+ 
+ We must subtract the common multiples of 3 and 5 ,that is 
+ the multiples of 3*5=15.There are 990/15=66 multiples of 15
+ and their sum =(15+990)*66/2=33165
+ 
+ SUM=166833+99500-33165=233168 !!
+ 
+ 
