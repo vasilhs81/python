@@ -12,6 +12,11 @@
 #
 # Find sum(S(N)), for all squarefree N only divisible by primes of the form 4k+1 with 4k+1 < 150.
 
+# a <= b => a^2 <= b^2 => a^2 + b^2 <= 2b^2 => N <= 2b^2 => sqrt(N) <= sqrt(2) * b => sqrt(N)/sqrt(2) <= b =>
+#  a<= b => a^2 <= b^2 => 2a^2 <= b^2 +a^2 => 2 a^2 <=N => a^2 <= N/2 => a <= sqrt(N)/ sqrt(2)
+# A number is said to be squarefree (or sometimes quadratfrei; Shanks 1993) if its prime decomposition
+# contains no repeated factors. All primes are therefore trivially squarefree. The number 1 is by convention taken to be squarefree.
+
 
 
 from math import sqrt; from itertools import count, islice
@@ -65,12 +70,12 @@ def collectAllPrimesMulti(_list):
 
 
 
-
-def squarefree_(n):
-    for i in range(2, int(math.ceil(math.sqrt(math.sqrt(n))))):
-        if n % (i ** 2) == 0:
-            return False
-    return True
+#
+# def squarefree_(n):
+#     for i in range(2, int(math.ceil(math.sqrt(math.sqrt(n))))):
+#         if n % (i ** 2) == 0:
+#             return False
+#     return True
 
 
 
@@ -122,6 +127,9 @@ def square_free_sieve(limit):
 
 
 # for a in range(sqrt(N/2)):
+
+# global variables:
+sumAs =0L
 ss = 0
 notsquareBs = set()
 squareBs = set()
@@ -134,82 +142,85 @@ def _solve(N):
     global ss
     global dict
     # for N in multi:
-    for a in xrange(int(sqrt(N/2))):
+    dict[N] = []
+    # for a in xrange(N-1):
+    for a in xrange(int(math.ceil(sqrt(N)/sqrt(2)))):
         a2 = a*a
+        # if a2 >= N: break
+        # if a2 > N - a2: continue
         b2 = N - a2
-        dict[N] = []
+        # if is_square(b2):
+        #     dict[N].append({"a": a, "b": int(sqrt(b2))})
+
         if b2 not in squareBs and b2 not in notsquareBs:
             if is_square(b2):
-                # print "N=", N, "found: ", a, sqrt(b2)
-                # ss += a
                 squareBs.add(b2)
-                # return (a,sqrt(b2))
-                dict[N].append({"a":a, "b":sqrt(b2)})
+                dict[N].append({"a": a, "b": int(sqrt(b2))})
             else:
                 notsquareBs.add(b2)
         elif b2 in squareBs:
-            dict[N].append({"a": a, "b": sqrt(b2)})
-            # return (a, sqrt(b2))
-            # print "N=", N, "found: ", a, sqrt(b2)
-            # ss += a
+            dict[N].append({"a": a, "b": int(sqrt(b2))})
+
+
 
 def collectAllPrimesMultiAndSolve(_list):
-    mylist = [1 for x in xrange(len(_list))]
-    mylist[0] = [1, _list[0]]
-    _solve(_list[0])
     global dict
+    mylist = [[1, x] for x in _list]
+    dict[1] = [{"a": 0, "b": 1}]
+    # for i in xrange(len(_list)):  _solve(_list[i])
+    for x in _list: _solve(x)
+
     index = 1
-    s = set(_list)
-    dict = {}
+    # s = set(_list)
     # N = N1 * N2 => N= (a1^2 +b1^2)(a2^2 + b2^2) = (a1a2)^2 + (a1b2)^2 + (b1a2)^2 +(b1b2)^2 = a^2 + b^2
     # (a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2
     # (a^2+b^2)(c^2+d^2)=(bd - ac)^2+(ad+bc)^2
-
     while True:
         if index == len(mylist):
             break
-        _solve(_list[index])
-        if mylist[index] == 1:
-            mylist[index] = []
+        tmp = []
+        for y in mylist[index-1]:
+            for x in mylist[index]:
+                r = y * x
+                if r == 65 :
+                    pass
+                tmp.append(r)
+                if not dict. has_key(r):
+                    dict[r] = []
+                    p = dict[x][0]
+                    for q in dict[y]:
+                        a = abs(p["b"] * q["b"] - p["a"] * q["a"])
+                        b = p["a"] * q["b"] + p["b"] * q["a"]
+                        if a < b:
+                            dict[r].append({"a": a, "b": b})
+                        else:
+                            dict[r].append({"b": a, "a": b})
 
-            # a1 = [x * _list[index] for x in mylist[index - 1]]
-            a1 = []
-            for x in mylist[index - 1]:
-                dict[x * _list[index]] = []
-                for y in dict[x]:
-                    q1 = (dict[_list[index]]["b"] * y["b"] - dict[_list[index]]["a"] * y["a"])
-                    q2 = (dict[_list[index]]["a"] * y["b"] + dict[_list[index]]["b"] * y["a"])
-                    if q1<q2:
-                        dict[x*_list[index]].append({
-                            "a": q1, "b": q2
-                        })
-                    else:
-                        dict[x * _list[index]].append({
-                            "b": q1, "a": q2
-                        })
-
-            a1.append(x*_list[index])
-
-            a2= []
-
-            for x in mylist[index - 1]:
-                a2.append(x * 1)
-
-
-            # a2 = [1 * x for x in mylist[index - 1]]
-
-
-            mylist[index] += a1
-            mylist[index] += a2
-            s.update(mylist[index])
+                        a = p["b"] * q["b"] + p["a"] * q["a"]
+                        b = abs(p["a"] * q["b"] - p["b"] * q["a"])
+                        if a < b:
+                            dict[r].append({"a": a, "b": b})
+                        else:
+                            dict[r].append({"b": a, "a": b})
+                        if(len(dict[r])>1500):
+                            _ll = []
+                            for ll in dict[r]:
+                                if ll["a"] in _ll:
+                                    print "fffff:", ll["a"]
+                                    break
+                                else: _ll.append(ll["a"])
+                            print sum(_ll)
+                            pass
+        mylist[index] = tmp
         index += 1
 
-    # ll = []
+    # actually we do not need dict[r] , only to sum a's
+    # ll = [] multiple solutions
     # for i in xrange(len(_list)):
     #     for j in xrange(i+1, len(_list)):
     #         ll.append(_list[i] * _list[j])
 
-    return s
+    return mylist[index-1]
 
 
 # for N in multi:
@@ -220,15 +231,44 @@ def collectAllPrimesMultiAndSolve(_list):
 
 
 _list = findPrimes()
-print "found: ", len(_list),"primes\n",(_list)
+print "found: ", len(_list), "primes\n", (_list)
 multi = collectAllPrimesMultiAndSolve(_list)
+print "size of multi:", len(multi)
+s = set()
+s.update(multi)
+print "size of set:", len(s)
 print "reducing: ", len(multi)
-print multi
-print dict
+print dict[149]
+print dict[1]
+print "13*149=",13*149, dict[13*149]
+print "65=", dict[65]
+print "61*89*113=",61*89*113, dict[61*89*113]
+print "5, 13, 17, 29, 37, 41, 53=",5*13*17*29*37*41*53, dict[5*13*17*29*37*41*53]
+for r,k in dict.iteritems():
+    if len(k)>2:
+        print "Found:",r,k
+    if len(k)>2:
+        print "Found2:",r,k
+    if len(k)==2 and k[0]["a"] == k[1]["b"]:
+        print "skata",r,k
 
-
-
+#         print r, k
+#         for a in k:
+#             if a["a"] != 0:
+#                 ss += a["a"]
+# #
 print ss
 
+ss = sum(x["a"] for counter in dict.values() for x in counter)
+print ss
+
+# print multi
+# print dict
+# 356316136241687
+# 356599463120987
+# 186732730785176
+# 186732730785176
+# 368899498158503
+# 186732730785176
 
 
