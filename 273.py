@@ -21,6 +21,8 @@
 
 from math import sqrt; from itertools import count, islice
 import math
+import itertools
+
 
 def isPrime(n):
     return n > 1 and all(n % i for i in islice(count(2), int(sqrt(n)-1)))
@@ -133,16 +135,16 @@ sumAs =0L
 ss = 0
 notsquareBs = set()
 squareBs = set()
-dict = {}
+_dict = {}
 
 
 def _solve(N):
     global notsquareBs
     global squareBs
     global ss
-    global dict
+    global _dict
     # for N in multi:
-    dict[N] = []
+    _dict[N] = []
     # for a in xrange(N-1):
     for a in xrange(int(math.ceil(sqrt(N)/sqrt(2)))):
         a2 = a*a
@@ -155,18 +157,18 @@ def _solve(N):
         if b2 not in squareBs and b2 not in notsquareBs:
             if is_square(b2):
                 squareBs.add(b2)
-                dict[N].append({"a": a, "b": int(sqrt(b2))})
+                _dict[N].append({"a": a, "b": int(sqrt(b2))})
             else:
                 notsquareBs.add(b2)
         elif b2 in squareBs:
-            dict[N].append({"a": a, "b": int(sqrt(b2))})
+            _dict[N].append({"a": a, "b": int(sqrt(b2))})
 
 
 
 def collectAllPrimesMultiAndSolve(_list):
-    global dict
+    global _dict
     mylist = [[1, x] for x in _list]
-    dict[1] = [{"a": 0, "b": 1}]
+    _dict[1] = [{"a": 0, "b": 1}]
     # for i in xrange(len(_list)):  _solve(_list[i])
     for x in _list: _solve(x)
 
@@ -175,6 +177,7 @@ def collectAllPrimesMultiAndSolve(_list):
     # N = N1 * N2 => N= (a1^2 +b1^2)(a2^2 + b2^2) = (a1a2)^2 + (a1b2)^2 + (b1a2)^2 +(b1b2)^2 = a^2 + b^2
     # (a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2
     # (a^2+b^2)(c^2+d^2)=(bd - ac)^2+(ad+bc)^2
+    #
     while True:
         if index == len(mylist):
             break
@@ -185,26 +188,26 @@ def collectAllPrimesMultiAndSolve(_list):
                 if r == 65 :
                     pass
                 tmp.append(r)
-                if not dict. has_key(r):
-                    dict[r] = []
-                    p = dict[x][0]
-                    for q in dict[y]:
+                if not _dict. has_key(r):
+                    _dict[r] = []
+                    p = _dict[x][0]
+                    for q in _dict[y]:
                         a = abs(p["b"] * q["b"] - p["a"] * q["a"])
                         b = p["a"] * q["b"] + p["b"] * q["a"]
                         if a < b:
-                            dict[r].append({"a": a, "b": b})
+                            _dict[r].append({"a": a, "b": b})
                         else:
-                            dict[r].append({"b": a, "a": b})
+                            _dict[r].append({"b": a, "a": b})
 
                         a = p["b"] * q["b"] + p["a"] * q["a"]
                         b = abs(p["a"] * q["b"] - p["b"] * q["a"])
                         if a < b:
-                            dict[r].append({"a": a, "b": b})
+                            _dict[r].append({"a": a, "b": b})
                         else:
-                            dict[r].append({"b": a, "a": b})
-                        if(len(dict[r])>1500):
+                            _dict[r].append({"b": a, "a": b})
+                        if(len(_dict[r])>15000):
                             _ll = []
-                            for ll in dict[r]:
+                            for ll in _dict[r]:
                                 if ll["a"] in _ll:
                                     print "fffff:", ll["a"]
                                     break
@@ -223,6 +226,108 @@ def collectAllPrimesMultiAndSolve(_list):
     return mylist[index-1]
 
 
+
+def collectAllPrimesMultiAndSolveUsingRecursion(_list):
+    global _dict
+    mylist = [[1, x] for x in _list]
+    _dict[1] = [{"a": 0, "b": 1}]
+    # for i in xrange(len(_list)):  _solve(_list[i])
+    for x in _list: _solve(x)
+
+    index = 1
+    # s = set(_list)
+    # N = N1 * N2 => N= (a1^2 +b1^2)(a2^2 + b2^2) = (a1a2)^2 + (a1b2)^2 + (b1a2)^2 +(b1b2)^2 = a^2 + b^2
+    # (a^2+b^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2
+    # (a^2+b^2)(c^2+d^2)=(bd - ac)^2+(ad+bc)^2
+    #
+    while True:
+        if index == len(mylist):
+            break
+        tmp = []
+        for y in mylist[index-1]:
+            for x in mylist[index]:
+                r = y * x
+                if r == 65 :
+                    pass
+                tmp.append(r)
+                if not _dict. has_key(r):
+                    _dict[r] = []
+                    p = _dict[x][0]
+                    for q in _dict[y]:
+                        a = abs(p["b"] * q["b"] - p["a"] * q["a"])
+                        b = p["a"] * q["b"] + p["b"] * q["a"]
+                        if a < b:
+                            _dict[r].append({"a": a, "b": b})
+                        else:
+                            _dict[r].append({"b": a, "a": b})
+
+                        a = p["b"] * q["b"] + p["a"] * q["a"]
+                        b = abs(p["a"] * q["b"] - p["b"] * q["a"])
+                        if a < b:
+                            _dict[r].append({"a": a, "b": b})
+                        else:
+                            _dict[r].append({"b": a, "a": b})
+                        if(len(_dict[r])>1500):
+                            _ll = []
+                            for ll in _dict[r]:
+                                if ll["a"] in _ll:
+                                    print "fffff:", ll["a"]
+                                    break
+                                else: _ll.append(ll["a"])
+                            print sum(_ll)
+                            pass
+        mylist[index] = tmp
+        index += 1
+
+    # actually we do not need dict[r] , only to sum a's
+    # ll = [] multiple solutions
+    # for i in xrange(len(_list)):
+    #     for j in xrange(i+1, len(_list)):
+    #         ll.append(_list[i] * _list[j])
+
+    return mylist[index-1]
+
+
+def solveForAll(_list):
+    # 1 Mono a8roisma 8a exoume ka8e fora...
+    sumA = 0L
+    # Na ta swzw ston disko...
+    #  find the initial a's
+    for x in _list: _solve(x)
+    global _dict
+
+    for L in xrange(1, len(_list) + 1):
+        for subset in itertools.combinations(_list, L):
+            # subset contains all prime factors..
+            mylist = []
+            for p in subset:
+                dic = _dict[p][0]
+                if len(mylist) == 0:
+                    mylist.append({"a": dic["a"], "b": dic["b"]})
+                else:
+                    _ll = []
+                    for t in mylist:
+                        a = abs(dic["b"] * t["b"] - dic["a"] * t["a"])
+                        b = dic["a"] * t["b"] + dic["b"] * t["a"]
+
+                        if a < b:
+                            _ll.append({"a": a, "b": b})
+                        else:
+                            _ll.append({"b": a, "a": b})
+
+                        a = dic["b"] * t["b"] + dic["a"] * t["a"]
+                        b = abs(dic["a"] * t["b"] - dic["b"] * t["a"])
+
+                        if a < b:
+                            _ll.append({"a": a, "b": b})
+                        else:
+                            _ll.append({"b": a, "a": b})
+                    mylist.append(x for x in _ll)
+            sumA += sum(x["a"] for x in mylist)
+    return sumA
+
+
+
 # for N in multi:
 #     for a2 in xrange(N/2):
 #         if is_square(a2) and is_square(N - a2):
@@ -232,35 +337,21 @@ def collectAllPrimesMultiAndSolve(_list):
 
 _list = findPrimes()
 print "found: ", len(_list), "primes\n", (_list)
-multi = collectAllPrimesMultiAndSolve(_list)
-print "size of multi:", len(multi)
-s = set()
-s.update(multi)
-print "size of set:", len(s)
-print "reducing: ", len(multi)
-print dict[149]
-print dict[1]
-print "13*149=",13*149, dict[13*149]
-print "65=", dict[65]
-print "61*89*113=",61*89*113, dict[61*89*113]
-print "5, 13, 17, 29, 37, 41, 53=",5*13*17*29*37*41*53, dict[5*13*17*29*37*41*53]
-for r,k in dict.iteritems():
-    if len(k)>2:
-        print "Found:",r,k
-    if len(k)>2:
-        print "Found2:",r,k
-    if len(k)==2 and k[0]["a"] == k[1]["b"]:
-        print "skata",r,k
-
-#         print r, k
-#         for a in k:
-#             if a["a"] != 0:
-#                 ss += a["a"]
-# #
+ss = solveForAll(_list)
 print ss
+# multi = collectAllPrimesMultiAndSolve(_list)
+# multi = collectAllPrimesMulti(_list)
 
-ss = sum(x["a"] for counter in dict.values() for x in counter)
-print ss
+
+# print multi
+# print dict[149]
+# print dict[1]
+# print "13*149=",13*149, dict[13*149]
+# print "65=", dict[65]
+# print "61*89*113=",61*89*113, dict[61*89*113]
+# print "5, 13, 17, 29, 37, 41, 53=",5*13*17*29*37*41*53, dict[5*13*17*29*37*41*53]
+
+
 
 # print multi
 # print dict
