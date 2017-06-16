@@ -2,9 +2,9 @@ from BeautifulSoup import BeautifulSoup
 import urllib2
 import os
 
-def downloadAllXml():
+def downloadAllXml(f):
 
-    response = urllib2.urlopen('https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-Galileo.htm#001')
+    response = urllib2.urlopen(f)
     html = response.read()
     # soup.findAll('a', attrs={'href': re.compile("^http://")})
     soup = BeautifulSoup(html)
@@ -38,4 +38,13 @@ def indendAllXmlFiles():
             ff.close()
             print f
 
+
+# downloadAllXml("https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-Galileo.htm#001")
+# downloadAllXml("https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-Worldspan.htm")
+# downloadAllXml("https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-ACH.htm")
+downloadAllXml("https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-AirCanada.htm")
+print "Downloading completed."
 indendAllXmlFiles()
+
+
+
