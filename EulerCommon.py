@@ -12,6 +12,14 @@ def getListOfPrimesBelow(n):
            _list.append(num)
     return _list
 
+def getNextPrime(n):
+    num = n+2
+    while True:
+        if all(num % i != 0 for i in xrange(2, int(math.sqrt(num))+1)):
+           return num
+        num += 2
+
+
 
 
 
