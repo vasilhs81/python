@@ -63,8 +63,9 @@ def WW(n, k):
     # ll=[2,2,2,3]
 
     a = it.permutations(ll, nk)
+    # ss = a
     ss = set(a)
-    print ss
+    print "ss", ss
     # how many of them violate?
     su = 0
     _sums = []
@@ -91,21 +92,26 @@ def WW(n, k):
 
 def _filter(Length,Height):
     global walls
+    _set = set()
     print "QQQQQQQQQQQQQQQQQ"
-    for aa in it.combinations_with_replacement(walls, Height):
+
+    sa = []
+    print "walls",walls
+    for aa in it.permutations(walls, Height):
         print "checking..", aa
         # za = zip(*aa)
-        check = False
         # if any(set(a).intersection(b)!=[] for a, b in zip(aa, aa[1:])):
-        sa = []
         check = False
         for j in xrange(len(aa) -1):
+            # check if sums have common / double element inside..
             if len(set(aa[j]).intersection(aa[j+1])) > 0:
                 check = True
+                break
 
         if check ==False:
-            print "Found",aa
-
+            sa.append(aa)
+    print "Found:",sa
+    # print "AAAA",set(tuple(i) for i in sa)
 
 
 
@@ -115,7 +121,7 @@ def _filter(Length,Height):
                 # check = True
                 # break
         # if check == False:
-            print "Found", aa
+
 
 
 def W(Length, Height):
@@ -166,12 +172,12 @@ def subset_sum(numbers, target, partial=[]):
         remaining = numbers[i+1:]
         subset_sum(remaining, target, partial + [n])
 
-
+# every one must be repeated
 
 # subset_sum([2,2,2,3],9)
 
 #  just take all combinations of the four elements, and find the cases were the overlapp
-#  they can be repeated..
+#  they can be repeated 3 times..
 
 
 # 2 2 2 3
