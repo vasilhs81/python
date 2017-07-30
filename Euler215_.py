@@ -1,5 +1,3 @@
-
-
 # Consider the problem of building a wall out of 2*1 and 3*1 bricks (horizontal*vertical dimensions)
 # such that, for extra strength, the gaps between horizontally-adjacent bricks never line up in consecutive layers,
 # i.e. never form a "running crack".
@@ -63,21 +61,22 @@ def WW(n, k):
     # ll=[2,2,2,3]
 
     a = it.permutations(ll, nk)
-    ss = a
-    # ss = set(a)
-    # print "ss", ss
+    #ss = set(a)
+    #ss=a
+    #print ss
     # how many of them violate?
     su = 0
     _sums = []
-    for l in ss:
+    for l in a:
         # for j in xrange(4):
         _sums.append([sum(l[:j + 1]) for j in xrange(nk - 1)])
-
-    print "sums = ", _sums
-    print "zip sums=", zip(*_sums)
+    
+    
+    #print "sums = ", _sums
+    #print "zip sums=", zip(*_sums)
     for s in _sums:
         walls.append(s)
-
+    
     #  There might be different amount of elements
     # (| | |) (| | |) (| | |)
     # (| |) (| |) (| |) (| | |)
@@ -92,35 +91,31 @@ def WW(n, k):
 
 def _filter(Length,Height):
     global walls
-    _set = set()
-    print "QQQQQQQQQQQQQQQQQ"
-
-    sa = []
-    print "walls",walls
+    _sum =0
+    
+    _filter = set()
     for aa in it.permutations(walls, Height):
-        print "checking..", aa
+        
+        s = str(aa)
+        
+        if s in _filter: continue		
+        _filter.add(s)
+        
+        
         # za = zip(*aa)
+        check = False
         # if any(set(a).intersection(b)!=[] for a, b in zip(aa, aa[1:])):
+        sa = []
         check = False
         for j in xrange(len(aa) -1):
-            # check if sums have common / double element inside..
             if len(set(aa[j]).intersection(aa[j+1])) > 0:
                 check = True
                 break
 
         if check ==False:
-            sa.append(aa)
-    print "Found:",sa
-    # print "AAAA",set(tuple(i) for i in sa)
-
-
-
-            # print zip(za, za[1:])
-            # if any(i == j for i, j in zip(zaa, zaa[1:])):
-
-                # check = True
-                # break
-        # if check == False:
+            #print "Found",aa
+            _sum +=1
+    print "found:", _sum            
 
 
 
@@ -136,7 +131,8 @@ def W(Length, Height):
             break
     _filter(Length, Height)
 
-W(9, 3)
+#W(9, 3)
+W(32,10)
 
 
 
@@ -172,25 +168,14 @@ def subset_sum(numbers, target, partial=[]):
         remaining = numbers[i+1:]
         subset_sum(remaining, target, partial + [n])
 
-# every one must be repeated
+
 
 # subset_sum([2,2,2,3],9)
 
 #  just take all combinations of the four elements, and find the cases were the overlapp
-#  they can be repeated 3 times..
+#  they can be repeated..
 
 
-# 2 2 2 3 ->2 4 6
-# 3 2 2 2 -> 3 5 7
-# 2 2 2 3 -> 2 4 6
-
-
-
-
-
-
-
-
-
-
-
+# 2 2 2 3
+# 3 2 2 2
+# 2 2 2 3
