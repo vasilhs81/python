@@ -179,18 +179,7 @@ def subset_sum(numbers, target, partial=[]):
 #  just take all combinations of the four elements, and find the cases were the overlapp
 #  they can be repeated 3 times..
 
-
+#
 # 2 2 2 3 ->2 4 6
 # 3 2 2 2 -> 3 5 7
 # 2 2 2 3 -> 2 4 6
-
-
-
-
-
-
-
-
-
-
-
