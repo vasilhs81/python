@@ -1,0 +1,104 @@
+
+<AirShoppingRQ xmlns="http://www.iata.org/IATA/EDIST/2017.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="IATA2017.1" EchoToken="21212AB" >
+	<Document>
+		<Name>KRONOS NDC GATEWAY</Name>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>12312312</IATA_Number>
+				<AgencyID Owner="C9">C9</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+		<Participants>
+			<Participant>
+				<AggregatorParticipant SequenceNumber="1">
+					<Name>JR TECHNOLOGIES</Name>
+					<AggregatorID>88888888</AggregatorID>
+				</AggregatorParticipant>
+			</Participant>
+		</Participants>
+	</Party>
+	<CoreQuery>
+		<OriginDestinations>
+			<OriginDestination>
+				<Departure>
+					<AirportCode>LHR</AirportCode>
+					<Date>2017-07-26</Date>
+				</Departure>
+				<Arrival>
+					<AirportCode>DXB</AirportCode>
+				</Arrival>
+			</OriginDestination>
+			<OriginDestination>
+				<Departure>
+					<AirportCode>DXB</AirportCode>
+					<Date>2017-07-28</Date>
+				</Departure>
+				<Arrival>
+					<AirportCode>LHR</AirportCode>
+				</Arrival>
+			</OriginDestination>
+		</OriginDestinations>
+	</CoreQuery>
+	<Preference>
+		<FarePreferences>
+			<Types>
+				<Type>759</Type>
+			</Types>
+		</FarePreferences>
+		<CabinPreferences>
+			<CabinType>
+				<Code>M</Code>
+			</CabinType>
+		</CabinPreferences>
+	</Preference>
+	<DataLists>
+		<PassengerList>
+			<Passenger PassengerID="SH1">
+				<PTC>ADT</PTC>
+				<Individual>
+					<GivenName>John</GivenName>
+					<Surname>Jones</Surname>
+				</Individual>
+			</Passenger>
+			<Passenger PassengerID="SH2">
+				<PTC>ADT</PTC>
+				<Individual>
+					<GivenName>Mary</GivenName>
+					<Surname>Jones</Surname>
+				</Individual>
+			</Passenger>
+			<Passenger PassengerID="SH3">
+				<PTC>INF</PTC>
+				<Individual>
+					<GivenName>Lilly</GivenName>
+					<Surname>Jones</Surname>
+				</Individual>
+			</Passenger>
+			<Passenger PassengerID="SH4">
+				<PTC>ADT</PTC>
+				<Individual>
+					<GivenName>Johns</GivenName>
+					<Surname>Joness</Surname>
+				</Individual>
+			</Passenger>
+			<Passenger PassengerID="SH5">
+				<PTC>ADT</PTC>
+				<Individual>
+					<GivenName>Marys</GivenName>
+					<Surname>Joness</Surname>
+				</Individual>
+			</Passenger>
+			<Passenger PassengerID="SH6">
+				<PTC>INF</PTC>
+				<Individual>
+					<GivenName>Lillys</GivenName>
+					<Surname>Joness</Surname>
+				</Individual>
+			</Passenger>
+		</PassengerList>
+	</DataLists>
+</AirShoppingRQ>

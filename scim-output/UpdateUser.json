@@ -1,0 +1,28 @@
+{
+    "active": true, 
+    "emails": [
+        {
+            "value": "some@email.com"
+        }
+    ], 
+    "id": "72804d4c-8698-47bb-a47e-68d502a35481", 
+    "meta": {
+        "created": "2017-05-26T12:17:04", 
+        "lastModified": "2017-05-26T12:18:21"
+    }, 
+    "name": {
+        "familyName": "Last", 
+        "givenName": "First"
+    }, 
+    "phoneNumbers": [
+        {
+            "primary": true, 
+            "value": "555-555-5555"
+        }
+    ], 
+    "schemas": [
+        "urn:scim:schemas:core:1.0"
+    ], 
+    "title": "Mr.", 
+    "userName": "PRGAAAA"
+}

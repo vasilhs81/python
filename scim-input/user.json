@@ -1,0 +1,23 @@
+{
+    "schemas": [
+        "urn:scim:schemas:core:1.0"
+    ],
+    "userName": "other_username",
+    "name": {
+        "givenName": "First",
+        "familyName": "Last"
+    },
+    "title": "Mr.",
+    "emails": [
+        {
+            "value": "some@email.com",
+            "primary": true
+        }
+    ],
+    "phoneNumbers": [
+    {
+      "value": "555-555-5555",
+      "type": "work"
+    }
+  ]
+ }

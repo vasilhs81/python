@@ -1,0 +1,19 @@
+{
+    "attributes": [
+        {
+            "caseExact": false, 
+            "description": "Unique identifier for the SCIM resource as defined by the Service Provider. Each representation of the resource MUST include a non-empty id value. This identifier MUST be unique across the Service Provider's entire set of resources. It MUST be a stable, non-reassignable identifier that does not change when the same resource is returned in subsequent requests. The value of the id attribute is always issued by the Service Provider and MUST never be specified by the Service Consumer. REQUIRED.", 
+            "multiValued": false, 
+            "name": "id", 
+            "readOnly": true, 
+            "required": true, 
+            "schema": "urn:scim:schemas:core:1.0", 
+            "type": "string"
+        }
+    ], 
+    "description": "Core User", 
+    "endpoint": "/Users", 
+    "id": "urn:scim:schemas:core:1.0:User", 
+    "name": "User", 
+    "schema": "urn:scim:schemas:core:1.0"
+}
