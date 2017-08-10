@@ -60,3 +60,14 @@ _l = [1, 1, 1, 3, 5, 9, 17, 31, 57, 105, 193, 355, 653, 1201, 2209, 4063, 7473, 
 # print tripow(9)  # -> 149
 # x = list(IT.islice(tribonacci(), 1000))
 # print x[-1] / float(x[-2])  # -> 1.83928675521
+
+
+# def TribonacciPeriod(m):
+#     a = 1; b = 1; c = 2 // manually do one iteration
+#     n = 1
+#     while (a != 0 or b != 1 or c != 1):
+#         tmp = (a + b + c) mod m
+#         a = b; b = c; c = tmp
+#         n += 1
+#     return n
+# I need to calculate T(y) mod10000 for y > 2^40.
