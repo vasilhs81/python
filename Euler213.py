@@ -422,6 +422,55 @@ def bell2():
             # _A[i][j][1] -=1
     A = _A
 
+
+
+def bell4():
+    # lets find the transition matrix for each flea, and multiple it 50 times..
+
+
+    import numpy as np
+    from numpy.linalg import inv
+    from numpy import linalg as LA
+    # N = np.array([[0 for x in xrange(DIM)] for i in xrange(DIM)])
+    directions =4
+    P = np.zeros(DIM*DIM, DIM*DIM)
+    for i in xrange(DIM):
+        if i == DIM-1:
+            directions -= 1
+        for j in xrange(DIM):
+            if j == DIM-1:
+                directions -= 1
+                row = (i ) * DIM + j
+                col = (i) * DIM + j
+
+                # if (i > 1): P[row, (i-2) * DIM+j] = 1.0/directions
+                # if (i < n): P[row, (i  ) * n+j)=H2; end
+                
+                # if (j > 1), a(row, (i-1) * n+j-1)=H2; end
+                # if (j < n), a(row, (i-1) * n+j+1)=H2; end
+
+
+
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+
+
+
+
+    # x = np.array(((2, 3), (3, 5)))
+    # y = np.array(((1, 2), (5, -1)))
+    # return LA.matrix_power(inv(x * y), 3)
+
+
+
+
+
+
+
+
 def init():
     global DIM
     global A
@@ -474,3 +523,5 @@ def init():
 
 
 bell3(50)
+# a = bell4()
+# print a
