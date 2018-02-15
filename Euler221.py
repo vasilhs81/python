@@ -14,6 +14,10 @@
 # A: Integer, >0, so find pq such that A integer and A > 0
 # -pq^2 + pq =x , p+q =y , if p,q >0 , then 1-qp <0 and p + q >0 so aporiptetai.
 #  Symmetry, so p > 0 , q < 0. If p=-q then A = (1-a^2)/(2/a)
+# Suffices (1-pq)pq%(p+q)==0, and (1-pq)pq/(p+q) >0 -> p,q <0 , or |negative part| > |positive part|
+# Bounds?
+
+
 
 
 def a1():

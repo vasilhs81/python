@@ -21,6 +21,12 @@ def getNextPrime(n):
 
 
 
+def is_perfect_power(a, b):
+  while a % b == 0:
+    a = a / b
+  if a == 1:
+    return True
+  return False
 
 
 def is_square(apositiveint):
