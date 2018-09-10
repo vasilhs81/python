@@ -2325,9 +2325,7 @@ public static String getValueFromNode(Node startingNode, String queryPath, Globa
     //params.put("refs", serv.getPrices().stream().map(x -> "CLASS_" + x.getPriceClassRefs().get(0)).distinct().collect(Collectors.joining(" ")));
     
 ///////////////////////////
-  try {
-            System.out.println(DomCreateCommons.documentToString(airPriceRS));
-        } catch (Exception ex) {}
+  try { System.out.println(DomCreateCommons.documentToString(airPriceRS));} catch (Exception ex) {}
 /////////////////////////////
 Map<String, PassengerHolder> passengerHolders =  rqFilter.getPassengers().stream().
 filter(a -> a.getProfile() == null)
@@ -2569,3 +2567,10 @@ Map<String, List<String>> requestHeaders = (Map<String, List<String>>) ((Binding
 
 ///////////////////////////////////////sum bigdecimals using java streams
 BigDecimal penaltyAmount = offerItem.getPrice().getFeeList().stream().map(a->a.getAmount().getValue()).reduce(BigDecimal.ZERO,BigDecimal::add).get();                    
+////////
+ try {
+	System.out.println(
+		CommonUtils.convertObjectToXml(retrieveRefundDetails,org.datacontract.schemas._2004._07.sita_services.ARRRetrieveRefundDetails.class)
+		);
+                } catch (Exception ex) {}
+//////////////////////                
