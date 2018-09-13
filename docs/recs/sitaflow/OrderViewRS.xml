@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderViewRS EchoToken="663612" TimeStamp="2018-09-13T10:23:55.888Z" Version="IATA2016.2" TransactionIdentifier="663612" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<Name>InselAir NDC GATEWAY</Name>
+		<ReferenceVersion>BUILD.KUBE28</ReferenceVersion>
+	</Document>
+	<Success/>
+	<Response>
+		<OrderViewProcessing/>
+		<Passengers/>
+		<Order>
+			<OrderID Owner="7I">T1234BPS8</OrderID>
+			<BookingReferences>
+				<BookingReference>
+					<ID>P1238</ID>
+					<AirlineID>7I</AirlineID>
+				</BookingReference>
+			</BookingReferences>
+			<TotalOrderPrice>
+				<DetailCurrencyPrice>
+					<Total Taxable="true" Code="USD">135.84</Total>
+					<Details>
+						<Detail>
+							<SubTotal Code="USD">122.00</SubTotal>
+							<Application>Base Fare</Application>
+						</Detail>
+					</Details>
+					<Taxes>
+						<Total Code="USD">13.84</Total>
+						<Breakdown>
+							<Tax>
+								<Amount Code="USD">4.00</Amount>
+								<TaxCode>E9</TaxCode>
+								<Description>airport improvement fee</Description>
+							</Tax>
+							<Tax>
+								<Amount Code="USD">9.84</Amount>
+								<TaxCode>PC</TaxCode>
+								<Description>passenger facility charge</Description>
+							</Tax>
+						</Breakdown>
+					</Taxes>
+				</DetailCurrencyPrice>
+			</TotalOrderPrice>
+			<Status>
+				<StatusCode>
+					<Code>OK</Code>
+				</StatusCode>
+			</Status>
+			<OrderItems>
+				<OrderItem Timestamp="2018-09-13T10:23:55.868Z">
+					<OrderItemID Owner="7I">ORDERITEM1</OrderItemID>
+					<OtherItem refs="SEG1">
+						<Price>
+							<DetailCurrencyPrice>
+								<Total Taxable="true" Code="USD">135.84</Total>
+								<Details>
+									<Detail>
+										<SubTotal Code="USD">122.00</SubTotal>
+										<Application>Base Fare</Application>
+									</Detail>
+								</Details>
+								<Taxes>
+									<Total Code="USD">13.84</Total>
+									<Breakdown>
+										<Tax>
+											<Amount Code="USD">4.00</Amount>
+											<TaxCode>E9</TaxCode>
+											<Description>airport improvement fee</Description>
+										</Tax>
+										<Tax>
+											<Amount Code="USD">9.84</Amount>
+											<TaxCode>PC</TaxCode>
+											<Description>passenger facility charge</Description>
+										</Tax>
+									</Breakdown>
+								</Taxes>
+							</DetailCurrencyPrice>
+						</Price>
+					</OtherItem>
+					<Associations>
+						<Passengers>
+							<PassengerReferences>SH1</PassengerReferences>
+						</Passengers>
+						<IncludedService>
+							<ServiceReferences>SVC00038 SVC00059</ServiceReferences>
+						</IncludedService>
+					</Associations>
+				</OrderItem>
+			</OrderItems>
+		</Order>
+		<Payments>
+			<Payment>
+				<Method>
+					<PaymentCardMethod>
+						<CardType>Credit</CardType>
+						<CardCode>VI</CardCode>
+						<CardHolderName>Stylianakis George</CardHolderName>
+						<EffectiveExpireDate>
+							<Expiration>0519</Expiration>
+						</EffectiveExpireDate>
+					</PaymentCardMethod>
+				</Method>
+				<Amount Code="USD">135.84</Amount>
+			</Payment>
+		</Payments>
+		<TicketDocInfos>
+			<TicketDocInfo>
+				<TicketDocument>
+					<TicketDocNbr>9584321010145</TicketDocNbr>
+					<Type>
+						<Code>eTicket</Code>
+					</Type>
+					<NumberofBooklets>1</NumberofBooklets>
+					<DateOfIssue>2018-09-13</DateOfIssue>
+				</TicketDocument>
+				<PassengerReference>SH1</PassengerReference>
+			</TicketDocInfo>
+		</TicketDocInfos>
+		<DataLists>
+			<RecognizedTravelerList>
+				<RecognizedTraveler ObjectKey="SH1">
+					<PTC>ADT</PTC>
+					<Name>
+						<Surname>Stylianakis</Surname>
+						<Given>George</Given>
+					</Name>
+					<Contacts>
+						<Contact>
+							<EmailContact>
+								<Address>g.stylianakis@jrtechnologies.com</Address>
+							</EmailContact>
+						</Contact>
+						<Contact>
+							<PhoneContact>
+								<Number>+37669898989898</Number>
+							</PhoneContact>
+						</Contact>
+					</Contacts>
+					<Remarks>
+						<Remark>primary</Remark>
+					</Remarks>
+				</RecognizedTraveler>
+			</RecognizedTravelerList>
+			<FlightSegmentList>
+				<FlightSegment SegmentKey="SEG1">
+					<Departure>
+						<AirportCode>BON</AirportCode>
+						<Date>2018-09-29</Date>
+						<Time>06:35</Time>
+					</Departure>
+					<Arrival>
+						<AirportCode>CUR</AirportCode>
+						<Date>2018-09-29</Date>
+						<Time>07:00</Time>
+					</Arrival>
+					<MarketingCarrier>
+						<AirlineID>7I</AirlineID>
+						<FlightNumber>302</FlightNumber>
+					</MarketingCarrier>
+					<OperatingCarrier>
+						<AirlineID>7I</AirlineID>
+						<FlightNumber>302</FlightNumber>
+					</OperatingCarrier>
+					<Equipment>
+						<AircraftCode>F50</AircraftCode>
+						<Name>F50</Name>
+					</Equipment>
+					<ClassOfService refs="PC1">
+						<Code>Y</Code>
+						<MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+					</ClassOfService>
+					<FlightDetail>
+						<FlightDuration>
+							<Value>P0DT0H25M0S</Value>
+						</FlightDuration>
+					</FlightDetail>
+				</FlightSegment>
+			</FlightSegmentList>
+			<FlightList>
+				<Flight FlightKey="FL_BONCUR">
+					<Journey>
+						<Time>P0DT0H25M0S</Time>
+					</Journey>
+					<SegmentReferences>SEG1</SegmentReferences>
+				</Flight>
+			</FlightList>
+			<OriginDestinationList>
+				<OriginDestination OriginDestinationKey="BONCUR">
+					<DepartureCode>BON</DepartureCode>
+					<ArrivalCode>CUR</ArrivalCode>
+					<FlightReferences>FL_BONCUR</FlightReferences>
+				</OriginDestination>
+			</OriginDestinationList>
+			<PriceClassList>
+				<PriceClass ObjectKey="PC1">
+					<Name>E_ECONOMY_FLEXIBLE</Name>
+					<FareBasisCode>
+						<Code>Y</Code>
+					</FareBasisCode>
+				</PriceClass>
+			</PriceClassList>
+			<ServiceList>
+				<Service ObjectKey="SVC00038">
+					<ServiceID Owner="7I">SVC00038</ServiceID>
+					<Name>Free Bag</Name>
+					<Descriptions>
+						<Description>
+							<Text>You can carry one bag per person of up to 23Kg, for free. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+						</Description>
+					</Descriptions>
+					<Price>
+						<Total Code="USD">0.00</Total>
+						<PassengerReferences>SH1</PassengerReferences>
+					</Price>
+					<Associations>
+						<Traveler>
+							<TravelerReferences>SH1</TravelerReferences>
+						</Traveler>
+						<Flight>
+							<SegmentReferences>SEG1</SegmentReferences>
+						</Flight>
+					</Associations>
+				</Service>
+				<Service ObjectKey="SVC00059">
+					<ServiceID Owner="7I">SVC00059</ServiceID>
+					<Name>Seat Selection</Name>
+					<Descriptions>
+						<Description>
+							<Text>Your preferred seat can be purchased at any time prior to your flight.</Text>
+						</Description>
+					</Descriptions>
+					<Price>
+						<Total Code="USD">0.00</Total>
+						<PassengerReferences>SH1</PassengerReferences>
+					</Price>
+					<Associations>
+						<Traveler>
+							<TravelerReferences>SH1</TravelerReferences>
+						</Traveler>
+						<Flight>
+							<SegmentReferences>SEG1</SegmentReferences>
+						</Flight>
+					</Associations>
+				</Service>
+			</ServiceList>
+		</DataLists>
+	</Response>
+</OrderViewRS>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RetrieveTicketByTicketNumberResponse xmlns="http://sita.aero/SITA_RetrieveTicketByTicketNumber/5/0" xmlns:common="http://sita.aero/common/4/0" xmlns:fares="http://sita.aero/fares/common/5/0" xmlns:ticketing="http://sita.aero/ticketing/common/4/0">
+  <Success/>
+  <FlightInfoDetails>
+    <common:FlightLegInfo FlightStatus="OK" RPH="1" SequenceNumber="1" StopOverIndicator="O">
+      <common:DepartureAirport LocationCode="BON"/>
+      <common:ArrivalAirport LocationCode="CUR"/>
+      <common:MarketingAirlines>
+        <common:MarketingAirline Code="7I" FlightNumber="302" ResBookDesigCode="Y"/>
+      </common:MarketingAirlines>
+      <common:DepartureDate>2018-09-29</common:DepartureDate>
+      <common:DepartureTime Scheduled="06:35:00"/>
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P123S"/>
+      </common:BookingInfo>
+    </common:FlightLegInfo>
+  </FlightInfoDetails>
+  <PassengerInfo RPH="1">
+    <common:BookingInfo>
+      <common:BookingReferenceID ID="P123S"/>
+    </common:BookingInfo>
+    <common:PassengerName>
+      <common:GivenName>GEORGEMR</common:GivenName>
+      <common:Surname>STYLIANAKIS</common:Surname>
+    </common:PassengerName>
+    <common:PassengerType Code="ADT"/>
+    <TicketingInfo AirlineAccountingCode="958" DateOfIssue="2018-09-13" Destination="CUR" FormAndSerialNumber="4321010154" IssueCity="MIA" IssueIATA="73704444" IssuingAgentType="T" Origin="BON" OriginalDateofIssue="2018-09-13" ReservationsCityCode="WWW001" ResidingDatabase="7I">
+      <common:CouponInfo CouponNumber="1" FlightRPH="1" Status="OPEN FOR USE"/>
+      <common:TicketTotal Amount="135.84" CurrencyCode="USD"/>
+    </TicketingInfo>
+    <OriginInformation LocationCode="BON"/>
+    <DestinationInformation LocationCode="CUR"/>
+  </PassengerInfo>
+  <PTC_FareBreakdowns>
+    <PTC_FareBreakdown PassengerRPHList="1">
+      <fares:FareBasisCodes>
+        <fares:FareBasisCode FlightRPH="1">YOW</fares:FareBasisCode>
+      </fares:FareBasisCodes>
+      <fares:PassengerFare>
+        <fares:TotalFare Amount="135.84" CurrencyCode="USD"/>
+        <fares:BaseFare Amount="122.00" CurrencyCode="USD"/>
+        <fares:Taxes Amount="13.84">
+          <fares:Tax Amount="4.00" CurrencyCode="USD" TaxCode="E9"/>
+          <fares:Tax Amount="9.84" CurrencyCode="USD" TaxCode="PC"/>
+        </fares:Taxes>
+        <fares:UnstructuredFareCalc FareCalcMode="0">BON 7I CUR122.00NUC122.00END ROE1.000000</fares:UnstructuredFareCalc>
+        <fares:FareBaggageAllowances>
+          <fares:FareBaggageAllowance FlightRPH="1" UnitOfMeasure="PC" UnitOfMeasureQuantity="1"/>
+        </fares:FareBaggageAllowances>
+      </fares:PassengerFare>
+    </PTC_FareBreakdown>
+  </PTC_FareBreakdowns>
+  <Endorsements NonEndorsableIndicator="N">
+    <common:Endorsement>NONREF/NONEND/VALID ONLY 7I/</common:Endorsement>
+  </Endorsements>
+  <PaymentDetails>
+    <PaymentDetail PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI" CardNumber="XXXXXXXXXXXX1111" ExpireDate="0519"/>
+      <ticketing:PaymentAmount Amount="135.84" ApprovalCode="NULL" CurrencyCode="USD"/>
+    </PaymentDetail>
+  </PaymentDetails>
+</SITA_RetrieveTicketByTicketNumberResponse>

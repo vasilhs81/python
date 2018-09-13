@@ -1,0 +1,98 @@
+<sita:SITA_AirfarePriceRS xmlns:sita="http://www.sita.aero/PTS/fare/2005/11/PriceRS" xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.001">
+	<ota:OTA_AirPriceRS Target="Test" TimeStamp="2018-09-13T10:23:52" Version="3.001">
+		<ota:Success/>
+		<ota:PricedItineraries>
+			<ota:PricedItinerary SequenceNumber="1">
+				<ota:AirItinerary>
+					<ota:OriginDestinationOptions>
+						<ota:OriginDestinationOption>
+							<ota:FlightSegment ArrivalDateTime="2018-09-29T07:00:00" DepartureDateTime="2018-09-29T06:35:00" FlightNumber="302" InfoSource="1" RPH="1" ResBookDesigCode="Y">
+								<ota:DepartureAirport LocationCode="BON"/>
+								<ota:ArrivalAirport LocationCode="CUR"/>
+								<ota:OperatingAirline Code="7I"/>
+								<ota:Equipment AirEquipType="F50"/>
+								<ota:MarketingAirline Code="7I"/>
+							</ota:FlightSegment>
+						</ota:OriginDestinationOption>
+					</ota:OriginDestinationOptions>
+				</ota:AirItinerary>
+				<ota:AirItineraryPricingInfo>
+					<ota:PTC_FareBreakdowns>
+						<ota:PTC_FareBreakdown PricingSource="Published">
+							<ota:PassengerTypeQuantity Code="ADT"/>
+							<ota:FareBasisCodes>
+								<ota:FareBasisCode>YOW</ota:FareBasisCode>
+							</ota:FareBasisCodes>
+							<ota:PassengerFare>
+								<ota:BaseFare Amount="122.00" CurrencyCode="USD"/>
+								<ota:Taxes>
+									<ota:Tax Amount="4.00" CurrencyCode="USD" TaxCode="E9"/>
+									<ota:Tax Amount="9.84" CurrencyCode="USD" TaxCode="PC"/>
+								</ota:Taxes>
+								<ota:TotalFare Amount="135.84" CurrencyCode="USD"/>
+								<ota:UnstructuredFareCalc>bon 7i cur122.00nuc122.00end roe1.000000</ota:UnstructuredFareCalc>
+								<ota:TPA_Extensions>
+									<ota:SITA_PassengerFareExtension>
+										<sita:TaxBreakdowns>
+											<sita:TaxBreakdown Amount="4.00" CountryCode="BQ" CurrencyCode="USD" TaxCode="E9" TaxName="airport improvement fee" TaxType="001">
+												<sita:TaxDetails YQYRTaxPath="false">
+													<sita:TaxDetail IndividualTaxAmount="00004.00" Sequence="0110000"/>
+												</sita:TaxDetails>
+											</sita:TaxBreakdown>
+											<sita:TaxBreakdown Amount="9.84" CountryCode="BQ" CurrencyCode="USD" TaxCode="PC" TaxName="passenger facility charge" TaxType="001">
+												<sita:TaxDetails YQYRTaxPath="false">
+													<sita:TaxDetail IndividualTaxAmount="00009.84" Sequence="0114843"/>
+												</sita:TaxDetails>
+											</sita:TaxBreakdown>
+										</sita:TaxBreakdowns>
+										<sita:AppliedPTCs PTC="ADT"/>
+									</ota:SITA_PassengerFareExtension>
+								</ota:TPA_Extensions>
+							</ota:PassengerFare>
+						</ota:PTC_FareBreakdown>
+					</ota:PTC_FareBreakdowns>
+					<ota:FareInfos>
+						<ota:FareInfo NegotiatedFare="false">
+							<ota:FareReference>YOW</ota:FareReference>
+							<ota:RuleInfo/>
+							<ota:FilingAirline Code="7I"/>
+							<ota:DepartureAirport LocationCode="BON"/>
+							<ota:ArrivalAirport LocationCode="CUR"/>
+							<ota:TPA_Extensions>
+								<sita:SITA_FareInfoExtension FareComponentDirection="o" FareRPH="010101" FareType="EU " FootNoteDate="2018-09-29" RuleNumber="0500" RuleTariffNumber="303" TariffNumber="303">
+									<sita:SubjectToGovtApproval>false</sita:SubjectToGovtApproval>
+									<sita:References>
+										<sita:Ref1>gepy01(user(mia,&lt;&gt;,'7i',n,dept(&lt;&gt;,&lt;&gt;),'ndc/9ndc7i',&lt;&gt;,&lt;&gt;),pf2(n,[(agency(www001),iatanum(&lt;&gt;),n)],[],[],[],n,&lt;&gt;),&lt;&gt;)</sita:Ref1>
+										<sita:Ref2>3030500whnadtn0030000500atp0300</sita:Ref2>
+									</sita:References>
+									<sita:Directionality Code="TVL"/>
+								</sita:SITA_FareInfoExtension>
+							</ota:TPA_Extensions>
+						</ota:FareInfo>
+					</ota:FareInfos>
+				</ota:AirItineraryPricingInfo>
+				<ota:Notes>02035 - *CHECK RULE FOR PAYMENT/TICKETING CONDITIONS</ota:Notes>
+				<ota:TicketingInfo TicketTimeLimit="2018-09-20T23:59:59" TicketType="eTicket"/>
+			</ota:PricedItinerary>
+		</ota:PricedItineraries>
+	</ota:OTA_AirPriceRS>
+	<sita:AdditionalPriceRSData>
+		<sita:AdditionalItinerariesData>
+			<sita:AdditionalItineraryData FlightRestrictionInd="false" FunctionalControlCharacter="D" PublicPrivateConstructInd="false" RBD_OverrideInd="false" RBD_RestrictionInd="false" SequenceNumber="1">
+				<sita:AdditionalTicketInfo>
+					<sita:Endorsements>
+						<sita:Endorsement>nonref/nonend</sita:Endorsement>
+						<sita:Endorsement>valid only 7i</sita:Endorsement>
+					</sita:Endorsements>
+				</sita:AdditionalTicketInfo>
+				<sita:AdditionalSegmentInfos>
+					<sita:AdditionalSegmentInfo FareBasis="YOW" FareRPH="010101" FreeBaggageAllowance="20K" GlobalIndicator="WH" NotValidAfter="2018-09-29" NotValidBefore="2018-09-29" SegmentRPH="1" StopoverPermitted="true">
+						<sita:RebookResBookDesigCodes>
+							<sita:RebookResBookDesigCode ResBookDesigCode="Y"/>
+						</sita:RebookResBookDesigCodes>
+					</sita:AdditionalSegmentInfo>
+				</sita:AdditionalSegmentInfos>
+			</sita:AdditionalItineraryData>
+		</sita:AdditionalItinerariesData>
+	</sita:AdditionalPriceRSData>
+</sita:SITA_AirfarePriceRS>
