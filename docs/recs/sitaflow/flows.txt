@@ -1,0 +1,85 @@
+I am still a bit confused about the flow
+
+ they execute the refund for each ticket before proceeding with the next.
+ 
+ We build ItinReshopRS, using the responses of the ARR_RetrieveRefundDetails, and part of this info,
+ is used by IBE to create an OrderCancelRQ to send back to Gateway.
+ 
+ 
+ These are the various flows i have considered so far:
+ 
+ 1) Original Flow from SITA (three tickets):
+    1. ARR_SignIn
+    2. ARR_RetrieveRefundDetails
+    3. ARR_ExecuteRefund
+    4. ARR_RetrieveRefundDetails
+    5. ARR_ExecuteRefund
+    6. ARR_RetrieveRefundDetails
+    7. ARR_ExecuteRefund
+    8. ARR_SignOut
+	
+Seems incomplete to me, with the current NDC flow.
+ If we have to execute ARR_RetrieveRefundDetails - ARR_ExecuteRefund in series multiple times, 
+ that would mean we send also successively ItinReshopRQ/RS and OrderCancelRQ/RS, many times, 
+ back and forth from IBE, for each ticket!
+	
+	
+ 2) This is the flow that is implemented so far:
+	1. IBE sends ItinReshopRQ to Gateway 
+	2. ARR_SignIn
+    3. ARR_RetrieveRefundDetails (ticket 1)
+    4. ARR_RetrieveRefundDetails (ticket 2)
+	5. ARR_RetrieveRefundDetails (ticket 3)
+    6. Combine responses, save session ids, create ItinReshopRS and send it back to IBE.
+	7. IBE confirms changes, and sends OrderCancelRQ to Gateway.
+    8. ARR_ExecuteRefund (ticket 1)
+	9. ARR_ExecuteRefund (ticket 2)
+   10. ARR_ExecuteRefund (ticket 3)
+   11. ARR_SignOut
+
+(It does not work, in the second ARR_ExecuteRefund we have the "Operation not Permitted" error)
+
+
+3) Flow with multiple SignIn/SignOut (checked with Postman and works):
+	1. IBE sends ItinReshopRQ to Gateway 
+	2. ARR_SignIn
+    3. ARR_RetrieveRefundDetails (ticket 1)
+	4. ARR_SignIn
+    5. ARR_RetrieveRefundDetails (ticket 2)
+	6. ARR_SignIn
+	7. ARR_RetrieveRefundDetails (ticket 3)
+	8. Combine responses, save sessions ids, create ItinReshopRS and send it back to IBE.
+	9. IBE confirms changes, and sends OrderCancelRQ to Gateway.
+   10. ARR_ExecuteRefund (ticket 1)
+   11. ARR_SignOut
+   12. ARR_ExecuteRefund (ticket 2)
+   13. ARR_SignOut
+   14. ARR_ExecuteRefund (ticket 3)
+   15. ARR_SignOut
+
+   
+4) Flow with multiple ARR_RetrieveRefundDetails (checked with Postman and works):
+	1. IBE sends ItinReshopRQ to Gateway 
+	2. ARR_SignIn
+    3. ARR_RetrieveRefundDetails (ticket 1)
+    4. ARR_RetrieveRefundDetails (ticket 2)
+	5. ARR_RetrieveRefundDetails (ticket 3)
+	6. ARR_SignOut
+	7. Combine responses, create ItinReshopRS and send it back to IBE.
+	8. IBE confirms changes, and sends OrderCancelRQ to Gateway.
+	9. ARR_SignIn
+   10. ARR_RetrieveRefundDetails (ticket 1)
+   11. ARR_ExecuteRefund (ticket 1)
+   12. ARR_RetrieveRefundDetails (ticket 2)
+   13. ARR_ExecuteRefund (ticket 2)
+   14. ARR_RetrieveRefundDetails (ticket 3)
+   15. ARR_ExecuteRefund (ticket 3)
+   16. ARR_SignOut
+   
+
+Flow 3) can be implemented more easily, we just need to keep the session ID for each Ticket.
+Flow 4) is more complex, (we need to send multiple ARR_RetrieveRefundDetails), 
+but we avoid to keep sessions across NDC RQ/RS (ItinReshop and OrderCancel are processed
+in their own session id)
+   
+   

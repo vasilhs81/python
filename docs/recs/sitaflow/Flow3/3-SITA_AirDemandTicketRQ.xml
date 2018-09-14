@@ -1,0 +1,62 @@
+<ota:SITA_AirDemandTicketRQ xmlns:ota="http://sita.aero/SITA_AirDemandTicketRQ/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.001">
+	<ota:POS>
+		<common:Source xmlns:common="http://sita.aero/common/1/0" AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<common:RequestorID ID="73704444" ID_Context="Airfare" Type="7"/>
+		</common:Source>
+	</ota:POS>
+	<ota:DemandTicketDetail>
+		<ota:BookingReferenceID ID="P12EV" Type="14"/>
+		<ota:PaymentInfo PaymentType="5">
+			<ota:CreditCardInfo CardCode="VI" CardNumber="4111111111111111" ExpireDate="0519">
+				<ota:CardHolderName>Stylianakis George</ota:CardHolderName>
+				<ota:CardNumber>
+					<ota:PlainText>4111111111111111</ota:PlainText>
+				</ota:CardNumber>
+				<ota:SeriesCode>
+					<ota:PlainText>123</ota:PlainText>
+				</ota:SeriesCode>
+			</ota:CreditCardInfo>
+		</ota:PaymentInfo>
+		<ota:PassengerName PassengerTypeCode="ADT" RPH="1">
+			<common:NamePrefix xmlns:common="http://sita.aero/common/1/0">MR</common:NamePrefix>
+			<common:GivenName xmlns:common="http://sita.aero/common/1/0">GEORGE</common:GivenName>
+			<common:Surname xmlns:common="http://sita.aero/common/1/0">STYLIANAKIS</common:Surname>
+		</ota:PassengerName>
+		<ota:TPA_Extensions>
+			<ota:TaxProcessing/>
+			<ota:PTC_FareBreakdown PricingSource="Published">
+				<ota:FareBasisCodes>
+					<ota:FareBasisCode>YOW</ota:FareBasisCode>
+				</ota:FareBasisCodes>
+				<ota:PassengerFare>
+					<ota:BaseFare Amount="122.00" CurrencyCode="USD"/>
+					<ota:Taxes>
+						<ota:Tax Amount="4.00" CurrencyCode="USD" TaxCode="E9"/>
+						<ota:Tax Amount="9.84" CurrencyCode="USD" TaxCode="PC"/>
+					</ota:Taxes>
+					<ota:TotalFare Amount="135.84" CurrencyCode="USD"/>
+					<ota:UnstructuredFareCalc FareCalcMode="0">bon 7i cur122.00nuc122.00end roe1.000000</ota:UnstructuredFareCalc>
+					<ota:TPA_Extensions>
+						<ota:SITA_PassengerFareExtension>
+							<ota:TaxBreakdowns>
+								<ota:TaxBreakdown Amount="4.00" CountryCode="BQ" CurrencyCode="USD" TaxCode="E9" TaxName="airport improvement fee"/>
+								<ota:TaxBreakdown Amount="9.84" CountryCode="BQ" CurrencyCode="USD" TaxCode="PC" TaxName="passenger facility charge"/>
+							</ota:TaxBreakdowns>
+						</ota:SITA_PassengerFareExtension>
+					</ota:TPA_Extensions>
+				</ota:PassengerFare>
+			</ota:PTC_FareBreakdown>
+		</ota:TPA_Extensions>
+		<ota:AdditionalItineraryData>
+			<ota:AdditionalSegmentInfos>
+				<ota:AdditionalSegmentInfo FreeBaggageAllowance="1PC"/>
+			</ota:AdditionalSegmentInfos>
+			<ota:AdditionalTicketInfo>
+				<ota:Endorsements>
+					<ota:Endorsement>nonref/nonend</ota:Endorsement>
+					<ota:Endorsement>valid only 7i</ota:Endorsement>
+				</ota:Endorsements>
+			</ota:AdditionalTicketInfo>
+		</ota:AdditionalItineraryData>
+	</ota:DemandTicketDetail>
+</ota:SITA_AirDemandTicketRQ>

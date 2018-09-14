@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_AirDemandTicketRS xmlns="http://sita.aero/SITA_AirDemandTicketRS/3/0" xmlns:common="http://sita.aero/common/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0">
+  <Success/>
+  <BookingReferenceId ID="P12ET" Type="14"/>
+  <TicketItemInfo TicketNumber="4321010295" TotalAmount="135.84" Type="eTicket">
+    <PassengerName>
+      <common:GivenName>GEORGE</common:GivenName>
+      <common:Surname>STYLIANAKIS</common:Surname>
+    </PassengerName>
+  </TicketItemInfo>
+</SITA_AirDemandTicketRS>
