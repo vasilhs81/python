@@ -1,0 +1,79 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sita="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:sita1="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:sita2="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<hal:Config subscriberId="7I" xmlns:hal="http://sita.aero/hal"/>
+	</soapenv:Header>
+	<soapenv:Body>
+		<tem:ARR_ExecuteReprice>
+			<tem:sessionID>61ad2297-73dc-4cb4-a6dc-4098f8de5c3c</tem:sessionID>
+			<tem:ARR_ExecuteRepriceRQ>
+				<sita:baggageInfoField>
+					<sita:newBaggageIndField>true</sita:newBaggageIndField>
+				</sita:baggageInfoField>
+				<sita:commissionField xsi:nil="true"/>
+				<sita:endorsementsField>
+					<arr:string xsi:nil="true"/>
+				</sita:endorsementsField>
+				<sita:passengerInfoField>
+					<sita:additionalPassengerInfoField>ADT</sita:additionalPassengerInfoField>
+					<sita:emailAddressField>G.STYLIANAKIS@JRTECHNOLOGIES.COM</sita:emailAddressField>
+					<sita:emailIndicatorField>true</sita:emailIndicatorField>
+					<sita:sequenceNumberField>1</sita:sequenceNumberField>
+					<sita:ticketingInfoField>
+						<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
+						<sita2:formAndSerialNumberField>4321010854</sita2:formAndSerialNumberField>
+						<sita:salesReportInfoField xsi:nil="true"/>
+						<sita:sponsorInfoField xsi:nil="true"/>
+						<sita:tourCodeField xsi:nil="true"/>
+					</sita:ticketingInfoField>
+				</sita:passengerInfoField>
+				<sita:paymentDetailsField>
+					<sita1:PaymentDetailType>
+						<sita1:miscChargeOrderField>
+						<!--
+							<sita1:couponInfoField/>
+							<sita1:couponRPHsField/>
+							<sita1:originalIssueDateField/>
+							<sita1:originalIssueIATAField>73704444</sita1:originalIssueIATAField>
+							<sita1:originalIssuePlaceField/>
+							<sita1:originalPaymentFormField/>
+							<sita1:originalTicketNumberField>9584321010854</sita1:originalTicketNumberField>
+							<sita1:paperMCO_ExistIndField/>
+							<sita1:ticketNumberField>9584321010854</sita1:ticketNumberField>
+							-->
+						</sita1:miscChargeOrderField>
+						<sita1:paymentAmountField>
+							<sita1:amountField>135.84</sita1:amountField>
+							<sita1:approvalCodeField xsi:nil="true"/>
+							<sita1:currencyCodeField>USD</sita1:currencyCodeField>
+							<sita1:decimalPlacesField xsi:nil="true"/>
+						</sita1:paymentAmountField>
+						<sita1:paymentCardField>
+							<sita1:addressField>
+							</sita1:addressField>
+							<sita1:cardCodeField/>
+							<sita1:cardHolderNameField>BILL</sita1:cardHolderNameField>
+							<sita1:cardNumberField>4111111111111111</sita1:cardNumberField>
+							<sita1:effectiveDateField/>
+							<sita1:expireDateField>1220</sita1:expireDateField>
+							<sita1:seriesCodeField>123</sita1:seriesCodeField>
+							<sita1:cardPresentIndField/>
+							<sita1:cardTypeField>CC</sita1:cardTypeField>
+							<sita1:countryOfIssueField/>
+							<sita1:extendPaymentIndicatorField/>
+							<sita1:extendedPaymentQuantityField/>
+							<sita1:maskedCardNumberField/>
+							<sita1:remarkField/>
+						</sita1:paymentCardField>
+						<sita1:paymentReferenceDataField xsi:nil="true"/>
+						<sita1:paymentTypeField>CC</sita1:paymentTypeField>
+						<sita1:primaryPaymentIndField xsi:nil="true"/>
+						<sita1:splitPaymentIndField xsi:nil="true"/>
+						<sita1:documentField xsi:nil="true"/>
+						<sita1:passengerRPHListField xsi:nil="true"/>
+					</sita1:PaymentDetailType>
+				</sita:paymentDetailsField>
+				<sita:penaltyField xsi:nil="true"/>
+			</tem:ARR_ExecuteRepriceRQ>
+		</tem:ARR_ExecuteReprice>
+	</soapenv:Body>
+</soapenv:Envelope>

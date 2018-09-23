@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
+  <Success/>
+  <AirReservation BookingReferenceID="P1363">
+    <common:AirItinerary>
+      <common:OriginDestinationOptions>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2018-09-29T07:00:00" DepartureDateTime="2018-09-29T06:35:00" FlightNumber="302" RPH="1" Status="HK">
+            <common:DepartureAirport LocationCode="BON"/>
+            <common:ArrivalAirport LocationCode="CUR"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+      </common:OriginDestinationOptions>
+    </common:AirItinerary>
+    <common:TravelerInfo>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>BILL</common:GivenName>
+          <common:Surname>MAVERIK</common:Surname>
+        </common:PersonName>
+        <common:Telephone FormattedInd="false" PhoneNumber="+37669898989898" PhoneTechType="5"/>
+        <common:Email>G.STYLIANAKIS@JRTECHNOLOGIES.COM</common:Email>
+        <common:TravelerRefNumber RPH="1"/>
+      </common:AirTraveler>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>GEORGE</common:GivenName>
+          <common:Surname>STYLIANAKIS</common:Surname>
+        </common:PersonName>
+        <common:TravelerRefNumber RPH="2"/>
+      </common:AirTraveler>
+    </common:TravelerInfo>
+    <common:Ticketing TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1 2"/>
+  </AirReservation>
+</OTA_AirBookRS>
