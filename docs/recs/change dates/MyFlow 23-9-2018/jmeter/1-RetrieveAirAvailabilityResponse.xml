@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Conversation xmlns="http://sita.aero/hal" id="conv-14q-1537738349460-234" server="10.217.26.215" timestamp="2018-09-23 21:32:29"/>
+  </Header>
+  <SOAP-ENV:Body>
+    <ARR_RetrieveAirAvailabilityResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <ReturnData xmlns:a="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:errorsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+        <a:flightInfoDetailsField>
+          <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+            <a:flightLegInfoField>
+              <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+                <arrivalAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>CUR</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </arrivalAirportField>
+                <arrivalDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </arrivalDateField>
+                <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>07:00:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>BON</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </departureAirportField>
+                <departureDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </departureDateField>
+                <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>06:35:00</scheduledField>
+                  <boardingField i:nil="true"/>
+                  <julianDateOfDepartureField i:nil="true"/>
+                </departureTimeField>
+                <equipmentField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <EquipmentType>
+                    <abbreviatedRegistrationField i:nil="true"/>
+                    <airEquipTypeField>F50</airEquipTypeField>
+                    <changeofGaugeField i:nil="true"/>
+                    <registrationField i:nil="true"/>
+                    <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                  </EquipmentType>
+                </equipmentField>
+                <marketingAirlinesField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <OperatingAirlineType>
+                    <airAllianceNameField i:nil="true"/>
+                    <codeField>7I</codeField>
+                    <companyShortNameField i:nil="true"/>
+                    <flightNumberField>302</flightNumberField>
+                    <resBookDesigCodeField i:nil="true"/>
+                  </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <airAllianceNameField i:nil="true"/>
+                  <codeField i:nil="true"/>
+                  <companyShortNameField i:nil="true"/>
+                  <flightNumberField i:nil="true"/>
+                  <resBookDesigCodeField i:nil="true"/>
+                </operatingAirlineField>
+                <rPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">1</rPHField>
+                <stopQuantityField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">0</stopQuantityField>
+                <a:bookingClassAvailField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>H</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>8</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>M</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>W</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>K</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>U</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Q</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>N</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>X</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>O</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>S</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>2</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>E</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>B</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>G</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>V</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>I</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                </a:bookingClassAvailField>
+                <a:commentField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <a:ticketField>eTicket</a:ticketField>
+              </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+            </a:flightLegInfoField>
+            <a:textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+          </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+          <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+            <a:flightLegInfoField>
+              <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+                <arrivalAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>CUR</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </arrivalAirportField>
+                <arrivalDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </arrivalDateField>
+                <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>11:45:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>BON</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </departureAirportField>
+                <departureDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </departureDateField>
+                <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>11:20:00</scheduledField>
+                  <boardingField i:nil="true"/>
+                  <julianDateOfDepartureField i:nil="true"/>
+                </departureTimeField>
+                <equipmentField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <EquipmentType>
+                    <abbreviatedRegistrationField i:nil="true"/>
+                    <airEquipTypeField>F50</airEquipTypeField>
+                    <changeofGaugeField i:nil="true"/>
+                    <registrationField i:nil="true"/>
+                    <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                  </EquipmentType>
+                </equipmentField>
+                <marketingAirlinesField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <OperatingAirlineType>
+                    <airAllianceNameField i:nil="true"/>
+                    <codeField>7I</codeField>
+                    <companyShortNameField i:nil="true"/>
+                    <flightNumberField>304</flightNumberField>
+                    <resBookDesigCodeField i:nil="true"/>
+                  </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <airAllianceNameField i:nil="true"/>
+                  <codeField i:nil="true"/>
+                  <companyShortNameField i:nil="true"/>
+                  <flightNumberField i:nil="true"/>
+                  <resBookDesigCodeField i:nil="true"/>
+                </operatingAirlineField>
+                <rPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">2</rPHField>
+                <stopQuantityField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">0</stopQuantityField>
+                <a:bookingClassAvailField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>H</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>M</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>W</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>K</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>U</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Q</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>N</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>X</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>O</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>S</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>2</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>E</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>B</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>G</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>V</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>I</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                </a:bookingClassAvailField>
+                <a:commentField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <a:ticketField>eTicket</a:ticketField>
+              </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+            </a:flightLegInfoField>
+            <a:textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+          </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+          <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+            <a:flightLegInfoField>
+              <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+                <arrivalAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>CUR</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </arrivalAirportField>
+                <arrivalDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </arrivalDateField>
+                <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>17:35:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>BON</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </departureAirportField>
+                <departureDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </departureDateField>
+                <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>17:10:00</scheduledField>
+                  <boardingField i:nil="true"/>
+                  <julianDateOfDepartureField i:nil="true"/>
+                </departureTimeField>
+                <equipmentField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <EquipmentType>
+                    <abbreviatedRegistrationField i:nil="true"/>
+                    <airEquipTypeField>F50</airEquipTypeField>
+                    <changeofGaugeField i:nil="true"/>
+                    <registrationField i:nil="true"/>
+                    <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                  </EquipmentType>
+                </equipmentField>
+                <marketingAirlinesField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <OperatingAirlineType>
+                    <airAllianceNameField i:nil="true"/>
+                    <codeField>7I</codeField>
+                    <companyShortNameField i:nil="true"/>
+                    <flightNumberField>306</flightNumberField>
+                    <resBookDesigCodeField i:nil="true"/>
+                  </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <airAllianceNameField i:nil="true"/>
+                  <codeField i:nil="true"/>
+                  <companyShortNameField i:nil="true"/>
+                  <flightNumberField i:nil="true"/>
+                  <resBookDesigCodeField i:nil="true"/>
+                </operatingAirlineField>
+                <rPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">3</rPHField>
+                <stopQuantityField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">0</stopQuantityField>
+                <a:bookingClassAvailField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>H</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>7</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>1</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>M</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>W</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>K</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>U</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Q</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>N</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>X</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>4</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>O</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>S</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>2</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>E</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>B</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>G</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>V</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>I</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                </a:bookingClassAvailField>
+                <a:commentField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <a:ticketField>eTicket</a:ticketField>
+              </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+            </a:flightLegInfoField>
+            <a:textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+          </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+          <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+            <a:flightLegInfoField>
+              <a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+                <arrivalAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>CUR</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </arrivalAirportField>
+                <arrivalDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </arrivalDateField>
+                <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>21:50:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <gateField i:nil="true"/>
+                  <locationCodeField>BON</locationCodeField>
+                  <terminalField i:nil="true"/>
+                </departureAirportField>
+                <departureDateField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <dateChangeDecrementIndField i:nil="true"/>
+                  <dateChangeIncrementIndField i:nil="true"/>
+                  <dateChangeNbrField i:nil="true"/>
+                  <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:string>2018-09-30</b:string>
+                  </textField>
+                </departureDateField>
+                <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <actualField i:nil="true"/>
+                  <estimatedField i:nil="true"/>
+                  <nextAdvisoryTimeField i:nil="true"/>
+                  <reasonCodeField i:nil="true"/>
+                  <scheduledField>21:25:00</scheduledField>
+                  <boardingField i:nil="true"/>
+                  <julianDateOfDepartureField i:nil="true"/>
+                </departureTimeField>
+                <equipmentField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <EquipmentType>
+                    <abbreviatedRegistrationField i:nil="true"/>
+                    <airEquipTypeField>F50</airEquipTypeField>
+                    <changeofGaugeField i:nil="true"/>
+                    <registrationField i:nil="true"/>
+                    <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                  </EquipmentType>
+                </equipmentField>
+                <marketingAirlinesField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <OperatingAirlineType>
+                    <airAllianceNameField i:nil="true"/>
+                    <codeField>7I</codeField>
+                    <companyShortNameField i:nil="true"/>
+                    <flightNumberField>308</flightNumberField>
+                    <resBookDesigCodeField i:nil="true"/>
+                  </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <airAllianceNameField i:nil="true"/>
+                  <codeField i:nil="true"/>
+                  <companyShortNameField i:nil="true"/>
+                  <flightNumberField i:nil="true"/>
+                  <resBookDesigCodeField i:nil="true"/>
+                </operatingAirlineField>
+                <rPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">4</rPHField>
+                <stopQuantityField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">0</stopQuantityField>
+                <a:bookingClassAvailField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>H</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>4</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>4</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>M</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>W</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>K</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>U</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>Q</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>N</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>X</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>O</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>S</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>2</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>E</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>B</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>G</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>V</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>I</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                </a:bookingClassAvailField>
+                <a:commentField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <a:ticketField>eTicket</a:ticketField>
+              </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetailsFlightLegInfo>
+            </a:flightLegInfoField>
+            <a:textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+          </a:ARR_RetrieveAirAvailabilityResponseFlightInfoDetails>
+        </a:flightInfoDetailsField>
+        <a:responseStatusField>0</a:responseStatusField>
+        <a:warningsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+      </ReturnData>
+    </ARR_RetrieveAirAvailabilityResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

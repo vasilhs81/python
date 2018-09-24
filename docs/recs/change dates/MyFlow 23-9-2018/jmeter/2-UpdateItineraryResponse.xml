@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Conversation xmlns="http://sita.aero/hal" id="conv-14q-1537738350348-210" server="10.217.26.215" timestamp="2018-09-23 21:32:30"/>
+  </Header>
+  <SOAP-ENV:Body>
+    <ARR_UpdateItineraryResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <ReturnData xmlns:a="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:errorsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+        <a:passengerNameRecordField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+          <b:bookingInfoField>
+            <b:bookingReferenceIDField>
+              <b:UniqueID_Type>
+                <b:companyNameField i:nil="true"/>
+                <b:iD_ContextField i:nil="true"/>
+                <b:idField>P1363</b:idField>
+                <b:instanceField i:nil="true"/>
+                <b:typeField i:nil="true"/>
+                <b:uRLField i:nil="true"/>
+              </b:UniqueID_Type>
+            </b:bookingReferenceIDField>
+            <b:statusCodeField i:nil="true"/>
+            <b:statusNameField i:nil="true"/>
+          </b:bookingInfoField>
+          <b:flightInfoDetailsField>
+            <b:flightLegInfoField>
+              <b:FlightInfoDetailsTypeFlightLegInfo>
+                <b:aPI_RequiredIndicatorField i:nil="true"/>
+                <b:aircraftOwnerField i:nil="true"/>
+                <b:arrivalAirportField>
+                  <b:FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                    <b:cityField i:nil="true"/>
+                    <b:countryCodeField i:nil="true"/>
+                    <b:gateField i:nil="true"/>
+                    <b:locationCodeField>CUR</b:locationCodeField>
+                    <b:locationNameField i:nil="true"/>
+                    <b:stateCodeField i:nil="true"/>
+                    <b:terminalField i:nil="true"/>
+                  </b:FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                </b:arrivalAirportField>
+                <b:arrivalDateField>
+                  <b:dateChangeDecrementIndField i:nil="true"/>
+                  <b:dateChangeIncrementIndField i:nil="true"/>
+                  <b:dateChangeNbrField i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>2018-09-30</c:string>
+                  </b:textField>
+                </b:arrivalDateField>
+                <b:arrivalTimeField>
+                  <b:actualField i:nil="true"/>
+                  <b:estimatedField i:nil="true"/>
+                  <b:reasonCodeField i:nil="true"/>
+                  <b:scheduledField>07:00:00</b:scheduledField>
+                </b:arrivalTimeField>
+                <b:bookingClassField>
+                  <b:FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                    <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>2</b:resBookDesigQuantityField>
+                  </b:FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                </b:bookingClassField>
+                <b:bookingInfoField i:nil="true"/>
+                <b:cabinTypeField i:nil="true"/>
+                <b:commentField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</c:string>
+                </b:commentField>
+                <b:couponInfoField i:nil="true"/>
+                <b:daysOfOperationField i:nil="true"/>
+                <b:departureAirportField>
+                  <b:cityField i:nil="true"/>
+                  <b:countryCodeField i:nil="true"/>
+                  <b:gateField i:nil="true"/>
+                  <b:locationCodeField>BON</b:locationCodeField>
+                  <b:locationNameField i:nil="true"/>
+                  <b:stateCodeField i:nil="true"/>
+                  <b:terminalField i:nil="true"/>
+                </b:departureAirportField>
+                <b:departureDateField>
+                  <b:dateChangeDecrementIndField i:nil="true"/>
+                  <b:dateChangeIncrementIndField i:nil="true"/>
+                  <b:dateChangeNbrField i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>2018-09-30</c:string>
+                  </b:textField>
+                </b:departureDateField>
+                <b:departureDayField i:nil="true"/>
+                <b:departureTimeField>
+                  <b:actualField i:nil="true"/>
+                  <b:boardingField i:nil="true"/>
+                  <b:estimatedField i:nil="true"/>
+                  <b:julianDateOfDepartureField i:nil="true"/>
+                  <b:nextAdvisoryTimeField i:nil="true"/>
+                  <b:reasonCodeField i:nil="true"/>
+                  <b:scheduledField>06:35:00</b:scheduledField>
+                </b:departureTimeField>
+                <b:eTicketableIndField i:nil="true"/>
+                <b:equipmentField i:nil="true"/>
+                <b:flightDestinationField i:nil="true"/>
+                <b:flightStatusField>HK</b:flightStatusField>
+                <b:handlingAgentField i:nil="true"/>
+                <b:marketingAirlinesField i:nil="true"/>
+                <b:marketingCabinField i:nil="true"/>
+                <b:onTimeRateField i:nil="true"/>
+                <b:operatingAirlineField>
+                  <b:airAllianceNameField i:nil="true"/>
+                  <b:codeField>7I</b:codeField>
+                  <b:companyShortNameField i:nil="true"/>
+                  <b:flightNumberField>302</b:flightNumberField>
+                  <b:resBookDesigCodeField i:nil="true"/>
+                </b:operatingAirlineField>
+                <b:passengersCheckInStatusField i:nil="true"/>
+                <b:rPHField>1</b:rPHField>
+                <b:routingField i:nil="true"/>
+                <b:scheduleValidEndDateField i:nil="true"/>
+                <b:scheduleValidStartDateField i:nil="true"/>
+                <b:scheduledFlightTimeField i:nil="true"/>
+                <b:seatingDetailsField i:nil="true"/>
+                <b:secureFlightIndicatorField i:nil="true"/>
+                <b:sequenceNumberField i:nil="true"/>
+                <b:smokingAllowedField i:nil="true"/>
+                <b:stopOverIndicatorField i:nil="true"/>
+                <b:stopQuantityField i:nil="true"/>
+                <b:travelerTotalsField i:nil="true"/>
+              </b:FlightInfoDetailsTypeFlightLegInfo>
+            </b:flightLegInfoField>
+            <b:warningsField i:nil="true"/>
+          </b:flightInfoDetailsField>
+          <b:groupInfoField i:nil="true"/>
+          <b:passengerInfoField>
+            <b:PassengerNameRecordTypePassengerInfo>
+              <b:bookingInfoField i:nil="true"/>
+              <b:commentField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+              <b:contactInfoField>
+                <b:PassengerInfoBaseTypeContactInfo>
+                  <b:addressField i:nil="true"/>
+                  <b:contactTypeField i:nil="true"/>
+                  <b:emailField>
+                    <b:EmailType>
+                      <b:emailType1Field i:nil="true"/>
+                      <b:rPHField i:nil="true"/>
+                      <b:remarkField i:nil="true"/>
+                      <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                        <c:string>G.STYLIANAKIS@JRTECHNOLOGIES.COM</c:string>
+                      </b:textField>
+                    </b:EmailType>
+                  </b:emailField>
+                  <b:rPHField i:nil="true"/>
+                  <b:telephoneField>
+                    <b:TelephoneBaseType>
+                      <b:areaCityCodeField i:nil="true"/>
+                      <b:countryAccessCodeField i:nil="true"/>
+                      <b:extensionField i:nil="true"/>
+                      <b:phoneNumberField>+37669898989898</b:phoneNumberField>
+                      <b:phoneTypeField>1</b:phoneTypeField>
+                      <b:remarkField i:nil="true"/>
+                    </b:TelephoneBaseType>
+                  </b:telephoneField>
+                  <b:allPaxIndField>true</b:allPaxIndField>
+                </b:PassengerInfoBaseTypeContactInfo>
+              </b:contactInfoField>
+              <b:hasInfantIndicatorField i:nil="true"/>
+              <b:infantIndexNumberField i:nil="true"/>
+              <b:partNumberField i:nil="true"/>
+              <b:passengerNameField>
+                <b:givenNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>BILL</c:string>
+                </b:givenNameField>
+                <b:middleNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <b:namePrefixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>MR</c:string>
+                </b:namePrefixField>
+                <b:nameSuffixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <b:nameTitleField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <b:nameTypeField i:nil="true"/>
+                <b:surnameField>MAVERIK</b:surnameField>
+                <b:surnamePrefixField i:nil="true"/>
+              </b:passengerNameField>
+              <b:passengerRPHField i:nil="true"/>
+              <b:passengerTypeField>
+                <b:ageField i:nil="true"/>
+                <b:codeField>ADT</b:codeField>
+                <b:dateOfBirthField i:nil="true"/>
+              </b:passengerTypeField>
+              <b:rPHField>1</b:rPHField>
+              <b:sequenceNumberField>1</b:sequenceNumberField>
+              <b:ticketingInfoField>
+                <b:airlineAccountingCodeField i:nil="true"/>
+                <b:couponInfoField i:nil="true"/>
+                <b:formAndSerialNumberField>4321010854</b:formAndSerialNumberField>
+                <b:paperTicketIndField i:nil="true"/>
+                <b:rPHField i:nil="true"/>
+                <b:residingDatabaseField i:nil="true"/>
+              </b:ticketingInfoField>
+            </b:PassengerNameRecordTypePassengerInfo>
+            <b:PassengerNameRecordTypePassengerInfo>
+              <b:bookingInfoField i:nil="true"/>
+              <b:commentField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+              <b:contactInfoField i:nil="true"/>
+              <b:hasInfantIndicatorField i:nil="true"/>
+              <b:infantIndexNumberField i:nil="true"/>
+              <b:partNumberField i:nil="true"/>
+              <b:passengerNameField>
+                <b:givenNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>GEORGE</c:string>
+                </b:givenNameField>
+                <b:middleNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <b:namePrefixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>MR</c:string>
+                </b:namePrefixField>
+                <b:nameSuffixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <b:nameTitleField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
+                <b:nameTypeField i:nil="true"/>
+                <b:surnameField>STYLIANAKIS</b:surnameField>
+                <b:surnamePrefixField i:nil="true"/>
+              </b:passengerNameField>
+              <b:passengerRPHField i:nil="true"/>
+              <b:passengerTypeField>
+                <b:ageField i:nil="true"/>
+                <b:codeField>ADT</b:codeField>
+                <b:dateOfBirthField i:nil="true"/>
+              </b:passengerTypeField>
+              <b:rPHField>2</b:rPHField>
+              <b:sequenceNumberField>2</b:sequenceNumberField>
+              <b:ticketingInfoField>
+                <b:airlineAccountingCodeField i:nil="true"/>
+                <b:couponInfoField i:nil="true"/>
+                <b:formAndSerialNumberField>4321010855</b:formAndSerialNumberField>
+                <b:paperTicketIndField i:nil="true"/>
+                <b:rPHField i:nil="true"/>
+                <b:residingDatabaseField i:nil="true"/>
+              </b:ticketingInfoField>
+            </b:PassengerNameRecordTypePassengerInfo>
+          </b:passengerInfoField>
+          <b:queuesField i:nil="true"/>
+          <b:specialReqDetailsField i:nil="true"/>
+          <b:ticketingField>
+            <b:TicketingType>
+              <b:pseudoCityCodeField i:nil="true"/>
+              <b:ticketAdvisoryField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <c:string>*T</c:string>
+              </b:ticketAdvisoryField>
+              <b:ticketTimeLimitField i:nil="true"/>
+              <b:ticketTypeField>eTicket</b:ticketTypeField>
+              <b:ticketingStatusField>3</b:ticketingStatusField>
+              <b:travelerRefNumberField>1 2</b:travelerRefNumberField>
+            </b:TicketingType>
+          </b:ticketingField>
+        </a:passengerNameRecordField>
+        <a:responseStatusField>0</a:responseStatusField>
+        <a:warningsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+      </ReturnData>
+    </ARR_UpdateItineraryResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

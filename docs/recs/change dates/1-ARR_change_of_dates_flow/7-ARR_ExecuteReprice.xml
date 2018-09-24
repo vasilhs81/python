@@ -1,0 +1,51 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sita="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:sita1="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:sita2="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+		<hal:Config subscriberId="7I" xmlns:hal="http://sita.aero/hal"/>
+	</soapenv:Header>
+   <soapenv:Body>
+      <tem:ARR_ExecuteReprice>
+         <tem:sessionID>61ad2297-73dc-4cb4-a6dc-4098f8de5c3c</tem:sessionID>
+         <tem:ARR_ExecuteRepriceRQ>
+            <sita:baggageInfoField>
+               <sita:newBaggageIndField>true</sita:newBaggageIndField>
+            </sita:baggageInfoField>
+            <sita:commissionField xsi:nil="true"/>
+            <sita:endorsementsField>
+               <arr:string xsi:nil="true"/>
+            </sita:endorsementsField>
+            <sita:passengerInfoField>
+               <sita:additionalPassengerInfoField>ADT</sita:additionalPassengerInfoField>
+               <sita:emailAddressField>j.mamra@mail.com</sita:emailAddressField>
+               <sita:emailIndicatorField>true</sita:emailIndicatorField>
+               <sita:sequenceNumberField>1</sita:sequenceNumberField>
+               <sita:ticketingInfoField>
+                  <sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
+                  <sita2:formAndSerialNumberField>4321009933</sita2:formAndSerialNumberField>
+                  <sita:salesReportInfoField xsi:nil="true"/>
+                  <sita:sponsorInfoField xsi:nil="true"/>
+                  <sita:tourCodeField xsi:nil="true"/>
+               </sita:ticketingInfoField>
+            </sita:passengerInfoField>
+            <sita:paymentDetailsField>
+               <sita1:PaymentDetailType>
+                  <sita1:miscChargeOrderField xsi:nil="true"/>
+                  <sita1:paymentAmountField>
+                     <sita1:amountField>147.00</sita1:amountField>
+                     <sita1:approvalCodeField xsi:nil="true"/>
+                     <sita1:currencyCodeField>USD</sita1:currencyCodeField>
+                     <sita1:decimalPlacesField xsi:nil="true"/>
+                  </sita1:paymentAmountField>
+                  <sita1:paymentCardField xsi:nil="true"/>
+                  <sita1:paymentReferenceDataField xsi:nil="true"/>
+                  <sita1:paymentTypeField>CC</sita1:paymentTypeField>
+                  <sita1:primaryPaymentIndField xsi:nil="true"/>
+                  <sita1:splitPaymentIndField xsi:nil="true"/>
+                  <sita1:documentField xsi:nil="true"/>
+                  <sita1:passengerRPHListField xsi:nil="true"/>
+               </sita1:PaymentDetailType>
+            </sita:paymentDetailsField>
+            <sita:penaltyField xsi:nil="true"/>
+         </tem:ARR_ExecuteRepriceRQ>
+      </tem:ARR_ExecuteReprice>
+   </soapenv:Body>
+</soapenv:Envelope>

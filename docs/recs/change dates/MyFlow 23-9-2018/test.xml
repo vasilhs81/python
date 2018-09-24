@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Header>
+		<ns7:Config xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.RES.HalService" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns5="http://tempuri.org/" 
+		xmlns:ns6="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns7="http://sita.aero/hal" xmlns:ns8="http://schemas.microsoft.com/2003/10/Serialization/" subscriberId="7I"/>
+	</S:Header>
+	<S:Body>
+		<ns5:ARR_ExecuteReprice xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.RES.HalService" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns5="http://tempuri.org/" xmlns:ns6="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns7="http://sita.aero/hal" xmlns:ns8="http://schemas.microsoft.com/2003/10/Serialization/">
+			<ns5:sessionID>09b0a060-fdb0-4d16-a69a-312d535415b4</ns5:sessionID>
+			<tem:ARR_ExecuteRepriceRQ>
+				<sita:baggageInfoField>
+					<sita:newBaggageIndField>true</sita:newBaggageIndField>
+				</sita:baggageInfoField>
+				<sita:commissionField xsi:nil="true"/>
+				<sita:endorsementsField>
+					<arr:string xsi:nil="true"/>
+				</sita:endorsementsField>
+				<sita:passengerInfoField>
+					<sita:additionalPassengerInfoField>ADT</sita:additionalPassengerInfoField>
+					<sita:emailAddressField>G.STYLIANAKIS@JRTECHNOLOGIES.COM</sita:emailAddressField>
+					<sita:emailIndicatorField>true</sita:emailIndicatorField>
+					<sita:sequenceNumberField>1</sita:sequenceNumberField>
+					<sita:ticketingInfoField>
+						<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
+						<sita2:formAndSerialNumberField>4321010854</sita2:formAndSerialNumberField>
+						<sita:salesReportInfoField xsi:nil="true"/>
+						<sita:sponsorInfoField xsi:nil="true"/>
+						<sita:tourCodeField xsi:nil="true"/>
+					</sita:ticketingInfoField>
+				</sita:passengerInfoField>
+				<sita:paymentDetailsField>
+					<sita1:PaymentDetailType>
+						<sita1:miscChargeOrderField xsi:nil="true"/>
+						<sita1:paymentAmountField>
+							<sita1:amountField>135.84</sita1:amountField>
+							<sita1:approvalCodeField xsi:nil="true"/>
+							<sita1:currencyCodeField>USD</sita1:currencyCodeField>
+							<sita1:decimalPlacesField xsi:nil="true"/>
+						</sita1:paymentAmountField>
+						<sita1:paymentCardField>
+							<sita1:addressField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:cardCodeField>VI</sita1:cardCodeField>
+							<sita1:cardHolderNameField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:cardNumberField>4111111111111111</sita1:cardNumberField>
+							<sita1:effectiveDateField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:expireDateField>1220</sita1:expireDateField>
+							<sita1:seriesCodeField>123</sita1:seriesCodeField>
+							<sita1:cardPresentIndField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:cardTypeField>Visa</sita1:cardTypeField>
+							<sita1:countryOfIssueField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:extendPaymentIndicatorField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:extendedPaymentQuantityField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:maskedCardNumberField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							<sita1:remarkField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+						</sita1:paymentCardField>
+						<sita1:paymentReferenceDataField xsi:nil="true"/>
+						<sita1:paymentTypeField>CC</sita1:paymentTypeField>
+						<sita1:primaryPaymentIndField xsi:nil="true"/>
+						<sita1:splitPaymentIndField xsi:nil="true"/>
+						<sita1:documentField xsi:nil="true"/>
+						<sita1:passengerRPHListField xsi:nil="true">1</sita1:passengerRPHListField xsi:nil="true">
+					</sita1:PaymentDetailType>
+				</sita:paymentDetailsField>
+				<sita:penaltyField xsi:nil="true"/>
+			</tem:ARR_ExecuteRepriceRQ>
+		</ns5:ARR_ExecuteReprice>
+	</S:Body>
+</S:Envelope>
+
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_CancelRQ xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05
+OTA_CancelRQ.xsd" EchoToken="892345" TimeStamp="2007-11-17T09:30:47-05:00" Target="Production" Version="1.008" SequenceNmbr="1" CancelType="Initiate" TravelSector="3">
+	<!--TravelSector 3=Hotel-->
+	<POS>
+        <Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"></Source>
+    </POS>
+	<UniqueID Type="14" ID="P12EV">
+		<CompanyName CompanyShortName="1P" TravelSector="1"/>
+	</UniqueID>
+</OTA_CancelRQ>
