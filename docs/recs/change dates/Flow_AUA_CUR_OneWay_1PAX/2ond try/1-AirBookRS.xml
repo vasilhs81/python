@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
+  <Success/>
+  <AirReservation BookingReferenceID="P163J">
+    <common:AirItinerary>
+      <common:OriginDestinationOptions>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2018-12-19T19:55:00" DepartureDateTime="2018-12-19T19:20:00" FlightNumber="406" RPH="1" Status="HK">
+            <common:DepartureAirport LocationCode="AUA"/>
+            <common:ArrivalAirport LocationCode="CUR"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+      </common:OriginDestinationOptions>
+    </common:AirItinerary>
+    <common:TravelerInfo>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>MARIOS</common:GivenName>
+          <common:Surname>SANTOS</common:Surname>
+        </common:PersonName>
+        <common:Telephone FormattedInd="false" PhoneNumber="+301232323232323" PhoneTechType="5"/>
+        <common:Email>SANTOS@SKSS.COM</common:Email>
+        <common:TravelerRefNumber RPH="1"/>
+      </common:AirTraveler>
+      <common:SpecialReqDetails>
+        <common:SpecialServiceRequests>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010980C1</common:Text>
+          </common:SpecialServiceRequest>
+        </common:SpecialServiceRequests>
+      </common:SpecialReqDetails>
+    </common:TravelerInfo>
+    <common:Ticketing TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1">
+      <common:TicketAdvisory>*T</common:TicketAdvisory>
+    </common:Ticketing>
+  </AirReservation>
+</OTA_AirBookRS>

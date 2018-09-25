@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Conversation xmlns="http://sita.aero/hal" id="conv-14q-1537862499729-207" server="10.217.26.215" timestamp="2018-09-25 08:01:39"/>
+  </Header>
+  <SOAP-ENV:Body>
+    <ARR_ExecuteRepriceResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <ReturnData xmlns:a="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:errorsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+          <b:ErrorType>
+            <b:codeField>5017</b:codeField>
+            <b:sourceField i:nil="true"/>
+            <b:typeField>1</b:typeField>
+            <b:valueField>Booking has been modified - Please complete Repice or Ignore Booking Modifications</b:valueField>
+          </b:ErrorType>
+        </a:errorsField>
+        <a:responseStatusField>2</a:responseStatusField>
+        <a:ticketItemInfoField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+        <a:warningsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+      </ReturnData>
+    </ARR_ExecuteRepriceResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

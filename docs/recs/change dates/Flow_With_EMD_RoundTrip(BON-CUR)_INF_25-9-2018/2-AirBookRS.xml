@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
+  <Success/>
+  <AirReservation BookingReferenceID="P162K">
+    <common:AirItinerary>
+      <common:OriginDestinationOptions>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2018-11-08T21:50:00" DepartureDateTime="2018-11-08T21:25:00" FlightNumber="308" RPH="1" Status="HK">
+            <common:DepartureAirport LocationCode="BON"/>
+            <common:ArrivalAirport LocationCode="CUR"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+      </common:OriginDestinationOptions>
+    </common:AirItinerary>
+    <common:TravelerInfo>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>AKIS</common:GivenName>
+          <common:Surname>SALON</common:Surname>
+        </common:PersonName>
+        <common:Telephone FormattedInd="false" PhoneNumber="+30232333233333" PhoneTechType="5"/>
+        <common:Email>ALEK@JRJRJ.COM</common:Email>
+        <common:TravelerRefNumber RPH="1"/>
+      </common:AirTraveler>
+      <common:SpecialReqDetails>
+        <common:SpecialServiceRequests>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="INFT" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.MANOS/MAIK 15NOV17/INF1</common:Text>
+          </common:SpecialServiceRequest>
+        </common:SpecialServiceRequests>
+        <common:OtherServiceInformations>
+          <common:OtherServiceInformation RPH="1">
+            <common:TravelerRefNumber RPH="1"/>
+            <common:Airline Code="YY"/>
+            <common:Text>1INF MANOS/MAIK</common:Text>
+          </common:OtherServiceInformation>
+        </common:OtherServiceInformations>
+      </common:SpecialReqDetails>
+    </common:TravelerInfo>
+    <common:Ticketing TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1"/>
+  </AirReservation>
+</OTA_AirBookRS>

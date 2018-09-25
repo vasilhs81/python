@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sita="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<hal:Config subscriberId="7I" xmlns:hal="http://sita.aero/hal"/>
+	</soapenv:Header>
+	<soapenv:Body>
+		<tem:ARR_RetrieveAirAvailability>
+			<tem:sessionID>3ac7273b-0650-444c-ac37-0731d06ba737</tem:sessionID>
+			 <tem:ARR_RetrieveAirAvailabilityRQ>
+            <sita:displayOptionsField xsi:nil="true"/>
+            <sita:originDestinationInformationField>
+               <sita:arrivalLocationField>
+                  <sita:locationCodeField>CUR</sita:locationCodeField>
+               </sita:arrivalLocationField>
+               <sita:connectionLocationsField xsi:nil="true"/>
+               <sita:departureDateField>2018-11-22</sita:departureDateField>
+               <sita:departureLocationField>
+                  <sita:locationCodeField>AUA</sita:locationCodeField>
+               </sita:departureLocationField>
+               <sita:departureTimeField xsi:nil="true"/>
+            </sita:originDestinationInformationField>
+            <sita:specificFlightInfoField>
+               <sita:airlineField>
+                  <sita:codeField>7I</sita:codeField>
+               </sita:airlineField>
+            </sita:specificFlightInfoField>
+         </tem:ARR_RetrieveAirAvailabilityRQ>
+		</tem:ARR_RetrieveAirAvailability>
+	</soapenv:Body>
+</soapenv:Envelope>

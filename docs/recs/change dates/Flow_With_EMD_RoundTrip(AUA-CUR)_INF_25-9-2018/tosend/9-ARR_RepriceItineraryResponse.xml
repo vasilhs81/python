@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Conversation xmlns="http://sita.aero/hal" id="conv-18q-1537865706651-228" server="10.217.26.219" timestamp="2018-09-25 08:55:06"/>
+  </Header>
+  <SOAP-ENV:Body>
+    <ARR_RepriceItineraryResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <ReturnData xmlns:a="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:errorsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+        <a:pricedItineraryField>
+          <a:flightInfoDetailsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+            <b:FlightSegmentBaseType>
+              <b:arrivalAirportField>
+                <b:gateField i:nil="true"/>
+                <b:locationCodeField>AUA</b:locationCodeField>
+                <b:terminalField i:nil="true"/>
+              </b:arrivalAirportField>
+              <b:arrivalDateField>
+                <b:dateChangeDecrementIndField i:nil="true"/>
+                <b:dateChangeIncrementIndField i:nil="true"/>
+                <b:dateChangeNbrField i:nil="true"/>
+                <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>2019-02-18</c:string>
+                </b:textField>
+              </b:arrivalDateField>
+              <b:arrivalTimeField>
+                <b:actualField i:nil="true"/>
+                <b:estimatedField i:nil="true"/>
+                <b:nextAdvisoryTimeField i:nil="true"/>
+                <b:reasonCodeField i:nil="true"/>
+                <b:scheduledField>13:00:00</b:scheduledField>
+              </b:arrivalTimeField>
+              <b:departureAirportField>
+                <b:gateField i:nil="true"/>
+                <b:locationCodeField>CUR</b:locationCodeField>
+                <b:terminalField i:nil="true"/>
+              </b:departureAirportField>
+              <b:departureDateField>
+                <b:dateChangeDecrementIndField i:nil="true"/>
+                <b:dateChangeIncrementIndField i:nil="true"/>
+                <b:dateChangeNbrField i:nil="true"/>
+                <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>2019-02-18</c:string>
+                </b:textField>
+              </b:departureDateField>
+              <b:departureTimeField>
+                <b:actualField i:nil="true"/>
+                <b:estimatedField i:nil="true"/>
+                <b:nextAdvisoryTimeField i:nil="true"/>
+                <b:reasonCodeField i:nil="true"/>
+                <b:scheduledField>12:25:00</b:scheduledField>
+                <b:boardingField i:nil="true"/>
+                <b:julianDateOfDepartureField i:nil="true"/>
+              </b:departureTimeField>
+              <b:equipmentField i:nil="true"/>
+              <b:marketingAirlinesField>
+                <b:OperatingAirlineType>
+                  <b:airAllianceNameField i:nil="true"/>
+                  <b:codeField>7I</b:codeField>
+                  <b:companyShortNameField i:nil="true"/>
+                  <b:flightNumberField>403</b:flightNumberField>
+                  <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                </b:OperatingAirlineType>
+              </b:marketingAirlinesField>
+              <b:operatingAirlineField i:nil="true"/>
+              <b:rPHField>1</b:rPHField>
+              <b:stopQuantityField>0</b:stopQuantityField>
+            </b:FlightSegmentBaseType>
+            <b:FlightSegmentBaseType>
+              <b:arrivalAirportField>
+                <b:gateField i:nil="true"/>
+                <b:locationCodeField>CUR</b:locationCodeField>
+                <b:terminalField i:nil="true"/>
+              </b:arrivalAirportField>
+              <b:arrivalDateField>
+                <b:dateChangeDecrementIndField i:nil="true"/>
+                <b:dateChangeIncrementIndField i:nil="true"/>
+                <b:dateChangeNbrField i:nil="true"/>
+                <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>2019-02-22</c:string>
+                </b:textField>
+              </b:arrivalDateField>
+              <b:arrivalTimeField>
+                <b:actualField i:nil="true"/>
+                <b:estimatedField i:nil="true"/>
+                <b:nextAdvisoryTimeField i:nil="true"/>
+                <b:reasonCodeField i:nil="true"/>
+                <b:scheduledField>14:10:00</b:scheduledField>
+              </b:arrivalTimeField>
+              <b:departureAirportField>
+                <b:gateField i:nil="true"/>
+                <b:locationCodeField>AUA</b:locationCodeField>
+                <b:terminalField i:nil="true"/>
+              </b:departureAirportField>
+              <b:departureDateField>
+                <b:dateChangeDecrementIndField i:nil="true"/>
+                <b:dateChangeIncrementIndField i:nil="true"/>
+                <b:dateChangeNbrField i:nil="true"/>
+                <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                  <c:string>2019-02-22</c:string>
+                </b:textField>
+              </b:departureDateField>
+              <b:departureTimeField>
+                <b:actualField i:nil="true"/>
+                <b:estimatedField i:nil="true"/>
+                <b:nextAdvisoryTimeField i:nil="true"/>
+                <b:reasonCodeField i:nil="true"/>
+                <b:scheduledField>13:35:00</b:scheduledField>
+                <b:boardingField i:nil="true"/>
+                <b:julianDateOfDepartureField i:nil="true"/>
+              </b:departureTimeField>
+              <b:equipmentField i:nil="true"/>
+              <b:marketingAirlinesField>
+                <b:OperatingAirlineType>
+                  <b:airAllianceNameField i:nil="true"/>
+                  <b:codeField>7I</b:codeField>
+                  <b:companyShortNameField i:nil="true"/>
+                  <b:flightNumberField>902</b:flightNumberField>
+                  <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
+                </b:OperatingAirlineType>
+              </b:marketingAirlinesField>
+              <b:operatingAirlineField i:nil="true"/>
+              <b:rPHField>2</b:rPHField>
+              <b:stopQuantityField>0</b:stopQuantityField>
+            </b:FlightSegmentBaseType>
+          </a:flightInfoDetailsField>
+          <a:pTC_FareBreakdownsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.SWF">
+            <b:SWF_PTC_FareBreakdownType>
+              <b:endorsementsField xmlns:c="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+              <b:fareBasisCodesField>
+                <b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                  <flightRPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">1</flightRPHField>
+                  <notValidAfterField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <notValidBeforeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>YOW</c:string>
+                  </b:textField>
+                </b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                <b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                  <flightRPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">2</flightRPHField>
+                  <notValidAfterField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <notValidBeforeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>YOW</c:string>
+                  </b:textField>
+                </b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+              </b:fareBasisCodesField>
+              <b:passengerFareField>
+                <b:baseFareField>
+                  <b:amountField>53</b:amountField>
+                  <b:currencyCodeField>ANG</b:currencyCodeField>
+                  <b:fareAmountTypeField i:nil="true"/>
+                  <b:exchangeRateField i:nil="true"/>
+                  <b:fromCurrencyField i:nil="true"/>
+                  <b:toCurrencyField i:nil="true"/>
+                </b:baseFareField>
+                <b:equivFareField>
+                  <b:amountField>30.00</b:amountField>
+                  <b:currencyCodeField>USD</b:currencyCodeField>
+                  <b:fareAmountTypeField i:nil="true"/>
+                </b:equivFareField>
+                <b:taxesField xmlns:c="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                <b:totalFareField>
+                  <b:amountField>30.00</b:amountField>
+                  <b:currencyCodeField>USD</b:currencyCodeField>
+                  <b:fareAmountTypeField i:nil="true"/>
+                </b:totalFareField>
+                <b:unstructuredFareCalcField>
+                  <fareCalcModeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>cur 7i aua14.74yow/in10 7i cur14.74yow/in10 nuc29.48end roe1.790000</c:string>
+                  </b:textField>
+                </b:unstructuredFareCalcField>
+              </b:passengerFareField>
+              <b:ticketDesignatorsField i:nil="true"/>
+            </b:SWF_PTC_FareBreakdownType>
+          </a:pTC_FareBreakdownsField>
+        </a:pricedItineraryField>
+        <a:repriceFareInfoField>
+          <a:cat35SellingReissueInfoField i:nil="true"/>
+          <a:endorsementsField>
+            <a:EndorsementsTypeEndorsement>
+              <a:messageNumberField i:nil="true"/>
+              <a:valueField>nonref/nonend</a:valueField>
+            </a:EndorsementsTypeEndorsement>
+            <a:EndorsementsTypeEndorsement>
+              <a:messageNumberField i:nil="true"/>
+              <a:valueField>valid only 7i</a:valueField>
+            </a:EndorsementsTypeEndorsement>
+          </a:endorsementsField>
+          <a:fareField>
+            <a:originalFareAddCollectField>0.00</a:originalFareAddCollectField>
+            <a:originalFareResidualIgnoredField i:nil="true"/>
+            <a:reissueConversionRateField>0.55865922</a:reissueConversionRateField>
+            <a:reissueCurrencyCodeField>USD</a:reissueCurrencyCodeField>
+            <a:reissueDecimalPlacesField>2</a:reissueDecimalPlacesField>
+            <a:reissueFareAddCollectField>0.00</a:reissueFareAddCollectField>
+            <a:reissueFareRefundField>0.00</a:reissueFareRefundField>
+            <a:reissueItineraryChangeChargeField>0.00</a:reissueItineraryChangeChargeField>
+            <a:reissueSurchargeAmountField>0.00</a:reissueSurchargeAmountField>
+            <a:reissueTotalAddCollectField>0.00</a:reissueTotalAddCollectField>
+            <a:reissueTotalRefundField>0.00</a:reissueTotalRefundField>
+          </a:fareField>
+          <a:formOfRefundField i:nil="true"/>
+          <a:reissueRevalidationIndField>A</a:reissueRevalidationIndField>
+          <a:residualIgnoredField>N</a:residualIgnoredField>
+          <a:taxesField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+          <a:tourCodeField i:nil="true"/>
+          <a:waiverField>N</a:waiverField>
+        </a:repriceFareInfoField>
+        <a:responseStatusField>1</a:responseStatusField>
+        <a:ticketedFareInfoField>
+          <a:pTC_FareBreakdownsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.SWF">
+            <b:SWF_PTC_FareBreakdownType>
+              <b:endorsementsField xmlns:c="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+              <b:fareBasisCodesField>
+                <b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                  <flightRPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">1</flightRPHField>
+                  <notValidAfterField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <notValidBeforeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>YOW</c:string>
+                  </b:textField>
+                </b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                <b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                  <flightRPHField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">2</flightRPHField>
+                  <notValidAfterField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <notValidBeforeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                  <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <c:string>YOW</c:string>
+                  </b:textField>
+                </b:SWF_PTC_FareBreakdownTypeFareBasisCode>
+              </b:fareBasisCodesField>
+              <b:passengerFareField>
+                <b:baseFareField>
+                  <b:amountField>53</b:amountField>
+                  <b:currencyCodeField>ANG</b:currencyCodeField>
+                  <b:fareAmountTypeField i:nil="true"/>
+                  <b:exchangeRateField i:nil="true"/>
+                  <b:fromCurrencyField i:nil="true"/>
+                  <b:toCurrencyField i:nil="true"/>
+                </b:baseFareField>
+                <b:equivFareField>
+                  <b:amountField>30.00</b:amountField>
+                  <b:currencyCodeField>USD</b:currencyCodeField>
+                  <b:fareAmountTypeField i:nil="true"/>
+                </b:equivFareField>
+                <b:taxesField xmlns:c="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+                <b:totalFareField>
+                  <b:amountField>30.00</b:amountField>
+                  <b:currencyCodeField>USD</b:currencyCodeField>
+                  <b:fareAmountTypeField i:nil="true"/>
+                </b:totalFareField>
+                <b:unstructuredFareCalcField i:nil="true"/>
+              </b:passengerFareField>
+              <b:ticketDesignatorsField>
+                <b:SWF_TicketDesignatorType>
+                  <b:flightRPHField>1</b:flightRPHField>
+                  <b:ticketDesignatorCodeField>IN</b:ticketDesignatorCodeField>
+                  <b:ticketDesignatorExtensionField>10</b:ticketDesignatorExtensionField>
+                </b:SWF_TicketDesignatorType>
+                <b:SWF_TicketDesignatorType>
+                  <b:flightRPHField>2</b:flightRPHField>
+                  <b:ticketDesignatorCodeField>IN</b:ticketDesignatorCodeField>
+                  <b:ticketDesignatorExtensionField>10</b:ticketDesignatorExtensionField>
+                </b:SWF_TicketDesignatorType>
+              </b:ticketDesignatorsField>
+            </b:SWF_PTC_FareBreakdownType>
+          </a:pTC_FareBreakdownsField>
+        </a:ticketedFareInfoField>
+        <a:warningsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+          <b:WarningType>
+            <b:codeField i:nil="true"/>
+            <b:rPHField i:nil="true"/>
+            <b:shortTextField i:nil="true"/>
+            <b:statusField i:nil="true"/>
+            <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <c:string>02123 - ONLY ALLOWS REISSUE</c:string>
+            </b:textField>
+            <b:typeField>448</b:typeField>
+          </b:WarningType>
+        </a:warningsField>
+      </ReturnData>
+    </ARR_RepriceItineraryResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RetrieveTicketsByRecordLocatorResponse xmlns="http://sita.aero/SITA_RetrieveTicketsByRecordLocatorResponse/5/0" xmlns:common="http://sita.aero/common/4/0" xmlns:fares="http://sita.aero/fares/common/5/0" xmlns:ticketing="http://sita.aero/ticketing/common/4/0">
+  <Success/>
+  <FlightInfoDetails>
+    <common:FlightLegInfo FlightStatus="OK" RPH="1" SequenceNumber="1" StopOverIndicator="O">
+      <common:DepartureAirport LocationCode="AUA"/>
+      <common:ArrivalAirport LocationCode="CUR"/>
+      <common:MarketingAirlines>
+        <common:MarketingAirline Code="7I" FlightNumber="902" ResBookDesigCode="Y"/>
+      </common:MarketingAirlines>
+      <common:DepartureDate>2019-02-13</common:DepartureDate>
+      <common:DepartureTime Scheduled="13:35:00"/>
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+    </common:FlightLegInfo>
+    <common:FlightLegInfo FlightStatus="OK" RPH="2" SequenceNumber="2" StopOverIndicator="X">
+      <common:DepartureAirport LocationCode="CUR"/>
+      <common:ArrivalAirport LocationCode="BON"/>
+      <common:MarketingAirlines>
+        <common:MarketingAirline Code="7I" FlightNumber="303" ResBookDesigCode="Y"/>
+      </common:MarketingAirlines>
+      <common:DepartureDate>2019-02-14</common:DepartureDate>
+      <common:DepartureTime Scheduled="10:30:00"/>
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+    </common:FlightLegInfo>
+    <common:FlightLegInfo FlightStatus="OK" RPH="3" SequenceNumber="3" StopOverIndicator="O">
+      <common:DepartureAirport LocationCode="BON"/>
+      <common:ArrivalAirport LocationCode="CUR"/>
+      <common:MarketingAirlines>
+        <common:MarketingAirline Code="7I" FlightNumber="302" ResBookDesigCode="Y"/>
+      </common:MarketingAirlines>
+      <common:DepartureDate>2019-02-15</common:DepartureDate>
+      <common:DepartureTime Scheduled="06:35:00"/>
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+    </common:FlightLegInfo>
+    <common:FlightLegInfo FlightStatus="OK" RPH="4" SequenceNumber="4" StopOverIndicator="X">
+      <common:DepartureAirport LocationCode="CUR"/>
+      <common:ArrivalAirport LocationCode="AUA"/>
+      <common:MarketingAirlines>
+        <common:MarketingAirline Code="7I" FlightNumber="405" ResBookDesigCode="Y"/>
+      </common:MarketingAirlines>
+      <common:DepartureDate>2019-02-15</common:DepartureDate>
+      <common:DepartureTime Scheduled="18:15:00"/>
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+    </common:FlightLegInfo>
+  </FlightInfoDetails>
+  <PassengerInfos>
+    <PassengerInfo RPH="1">
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+      <common:PassengerName>
+        <common:GivenName>ALEKMR</common:GivenName>
+        <common:Surname>GINES</common:Surname>
+      </common:PassengerName>
+      <common:PassengerType Code="ADT"/>
+      <TicketingInfo AirlineAccountingCode="958" DateOfIssue="2018-09-25" Destination="AUA" FormAndSerialNumber="4321010938" IssueCity="MIA" IssueIATA="73704444" IssuingAgentType="T" Origin="AUA" OriginalDateofIssue="2018-09-25" ReservationsCityCode="WWW001" ResidingDatabase="7I">
+        <common:CouponInfo CouponNumber="1" FlightRPH="1" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="2" FlightRPH="2" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="3" FlightRPH="3" Status="OPEN FOR USE">
+          <common:EMD_Info CouponNumber="1" TicketDocumentNbr="9584550015058"/>
+        </common:CouponInfo>
+        <common:CouponInfo CouponNumber="4" FlightRPH="4" Status="OPEN FOR USE">
+          <common:EMD_Info CouponNumber="2" TicketDocumentNbr="9584550015058"/>
+        </common:CouponInfo>
+        <common:TicketTotal Amount="392.39" CurrencyCode="USD"/>
+      </TicketingInfo>
+      <OriginInformation LocationCode="AUA"/>
+      <DestinationInformation LocationCode="AUA"/>
+    </PassengerInfo>
+    <PassengerInfo RPH="2">
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+      <common:PassengerName>
+        <common:GivenName>GEORGEMR</common:GivenName>
+        <common:Surname>KALKAS</common:Surname>
+      </common:PassengerName>
+      <common:PassengerType Code="ADT"/>
+      <TicketingInfo AirlineAccountingCode="958" DateOfIssue="2018-09-25" Destination="AUA" FormAndSerialNumber="4321010939" IssueCity="MIA" IssueIATA="73704444" IssuingAgentType="T" Origin="AUA" OriginalDateofIssue="2018-09-25" ReservationsCityCode="WWW001" ResidingDatabase="7I">
+        <common:CouponInfo CouponNumber="1" FlightRPH="1" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="2" FlightRPH="2" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="3" FlightRPH="3" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="4" FlightRPH="4" Status="OPEN FOR USE"/>
+        <common:TicketTotal Amount="392.39" CurrencyCode="USD"/>
+      </TicketingInfo>
+      <OriginInformation LocationCode="AUA"/>
+      <DestinationInformation LocationCode="AUA"/>
+    </PassengerInfo>
+    <PassengerInfo RPH="3">
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P161D"/>
+      </common:BookingInfo>
+      <common:PassengerName>
+        <common:GivenName>MICHAEL</common:GivenName>
+        <common:Surname>NTILIS</common:Surname>
+      </common:PassengerName>
+      <common:PassengerType Code="INF"/>
+      <TicketingInfo AirlineAccountingCode="958" DateOfIssue="2018-09-25" Destination="AUA" FormAndSerialNumber="4321010940" IssueCity="MIA" IssueIATA="73704444" IssuingAgentType="T" Origin="AUA" OriginalDateofIssue="2018-09-25" ReservationsCityCode="WWW001" ResidingDatabase="7I">
+        <common:CouponInfo CouponNumber="1" FlightRPH="1" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="2" FlightRPH="2" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="3" FlightRPH="3" Status="OPEN FOR USE"/>
+        <common:CouponInfo CouponNumber="4" FlightRPH="4" Status="OPEN FOR USE"/>
+        <common:TicketTotal Amount="38.00" CurrencyCode="USD"/>
+      </TicketingInfo>
+      <OriginInformation LocationCode="AUA"/>
+      <DestinationInformation LocationCode="AUA"/>
+    </PassengerInfo>
+  </PassengerInfos>
+  <PTC_FareBreakdowns>
+    <PTC_FareBreakdown PassengerRPHList="1 2">
+      <fares:FareBasisCodes>
+        <fares:FareBasisCode FlightRPH="1">YOW</fares:FareBasisCode>
+        <fares:FareBasisCode FlightRPH="2">YOW</fares:FareBasisCode>
+        <fares:FareBasisCode FlightRPH="3">YOW</fares:FareBasisCode>
+        <fares:FareBasisCode FlightRPH="4">YOW</fares:FareBasisCode>
+      </fares:FareBasisCodes>
+      <fares:PassengerFare>
+        <fares:TotalFare Amount="392.39" CurrencyCode="USD"/>
+        <fares:BaseFare Amount="600" CurrencyCode="AWG"/>
+        <fares:EquivFare Amount="333.00" CurrencyCode="USD"/>
+        <fares:Taxes Amount="59.39">
+          <fares:Tax Amount="34.25" CurrencyCode="USD" TaxCode="AW"/>
+          <fares:Tax Amount="10.00" CurrencyCode="USD" TaxCode="AN"/>
+          <fares:Tax Amount="5.00" CurrencyCode="USD" TaxCode="E9"/>
+          <fares:Tax Amount="10.14" CurrencyCode="USD" TaxCode="PC"/>
+        </fares:Taxes>
+        <fares:UnstructuredFareCalc FareCalcMode="0">AUA 7I X/CUR 7I BON166.66 7I X/CUR 7I AUA166.66NUC333.32END ROE1.800000</fares:UnstructuredFareCalc>
+        <fares:FareBaggageAllowances>
+          <fares:FareBaggageAllowance FlightRPH="1" UnitOfMeasure="PC" UnitOfMeasureQuantity="1"/>
+          <fares:FareBaggageAllowance FlightRPH="2" UnitOfMeasure="PC" UnitOfMeasureQuantity="1"/>
+          <fares:FareBaggageAllowance FlightRPH="3" UnitOfMeasure="PC" UnitOfMeasureQuantity="1"/>
+          <fares:FareBaggageAllowance FlightRPH="4" UnitOfMeasure="PC" UnitOfMeasureQuantity="1"/>
+        </fares:FareBaggageAllowances>
+      </fares:PassengerFare>
+    </PTC_FareBreakdown>
+    <PTC_FareBreakdown PassengerRPHList="3">
+      <fares:FareBasisCodes>
+        <fares:FareBasisCode FlightRPH="1">YOW</fares:FareBasisCode>
+        <fares:FareBasisCode FlightRPH="2">YOW</fares:FareBasisCode>
+        <fares:FareBasisCode FlightRPH="3">YOW</fares:FareBasisCode>
+        <fares:FareBasisCode FlightRPH="4">YOW</fares:FareBasisCode>
+      </fares:FareBasisCodes>
+      <fares:PassengerFare>
+        <fares:TotalFare Amount="38.00" CurrencyCode="USD"/>
+        <fares:BaseFare Amount="60" CurrencyCode="AWG"/>
+        <fares:EquivFare Amount="33.00" CurrencyCode="USD"/>
+        <fares:Taxes Amount="5.00">
+          <fares:Tax Amount="5.00" CurrencyCode="USD" TaxCode="E9"/>
+        </fares:Taxes>
+        <fares:UnstructuredFareCalc FareCalcMode="0">AUA 7I X/CUR 7I BON16.66 7I X/CUR 7I AUA16.66NUC33.32END ROE1.800000</fares:UnstructuredFareCalc>
+        <fares:FareBaggageAllowances>
+          <fares:FareBaggageAllowance FlightRPH="1" UnitOfMeasure="PC" UnitOfMeasureQuantity="0"/>
+          <fares:FareBaggageAllowance FlightRPH="2" UnitOfMeasure="PC" UnitOfMeasureQuantity="0"/>
+          <fares:FareBaggageAllowance FlightRPH="3" UnitOfMeasure="PC" UnitOfMeasureQuantity="0"/>
+          <fares:FareBaggageAllowance FlightRPH="4" UnitOfMeasure="PC" UnitOfMeasureQuantity="0"/>
+        </fares:FareBaggageAllowances>
+      </fares:PassengerFare>
+      <fares:TicketDesignators>
+        <fares:TicketDesignator FlightRPH="1" TicketDesignatorCode="IN" TicketDesignatorExtension="10"/>
+        <fares:TicketDesignator FlightRPH="2" TicketDesignatorCode="IN" TicketDesignatorExtension="10"/>
+        <fares:TicketDesignator FlightRPH="3" TicketDesignatorCode="IN" TicketDesignatorExtension="10"/>
+        <fares:TicketDesignator FlightRPH="4" TicketDesignatorCode="IN" TicketDesignatorExtension="10"/>
+      </fares:TicketDesignators>
+    </PTC_FareBreakdown>
+  </PTC_FareBreakdowns>
+  <Endorsements>
+    <TicketEndorsements NonEndorsableIndicator="N" PassengerRPHList="1 2 3">
+      <common:Endorsement>NONREF/NONEND/VALID ONLY 7I/NONREF/NONEND/VALID ONLY 7I/</common:Endorsement>
+    </TicketEndorsements>
+  </Endorsements>
+  <PaymentDetails>
+    <PaymentDetail PassengerRPHList="1 2" PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI" CardNumber="XXXXXXXXXXXX1111" ExpireDate="0623"/>
+      <ticketing:PaymentAmount Amount="392.39" ApprovalCode="NULL" CurrencyCode="USD"/>
+    </PaymentDetail>
+    <PaymentDetail PassengerRPHList="3" PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI" CardNumber="XXXXXXXXXXXX1111" ExpireDate="0623"/>
+      <ticketing:PaymentAmount Amount="38.00" ApprovalCode="NULL" CurrencyCode="USD"/>
+    </PaymentDetail>
+  </PaymentDetails>
+</SITA_RetrieveTicketsByRecordLocatorResponse>

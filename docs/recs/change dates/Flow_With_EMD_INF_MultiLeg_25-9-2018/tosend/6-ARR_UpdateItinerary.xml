@@ -1,0 +1,113 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sita="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:sita1="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:sita2="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<hal:Config subscriberId="7I" xmlns:hal="http://sita.aero/hal"/>
+	</soapenv:Header>
+	<soapenv:Body>
+		<tem:ARR_UpdateItinerary>
+			<tem:sessionID>4ef2a7c9-145f-4cbe-a3af-c20281a382c6</tem:sessionID>
+			<tem:ARR_UpdateItineraryRQ>
+				<sita:segmentsToAddField xsi:nil="true"/>
+				<sita:segmentsToChangeField>
+					<sita:ARR_UpdateItinerarySegments>
+						<sita:originalField>
+							<sita:flightInfoDetailsField>
+								<sita:flightLegInfoField>
+									<sita:arrivalAirportField>
+										<sita:locationCodeField>CUR</sita:locationCodeField>
+									</sita:arrivalAirportField>
+									<sita:departureAirportField>
+										<sita:locationCodeField>BON</sita:locationCodeField>
+									</sita:departureAirportField>
+									<sita:departureDateField>2019-02-15</sita:departureDateField>
+									<sita:marketingAirlineField>
+										<sita:codeField>7I</sita:codeField>
+										<sita:flightNumberField>302</sita:flightNumberField>
+									</sita:marketingAirlineField>
+									<sita:rPHField>3</sita:rPHField>
+								</sita:flightLegInfoField>
+								<sita:flightLegInfoField>
+									<sita:arrivalAirportField>
+										<sita:locationCodeField>AUA</sita:locationCodeField>
+									</sita:arrivalAirportField>
+									<sita:departureAirportField>
+										<sita:locationCodeField>CUR</sita:locationCodeField>
+									</sita:departureAirportField>
+									<sita:departureDateField>2019-02-15</sita:departureDateField>
+									<sita:marketingAirlineField>
+										<sita:codeField>7I</sita:codeField>
+										<sita:flightNumberField>405</sita:flightNumberField>
+									</sita:marketingAirlineField>
+									<sita:rPHField>4</sita:rPHField>
+								</sita:flightLegInfoField>
+							</sita:flightInfoDetailsField>
+						</sita:originalField>
+						<sita:updatedField>
+							<sita:flightInfoDetailsField>
+								<sita:flightLegInfoField>
+									<sita:arrivalAirportField>
+										<sita:locationCodeField>CUR</sita:locationCodeField>
+									</sita:arrivalAirportField>
+									<sita:departureAirportField>
+										<sita:locationCodeField>BON</sita:locationCodeField>
+									</sita:departureAirportField>
+									<sita:departureDateField>2019-02-16</sita:departureDateField>
+									<sita:marketingAirlineField>
+										<sita:codeField>7I</sita:codeField>
+										<sita:flightNumberField>302</sita:flightNumberField>
+									</sita:marketingAirlineField>
+									<sita:rPHField>3</sita:rPHField>
+									<sita:bookingClassAvailField>
+										<sita1:resBookDesigCodeField>Y</sita1:resBookDesigCodeField>
+										<sita1:resBookDesigQuantityField>2</sita1:resBookDesigQuantityField>
+										<sita1:resBookDesigStatusCodeField xsi:nil="true"/>
+									</sita:bookingClassAvailField>
+									<sita:fareInfoField xsi:nil="true"/>
+								</sita:flightLegInfoField>
+								<sita:flightLegInfoField>
+									<sita:arrivalAirportField>
+										<sita:locationCodeField>AUA</sita:locationCodeField>
+									</sita:arrivalAirportField>
+									<sita:departureAirportField>
+										<sita:locationCodeField>CUR</sita:locationCodeField>
+									</sita:departureAirportField>
+									<sita:departureDateField>2019-02-16</sita:departureDateField>
+									<sita:marketingAirlineField>
+										<sita:codeField>7I</sita:codeField>
+										<sita:flightNumberField>405</sita:flightNumberField>
+									</sita:marketingAirlineField>
+									<sita:rPHField>4</sita:rPHField>
+									<sita:bookingClassAvailField>
+										<sita1:resBookDesigCodeField>Y</sita1:resBookDesigCodeField>
+										<sita1:resBookDesigQuantityField>2</sita1:resBookDesigQuantityField>
+										<sita1:resBookDesigStatusCodeField xsi:nil="true"/>
+									</sita:bookingClassAvailField>
+									<sita:fareInfoField xsi:nil="true"/>
+								</sita:flightLegInfoField>
+							</sita:flightInfoDetailsField>
+						</sita:updatedField>
+					</sita:ARR_UpdateItinerarySegments>
+				</sita:segmentsToChangeField>
+				<sita:segmentsToRemoveField xsi:nil="true"/>
+				<sita:ticketingInfosField>
+					<sita:residingDatabaseField>7I</sita:residingDatabaseField>
+					<sita:ticketingInfoField>
+						<!--Zero or more repetitions:-->
+						<sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+							<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
+							<sita2:formAndSerialNumberField>4321010938</sita2:formAndSerialNumberField>
+						</sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+						<sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+							<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
+							<sita2:formAndSerialNumberField>4321010939</sita2:formAndSerialNumberField>
+						</sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+						<sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+							<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
+							<sita2:formAndSerialNumberField>4321010940</sita2:formAndSerialNumberField>
+						</sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+
+					</sita:ticketingInfoField>
+				</sita:ticketingInfosField>
+			</tem:ARR_UpdateItineraryRQ>
+		</tem:ARR_UpdateItinerary>
+	</soapenv:Body>
+</soapenv:Envelope>

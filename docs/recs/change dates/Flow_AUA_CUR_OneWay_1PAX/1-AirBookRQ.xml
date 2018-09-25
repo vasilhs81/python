@@ -1,0 +1,39 @@
+<OTA_AirBookRQ xmlns="http://sita.aero/SITA_AirBookRQ/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EchoToken="235025" TimeStamp="2018-09-25T12:18:39.485Z" Version="2.001">
+	<POS>
+		<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" ID_Context="Airfare" Type="7"/>
+		</Source>
+	</POS>
+	<AirItinerary>
+		<OriginDestinationOptions>
+			<OriginDestinationOption>
+				<FlightSegment ArrivalDateTime="2018-11-30T00:10:00" DepartureDateTime="2018-11-29T23:35:00" FlightNumber="408" RPH="1">
+					<DepartureAirport LocationCode="AUA"/>
+					<ArrivalAirport LocationCode="CUR"/>
+					<OperatingAirline Code="7I" FlightNumber="408"/>
+					<Equipment AirEquipType="F50"/>
+					<MarketingAirline Code="7I"/>
+					<BookingClassAvails>
+						<BookingClassAvail RPH="1" ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+					</BookingClassAvails>
+				</FlightSegment>
+			</OriginDestinationOption>
+		</OriginDestinationOptions>
+	</AirItinerary>
+	<TravelerInfo>
+		<AirTraveler PassengerTypeCode="ADT">
+			<PersonName>
+				<NamePrefix>Mr</NamePrefix>
+				<GivenName>Alek</GivenName>
+				<Surname>Gines</Surname>
+			</PersonName>
+			<Telephone PhoneLocationType="7" PhoneNumber="+3024234232343" PhoneTechType="5"/>
+			<Email>ales@gines.com</Email>
+			<TravelerRefNumber RPH="1"/>
+		</AirTraveler>
+		<SpecialReqDetails>
+			<SpecialServiceRequests/>
+		</SpecialReqDetails>
+	</TravelerInfo>
+	<Ticketing TicketType="eTicket"/>
+</OTA_AirBookRQ>

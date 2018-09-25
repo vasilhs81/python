@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Conversation xmlns="http://sita.aero/hal" id="conv-13q-1537862495025-228" server="10.217.26.214" timestamp="2018-09-25 08:01:35"/>
+  </Header>
+  <SOAP-ENV:Body>
+    <ARR_RepriceItineraryResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <ReturnData xmlns:a="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:errorsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+          <b:ErrorType>
+            <b:codeField i:nil="true"/>
+            <b:sourceField i:nil="true"/>
+            <b:typeField>448</b:typeField>
+            <b:valueField>02130 - MANUAL REISSUE REQUIRED - UNABLE TO AUTOMATE PROCESS</b:valueField>
+          </b:ErrorType>
+        </a:errorsField>
+        <a:pricedItineraryField i:nil="true"/>
+        <a:repriceFareInfoField i:nil="true"/>
+        <a:responseStatusField>2</a:responseStatusField>
+        <a:ticketedFareInfoField i:nil="true"/>
+        <a:warningsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+      </ReturnData>
+    </ARR_RepriceItineraryResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

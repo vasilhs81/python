@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
+  <Success/>
+  <AirReservation BookingReferenceID="P161D">
+    <common:AirItinerary>
+      <common:OriginDestinationOptions>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2019-02-13T14:10:00" DepartureDateTime="2019-02-13T13:35:00" FlightNumber="902" RPH="1" Status="HK">
+            <common:DepartureAirport LocationCode="AUA"/>
+            <common:ArrivalAirport LocationCode="CUR"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2019-02-14T10:55:00" DepartureDateTime="2019-02-14T10:30:00" FlightNumber="303" RPH="2" Status="HK">
+            <common:DepartureAirport LocationCode="CUR"/>
+            <common:ArrivalAirport LocationCode="BON"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2019-02-15T07:00:00" DepartureDateTime="2019-02-15T06:35:00" FlightNumber="302" RPH="3" Status="HK">
+            <common:DepartureAirport LocationCode="BON"/>
+            <common:ArrivalAirport LocationCode="CUR"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2019-02-15T18:50:00" DepartureDateTime="2019-02-15T18:15:00" FlightNumber="405" RPH="4" Status="HK">
+            <common:DepartureAirport LocationCode="CUR"/>
+            <common:ArrivalAirport LocationCode="AUA"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+      </common:OriginDestinationOptions>
+    </common:AirItinerary>
+    <common:TravelerInfo>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>ALEK</common:GivenName>
+          <common:Surname>GINES</common:Surname>
+        </common:PersonName>
+        <common:Telephone FormattedInd="false" PhoneNumber="+305454545455454" PhoneTechType="5"/>
+        <common:Email>V.KASIMATIS@JRTECHNOLOGIES.COM</common:Email>
+        <common:TravelerRefNumber RPH="1"/>
+      </common:AirTraveler>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>GEORGE</common:GivenName>
+          <common:Surname>KALKAS</common:Surname>
+        </common:PersonName>
+        <common:Telephone FormattedInd="false" LocationCode="UND" PhoneNumber="EFINED" PhoneTechType="5"/>
+        <common:TravelerRefNumber RPH="2"/>
+      </common:AirTraveler>
+      <common:SpecialReqDetails>
+        <common:SpecialServiceRequests>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="INFT" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.NTILIS/MICHAEL 07FEB18/INF1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="INFT" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.NTILIS/MICHAEL 07FEB18/INF1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="INFT" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.NTILIS/MICHAEL 07FEB18/INF1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="INFT" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.NTILIS/MICHAEL 07FEB18/INF1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010938C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010938C2</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010938C3</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010938C4</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010939C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010939C2</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010939C3</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010939C4</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.INF9584321010940C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.INF9584321010940C2</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.INF9584321010940C3</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.INF9584321010940C4</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550015058C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550015058C2</common:Text>
+          </common:SpecialServiceRequest>
+        </common:SpecialServiceRequests>
+        <common:OtherServiceInformations>
+          <common:OtherServiceInformation RPH="1">
+            <common:TravelerRefNumber RPH="1"/>
+            <common:Airline Code="YY"/>
+            <common:Text>1INF NTILIS/MICHAEL</common:Text>
+          </common:OtherServiceInformation>
+        </common:OtherServiceInformations>
+      </common:SpecialReqDetails>
+    </common:TravelerInfo>
+    <common:Ticketing TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1 2">
+      <common:TicketAdvisory>*T</common:TicketAdvisory>
+    </common:Ticketing>
+  </AirReservation>
+</OTA_AirBookRS>

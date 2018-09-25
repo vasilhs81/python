@@ -1,0 +1,39 @@
+<OTA_AirBookRQ xmlns="http://sita.aero/SITA_AirBookRQ/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EchoToken="559858" TimeStamp="2018-09-25T12:02:55.780Z" Version="2.001">
+	<POS>
+		<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" ID_Context="Airfare" Type="7"/>
+		</Source>
+	</POS>
+	<AirItinerary>
+		<OriginDestinationOptions>
+			<OriginDestinationOption>
+				<FlightSegment ArrivalDateTime="2018-12-12T11:40:00" DepartureDateTime="2018-12-12T10:00:00" FlightNumber="511" RPH="1">
+					<DepartureAirport LocationCode="CUR"/>
+					<ArrivalAirport LocationCode="SXM"/>
+					<OperatingAirline Code="7I" FlightNumber="511"/>
+					<Equipment AirEquipType="E90"/>
+					<MarketingAirline Code="7I"/>
+					<BookingClassAvails>
+						<BookingClassAvail RPH="1" ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+					</BookingClassAvails>
+				</FlightSegment>
+			</OriginDestinationOption>
+		</OriginDestinationOptions>
+	</AirItinerary>
+	<TravelerInfo>
+		<AirTraveler PassengerTypeCode="ADT">
+			<PersonName>
+				<NamePrefix>Mr</NamePrefix>
+				<GivenName>Nic</GivenName>
+				<Surname>Berdan</Surname>
+			</PersonName>
+			<Telephone PhoneLocationType="7" PhoneNumber="+3045454545454" PhoneTechType="5"/>
+			<Email>berdan@berd.com</Email>
+			<TravelerRefNumber RPH="1"/>
+		</AirTraveler>
+		<SpecialReqDetails>
+			<SpecialServiceRequests/>
+		</SpecialReqDetails>
+	</TravelerInfo>
+	<Ticketing TicketType="eTicket"/>
+</OTA_AirBookRQ>

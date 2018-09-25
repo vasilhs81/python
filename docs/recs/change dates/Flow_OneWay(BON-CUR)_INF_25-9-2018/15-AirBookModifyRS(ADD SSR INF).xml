@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OTA_AirBookRS xmlns="http://www.opentravel.org/OTA/2003/05" Version="0">
+  <Success/>
+  <AirReservation BookingReferenceID="P1629">
+    <AirItinerary>
+      <OriginDestinationOptions>
+        <OriginDestinationOption>
+          <FlightSegment ArrivalDateTime="2018-11-09T21:50:00" DepartureDateTime="2018-11-09T21:25:00" FlightNumber="308" RPH="1" Status="HK">
+            <DepartureAirport LocationCode="BON"/>
+            <ArrivalAirport LocationCode="CUR"/>
+            <OperatingAirline Code="7I"/>
+            <BookingClassAvails>
+              <BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+            </BookingClassAvails>
+            <Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</Comment>
+          </FlightSegment>
+        </OriginDestinationOption>
+      </OriginDestinationOptions>
+    </AirItinerary>
+    <TravelerInfo>
+      <AirTraveler PassengerTypeCode="ADT">
+        <PersonName>
+          <NamePrefix>MR</NamePrefix>
+          <GivenName>AKIS</GivenName>
+          <Surname>SALON</Surname>
+        </PersonName>
+        <Telephone FormattedInd="false" PhoneNumber="+30232333233333" PhoneTechType="5"/>
+        <Email>ALEK@JRJRJ.COM</Email>
+        <TravelerRefNumber RPH="1"/>
+      </AirTraveler>
+      <SpecialReqDetails>
+        <SpecialServiceRequests>
+          <SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="INFT" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <Airline Code="7I"/>
+            <Text>.MANOS/MAIK 15NOV17/INF1</Text>
+          </SpecialServiceRequest>
+          <SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <Airline Code="7I"/>
+            <Text>.9584321010966C1</Text>
+          </SpecialServiceRequest>
+        </SpecialServiceRequests>
+        <OtherServiceInformations>
+          <OtherServiceInformation>
+            <TravelerRefNumber RPH="1"/>
+            <Airline Code="YY"/>
+            <Text>1INF MANOS/MAIK</Text>
+          </OtherServiceInformation>
+        </OtherServiceInformations>
+      </SpecialReqDetails>
+    </TravelerInfo>
+    <Ticketing TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1">
+      <TicketAdvisory>*T</TicketAdvisory>
+    </Ticketing>
+  </AirReservation>
+</OTA_AirBookRS>
