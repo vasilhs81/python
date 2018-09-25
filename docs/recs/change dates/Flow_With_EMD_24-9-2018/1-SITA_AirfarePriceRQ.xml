@@ -1,0 +1,40 @@
+<sita:SITA_AirfarePriceRQ xmlns:sita="http://www.sita.aero/PTS/fare/2005/11/PriceRQ" xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:p1="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.001">
+	<ota:OTA_AirPriceRQ Version="0.001">
+		<ota:POS>
+			<ota:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+				<ota:RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" ID_Context="Airfare" Type="7"/>
+			</ota:Source>
+		</ota:POS>
+		<ota:AirItinerary>
+			<ota:OriginDestinationOptions>
+				<ota:OriginDestinationOption>
+					<ota:FlightSegment ArrivalDateTime="2018-11-07T06:00:00" DepartureDateTime="2018-11-07T01:00:00" FlightNumber="111" InfoSource="1" ResBookDesigCode="Y">
+						<ota:DepartureAirport LocationCode="AUA"/>
+						<ota:ArrivalAirport LocationCode="CUR"/>
+						<ota:OperatingAirline Code="7I"/>
+						<ota:Equipment AirEquipType="F50"/>
+						<ota:MarketingAirline Code="7I"/>
+					</ota:FlightSegment>
+				</ota:OriginDestinationOption>
+				<ota:OriginDestinationOption>
+					<ota:FlightSegment ArrivalDateTime="2018-11-09T08:15:00" DepartureDateTime="2018-11-09T07:40:00" FlightNumber="401" InfoSource="2" ResBookDesigCode="Y">
+						<ota:DepartureAirport LocationCode="CUR"/>
+						<ota:ArrivalAirport LocationCode="AUA"/>
+						<ota:OperatingAirline Code="7I"/>
+						<ota:Equipment AirEquipType="F50"/>
+						<ota:MarketingAirline Code="7I"/>
+					</ota:FlightSegment>
+				</ota:OriginDestinationOption>
+			</ota:OriginDestinationOptions>
+		</ota:AirItinerary>
+		<ota:TravelerInfoSummary>
+			<ota:AirTravelerAvail>
+				<ota:PassengerTypeQuantity Age="73" Code="ADT" Quantity="1"/>
+			</ota:AirTravelerAvail>
+		</ota:TravelerInfoSummary>
+	</ota:OTA_AirPriceRQ>
+	<sita:AdditionalPriceRQData CheckInterlineAgreements="false" DoNotIncludeFBCInHFC="true" TaxBreakdownInd="true" TaxSummaryInd="true">
+		<sita:AdditionalSegmentInfos/>
+		<sita:TourCodes/>
+	</sita:AdditionalPriceRQData>
+</sita:SITA_AirfarePriceRQ>

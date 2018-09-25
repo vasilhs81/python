@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RetrieveEMD_ByDocNumberResponse xmlns="http://sita.aero/SITA_RetrieveEMD_ByDocNumber/4/0" xmlns:common="http://sita.aero/common/3/0" xmlns:fares="http://sita.aero/fares/common/4/0" xmlns:ticketing="http://sita.aero/ticketing/common/3/0">
+  <Success/>
+  <PassengerInfo>
+    <common:BookingInfo>
+      <common:BookingReferenceID ID="P1391">
+        <common:CompanyName Code="958"/>
+      </common:BookingReferenceID>
+    </common:BookingInfo>
+    <common:PassengerName>
+      <common:GivenName>ELTON MR</common:GivenName>
+      <common:Surname>JOHN</common:Surname>
+    </common:PassengerName>
+    <common:PassengerType Code="ADT"/>
+    <EMD_Info>
+      <ticketing:TicketDocument DateOfIssue="2018-09-24" IssueIATA="73704444" IssuingAgentType="G" ReservationsCityCode="WWW001" TicketDocumentNbr="9584550015054">
+        <ticketing:CouponInfo CurrencyCode="USD" DateOfService="2018-10-29" RPH="1" Status="OPEN FOR USE" Value="40.00">
+          <ticketing:PresentInfo>
+            <ticketing:DepartureAirport LocationCode="BON"/>
+            <ticketing:ArrivalAirport LocationCode="CUR"/>
+          </ticketing:PresentInfo>
+          <ticketing:ValidatingAirline Code="7I"/>
+          <ticketing:ReasonForIssuance SubCode="0CD"/>
+        </ticketing:CouponInfo>
+      </ticketing:TicketDocument>
+    </EMD_Info>
+  </PassengerInfo>
+  <PTC_FareBreakdowns>
+    <PTC_FareBreakdown>
+      <fares:PassengerFare>
+        <fares:TotalFare Amount="40.00" CurrencyCode="USD"/>
+        <fares:BaseFare Amount="40.00" CurrencyCode="USD"/>
+      </fares:PassengerFare>
+    </PTC_FareBreakdown>
+  </PTC_FareBreakdowns>
+  <Endorsements>
+    <common:Endorsement>NON END/CHANGEFEEMAYAPPLY</common:Endorsement>
+  </Endorsements>
+  <PaymentDetails>
+    <PaymentDetail PaymentType="CA">
+      <ticketing:PaymentAmount Amount="40.00" CurrencyCode="USD"/>
+    </PaymentDetail>
+  </PaymentDetails>
+</SITA_RetrieveEMD_ByDocNumberResponse>

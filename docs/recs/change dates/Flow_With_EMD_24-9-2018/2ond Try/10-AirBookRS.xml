@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
   <Success/>
-  <AirReservation BookingReferenceID="P1375">
+  <AirReservation BookingReferenceID="P1391">
     <common:AirItinerary>
       <common:OriginDestinationOptions>
         <common:OriginDestinationOption>
-          <common:FlightSegment ArrivalDateTime="2018-09-29T07:00:00" DepartureDateTime="2018-09-29T06:35:00" FlightNumber="302" RPH="1" Status="HK">
+          <common:FlightSegment ArrivalDateTime="2018-10-29T17:35:00" DepartureDateTime="2018-10-29T17:10:00" FlightNumber="306" RPH="1" Status="HK">
             <common:DepartureAirport LocationCode="BON"/>
             <common:ArrivalAirport LocationCode="CUR"/>
             <common:OperatingAirline Code="7I"/>
@@ -21,30 +21,35 @@
       <common:AirTraveler PassengerTypeCode="ADT">
         <common:PersonName>
           <common:NamePrefix>MR</common:NamePrefix>
-          <common:GivenName>BILL</common:GivenName>
-          <common:Surname>MAVERIK</common:Surname>
+          <common:GivenName>ELTON</common:GivenName>
+          <common:Surname>JOHN</common:Surname>
         </common:PersonName>
-        <common:Telephone FormattedInd="false" PhoneNumber="+37669898989898" PhoneTechType="5"/>
-        <common:Email>G.STYLIANAKIS@JRTECHNOLOGIES.COM</common:Email>
+        <common:Telephone FormattedInd="false" PhoneNumber="+3034343434344" PhoneTechType="5"/>
+        <common:Email>ELTON@JRTLOGIES.COM</common:Email>
         <common:TravelerRefNumber RPH="1"/>
       </common:AirTraveler>
       <common:AirTraveler PassengerTypeCode="ADT">
         <common:PersonName>
           <common:NamePrefix>MR</common:NamePrefix>
-          <common:GivenName>GEORGE</common:GivenName>
-          <common:Surname>STYLIANAKIS</common:Surname>
+          <common:GivenName>NINA</common:GivenName>
+          <common:Surname>JOHN</common:Surname>
         </common:PersonName>
+        <common:Telephone FormattedInd="false" LocationCode="UND" PhoneNumber="EFINED" PhoneTechType="5"/>
         <common:TravelerRefNumber RPH="2"/>
       </common:AirTraveler>
       <common:SpecialReqDetails>
         <common:SpecialServiceRequests>
           <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010875C1</common:Text>
+            <common:Text>.9584321010931C1</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010876C1</common:Text>
+            <common:Text>.9584321010932C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550015054C1</common:Text>
           </common:SpecialServiceRequest>
         </common:SpecialServiceRequests>
       </common:SpecialReqDetails>

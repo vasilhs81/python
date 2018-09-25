@@ -1,0 +1,16 @@
+<SITA_AirDemandTicketRS xmlns="http://sita.aero/SITA_AirDemandTicketRS/3/0" Version="0">
+	<Success/>
+	<BookingReferenceId ID="P1391" Type="14"/>
+	<TicketItemInfo TicketNumber="4321010931" TotalAmount="135.84" Type="eTicket">
+		<PassengerName>
+			<common:GivenName xmlns:common="http://sita.aero/common/1/0">ELTON</common:GivenName>
+			<common:Surname xmlns:common="http://sita.aero/common/1/0">JOHN</common:Surname>
+		</PassengerName>
+	</TicketItemInfo>
+	<TicketItemInfo TicketNumber="4321010932" TotalAmount="135.84" Type="eTicket">
+		<PassengerName>
+			<common:GivenName xmlns:common="http://sita.aero/common/1/0">NINA</common:GivenName>
+			<common:Surname xmlns:common="http://sita.aero/common/1/0">JOHN</common:Surname>
+		</PassengerName>
+	</TicketItemInfo>
+</SITA_AirDemandTicketRS>

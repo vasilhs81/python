@@ -1,0 +1,59 @@
+<OTA_AirBookRQ xmlns="http://sita.aero/SITA_AirBookRQ/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EchoToken="804196" TimeStamp="2018-09-14T09:43:30.221Z" Version="2.001">
+	<POS>
+		<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" ID_Context="Airfare" Type="7"/>
+		</Source>
+	</POS>
+	<AirItinerary>
+		<OriginDestinationOptions>
+			<OriginDestinationOption>
+				<FlightSegment ArrivalDateTime="2018-11-07T06:00:00" DepartureDateTime="2018-11-07T01:00:00" FlightNumber="111" RPH="1">
+					<DepartureAirport LocationCode="AUA"/>
+					<ArrivalAirport LocationCode="CUR"/>
+					<OperatingAirline Code="7I" FlightNumber="111"/>
+					<Equipment AirEquipType="F50"/>
+					<MarketingAirline Code="7I"/>
+					<BookingClassAvails>
+						<BookingClassAvail RPH="1" ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+					</BookingClassAvails>
+				</FlightSegment>
+			</OriginDestinationOption>
+			<OriginDestinationOption>
+				<FlightSegment ArrivalDateTime="2018-11-09T08:15:00" DepartureDateTime="2018-11-09T07:40:00" FlightNumber="401" RPH="2">
+					<DepartureAirport LocationCode="CUR"/>
+					<ArrivalAirport LocationCode="AUA"/>
+					<OperatingAirline Code="7I" FlightNumber="401"/>
+					<Equipment AirEquipType="F50"/>
+					<MarketingAirline Code="7I"/>
+					<BookingClassAvails>
+						<BookingClassAvail RPH="1" ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+					</BookingClassAvails>
+				</FlightSegment>
+			</OriginDestinationOption>
+		</OriginDestinationOptions>
+	</AirItinerary>
+	<TravelerInfo>
+		<AirTraveler PassengerTypeCode="ADT">
+			<PersonName>
+				<NamePrefix>Mr</NamePrefix>
+				<GivenName>Vasilis</GivenName>
+				<Surname>Kasimatis</Surname>
+			</PersonName>
+			<Telephone PhoneLocationType="7" PhoneNumber="3045454545454" PhoneTechType="5"/>
+			<Email>vkasimatis@jrtechnologies.com</Email>
+			<TravelerRefNumber RPH="1"/>
+		</AirTraveler>
+		<AirTraveler PassengerTypeCode="ADT">
+			<PersonName>
+				<NamePrefix>Mrs</NamePrefix>
+				<GivenName>Lena</GivenName>
+				<Surname>Louna</Surname>
+			</PersonName>
+			<TravelerRefNumber RPH="2"/>
+		</AirTraveler>
+		<SpecialReqDetails>
+			<SpecialServiceRequests/>
+		</SpecialReqDetails>
+	</TravelerInfo>
+	<Ticketing TicketType="eTicket"/>
+</OTA_AirBookRQ>

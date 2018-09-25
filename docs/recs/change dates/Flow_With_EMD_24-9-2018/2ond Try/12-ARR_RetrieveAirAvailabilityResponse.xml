@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
   <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
-    <Conversation xmlns="http://sita.aero/hal" id="conv-17q-1537776026669-213" server="10.217.26.218" timestamp="2018-09-24 08:00:26"/>
+    <Conversation xmlns="http://sita.aero/hal" id="conv-16q-1537796817239-225" server="10.217.26.217" timestamp="2018-09-24 13:46:57"/>
   </Header>
   <SOAP-ENV:Body>
     <ARR_RetrieveAirAvailabilityResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -20,7 +20,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </arrivalDateField>
                 <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -40,7 +40,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </departureDateField>
                 <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -87,17 +87,17 @@
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>H</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>8</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>8</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
@@ -132,8 +132,8 @@
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>X</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
-                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                    <b:resBookDesigQuantityField/>
+                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>O</b:resBookDesigCodeField>
@@ -190,7 +190,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </arrivalDateField>
                 <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -210,7 +210,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </departureDateField>
                 <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -267,7 +267,7 @@
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
@@ -360,7 +360,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </arrivalDateField>
                 <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -380,7 +380,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </departureDateField>
                 <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -432,12 +432,12 @@
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>7</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>1</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
@@ -530,7 +530,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </arrivalDateField>
                 <arrivalTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -550,7 +550,7 @@
                   <dateChangeIncrementIndField i:nil="true"/>
                   <dateChangeNbrField i:nil="true"/>
                   <textField xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <b:string>2018-09-30</b:string>
+                    <b:string>2018-10-30</b:string>
                   </textField>
                 </departureDateField>
                 <departureTimeField xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
@@ -597,27 +597,27 @@
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>H</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField/>
-                    <b:resBookDesigStatusCodeField>4</b:resBookDesigStatusCodeField>
-                  </b:BookingClassAvailType>
-                  <b:BookingClassAvailType>
-                    <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField/>
-                    <b:resBookDesigStatusCodeField>3</b:resBookDesigStatusCodeField>
-                  </b:BookingClassAvailType>
-                  <b:BookingClassAvailType>
-                    <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField/>
-                    <b:resBookDesigStatusCodeField>4</b:resBookDesigStatusCodeField>
-                  </b:BookingClassAvailType>
-                  <b:BookingClassAvailType>
-                    <b:resBookDesigCodeField>M</b:resBookDesigCodeField>
                     <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>T</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>L</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>9</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
+                    <b:resBookDesigCodeField>M</b:resBookDesigCodeField>
+                    <b:resBookDesigQuantityField>8</b:resBookDesigQuantityField>
+                    <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
+                  </b:BookingClassAvailType>
+                  <b:BookingClassAvailType>
                     <b:resBookDesigCodeField>W</b:resBookDesigCodeField>
-                    <b:resBookDesigQuantityField>5</b:resBookDesigQuantityField>
+                    <b:resBookDesigQuantityField>3</b:resBookDesigQuantityField>
                     <b:resBookDesigStatusCodeField>1</b:resBookDesigStatusCodeField>
                   </b:BookingClassAvailType>
                   <b:BookingClassAvailType>

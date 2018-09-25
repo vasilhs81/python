@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_AirDemandTicketRS xmlns="http://sita.aero/SITA_AirDemandTicketRS/3/0" xmlns:common="http://sita.aero/common/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0">
+  <Success/>
+  <BookingReferenceId ID="P138F" Type="14"/>
+  <TicketItemInfo TicketNumber="4321010898" TotalAmount="327.25" Type="eTicket">
+    <PassengerName>
+      <common:GivenName>VASILIS</common:GivenName>
+      <common:Surname>KASIMATIS</common:Surname>
+    </PassengerName>
+  </TicketItemInfo>
+  <TicketItemInfo TicketNumber="4321010899" TotalAmount="327.25" Type="eTicket">
+    <PassengerName>
+      <common:GivenName>LENA</common:GivenName>
+      <common:Surname>LOUNA</common:Surname>
+    </PassengerName>
+  </TicketItemInfo>
+</SITA_AirDemandTicketRS>

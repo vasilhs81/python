@@ -5,10 +5,10 @@
 		</common:Source>
 	</ota:POS>
 	<ota:DemandTicketDetail>
-		<ota:BookingReferenceID ID="P1375" Type="14"/>
+		<ota:BookingReferenceID ID="P138F" Type="14"/>
 		<ota:PaymentInfo PaymentType="5">
-			<ota:CreditCardInfo CardCode="VI" CardNumber="4111111111111111" ExpireDate="0519">
-				<ota:CardHolderName>Stylianakis George</ota:CardHolderName>
+			<ota:CreditCardInfo CardCode="VI" CardNumber="4111111111111111" ExpireDate="0522">
+				<ota:CardHolderName>Kasimatis Vasilis</ota:CardHolderName>
 				<ota:CardNumber>
 					<ota:PlainText>4111111111111111</ota:PlainText>
 				</ota:CardNumber>
@@ -19,28 +19,33 @@
 		</ota:PaymentInfo>
 		<ota:PassengerName PassengerTypeCode="ADT" RPH="1">
 			<common:NamePrefix xmlns:common="http://sita.aero/common/1/0">MR</common:NamePrefix>
-			<common:GivenName xmlns:common="http://sita.aero/common/1/0">GEORGE</common:GivenName>
-			<common:Surname xmlns:common="http://sita.aero/common/1/0">STYLIANAKIS</common:Surname>
+			<common:GivenName xmlns:common="http://sita.aero/common/1/0">VASILIS</common:GivenName>
+			<common:Surname xmlns:common="http://sita.aero/common/1/0">KASIMATIS</common:Surname>
+		</ota:PassengerName>
+		<ota:PassengerName PassengerTypeCode="ADT" RPH="2">
+			<common:NamePrefix xmlns:common="http://sita.aero/common/1/0">MRS</common:NamePrefix>
+			<common:GivenName xmlns:common="http://sita.aero/common/1/0">LENA</common:GivenName>
+			<common:Surname xmlns:common="http://sita.aero/common/1/0">LOUNA</common:Surname>
 		</ota:PassengerName>
 		<ota:TPA_Extensions>
 			<ota:TaxProcessing/>
 			<ota:PTC_FareBreakdown PricingSource="Published">
 				<ota:FareBasisCodes>
 					<ota:FareBasisCode>YOW</ota:FareBasisCode>
+					<ota:FareBasisCode>YOW</ota:FareBasisCode>
 				</ota:FareBasisCodes>
 				<ota:PassengerFare>
-					<ota:BaseFare Amount="122.00" CurrencyCode="USD"/>
+					<ota:BaseFare Amount="528" CurrencyCode="AWG"/>
+					<ota:EquivFare Amount="293.00" CurrencyCode="USD"/>
 					<ota:Taxes>
-						<ota:Tax Amount="4.00" CurrencyCode="USD" TaxCode="E9"/>
-						<ota:Tax Amount="9.84" CurrencyCode="USD" TaxCode="PC"/>
+						<ota:Tax Amount="34.25" CurrencyCode="USD" TaxCode="AW"/>
 					</ota:Taxes>
-					<ota:TotalFare Amount="135.84" CurrencyCode="USD"/>
-					<ota:UnstructuredFareCalc FareCalcMode="0">bon 7i cur122.00nuc122.00end roe1.000000</ota:UnstructuredFareCalc>
+					<ota:TotalFare Amount="327.25" CurrencyCode="USD"/>
+					<ota:UnstructuredFareCalc FareCalcMode="0">aua 7i cur146.66 7i aua146.66nuc293.32end roe1.800000</ota:UnstructuredFareCalc>
 					<ota:TPA_Extensions>
 						<ota:SITA_PassengerFareExtension>
 							<ota:TaxBreakdowns>
-								<ota:TaxBreakdown Amount="4.00" CountryCode="BQ" CurrencyCode="USD" TaxCode="E9" TaxName="airport improvement fee"/>
-								<ota:TaxBreakdown Amount="9.84" CountryCode="BQ" CurrencyCode="USD" TaxCode="PC" TaxName="passenger facility charge"/>
+								<ota:TaxBreakdown Amount="34.25" CountryCode="AW" CurrencyCode="USD" TaxCode="AW" TaxName="passenger facility and security charge"/>
 							</ota:TaxBreakdowns>
 						</ota:SITA_PassengerFareExtension>
 					</ota:TPA_Extensions>
@@ -53,6 +58,8 @@
 			</ota:AdditionalSegmentInfos>
 			<ota:AdditionalTicketInfo>
 				<ota:Endorsements>
+					<ota:Endorsement>nonref/nonend</ota:Endorsement>
+					<ota:Endorsement>valid only 7i</ota:Endorsement>
 					<ota:Endorsement>nonref/nonend</ota:Endorsement>
 					<ota:Endorsement>valid only 7i</ota:Endorsement>
 				</ota:Endorsements>

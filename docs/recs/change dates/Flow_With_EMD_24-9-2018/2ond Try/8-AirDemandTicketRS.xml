@@ -1,0 +1,4 @@
+<SITA_AirDemandTicketRS xmlns="http://sita.aero/SITA_AirDemandTicketRS/4/0" Version="0">
+	<Success/>
+	<TicketItemInfo TicketNumber="9584550015054" TotalAmount="40" Type="EMD-A"/>
+</SITA_AirDemandTicketRS>

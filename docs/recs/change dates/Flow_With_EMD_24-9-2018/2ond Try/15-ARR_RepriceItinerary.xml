@@ -4,7 +4,7 @@
 	</soapenv:Header>
 	<soapenv:Body>
 		<tem:ARR_RepriceItinerary>
-			<tem:sessionID>d33f24af-e49b-41e7-99b6-c88cd1d06a39</tem:sessionID>
+			<tem:sessionID>bb0e2cb4-92f5-4cd0-a498-c5a8ba39a60d</tem:sessionID>
 			<tem:ARR_RepriceItineraryRQ>
 				<sita:repriceOptionsField>
 					<sita1:includeNegotiatedFaresField>false</sita1:includeNegotiatedFaresField>
@@ -24,9 +24,10 @@
 				</sita:repriceOptionsField>
 				<sita:ticketingInfoField>
 					<sita1:airlineAccountingCodeField>958</sita1:airlineAccountingCodeField>
-					<sita1:formAndSerialNumberField>4321010875</sita1:formAndSerialNumberField>
+					<sita1:formAndSerialNumberField>4321010931</sita1:formAndSerialNumberField>
 					<sita:residingDatabaseField>7I</sita:residingDatabaseField>
 				</sita:ticketingInfoField>
+
 			</tem:ARR_RepriceItineraryRQ>
 		</tem:ARR_RepriceItinerary>
 	</soapenv:Body>

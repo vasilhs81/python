@@ -1,0 +1,9 @@
+<SITA_RetrieveEMD_ByDocNumber xmlns="http://sita.aero/SITA_RetrieveEMD_ByDocNumber/4/0" xmlns:common="http://sita.aero/common/3/0" xmlns:ticketing="http://sita.aero/ticketing/common/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<POS>
+   <Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+</POS>
+<EMD_Info>
+<ticketing:TicketDocument ResidingDatabase="XS" TicketDocumentNbr="9584550015054"/>
+</EMD_Info>
+</SITA_RetrieveEMD_ByDocNumber>

@@ -5,7 +5,7 @@
     <common:AirItinerary>
       <common:OriginDestinationOptions>
         <common:OriginDestinationOption>
-          <common:FlightSegment ArrivalDateTime="2018-09-29T07:00:00" DepartureDateTime="2018-09-29T06:35:00" FlightNumber="302" RPH="1" Status="HK">
+          <common:FlightSegment ArrivalDateTime="2018-09-30T07:00:00" DepartureDateTime="2018-09-30T06:35:00" FlightNumber="302" RPH="1" Status="HK">
             <common:DepartureAirport LocationCode="BON"/>
             <common:ArrivalAirport LocationCode="CUR"/>
             <common:OperatingAirline Code="7I"/>
@@ -40,11 +40,11 @@
         <common:SpecialServiceRequests>
           <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010875C1</common:Text>
+            <common:Text>.9584321010877C1</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010876C1</common:Text>
+            <common:Text>.9584321010878C1</common:Text>
           </common:SpecialServiceRequest>
         </common:SpecialServiceRequests>
       </common:SpecialReqDetails>

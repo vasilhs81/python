@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
   <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
-    <Conversation xmlns="http://sita.aero/hal" id="conv-17q-1537776028201-234" server="10.217.26.218" timestamp="2018-09-24 08:00:28"/>
+    <Conversation xmlns="http://sita.aero/hal" id="conv-16q-1537796818119-231" server="10.217.26.217" timestamp="2018-09-24 13:46:58"/>
   </Header>
   <SOAP-ENV:Body>
     <ARR_UpdateItineraryResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -12,7 +12,7 @@
               <b:UniqueID_Type>
                 <b:companyNameField i:nil="true"/>
                 <b:iD_ContextField i:nil="true"/>
-                <b:idField>P1375</b:idField>
+                <b:idField>P1391</b:idField>
                 <b:instanceField i:nil="true"/>
                 <b:typeField i:nil="true"/>
                 <b:uRLField i:nil="true"/>
@@ -42,14 +42,14 @@
                   <b:dateChangeIncrementIndField i:nil="true"/>
                   <b:dateChangeNbrField i:nil="true"/>
                   <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <c:string>2018-09-30</c:string>
+                    <c:string>2018-10-30</c:string>
                   </b:textField>
                 </b:arrivalDateField>
                 <b:arrivalTimeField>
                   <b:actualField i:nil="true"/>
                   <b:estimatedField i:nil="true"/>
                   <b:reasonCodeField i:nil="true"/>
-                  <b:scheduledField>07:00:00</b:scheduledField>
+                  <b:scheduledField>17:35:00</b:scheduledField>
                 </b:arrivalTimeField>
                 <b:bookingClassField>
                   <b:FlightInfoDetailsTypeFlightLegInfoBookingClass>
@@ -78,7 +78,7 @@
                   <b:dateChangeIncrementIndField i:nil="true"/>
                   <b:dateChangeNbrField i:nil="true"/>
                   <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                    <c:string>2018-09-30</c:string>
+                    <c:string>2018-10-30</c:string>
                   </b:textField>
                 </b:departureDateField>
                 <b:departureDayField i:nil="true"/>
@@ -89,7 +89,7 @@
                   <b:julianDateOfDepartureField i:nil="true"/>
                   <b:nextAdvisoryTimeField i:nil="true"/>
                   <b:reasonCodeField i:nil="true"/>
-                  <b:scheduledField>06:35:00</b:scheduledField>
+                  <b:scheduledField>17:10:00</b:scheduledField>
                 </b:departureTimeField>
                 <b:eTicketableIndField i:nil="true"/>
                 <b:equipmentField i:nil="true"/>
@@ -103,7 +103,7 @@
                   <b:airAllianceNameField i:nil="true"/>
                   <b:codeField>7I</b:codeField>
                   <b:companyShortNameField i:nil="true"/>
-                  <b:flightNumberField>302</b:flightNumberField>
+                  <b:flightNumberField>306</b:flightNumberField>
                   <b:resBookDesigCodeField i:nil="true"/>
                 </b:operatingAirlineField>
                 <b:passengersCheckInStatusField i:nil="true"/>
@@ -138,7 +138,7 @@
                       <b:rPHField i:nil="true"/>
                       <b:remarkField i:nil="true"/>
                       <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                        <c:string>G.STYLIANAKIS@JRTECHNOLOGIES.COM</c:string>
+                        <c:string>ELTON@JRTLOGIES.COM</c:string>
                       </b:textField>
                     </b:EmailType>
                   </b:emailField>
@@ -148,7 +148,7 @@
                       <b:areaCityCodeField i:nil="true"/>
                       <b:countryAccessCodeField i:nil="true"/>
                       <b:extensionField i:nil="true"/>
-                      <b:phoneNumberField>+37669898989898</b:phoneNumberField>
+                      <b:phoneNumberField>+3034343434344</b:phoneNumberField>
                       <b:phoneTypeField>1</b:phoneTypeField>
                       <b:remarkField i:nil="true"/>
                     </b:TelephoneBaseType>
@@ -161,7 +161,7 @@
               <b:partNumberField i:nil="true"/>
               <b:passengerNameField>
                 <b:givenNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                  <c:string>BILL</c:string>
+                  <c:string>ELTON</c:string>
                 </b:givenNameField>
                 <b:middleNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
                 <b:namePrefixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -170,7 +170,7 @@
                 <b:nameSuffixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
                 <b:nameTitleField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
                 <b:nameTypeField i:nil="true"/>
-                <b:surnameField>MAVERIK</b:surnameField>
+                <b:surnameField>JOHN</b:surnameField>
                 <b:surnamePrefixField i:nil="true"/>
               </b:passengerNameField>
               <b:passengerRPHField i:nil="true"/>
@@ -184,7 +184,7 @@
               <b:ticketingInfoField>
                 <b:airlineAccountingCodeField i:nil="true"/>
                 <b:couponInfoField i:nil="true"/>
-                <b:formAndSerialNumberField>4321010875</b:formAndSerialNumberField>
+                <b:formAndSerialNumberField>4321010931</b:formAndSerialNumberField>
                 <b:paperTicketIndField i:nil="true"/>
                 <b:rPHField i:nil="true"/>
                 <b:residingDatabaseField i:nil="true"/>
@@ -193,13 +193,31 @@
             <b:PassengerNameRecordTypePassengerInfo>
               <b:bookingInfoField i:nil="true"/>
               <b:commentField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
-              <b:contactInfoField i:nil="true"/>
+              <b:contactInfoField>
+                <b:PassengerInfoBaseTypeContactInfo>
+                  <b:addressField i:nil="true"/>
+                  <b:contactTypeField i:nil="true"/>
+                  <b:emailField i:nil="true"/>
+                  <b:rPHField i:nil="true"/>
+                  <b:telephoneField>
+                    <b:TelephoneBaseType>
+                      <b:areaCityCodeField i:nil="true"/>
+                      <b:countryAccessCodeField i:nil="true"/>
+                      <b:extensionField i:nil="true"/>
+                      <b:phoneNumberField>EFINED</b:phoneNumberField>
+                      <b:phoneTypeField>1</b:phoneTypeField>
+                      <b:remarkField i:nil="true"/>
+                    </b:TelephoneBaseType>
+                  </b:telephoneField>
+                  <b:allPaxIndField>false</b:allPaxIndField>
+                </b:PassengerInfoBaseTypeContactInfo>
+              </b:contactInfoField>
               <b:hasInfantIndicatorField i:nil="true"/>
               <b:infantIndexNumberField i:nil="true"/>
               <b:partNumberField i:nil="true"/>
               <b:passengerNameField>
                 <b:givenNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                  <c:string>GEORGE</c:string>
+                  <c:string>NINA</c:string>
                 </b:givenNameField>
                 <b:middleNameField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
                 <b:namePrefixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -208,7 +226,7 @@
                 <b:nameSuffixField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
                 <b:nameTitleField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true"/>
                 <b:nameTypeField i:nil="true"/>
-                <b:surnameField>STYLIANAKIS</b:surnameField>
+                <b:surnameField>JOHN</b:surnameField>
                 <b:surnamePrefixField i:nil="true"/>
               </b:passengerNameField>
               <b:passengerRPHField i:nil="true"/>
@@ -222,7 +240,7 @@
               <b:ticketingInfoField>
                 <b:airlineAccountingCodeField i:nil="true"/>
                 <b:couponInfoField i:nil="true"/>
-                <b:formAndSerialNumberField>4321010876</b:formAndSerialNumberField>
+                <b:formAndSerialNumberField>4321010932</b:formAndSerialNumberField>
                 <b:paperTicketIndField i:nil="true"/>
                 <b:rPHField i:nil="true"/>
                 <b:residingDatabaseField i:nil="true"/>

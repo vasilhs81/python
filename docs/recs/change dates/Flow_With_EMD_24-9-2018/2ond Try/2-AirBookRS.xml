@@ -1,0 +1,42 @@
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" Version="0">
+	<Success/>
+	<AirReservation BookingReferenceID="P1391">
+		<common:AirItinerary xmlns:common="http://sita.aero/common/1/0">
+			<common:OriginDestinationOptions>
+				<common:OriginDestinationOption>
+					<common:FlightSegment ArrivalDateTime="2018-10-29T17:35:00" DepartureDateTime="2018-10-29T17:10:00" FlightNumber="306" RPH="1" Status="HK">
+						<common:DepartureAirport LocationCode="BON"/>
+						<common:ArrivalAirport LocationCode="CUR"/>
+						<common:OperatingAirline Code="7I"/>
+						<common:BookingClassAvails>
+							<common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+						</common:BookingClassAvails>
+						<common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+					</common:FlightSegment>
+				</common:OriginDestinationOption>
+			</common:OriginDestinationOptions>
+		</common:AirItinerary>
+		<common:TravelerInfo xmlns:common="http://sita.aero/common/1/0">
+			<common:AirTraveler PassengerTypeCode="ADT">
+				<common:PersonName>
+					<common:NamePrefix>MR</common:NamePrefix>
+					<common:GivenName>ELTON</common:GivenName>
+					<common:Surname>JOHN</common:Surname>
+				</common:PersonName>
+				<common:Telephone FormattedInd="false" PhoneNumber="+3034343434344" PhoneTechType="5"/>
+				<common:Email>ELTON@JRTLOGIES.COM</common:Email>
+				<common:TravelerRefNumber RPH="1"/>
+			</common:AirTraveler>
+			<common:AirTraveler PassengerTypeCode="ADT">
+				<common:PersonName>
+					<common:NamePrefix>MR</common:NamePrefix>
+					<common:GivenName>NINA</common:GivenName>
+					<common:Surname>JOHN</common:Surname>
+				</common:PersonName>
+				<common:Telephone FormattedInd="false" LocationCode="UND" PhoneNumber="EFINED" PhoneTechType="5"/>
+				<common:TravelerRefNumber RPH="2"/>
+			</common:AirTraveler>
+		</common:TravelerInfo>
+		<common:Ticketing xmlns:common="http://sita.aero/common/1/0" TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1 2"/>
+	</AirReservation>
+</OTA_AirBookRS>

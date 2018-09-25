@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RetrieveTicketsByRecordLocatorResponse xmlns="http://sita.aero/SITA_RetrieveTicketsByRecordLocatorResponse/5/0" xmlns:common="http://sita.aero/common/4/0" xmlns:fares="http://sita.aero/fares/common/5/0" xmlns:ticketing="http://sita.aero/ticketing/common/4/0">
+  <Success/>
+  <FlightInfoDetails>
+    <common:FlightLegInfo FlightStatus="OK" RPH="1" SequenceNumber="1" StopOverIndicator="O">
+      <common:DepartureAirport LocationCode="BON"/>
+      <common:ArrivalAirport LocationCode="CUR"/>
+      <common:MarketingAirlines>
+        <common:MarketingAirline Code="7I" FlightNumber="306" ResBookDesigCode="Y"/>
+      </common:MarketingAirlines>
+      <common:DepartureDate>2018-10-30</common:DepartureDate>
+      <common:DepartureTime Scheduled="17:10:00"/>
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P1391"/>
+      </common:BookingInfo>
+    </common:FlightLegInfo>
+  </FlightInfoDetails>
+  <PassengerInfos>
+    <PassengerInfo RPH="1">
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P1391"/>
+      </common:BookingInfo>
+      <common:PassengerName>
+        <common:GivenName>ELTONMR</common:GivenName>
+        <common:Surname>JOHN</common:Surname>
+      </common:PassengerName>
+      <common:PassengerType Code="ADT"/>
+      <common:Comment>ADT</common:Comment>
+      <TicketingInfo AirlineAccountingCode="958" DateOfIssue="2018-09-24" Destination="CUR" FormAndSerialNumber="4321010933" IssueCity="MIA" IssueIATA="73704444" IssuingAgentType="T" Origin="BON" OriginalDateofIssue="2018-09-24" ReservationsCityCode="WWW001" ResidingDatabase="7I">
+        <common:CouponInfo CouponNumber="1" FlightRPH="1" Status="OPEN FOR USE"/>
+        <common:TicketTotal Amount="135.84" CurrencyCode="USD" FareAmountType="ADC"/>
+      </TicketingInfo>
+      <OriginInformation LocationCode="BON"/>
+      <DestinationInformation LocationCode="CUR"/>
+      <ExchangedDocumentInfo TicketDocumentNbr="9584321010931">
+        <CouponInfo CouponNumber="1"/>
+      </ExchangedDocumentInfo>
+    </PassengerInfo>
+    <PassengerInfo RPH="2">
+      <common:BookingInfo>
+        <common:BookingReferenceID ID="P1391"/>
+      </common:BookingInfo>
+      <common:PassengerName>
+        <common:GivenName>NINAMR</common:GivenName>
+        <common:Surname>JOHN</common:Surname>
+      </common:PassengerName>
+      <common:PassengerType Code="ADT"/>
+      <common:Comment>ADT</common:Comment>
+      <TicketingInfo AirlineAccountingCode="958" DateOfIssue="2018-09-24" Destination="CUR" FormAndSerialNumber="4321010934" IssueCity="MIA" IssueIATA="73704444" IssuingAgentType="T" Origin="BON" OriginalDateofIssue="2018-09-24" ReservationsCityCode="WWW001" ResidingDatabase="7I">
+        <common:CouponInfo CouponNumber="1" FlightRPH="1" Status="OPEN FOR USE"/>
+        <common:TicketTotal Amount="135.84" CurrencyCode="USD" FareAmountType="ADC"/>
+      </TicketingInfo>
+      <OriginInformation LocationCode="BON"/>
+      <DestinationInformation LocationCode="CUR"/>
+      <ExchangedDocumentInfo TicketDocumentNbr="9584321010932">
+        <CouponInfo CouponNumber="1"/>
+      </ExchangedDocumentInfo>
+    </PassengerInfo>
+  </PassengerInfos>
+  <PTC_FareBreakdowns>
+    <PTC_FareBreakdown PassengerRPHList="1 2">
+      <fares:FareBasisCodes>
+        <fares:FareBasisCode FlightRPH="1" NotValidAfter="2018-10-30" NotValidBefore="2018-10-30">YOW</fares:FareBasisCode>
+      </fares:FareBasisCodes>
+      <fares:PassengerFare>
+        <fares:TotalFare Amount="135.84" CurrencyCode="USD" FareAmountType="ADC"/>
+        <fares:BaseFare Amount="122.00" CurrencyCode="USD"/>
+        <fares:Taxes>
+          <fares:Tax Amount="4.00" CurrencyCode="USD" PaidIndicator="true" TaxCode="E9"/>
+          <fares:Tax Amount="9.84" CurrencyCode="USD" PaidIndicator="true" TaxCode="PC"/>
+        </fares:Taxes>
+        <fares:UnstructuredFareCalc FareCalcMode="0">BON 7I CUR122.00YOW NUC122.00END ROE1.000000</fares:UnstructuredFareCalc>
+        <fares:FareBaggageAllowances>
+          <fares:FareBaggageAllowance FlightRPH="1" UnitOfMeasure="K" UnitOfMeasureQuantity="20"/>
+        </fares:FareBaggageAllowances>
+      </fares:PassengerFare>
+    </PTC_FareBreakdown>
+  </PTC_FareBreakdowns>
+  <Endorsements>
+    <TicketEndorsements NonEndorsableIndicator="N" PassengerRPHList="1 2">
+      <common:Endorsement>NONREF/NONEND VALID ONLY 7I</common:Endorsement>
+    </TicketEndorsements>
+  </Endorsements>
+  <OriginalIssueInfos>
+    <OriginalIssueInfo DateOfIssue="2018-09-24" IssueCity="MIA" IssueIATA="73704444" PassengerRPHList="1" TicketDocumentNbr="9584321010931"/>
+    <OriginalIssueInfo DateOfIssue="2018-09-24" IssueCity="MIA" IssueIATA="73704444" PassengerRPHList="2" TicketDocumentNbr="9584321010932"/>
+  </OriginalIssueInfos>
+  <PaymentDetails>
+    <PaymentDetail PassengerRPHList="1" PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI" CardNumber="XXXXXXXXXXXX1111" ExpireDate="0323"/>
+      <ticketing:PaymentAmount Amount="0" ApprovalCode="NULL" CurrencyCode="USD"/>
+    </PaymentDetail>
+    <PaymentDetail PassengerRPHList="2" PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI" CardNumber="XXXXXXXXXXXX1111" ExpireDate="1223"/>
+      <ticketing:PaymentAmount Amount="0" ApprovalCode="NULL" CurrencyCode="USD"/>
+    </PaymentDetail>
+  </PaymentDetails>
+  <OriginalDocPaymentDetails>
+    <OriginalDocPaymentDetail PassengerRPHList="1" PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI"/>
+      <ticketing:PaymentAmount Amount="135.84" CurrencyCode="USD"/>
+    </OriginalDocPaymentDetail>
+    <OriginalDocPaymentDetail PassengerRPHList="2" PaymentType="CC">
+      <ticketing:PaymentCard CardCode="VI"/>
+      <ticketing:PaymentAmount Amount="135.84" CurrencyCode="USD"/>
+    </OriginalDocPaymentDetail>
+  </OriginalDocPaymentDetails>
+</SITA_RetrieveTicketsByRecordLocatorResponse>

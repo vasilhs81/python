@@ -4,7 +4,7 @@
 	</soapenv:Header>
 	<soapenv:Body>
 		<tem:ARR_UpdateItinerary>
-			<tem:sessionID>d33f24af-e49b-41e7-99b6-c88cd1d06a39</tem:sessionID>
+			<tem:sessionID>bb0e2cb4-92f5-4cd0-a498-c5a8ba39a60d</tem:sessionID>
 			<tem:ARR_UpdateItineraryRQ>
 				<sita:segmentsToAddField xsi:nil="true"/>
 				<sita:segmentsToChangeField>
@@ -18,10 +18,10 @@
 									<sita:departureAirportField>
 										<sita:locationCodeField>BON</sita:locationCodeField>
 									</sita:departureAirportField>
-									<sita:departureDateField>2018-09-29</sita:departureDateField>
+									<sita:departureDateField>2018-10-29</sita:departureDateField>
 									<sita:marketingAirlineField>
 										<sita:codeField>7I</sita:codeField>
-										<sita:flightNumberField>302</sita:flightNumberField>
+										<sita:flightNumberField>306</sita:flightNumberField>
 									</sita:marketingAirlineField>
 									<sita:rPHField>1</sita:rPHField>
 								</sita:flightLegInfoField>
@@ -36,10 +36,10 @@
 									<sita:departureAirportField>
 										<sita:locationCodeField>BON</sita:locationCodeField>
 									</sita:departureAirportField>
-									<sita:departureDateField>2018-09-30</sita:departureDateField>
+									<sita:departureDateField>2018-10-30</sita:departureDateField>
 									<sita:marketingAirlineField>
 										<sita:codeField>7I</sita:codeField>
-										<sita:flightNumberField>302</sita:flightNumberField>
+										<sita:flightNumberField>306</sita:flightNumberField>
 									</sita:marketingAirlineField>
 									<sita:rPHField>2</sita:rPHField>
 									<sita:bookingClassAvailField>
@@ -60,11 +60,11 @@
 						<!--Zero or more repetitions:-->
 						<sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
 							<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
-							<sita2:formAndSerialNumberField>4321010875</sita2:formAndSerialNumberField>
+							<sita2:formAndSerialNumberField>4321010931</sita2:formAndSerialNumberField>
 						</sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
 						<sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
 							<sita2:airlineAccountingCodeField>958</sita2:airlineAccountingCodeField>
-							<sita2:formAndSerialNumberField>4321010876</sita2:formAndSerialNumberField>
+							<sita2:formAndSerialNumberField>4321010932</sita2:formAndSerialNumberField>
 						</sita:ARR_UpdateItineraryTicketingInfosTicketingInfo>
 
 					</sita:ticketingInfoField>
@@ -73,4 +73,3 @@
 		</tem:ARR_UpdateItinerary>
 	</soapenv:Body>
 </soapenv:Envelope>
-

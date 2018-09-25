@@ -1,0 +1,30 @@
+<SITA_AirDemandTicketRQ xmlns="http://sita.aero/SITA_AirDemandTicketRQ/4/0" xmlns:common="http://sita.aero/common/2/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CorrelationID="ID1" RetransmissionIndicator="true" Target="Test" Version="1.0">
+	<POS>
+		<common:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<RequestorID ID="73704444" ID_Context="Airfare" Type="7"/>
+		</common:Source>
+	</POS>
+	<DemandTicketDetail>
+		<MessageFunction Function="EMD"/>
+		<BookingReferenceID ID="P1389" Type="14"/>
+		<PaymentInfo PaymentType="1"/>
+		<PassengerNameReference/>
+		<PassengerName PassengerTypeCode="ADT">
+			<common:NamePrefix>MR</common:NamePrefix>
+			<common:GivenName>VASILIS</common:GivenName>
+			<common:Surname>KASIMATIS</common:Surname>
+		</PassengerName>
+		<EMD_Info EMD_Type="EMD-A" TotalFltSegQty="1">
+			<OriginDestination DestinationCityCode="CUR" OriginCityCode="AUA"/>
+			<Endorsement Info="NON END/CHANGE_FEE_MAY_APPLY"/>
+			<BaseFare Amount="40" CurrencyCode="USD" DecimalPlaces="2"/>
+			<FareInfo NonRefundableInd="false"/>
+			<ResponseComment>PAX1 SVC00039 OD1</ResponseComment>
+			<TicketDocument InConnectionDocNbr="9584321010892" Type="EMD">
+				<CouponInfo Currency="USD" DateOfService="2018-11-07" InConnectionNbr="1" Value="40">
+					<ReasonForIssuance Code="C" Description="CHECKED BAG SECOND" SubCode="0CD"/>
+				</CouponInfo>
+			</TicketDocument>
+		</EMD_Info>
+	</DemandTicketDetail>
+</SITA_AirDemandTicketRQ>

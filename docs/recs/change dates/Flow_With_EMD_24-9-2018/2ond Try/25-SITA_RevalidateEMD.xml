@@ -1,0 +1,19 @@
+<n1:SITA_RevalidateEMD Version="4.0.0" xmlns:common="http://sita.aero/common/4/0" xmlns:n1="http://sita.aero/SITA_RevalidateEMD/5/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <n1:POS>
+		<common:Source AgentDutyCode="41"
+              AgentSine="906/1234A"
+              AirlineVendorID="7I"
+              AirportCode="MIA"
+              ERSP_UserID="NDC/9NDC7I"
+              ISOCountry="US"
+              PseudoCityCode="WWW001">
+			<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+			<!-- <common:RequestorID ID="73704444" Type="5"/>   -->
+		</common:Source>	  
+
+	</n1:POS>
+	<n1:TicketDocument TicketDocumentNbr="9584550015054" ResidingDatabase="XS">
+		
+	</n1:TicketDocument>
+</n1:SITA_RevalidateEMD>
+

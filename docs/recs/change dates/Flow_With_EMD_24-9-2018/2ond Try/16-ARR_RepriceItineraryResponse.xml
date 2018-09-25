@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
   <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
-    <Conversation xmlns="http://sita.aero/hal" id="conv-17q-1537776028994-257" server="10.217.26.218" timestamp="2018-09-24 08:00:28"/>
+    <Conversation xmlns="http://sita.aero/hal" id="conv-13q-1537796820549-205" server="10.217.26.214" timestamp="2018-09-24 13:47:00"/>
   </Header>
   <SOAP-ENV:Body>
     <ARR_RepriceItineraryResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -19,7 +19,7 @@
                 <b:dateChangeIncrementIndField i:nil="true"/>
                 <b:dateChangeNbrField i:nil="true"/>
                 <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                  <c:string>2018-09-30</c:string>
+                  <c:string>2018-10-30</c:string>
                 </b:textField>
               </b:arrivalDateField>
               <b:arrivalTimeField>
@@ -27,7 +27,7 @@
                 <b:estimatedField i:nil="true"/>
                 <b:nextAdvisoryTimeField i:nil="true"/>
                 <b:reasonCodeField i:nil="true"/>
-                <b:scheduledField>07:00:00</b:scheduledField>
+                <b:scheduledField>17:35:00</b:scheduledField>
               </b:arrivalTimeField>
               <b:departureAirportField>
                 <b:gateField i:nil="true"/>
@@ -39,7 +39,7 @@
                 <b:dateChangeIncrementIndField i:nil="true"/>
                 <b:dateChangeNbrField i:nil="true"/>
                 <b:textField xmlns:c="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-                  <c:string>2018-09-30</c:string>
+                  <c:string>2018-10-30</c:string>
                 </b:textField>
               </b:departureDateField>
               <b:departureTimeField>
@@ -47,7 +47,7 @@
                 <b:estimatedField i:nil="true"/>
                 <b:nextAdvisoryTimeField i:nil="true"/>
                 <b:reasonCodeField i:nil="true"/>
-                <b:scheduledField>06:35:00</b:scheduledField>
+                <b:scheduledField>17:10:00</b:scheduledField>
                 <b:boardingField i:nil="true"/>
                 <b:julianDateOfDepartureField i:nil="true"/>
               </b:departureTimeField>
@@ -57,7 +57,7 @@
                   <b:airAllianceNameField i:nil="true"/>
                   <b:codeField>7I</b:codeField>
                   <b:companyShortNameField i:nil="true"/>
-                  <b:flightNumberField>302</b:flightNumberField>
+                  <b:flightNumberField>306</b:flightNumberField>
                   <b:resBookDesigCodeField>Y</b:resBookDesigCodeField>
                 </b:OperatingAirlineType>
               </b:marketingAirlinesField>

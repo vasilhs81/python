@@ -2,5 +2,5 @@
     <ns:POS>
         <ns1:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"></ns1:Source>
     </ns:POS>
-    <ns:UniqueID ID="P1375" Type="0"></ns:UniqueID>
+    <ns:UniqueID ID="P1391" Type="0"></ns:UniqueID>
 </ns:OTA_ReadRQ>
