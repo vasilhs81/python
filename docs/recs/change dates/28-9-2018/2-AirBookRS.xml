@@ -1,0 +1,33 @@
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" Version="0">
+	<Success/>
+	<AirReservation BookingReferenceID="P16HS">
+		<common:AirItinerary xmlns:common="http://sita.aero/common/1/0">
+			<common:OriginDestinationOptions>
+				<common:OriginDestinationOption>
+					<common:FlightSegment ArrivalDateTime="2018-10-09T14:30:00" DepartureDateTime="2018-10-09T13:35:00" FlightNumber="488" RPH="1" Status="HK">
+						<common:DepartureAirport LocationCode="AUA"/>
+						<common:ArrivalAirport LocationCode="CUR"/>
+						<common:OperatingAirline Code="7I"/>
+						<common:BookingClassAvails>
+							<common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+						</common:BookingClassAvails>
+						<common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+					</common:FlightSegment>
+				</common:OriginDestinationOption>
+			</common:OriginDestinationOptions>
+		</common:AirItinerary>
+		<common:TravelerInfo xmlns:common="http://sita.aero/common/1/0">
+			<common:AirTraveler PassengerTypeCode="ADT">
+				<common:PersonName>
+					<common:NamePrefix>MR</common:NamePrefix>
+					<common:GivenName>JOHAN</common:GivenName>
+					<common:Surname>ADAMS</common:Surname>
+				</common:PersonName>
+				<common:Telephone FormattedInd="false" PhoneNumber="+30334334343434" PhoneTechType="5"/>
+				<common:Email>V.KASIMATIS@JRTECHNOLOGIES.COM</common:Email>
+				<common:TravelerRefNumber RPH="1"/>
+			</common:AirTraveler>
+		</common:TravelerInfo>
+		<common:Ticketing xmlns:common="http://sita.aero/common/1/0" TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1"/>
+	</AirReservation>
+</OTA_AirBookRS>
