@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:sita="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:sita1="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<hal:Config subscriberId="7I" xmlns:hal="http://sita.aero/hal"/>
+	</soapenv:Header>
+	<soapenv:Body>
+		<tem:ARR_RepriceItinerary>
+			<tem:sessionID>393ebc79-aa63-4aad-b68d-4d0cc25342d6</tem:sessionID>
+			<tem:ARR_RepriceItineraryRQ>
+				<sita:repriceOptionsField>
+					<sita1:includeNegotiatedFaresField>false</sita1:includeNegotiatedFaresField>
+					<sita1:includeNegotiatedFaresFieldSpecified>false</sita1:includeNegotiatedFaresFieldSpecified>
+					<sita1:negotiatedFareCodeField xsi:nil="true"/>
+					<sita1:negotiatedFaresOnlyField>false</sita1:negotiatedFaresOnlyField>
+					<sita1:negotiatedFaresOnlyFieldSpecified>true</sita1:negotiatedFaresOnlyFieldSpecified>
+					<sita1:passengerTypeField xsi:nil="true"/>
+					<sita1:pricingSourceField>Both</sita1:pricingSourceField>
+					<sita1:pricingSourceFieldSpecified>false</sita1:pricingSourceFieldSpecified>
+					<sita1:waiverField xsi:nil="true"/>
+					<sita:currencyConversionCodeField xsi:nil="true"/>
+					<sita:ignoreTaxItemsField xsi:nil="true"/>
+					<sita:overrideInterlineAgreementField>false</sita:overrideInterlineAgreementField>
+					<sita:taxExemptItemsField xsi:nil="true"/>
+					<sita:tourCodesField xsi:nil="true"/>
+				</sita:repriceOptionsField>
+				<sita:ticketingInfoField>
+					<sita1:airlineAccountingCodeField>958</sita1:airlineAccountingCodeField>
+					<sita1:formAndSerialNumberField>4321010995</sita1:formAndSerialNumberField>
+					<sita:residingDatabaseField>7I</sita:residingDatabaseField>
+				</sita:ticketingInfoField>
+
+			</tem:ARR_RepriceItineraryRQ>
+		</tem:ARR_RepriceItinerary>
+	</soapenv:Body>
+</soapenv:Envelope>

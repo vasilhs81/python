@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
   <Success/>
-  <AirReservation BookingReferenceID="P161D">
+  <AirReservation BookingReferenceID="P1664">
     <common:AirItinerary>
       <common:OriginDestinationOptions>
         <common:OriginDestinationOption>
@@ -90,59 +90,51 @@
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010938C1</common:Text>
+            <common:Text>.INF9584321010989C1</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010938C2</common:Text>
+            <common:Text>.INF9584321010989C2</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010938C3</common:Text>
+            <common:Text>.INF9584321010989C3</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.9584321010938C4</common:Text>
-          </common:SpecialServiceRequest>
-          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
-            <common:Airline Code="7I"/>
-            <common:Text>.9584321010939C1</common:Text>
-          </common:SpecialServiceRequest>
-          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
-            <common:Airline Code="7I"/>
-            <common:Text>.9584321010939C2</common:Text>
-          </common:SpecialServiceRequest>
-          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
-            <common:Airline Code="7I"/>
-            <common:Text>.9584321010939C3</common:Text>
-          </common:SpecialServiceRequest>
-          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
-            <common:Airline Code="7I"/>
-            <common:Text>.9584321010939C4</common:Text>
+            <common:Text>.INF9584321010989C4</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.INF9584321010940C1</common:Text>
+            <common:Text>.9584321010990C1</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.INF9584321010940C2</common:Text>
+            <common:Text>.9584321010990C2</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.INF9584321010940C3</common:Text>
+            <common:Text>.9584321010990C3</common:Text>
           </common:SpecialServiceRequest>
           <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
             <common:Airline Code="7I"/>
-            <common:Text>.INF9584321010940C4</common:Text>
+            <common:Text>.9584321010990C4</common:Text>
           </common:SpecialServiceRequest>
-          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="1">
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
             <common:Airline Code="7I"/>
-            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550015058C1</common:Text>
+            <common:Text>.9584321010991C1</common:Text>
           </common:SpecialServiceRequest>
-          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="1">
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
             <common:Airline Code="7I"/>
-            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550015058C2</common:Text>
+            <common:Text>.9584321010991C2</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="3" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010991C3</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="4" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321010991C4</common:Text>
           </common:SpecialServiceRequest>
         </common:SpecialServiceRequests>
         <common:OtherServiceInformations>

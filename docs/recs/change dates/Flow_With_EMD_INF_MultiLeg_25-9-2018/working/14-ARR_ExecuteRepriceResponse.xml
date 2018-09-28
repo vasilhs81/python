@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Conversation xmlns="http://sita.aero/hal" id="conv-16q-1537953401233-223" server="10.217.26.217" timestamp="2018-09-26 09:16:41"/>
+  </Header>
+  <SOAP-ENV:Body>
+    <ARR_ExecuteRepriceResponse xmlns="http://tempuri.org/" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+      <ReturnData xmlns:a="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:errorsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+        <a:responseStatusField>0</a:responseStatusField>
+        <a:ticketItemInfoField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+          <b:airlineAccountingCodeField i:nil="true"/>
+          <b:formAndSerialNumberField>4321010993</b:formAndSerialNumberField>
+          <b:penaltyTotalField i:nil="true"/>
+          <b:settlementAuthCodeField i:nil="true"/>
+          <b:ticketTotalField>
+            <b:amountField>NO ADC</b:amountField>
+            <b:currencyCodeField i:nil="true"/>
+            <b:decimalPlacesField i:nil="true"/>
+          </b:ticketTotalField>
+          <b:totalAmountCurrencyField i:nil="true"/>
+          <b:totalAmountField>NO ADC</b:totalAmountField>
+          <b:transactionAmountField i:nil="true"/>
+          <b:transactionTotalField>
+            <b:amountField>0</b:amountField>
+            <b:currencyCodeField>USD</b:currencyCodeField>
+            <b:decimalPlacesField i:nil="true"/>
+          </b:transactionTotalField>
+          <b:typeField>eTicket</b:typeField>
+        </a:ticketItemInfoField>
+        <a:warningsField xmlns:b="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" i:nil="true"/>
+      </ReturnData>
+    </ARR_ExecuteRepriceResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
