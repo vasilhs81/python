@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderRetrieveRQ EchoToken="779971" TimeStamp="2018-07-20T07:11:54.241Z" Version="IATA2016.2" TransactionIdentifier="779971" xmlns="http://www.iata.org/IATA/EDIST">
+	<PointOfSale id="f0uZ2-Jp55B-70YgW-OmEa6" AgentDutyCode="41">
+		<Location>
+			<CountryCode>US</CountryCode>
+			<CityCode>ATL</CityCode>
+		</Location>
+		<TouchPoint>
+			<Device>
+				<Code>2</Code>
+				<Definition>Web Browser</Definition>
+				<Position>
+					<Latitude>38.89756</Latitude>
+					<Longitude>-77.03650</Longitude>
+					<NAC>8KD7V PGGM0</NAC>
+				</Position>
+			</Device>
+		</TouchPoint>
+	</PointOfSale>
+	<Document>
+		<Name>NDC-Gateway</Name>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>IBE</Name>
+				<Type>TravelAgency</Type>
+				<PseudoCity>MIA501</PseudoCity>
+				<IATA_Number>35200421</IATA_Number>
+				<AgencyID>906/1234A</AgencyID>
+				<AgentUser>
+					<AgentUserID>1775593559674963</AgentUserID>
+				</AgentUser>
+			</TravelAgencySender>
+		</Sender>
+		<Participants>
+			<Participant>
+				<EnabledSystemParticipant SequenceNumber="1">
+					<SystemID>1775593559674963</SystemID>
+				</EnabledSystemParticipant>
+			</Participant>
+		</Participants>
+		<Recipient>
+			<MarketingCarrierRecipient>
+				<AirlineID>7I</AirlineID>
+			</MarketingCarrierRecipient>
+		</Recipient>
+	</Party>
+	<Query>
+		<Filters>
+			<OrderID Owner="7I">D12347148</OrderID>
+		</Filters>
+	</Query>
+</OrderRetrieveRQ>

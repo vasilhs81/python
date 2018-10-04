@@ -1,0 +1,25 @@
+<n1:SITA_RevalidateEMD xmlns:common="http://sita.aero/common/4/1" xmlns:n1="http://sita.aero/SITA_RevalidateEMD/5/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sita.aero/SITA_RevalidateEMD/5/1 ../../../../../../Dev/hal_sws_4_1/dev/client_interfaces/xsd/hal/tkt/SITA_RevalidateEMD.xsd">
+       <n1:POS>
+              <common:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" PseudoCityCode="WWW001">
+                     <common:RequestorID ID="73704444" Type="5"/>
+              </common:Source>
+       </n1:POS>
+       <n1:FlightInfoDetails>
+              <common:FlightLegInfo FlightStatus="HK" RPH="1">
+                     <common:DepartureAirport LocationCode="AUA"/>
+                     <common:ArrivalAirport LocationCode="CUR"/>
+                     <common:OperatingAirline Code="7I" FlightNumber="902" ResBookDesigCode="Y"/>
+                     <common:DepartureDate>2019-01-03</common:DepartureDate>
+                     <common:DepartureTime Scheduled="13:35:00"/>
+                     <common:ArrivalDate>2019-01-03</common:ArrivalDate>
+                     <common:ArrivalTime Scheduled="14:10:00"/>
+                     <common:BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+              </common:FlightLegInfo>
+       </n1:FlightInfoDetails>
+       <n1:TicketDocument TicketDocumentNbr="9584550015588" ResidingDatabase="7I">
+              <n1:CouponInfo CouponNumber="1" DateOfService="2019-01-03"/>
+       </n1:TicketDocument>
+       <n1:BookingInfo>
+              <common:BookingReferenceID ID="P16T7"/>
+       </n1:BookingInfo>
+</n1:SITA_RevalidateEMD>

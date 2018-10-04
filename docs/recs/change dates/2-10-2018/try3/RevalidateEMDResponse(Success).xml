@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RevalidateEMDResponse xmlns="http://sita.aero/SITA_RevalidateEMD/5/1" xmlns:common="http://sita.aero/common/4/1" xmlns:ticketing="http://sita.aero/ticketing/common/4/1">
+  <Success/>
+</SITA_RevalidateEMDResponse>

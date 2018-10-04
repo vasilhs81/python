@@ -2568,9 +2568,17 @@ Map<String, List<String>> requestHeaders = (Map<String, List<String>>) ((Binding
 ///////////////////////////////////////sum bigdecimals using java streams
 BigDecimal penaltyAmount = offerItem.getPrice().getFeeList().stream().map(a->a.getAmount().getValue()).reduce(BigDecimal.ZERO,BigDecimal::add).get();                    
 ////////
- try {
-	System.out.println(
-		CommonUtils.convertObjectToXml(retrieveRefundDetails,org.datacontract.schemas._2004._07.sita_services.ARRRetrieveRefundDetails.class)
-		);
-                } catch (Exception ex) {}
+ try {System.out.println(CommonUtils.convertObjectToXml(retrieveRefundDetails,org.datacontract.schemas._2004._07.sita_services.ARRRetrieveRefundDetails.class));} catch (Exception ex) {}
 //////////////////////                
+private final static Map<String, Map<String, String>> responseIdToSessionIdMap = Collections.synchronizedMap(createLRUMap(MAX_SESSION_ENTRIES));
+
+    public static <K, V> Map<K, V> createLRUMap(final int maxEntries) {
+        return new java.util.LinkedHashMap<K,V> (maxEntries*10/7, 0.7f, true) {
+            @Override
+            protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+                return size() > maxEntries;
+            }
+        };
+    }
+    
+

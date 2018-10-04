@@ -1,0 +1,6 @@
+<ns:OTA_ReadRQ Target="Test" Version="1.0" xmlns:ns="http://sita.aero/SITA_ReadRQ/3/0" xmlns:ns1="http://sita.aero/common/1/0">
+    <ns:POS>
+        <ns1:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"></ns1:Source>
+    </ns:POS>
+    <ns:UniqueID ID="P169E" Type="0"></ns:UniqueID>
+</ns:OTA_ReadRQ>
