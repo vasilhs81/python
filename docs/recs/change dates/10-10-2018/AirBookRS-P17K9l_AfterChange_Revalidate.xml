@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<OTA_AirBookRS xmlns="http://sita.aero/SITA_AirBookRS/3/0" xmlns:common="http://sita.aero/common/1/0" Version="0">
+  <Success/>
+  <AirReservation BookingReferenceID="P17K9">
+    <common:AirItinerary>
+      <common:OriginDestinationOptions>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2019-02-12T14:10:00" DepartureDateTime="2019-02-12T13:35:00" FlightNumber="404" RPH="1" Status="HK">
+            <common:DepartureAirport LocationCode="AUA"/>
+            <common:ArrivalAirport LocationCode="CUR"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+        <common:OriginDestinationOption>
+          <common:FlightSegment ArrivalDateTime="2019-02-22T23:05:00" DepartureDateTime="2019-02-22T22:30:00" FlightNumber="407" RPH="2" Status="HK">
+            <common:DepartureAirport LocationCode="CUR"/>
+            <common:ArrivalAirport LocationCode="AUA"/>
+            <common:OperatingAirline Code="7I"/>
+            <common:BookingClassAvails>
+              <common:BookingClassAvail ResBookDesigCode="Y" ResBookDesigQuantity="2"/>
+            </common:BookingClassAvails>
+            <common:Comment>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</common:Comment>
+          </common:FlightSegment>
+        </common:OriginDestinationOption>
+      </common:OriginDestinationOptions>
+    </common:AirItinerary>
+    <common:TravelerInfo>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>JOHAN</common:GivenName>
+          <common:Surname>ADAMS</common:Surname>
+        </common:PersonName>
+        <common:Telephone FormattedInd="false" PhoneNumber="+3087877787877" PhoneTechType="5"/>
+        <common:Telephone FormattedInd="false" PhoneNumber="+301231231231232" PhoneTechType="5"/>
+        <common:Email>V.KASIMATIS@JRTECHNOLOGIES.COM</common:Email>
+        <common:Email>JOHAN@GGMAIL.COM</common:Email>
+        <common:TravelerRefNumber RPH="1"/>
+      </common:AirTraveler>
+      <common:AirTraveler PassengerTypeCode="ADT">
+        <common:PersonName>
+          <common:NamePrefix>MR</common:NamePrefix>
+          <common:GivenName>VASILIS</common:GivenName>
+          <common:Surname>KASIMATIS</common:Surname>
+        </common:PersonName>
+        <common:TravelerRefNumber RPH="2"/>
+      </common:AirTraveler>
+      <common:SpecialReqDetails>
+        <common:SpecialServiceRequests>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321014785C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321014785C2</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321014786C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="TKNE" ServiceQuantity="1" Status="HK" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.9584321014786C2</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="1" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="2">
+            <common:Airline Code="7I"/>
+            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550016420C1</common:Text>
+          </common:SpecialServiceRequest>
+          <common:SpecialServiceRequest FlightRefNumberRPHList="2" SSRCode="ASVC" ServiceQuantity="1" Status="HI" TravelerRefNumberRPHList="1">
+            <common:Airline Code="7I"/>
+            <common:Text>.C/0CD//CHECKED BAG SECOND/A/9584550016421C1</common:Text>
+          </common:SpecialServiceRequest>
+        </common:SpecialServiceRequests>
+      </common:SpecialReqDetails>
+    </common:TravelerInfo>
+    <common:Ticketing TicketType="eTicket" TicketingStatus="3" TravelerRefNumber="1 2">
+      <common:TicketAdvisory>*T</common:TicketAdvisory>
+    </common:Ticketing>
+  </AirReservation>
+</OTA_AirBookRS>

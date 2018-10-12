@@ -1,0 +1,25 @@
+<ns2:SITA_RevalidateEMD xmlns:ns2="http://sita.aero/SITA_RevalidateEMD/5/1" xmlns="http://sita.aero/common/4/1">
+	<ns2:POS>
+		<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<RequestorID ID="73704444" ID_Context="Airfare" Type="7"/>
+		</Source>
+	</ns2:POS>
+	<ns2:FlightInfoDetails>
+		<FlightLegInfo FlightStatus="HK" RPH="1">
+			<DepartureAirport LocationCode="AUA"/>
+			<ArrivalAirport LocationCode="CUR"/>
+			<OperatingAirline Code="7I" FlightNumber="404" ResBookDesigCode="Y"/>
+			<DepartureDate>2019-02-19</DepartureDate>
+			<DepartureTime Scheduled="13:35"/>
+			<ArrivalDate>2019-02-19</ArrivalDate>
+			<ArrivalTime Scheduled="14:10"/>
+			<BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+		</FlightLegInfo>
+	</ns2:FlightInfoDetails>
+	<ns2:TicketDocument ResidingDatabase="7I" TicketDocumentNbr="9584550016420">
+		<ns2:CouponInfo CouponNumber="1" DateOfService="2019-02-19"/>
+	</ns2:TicketDocument>
+	<ns2:BookingInfo>
+		<BookingReferenceID ID="P17K9"/>
+	</ns2:BookingInfo>
+</ns2:SITA_RevalidateEMD>

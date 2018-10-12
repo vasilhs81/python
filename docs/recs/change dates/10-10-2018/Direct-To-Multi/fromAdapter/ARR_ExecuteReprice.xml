@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:ARR_RepriceItinerary xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+    <ns2:repriceOptionsField>
+        <includeNegotiatedFaresField>false</includeNegotiatedFaresField>
+        <includeNegotiatedFaresFieldSpecified>false</includeNegotiatedFaresFieldSpecified>
+        <negotiatedFareCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <negotiatedFaresOnlyField>false</negotiatedFaresOnlyField>
+        <negotiatedFaresOnlyFieldSpecified>true</negotiatedFaresOnlyFieldSpecified>
+        <passengerTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <pricingSourceField>Both</pricingSourceField>
+        <pricingSourceFieldSpecified>false</pricingSourceFieldSpecified>
+        <waiverField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:currencyConversionCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:ignoreTaxItemsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:overrideInterlineAgreementField>false</ns2:overrideInterlineAgreementField>
+        <ns2:taxExemptItemsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:tourCodesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </ns2:repriceOptionsField>
+    <ns2:ticketingInfoField>
+        <airlineAccountingCodeField>958</airlineAccountingCodeField>
+        <formAndSerialNumberField>4321014840</formAndSerialNumberField>
+        <ns2:residingDatabaseField>7I</ns2:residingDatabaseField>
+    </ns2:ticketingInfoField>
+</ns3:ARR_RepriceItinerary>

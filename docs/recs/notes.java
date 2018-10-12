@@ -2581,4 +2581,22 @@ private final static Map<String, Map<String, String>> responseIdToSessionIdMap =
         };
     }
     
+/////////////////////////////////////
+airDemandDoc.getDocumentElement().getElementsByTagName("TicketDocument").item(0).getAttributes().getNamedItem("InConnectionDocNbr").setNodeValue("958" + ticketNbr);
+/////////////
+ public static <K, V extends Comparable<? super V>> Map<K, V> sortByValue(Map<K, V> map) {
+        List<Entry<K, V>> list = new ArrayList<>(map.entrySet());
+        list.sort(Entry.comparingByValue());
 
+        LinkedHashMap<K, V> result = new LinkedHashMap<>();
+        for (Entry<K, V> entry : list) {
+            result.put(entry.getKey(), entry.getValue());
+        }
+        result.get(null).
+        return result;
+    }
+
+
+List< OrderItemHolder> thisPaxThisServiceOrderItems = thisPaxOrderItems.stream().filter(a -> a.getServiceList().get(0).getServiceDefinitionRef().equals(serviceID)).
+                    sorted((o1, o2) -> segmentHolderMap.get(o1.getServiceList().get(0).getApplicableFlights().get(0).get(0).toString()).compareTo(segmentHolderMap.get(o2.getServiceList().get(0).getApplicableFlights().get(0).get(0).toString()))).
+                    collect(Collectors.toList());

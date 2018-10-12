@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderViewRS EchoToken="292338_2" TimeStamp="2018-10-12T10:00:04.353Z" Version="IATA2016.2" TransactionIdentifier="6e7dbaf45be244ca8ff0b2069aa40ebc" xmlns="http://www.iata.org/IATA/EDIST">
+    <Document>
+        <Name>InselAir NDC GATEWAY</Name>
+        <ReferenceVersion>BUILD92</ReferenceVersion>
+    </Document>
+    <Success/>
+    <Response>
+        <OrderViewProcessing/>
+        <Passengers/>
+        <Order>
+            <OrderID Owner="7I">D123473G8</OrderID>
+            <BookingReferences>
+                <BookingReference>
+                    <ID>P17R6</ID>
+                    <AirlineID>7I</AirlineID>
+                </BookingReference>
+            </BookingReferences>
+            <TotalOrderPrice>
+                <DetailCurrencyPrice>
+                    <Total Taxable="true" Code="USD">227.00</Total>
+                    <Details>
+                        <Detail>
+                            <SubTotal Code="USD">207.00</SubTotal>
+                            <Application>Base Fare</Application>
+                        </Detail>
+                    </Details>
+                    <Taxes>
+                        <Total Code="USD">20.00</Total>
+                        <Breakdown>
+                            <Tax>
+                                <Amount Code="USD">20.00</Amount>
+                                <TaxCode>AW</TaxCode>
+                                <Description>passenger facility and security charge</Description>
+                            </Tax>
+                        </Breakdown>
+                    </Taxes>
+                </DetailCurrencyPrice>
+            </TotalOrderPrice>
+            <Status>
+                <StatusCode>
+                    <Code>OK</Code>
+                </StatusCode>
+            </Status>
+            <OrderItems>
+                <OrderItem Timestamp="2018-10-12T10:00:00.900Z">
+                    <OrderItemID Owner="7I">ORDERITEM1</OrderItemID>
+                    <OtherItem refs="SEG1">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">187.00</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">167.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">20.00</Total>
+                                    <Breakdown>
+                                        <Tax>
+                                            <Amount Code="USD">20.00</Amount>
+                                            <TaxCode>AW</TaxCode>
+                                            <Description>passenger facility and security charge</Description>
+                                        </Tax>
+                                    </Breakdown>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH1</PassengerReferences>
+                        </Passengers>
+                        <IncludedService>
+                            <ServiceReferences>SVC00059 SVC00038</ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </OrderItem>
+                <OrderItem Timestamp="2018-10-12T10:00:00.900Z">
+                    <OrderItemID Owner="7I">ORDERITEM2</OrderItemID>
+                    <OtherItem refs="SEG1">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">40.00</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">40.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">0.00</Total>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH1</PassengerReferences>
+                        </Passengers>
+                        <AssociatedService>
+                            <ServiceReferences>SVC00039</ServiceReferences>
+                        </AssociatedService>
+                    </Associations>
+                </OrderItem>
+            </OrderItems>
+        </Order>
+        <Payments>
+            <Payment>
+                <Method>
+                    <PaymentCardMethod>
+                        <CardType>Credit</CardType>
+                        <CardCode>VI</CardCode>
+                        <CardHolderName>Kasimatis Vasilis</CardHolderName>
+                        <EffectiveExpireDate>
+                            <Expiration>0523</Expiration>
+                        </EffectiveExpireDate>
+                    </PaymentCardMethod>
+                </Method>
+                <Amount Code="USD">227.00</Amount>
+            </Payment>
+        </Payments>
+        <TicketDocInfos>
+            <TicketDocInfo>
+                <TicketDocument>
+                    <TicketDocNbr>9584321014844</TicketDocNbr>
+                    <Type>
+                        <Code>eTicket</Code>
+                    </Type>
+                    <NumberofBooklets>1</NumberofBooklets>
+                    <DateOfIssue>2018-10-12</DateOfIssue>
+                </TicketDocument>
+                <PassengerReference>SH1</PassengerReference>
+            </TicketDocInfo>
+            <TicketDocInfo>
+                <TicketDocument>
+                    <TicketDocNbr>9584550016687</TicketDocNbr>
+                    <Type>
+                        <Code>EMD-A</Code>
+                    </Type>
+                    <NumberofBooklets>1</NumberofBooklets>
+                    <DateOfIssue>2018-10-12</DateOfIssue>
+                    <CouponInfo>
+                        <CouponNumber>1</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <ServiceReferences>SVC00039</ServiceReferences>
+                        <Value Code="USD">40.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321014844</InConnectionDocNbr>
+                            <InConnectonCpnNbr>1</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                </TicketDocument>
+                <PassengerReference>SH1</PassengerReference>
+            </TicketDocInfo>
+        </TicketDocInfos>
+        <DataLists>
+            <RecognizedTravelerList>
+                <RecognizedTraveler ObjectKey="SH1">
+                    <PTC>ADT</PTC>
+                    <Age>
+                        <BirthDate>1944-06-08</BirthDate>
+                    </Age>
+                    <Name>
+                        <Surname>Kasimatis</Surname>
+                        <Given>Vasilis</Given>
+                        <Title>Mr</Title>
+                    </Name>
+                    <ProfileID>11825224668620451</ProfileID>
+                    <Gender>Male</Gender>
+                    <Contacts>
+                        <Contact>
+                            <EmailContact>
+                                <Address>vkasimatis@jrtechnologies.com</Address>
+                            </EmailContact>
+                            <PhoneContact>
+                                <Number>+30454545454545</Number>
+                            </PhoneContact>
+                        </Contact>
+                    </Contacts>
+                    <Remarks>
+                        <Remark>primary</Remark>
+                    </Remarks>
+                </RecognizedTraveler>
+            </RecognizedTravelerList>
+            <FlightSegmentList>
+                <FlightSegment SegmentKey="SEG1">
+                    <Departure>
+                        <AirportCode>AUA</AirportCode>
+                        <Date>2019-01-25</Date>
+                        <Time>01:00</Time>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>BON</AirportCode>
+                        <Date>2019-01-25</Date>
+                        <Time>19:00</Time>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>111</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>111</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>F50</AircraftCode>
+                        <Name>F50</Name>
+                    </Equipment>
+                    <ClassOfService refs="PC1">
+                        <Code>Y</Code>
+                        <MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT18H0M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+            </FlightSegmentList>
+            <FlightList>
+                <Flight FlightKey="FL_AUABON">
+                    <Journey>
+                        <Time>P0DT18H0M0S</Time>
+                    </Journey>
+                    <SegmentReferences>SEG1</SegmentReferences>
+                </Flight>
+            </FlightList>
+            <OriginDestinationList>
+                <OriginDestination OriginDestinationKey="AUABON">
+                    <DepartureCode>AUA</DepartureCode>
+                    <ArrivalCode>BON</ArrivalCode>
+                    <FlightReferences>FL_AUABON</FlightReferences>
+                </OriginDestination>
+            </OriginDestinationList>
+            <PriceClassList>
+                <PriceClass ObjectKey="PC1">
+                    <Name>E_ECONOMY_FLEXIBLE</Name>
+                    <FareBasisCode>
+                        <Code>Y</Code>
+                    </FareBasisCode>
+                </PriceClass>
+            </PriceClassList>
+            <ServiceList>
+                <Service ObjectKey="SVC00038">
+                    <ServiceID Owner="7I">SVC00038</ServiceID>
+                    <Name>Free Bag</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>You can carry one bag per person of up to 23Kg, for free. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total Code="USD">0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SVC00059">
+                    <ServiceID Owner="7I">SVC00059</ServiceID>
+                    <Name>Seat Selection</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>Your preferred seat can be booked at any time prior to your flight.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total Code="USD">0.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SVC00039">
+                    <ServiceID Owner="7I">SVC00039</ServiceID>
+                    <Name>Second Bag</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>You can carry 2nd bag per person up to 23 kg, for an extra fee. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total Code="USD">40.00</Total>
+                        <PassengerReferences>SH1</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <OriginDestinationReferences>AUABON</OriginDestinationReferences>
+                            <SegmentReferences>SEG1</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+            </ServiceList>
+        </DataLists>
+    </Response>
+</OrderViewRS>

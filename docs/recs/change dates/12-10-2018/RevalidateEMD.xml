@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:SITA_RevalidateEMD xmlns="http://sita.aero/common/4/1" xmlns:ns2="http://sita.aero/SITA_RevalidateEMD/5/1">
+    <ns2:POS>
+        <Source AgentSine="" PseudoCityCode="" ISOCountry="" AgentDutyCode="" AirlineVendorID="" AirportCode="" ERSP_UserID="">
+            <RequestorID Type="" ID=""/>
+        </Source>
+    </ns2:POS>
+    <ns2:FlightInfoDetails>
+        <FlightLegInfo RPH="1" FlightStatus="HK">
+            <DepartureAirport LocationCode="AUA"/>
+            <ArrivalAirport LocationCode="CUR"/>
+            <OperatingAirline Code="7I" FlightNumber="902" ResBookDesigCode="Y"/>
+            <DepartureDate>2019-01-23</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-01-23</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+        <FlightLegInfo RPH="2" FlightStatus="HK">
+            <DepartureAirport LocationCode="CUR"/>
+            <ArrivalAirport LocationCode="BON"/>
+            <OperatingAirline Code="7I" FlightNumber="303" ResBookDesigCode="Y"/>
+            <DepartureDate>2019-01-24</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-01-24</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+    </ns2:FlightInfoDetails>
+    <ns2:TicketDocument TicketDocumentNbr="9584550016757" ResidingDatabase="7I">
+        <ns2:CouponInfo DateOfService="2019-01-23" CouponNumber="1"/>
+    </ns2:TicketDocument>
+    <ns2:BookingInfo>
+        <BookingReferenceID ID="P17TZ"/>
+    </ns2:BookingInfo>
+</ns2:SITA_RevalidateEMD>

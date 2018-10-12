@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderCreateRQ EchoToken="292338_3" TimeStamp="2018-10-12T08:47:12.148Z" Version="IATA2016.2" TransactionIdentifier="292338_3" xmlns="http://www.iata.org/IATA/EDIST">
+	<PointOfSale id="f0uZ2-Jp55B-70YgW-OmEa6" AgentDutyCode="41">
+		<Location>
+			<CountryCode>US</CountryCode>
+			<CityCode>MIA</CityCode>
+		</Location>
+		<TouchPoint>
+			<Device>
+				<Code>2</Code>
+				<Definition>Web Browser</Definition>
+				<Position>
+					<Latitude>38.89756</Latitude>
+					<Longitude>-77.03650</Longitude>
+					<NAC>8KD7V PGGM0</NAC>
+				</Position>
+			</Device>
+		</TouchPoint>
+	</PointOfSale>
+	<Document>
+		<Name>NDC-Gateway</Name>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>IBE</Name>
+				<Type>TravelAgency</Type>
+				<PseudoCity>WWW001</PseudoCity>
+				<IATA_Number>35200421</IATA_Number>
+				<AgencyID>906/1234A</AgencyID>
+				<AgentUser>
+					<AgentUserID>11825224668620451</AgentUserID>
+				</AgentUser>
+			</TravelAgencySender>
+		</Sender>
+		<Participants>
+			<Participant>
+				<EnabledSystemParticipant SequenceNumber="1">
+					<SystemID>11825224668620451</SystemID>
+				</EnabledSystemParticipant>
+			</Participant>
+		</Participants>
+		<Recipient>
+			<MarketingCarrierRecipient>
+				<AirlineID>7I</AirlineID>
+			</MarketingCarrierRecipient>
+		</Recipient>
+	</Party>
+	<Query>
+		<Passengers>
+			<Passenger ObjectKey="PAX1">
+				<PTC Quantity="1">ADT</PTC>
+				<Age>
+					<BirthDate>1944-06-08</BirthDate>
+				</Age>
+				<Name>
+					<Surname>Kasimatis</Surname>
+					<Given>Vasilis</Given>
+					<Title>Mr</Title>
+				</Name>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>vkasimatis@jrtechnologies.com</Address>
+						</EmailContact>
+						<PhoneContact>
+							<Number>+30454545454545</Number>
+						</PhoneContact>
+					</Contact>
+				</Contacts>
+				<Gender>Male</Gender>
+				<Remarks>
+					<Remark>primary</Remark>
+				</Remarks>
+			</Passenger>
+		</Passengers>
+		<OrderItems>
+			<ShoppingResponse>
+				<Owner>7I</Owner>
+				<ResponseID>213-4578b1a6f340450d91c81cf94008ad42</ResponseID>
+				<Offers>
+					<Offer>
+						<OfferID Owner="7I">1</OfferID>
+						<OfferItems>
+							<OfferItem>
+								<OfferItemID Owner="7I" ObjectKey="ID1">1</OfferItemID>
+								<Passengers>
+									<PassengerReference>PAX1</PassengerReference>
+								</Passengers>
+								<TotalPrice>
+									<DetailCurrencyPrice>
+										<Total Code="USD">227.00</Total>
+										<Details>
+											<Detail>
+												<SubTotal Code="USD">187</SubTotal>
+												<Application>BaseFare</Application>
+											</Detail>
+											<Detail>
+												<SubTotal Code="USD">40</SubTotal>
+												<Application>Services</Application>
+											</Detail>
+										</Details>
+										<Taxes>
+											<Total Code="USD">20</Total>
+											<Breakdown>
+												<Tax>
+													<Amount Code="USD">20</Amount>
+													<Nation>AW</Nation>
+													<TaxCode>AW</TaxCode>
+													<Description>passenger facility and security charge</Description>
+												</Tax>
+											</Breakdown>
+										</Taxes>
+									</DetailCurrencyPrice>
+								</TotalPrice>
+								<ApplicableFlight>
+									<FlightSegmentReference ref="SEG1">
+										<ClassOfService>
+											<Code>Y</Code>
+											<MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+										</ClassOfService>
+									</FlightSegmentReference>
+									<OriginDestinationReferences>OD1</OriginDestinationReferences>
+									<FlightReferences>FL1</FlightReferences>
+								</ApplicableFlight>
+								<IncludedService>
+									<ServiceReferences>SVC00038 SVC00059</ServiceReferences>
+								</IncludedService>
+								<AssociatedServices>
+									<AssociatedService refs="SVC00039">
+										<ServiceID Owner="7I">SVC00039</ServiceID>
+									</AssociatedService>
+								</AssociatedServices>
+							</OfferItem>
+						</OfferItems>
+						<TotalPrice>
+							<SimpleCurrencyPrice Code="USD">227.00</SimpleCurrencyPrice>
+						</TotalPrice>
+					</Offer>
+				</Offers>
+			</ShoppingResponse>
+		</OrderItems>
+		<Payments>
+			<Payment>
+				<Method>
+					<PaymentCard>
+						<CardType>Credit</CardType>
+						<CardCode>VI</CardCode>
+						<CardNumber>4111111111111111</CardNumber>
+						<SeriesCode>123</SeriesCode>
+						<CardHolderName>Kasimatis Vasilis</CardHolderName>
+						<CardHolderBillingAddress>
+							<Street>askds 12</Street>
+							<CityName>Chqwww</CityName>
+							<StateProv>Chania</StateProv>
+							<PostalCode>3434</PostalCode>
+							<CountryCode>DZ</CountryCode>
+							<County>Chania</County>
+						</CardHolderBillingAddress>
+						<EffectiveExpireDate>
+							<Expiration>0523</Expiration>
+						</EffectiveExpireDate>
+					</PaymentCard>
+				</Method>
+				<Amount Code="USD">227.00</Amount>
+				<Payer>
+					<Name>
+						<Surname>Kasimatis</Surname>
+						<Given>Vasilis</Given>
+					</Name>
+					<Contacts>
+						<Contact>
+							<EmailContact>
+								<Address>v.kasimatis@jrtechnologies.com</Address>
+							</EmailContact>
+						</Contact>
+					</Contacts>
+				</Payer>
+			</Payment>
+		</Payments>
+		<DataLists>
+			<FlightSegmentList>
+				<FlightSegment SegmentKey="SEG1">
+					<Departure>
+						<AirportCode>AUA</AirportCode>
+						<Date>2019-01-25</Date>
+						<Time>01:00</Time>
+					</Departure>
+					<Arrival>
+						<AirportCode>BON</AirportCode>
+						<Date>2019-01-25</Date>
+						<Time>19:00</Time>
+					</Arrival>
+					<MarketingCarrier>
+						<AirlineID>7I</AirlineID>
+						<FlightNumber>111</FlightNumber>
+					</MarketingCarrier>
+					<OperatingCarrier>
+						<AirlineID>7I</AirlineID>
+						<FlightNumber>111</FlightNumber>
+					</OperatingCarrier>
+					<Equipment>
+						<AircraftCode>F50</AircraftCode>
+					</Equipment>
+					<ClassOfService>
+						<Code>Y</Code>
+						<MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+					</ClassOfService>
+					<FlightDetail>
+						<FlightDuration>
+							<Value>PT18H0M</Value>
+						</FlightDuration>
+					</FlightDetail>
+				</FlightSegment>
+			</FlightSegmentList>
+			<FlightList>
+				<Flight FlightKey="FL1">
+					<Journey>
+						<Time>P0DT18H0M0S</Time>
+					</Journey>
+					<SegmentReferences>SEG1</SegmentReferences>
+				</Flight>
+			</FlightList>
+			<OriginDestinationList>
+				<OriginDestination OriginDestinationKey="OD1">
+					<DepartureCode>AUA</DepartureCode>
+					<ArrivalCode>BON</ArrivalCode>
+					<FlightReferences>FL1</FlightReferences>
+				</OriginDestination>
+			</OriginDestinationList>
+			<ServiceList>
+				<Service ObjectKey="SVC00040">
+					<ServiceID Owner="7I">SVC00040</ServiceID>
+					<Name>Third Bag</Name>
+					<Encoding>
+						<Code>BG3</Code>
+						<SubCode>1</SubCode>
+					</Encoding>
+					<Descriptions>
+						<Description>
+							<Text>You can carry 3rd bag per person up to 23 kg, for an extra fee. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+							<Media>
+								<MediaLink>https://rcmsinselair.blob.core.windows.net/images/3-bags.png</MediaLink>
+							</Media>
+						</Description>
+					</Descriptions>
+					<Price>
+						<Total Taxable="false" Code="USD">150</Total>
+						<RefundableValue>
+							<Amount>0</Amount>
+						</RefundableValue>
+						<Taxes>
+							<Total>0</Total>
+						</Taxes>
+						<PassengerReferences>PAX1</PassengerReferences>
+					</Price>
+				</Service>
+				<Service ObjectKey="SVC00038">
+					<ServiceID Owner="7I">SVC00038</ServiceID>
+					<Name>Free Bag</Name>
+					<Encoding>
+						<Code>BG</Code>
+						<SubCode>1</SubCode>
+					</Encoding>
+					<Descriptions>
+						<Description>
+							<Text>You can carry one bag per person of up to 23Kg, for free. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+							<Media>
+								<MediaLink>https://rcmsinselair.blob.core.windows.net/images/1-bag.png</MediaLink>
+							</Media>
+						</Description>
+					</Descriptions>
+					<Price>
+						<Total Taxable="false" Code="USD">0</Total>
+						<RefundableValue>
+							<Amount>0</Amount>
+						</RefundableValue>
+						<Taxes>
+							<Total>0</Total>
+						</Taxes>
+						<PassengerReferences>PAX1</PassengerReferences>
+					</Price>
+					<Associations>
+						<Traveler>
+							<TravelerReferences>PAX1</TravelerReferences>
+						</Traveler>
+						<Flight>
+							<SegmentReferences>SEG1</SegmentReferences>
+						</Flight>
+					</Associations>
+				</Service>
+				<Service ObjectKey="SVC00059">
+					<ServiceID Owner="7I">SVC00059</ServiceID>
+					<Name>Seat Selection</Name>
+					<Encoding>
+						<Code>ST</Code>
+						<SubCode>1</SubCode>
+					</Encoding>
+					<Descriptions>
+						<Description>
+							<Text>Your preferred seat can be booked at any time prior to your flight.</Text>
+							<Media>
+								<MediaLink>https://rcmsinselair.blob.core.windows.net/images/7efa49d6-65f6-4618-a3a5-9d6ce3f97f78.jpg</MediaLink>
+							</Media>
+						</Description>
+					</Descriptions>
+					<Price>
+						<Total Taxable="false" Code="USD">0</Total>
+						<RefundableValue>
+							<Amount>0</Amount>
+						</RefundableValue>
+						<Taxes>
+							<Total>0</Total>
+						</Taxes>
+						<PassengerReferences>PAX1</PassengerReferences>
+					</Price>
+					<Associations>
+						<Traveler>
+							<TravelerReferences>PAX1</TravelerReferences>
+						</Traveler>
+						<Flight>
+							<SegmentReferences>SEG1</SegmentReferences>
+						</Flight>
+					</Associations>
+				</Service>
+				<Service ObjectKey="SVC00039">
+					<ServiceID Owner="7I">SVC00039</ServiceID>
+					<Name>Second Bag</Name>
+					<Encoding>
+						<Code>BG2</Code>
+						<SubCode>1</SubCode>
+					</Encoding>
+					<Descriptions>
+						<Description>
+							<Text>You can carry 2nd bag per person up to 23 kg, for an extra fee. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+							<Media>
+								<MediaLink>https://rcmsinselair.blob.core.windows.net/images/2-bags.png</MediaLink>
+							</Media>
+						</Description>
+					</Descriptions>
+					<Price>
+						<Total Taxable="false" Code="USD">40</Total>
+						<RefundableValue>
+							<Amount>0</Amount>
+						</RefundableValue>
+						<Taxes>
+							<Total>0</Total>
+						</Taxes>
+						<PassengerReferences>PAX1</PassengerReferences>
+					</Price>
+					<Associations>
+						<Traveler>
+							<TravelerReferences>PAX1</TravelerReferences>
+						</Traveler>
+						<Flight>
+							<OriginDestinationReferences>OD1</OriginDestinationReferences>
+						</Flight>
+					</Associations>
+				</Service>
+			</ServiceList>
+		</DataLists>
+	</Query>
+</OrderCreateRQ>
