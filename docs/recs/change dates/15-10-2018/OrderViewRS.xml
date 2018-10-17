@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderViewRS EchoToken="874964_1" TimeStamp="2018-10-15T17:18:37.460+03:00" Version="IATA2016.2" TransactionIdentifier="d043a1fd97c74d71b700754bb9ebeb80" xmlns="http://www.iata.org/IATA/EDIST">
+    <Document>
+        <Name>InselAir NDC GATEWAY</Name>
+        <ReferenceVersion>2.0.5.RELEASE</ReferenceVersion>
+    </Document>
+    <Success/>
+    <Response>
+        <OrderViewProcessing/>
+        <Passengers/>
+        <Order>
+            <OrderID Owner="7I">D123474S8</OrderID>
+            <BookingReferences>
+                <BookingReference>
+                    <ID>P161W</ID>
+                    <AirlineID>7I</AirlineID>
+                </BookingReference>
+            </BookingReferences>
+            <TotalOrderPrice>
+                <DetailCurrencyPrice>
+                    <Total Taxable="true" Code="USD">902.18</Total>
+                    <Details>
+                        <Detail>
+                            <SubTotal Code="USD">786.00</SubTotal>
+                            <Application>Base Fare</Application>
+                        </Detail>
+                    </Details>
+                    <Taxes>
+                        <Total Code="USD">116.18</Total>
+                        <Breakdown>
+                            <Tax>
+                                <Amount Code="USD">19.68</Amount>
+                                <TaxCode>PC</TaxCode>
+                                <Description>passenger facility charge</Description>
+                            </Tax>
+                            <Tax>
+                                <Amount Code="USD">8.00</Amount>
+                                <TaxCode>E9</TaxCode>
+                                <Description>airport improvement fee</Description>
+                            </Tax>
+                            <Tax>
+                                <Amount Code="USD">20.00</Amount>
+                                <TaxCode>AN</TaxCode>
+                                <Description>airport facility charge</Description>
+                            </Tax>
+                            <Tax>
+                                <Amount Code="USD">68.50</Amount>
+                                <TaxCode>AW</TaxCode>
+                                <Description>passenger facility and security charge</Description>
+                            </Tax>
+                        </Breakdown>
+                    </Taxes>
+                </DetailCurrencyPrice>
+            </TotalOrderPrice>
+            <Status>
+                <StatusCode>
+                    <Code>OK</Code>
+                </StatusCode>
+            </Status>
+            <OrderItems>
+                <OrderItem Timestamp="2018-10-15T17:18:33.656+03:00">
+                    <OrderItemID Owner="7I">ORDERITEM1</OrderItemID>
+                    <OtherItem refs="SEG3 SEG1 SEG2 SEG4">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">391.09</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">333.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">58.09</Total>
+                                    <Breakdown>
+                                        <Tax>
+                                            <Amount Code="USD">9.84</Amount>
+                                            <TaxCode>PC</TaxCode>
+                                            <Description>passenger facility charge</Description>
+                                        </Tax>
+                                        <Tax>
+                                            <Amount Code="USD">4.00</Amount>
+                                            <TaxCode>E9</TaxCode>
+                                            <Description>airport improvement fee</Description>
+                                        </Tax>
+                                        <Tax>
+                                            <Amount Code="USD">10.00</Amount>
+                                            <TaxCode>AN</TaxCode>
+                                            <Description>airport facility charge</Description>
+                                        </Tax>
+                                        <Tax>
+                                            <Amount Code="USD">34.25</Amount>
+                                            <TaxCode>AW</TaxCode>
+                                            <Description>passenger facility and security charge</Description>
+                                        </Tax>
+                                    </Breakdown>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH1</PassengerReferences>
+                        </Passengers>
+                        <IncludedService>
+                            <ServiceReferences>SVC00038 SVC00059</ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </OrderItem>
+                <OrderItem Timestamp="2018-10-15T17:18:33.656+03:00">
+                    <OrderItemID Owner="7I">ORDERITEM2</OrderItemID>
+                    <OtherItem refs="SEG3 SEG4">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">40.00</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">40.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">0.00</Total>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH1</PassengerReferences>
+                        </Passengers>
+                        <AssociatedService>
+                            <ServiceReferences>SVC00039</ServiceReferences>
+                        </AssociatedService>
+                    </Associations>
+                </OrderItem>
+                <OrderItem Timestamp="2018-10-15T17:18:33.656+03:00">
+                    <OrderItemID Owner="7I">ORDERITEM3</OrderItemID>
+                    <OtherItem refs="SEG3 SEG1 SEG2 SEG4">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">391.09</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">333.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">58.09</Total>
+                                    <Breakdown>
+                                        <Tax>
+                                            <Amount Code="USD">9.84</Amount>
+                                            <TaxCode>PC</TaxCode>
+                                            <Description>passenger facility charge</Description>
+                                        </Tax>
+                                        <Tax>
+                                            <Amount Code="USD">4.00</Amount>
+                                            <TaxCode>E9</TaxCode>
+                                            <Description>airport improvement fee</Description>
+                                        </Tax>
+                                        <Tax>
+                                            <Amount Code="USD">10.00</Amount>
+                                            <TaxCode>AN</TaxCode>
+                                            <Description>airport facility charge</Description>
+                                        </Tax>
+                                        <Tax>
+                                            <Amount Code="USD">34.25</Amount>
+                                            <TaxCode>AW</TaxCode>
+                                            <Description>passenger facility and security charge</Description>
+                                        </Tax>
+                                    </Breakdown>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH2</PassengerReferences>
+                        </Passengers>
+                        <IncludedService>
+                            <ServiceReferences>SVC00038 SVC00059</ServiceReferences>
+                        </IncludedService>
+                    </Associations>
+                </OrderItem>
+                <OrderItem Timestamp="2018-10-15T17:18:33.656+03:00">
+                    <OrderItemID Owner="7I">ORDERITEM4</OrderItemID>
+                    <OtherItem refs="SEG1 SEG2">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">40.00</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">40.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">0.00</Total>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH2</PassengerReferences>
+                        </Passengers>
+                        <AssociatedService>
+                            <ServiceReferences>SVC00039</ServiceReferences>
+                        </AssociatedService>
+                    </Associations>
+                </OrderItem>
+                <OrderItem Timestamp="2018-10-15T17:18:33.656+03:00">
+                    <OrderItemID Owner="7I">ORDERITEM5</OrderItemID>
+                    <OtherItem refs="SEG1 SEG2">
+                        <Price>
+                            <DetailCurrencyPrice>
+                                <Total Taxable="true" Code="USD">40.00</Total>
+                                <Details>
+                                    <Detail>
+                                        <SubTotal Code="USD">40.00</SubTotal>
+                                        <Application>Base Fare</Application>
+                                    </Detail>
+                                </Details>
+                                <Taxes>
+                                    <Total Code="USD">0.00</Total>
+                                </Taxes>
+                            </DetailCurrencyPrice>
+                        </Price>
+                    </OtherItem>
+                    <Associations>
+                        <Passengers>
+                            <PassengerReferences>SH1</PassengerReferences>
+                        </Passengers>
+                        <AssociatedService>
+                            <ServiceReferences>SVC00039</ServiceReferences>
+                        </AssociatedService>
+                    </Associations>
+                </OrderItem>
+            </OrderItems>
+        </Order>
+        <Payments>
+            <Payment>
+                <Method>
+                    <PaymentCardMethod>
+                        <CardType>Credit</CardType>
+                        <CardCode>VI</CardCode>
+                        <CardHolderName>Kasimatis Vasilis</CardHolderName>
+                        <EffectiveExpireDate>
+                            <Expiration>0623</Expiration>
+                        </EffectiveExpireDate>
+                    </PaymentCardMethod>
+                </Method>
+                <Amount Code="USD">902.18</Amount>
+            </Payment>
+        </Payments>
+        <TicketDocInfos>
+            <TicketDocInfo>
+                <TicketDocument>
+                    <TicketDocNbr>9584550016950</TicketDocNbr>
+                    <Type>
+                        <Code>EMD-A</Code>
+                    </Type>
+                    <NumberofBooklets>4</NumberofBooklets>
+                    <DateOfIssue>2018-10-15</DateOfIssue>
+                    <CouponInfo>
+                        <CouponNumber>1</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <Value Code="USD">40.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321015040</InConnectionDocNbr>
+                            <InConnectonCpnNbr>1</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                    <CouponInfo>
+                        <CouponNumber>2</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <Value Code="USD">0.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321015040</InConnectionDocNbr>
+                            <InConnectonCpnNbr>2</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                    <CouponInfo>
+                        <CouponNumber>3</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <Value Code="USD">40.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321015040</InConnectionDocNbr>
+                            <InConnectonCpnNbr>3</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                    <CouponInfo>
+                        <CouponNumber>4</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <Value Code="USD">0.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321015040</InConnectionDocNbr>
+                            <InConnectonCpnNbr>4</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                </TicketDocument>
+                <PassengerReference>SH1</PassengerReference>
+            </TicketDocInfo>
+            <TicketDocInfo>
+                <TicketDocument>
+                    <TicketDocNbr>9584321015040</TicketDocNbr>
+                    <Type>
+                        <Code>eTicket</Code>
+                    </Type>
+                    <NumberofBooklets>1</NumberofBooklets>
+                    <DateOfIssue>2018-10-15</DateOfIssue>
+                </TicketDocument>
+                <PassengerReference>SH1</PassengerReference>
+            </TicketDocInfo>
+            <TicketDocInfo>
+                <TicketDocument>
+                    <TicketDocNbr>9584550016949</TicketDocNbr>
+                    <Type>
+                        <Code>EMD-A</Code>
+                    </Type>
+                    <NumberofBooklets>2</NumberofBooklets>
+                    <DateOfIssue>2018-10-15</DateOfIssue>
+                    <CouponInfo>
+                        <CouponNumber>1</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <Value Code="USD">40.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321015039</InConnectionDocNbr>
+                            <InConnectonCpnNbr>1</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                    <CouponInfo>
+                        <CouponNumber>2</CouponNumber>
+                        <Status>
+                            <Code>Issued</Code>
+                        </Status>
+                        <Value Code="USD">0.0</Value>
+                        <InConnectionWithInfo>
+                            <InConnectionDocNbr>4321015039</InConnectionDocNbr>
+                            <InConnectonCpnNbr>2</InConnectonCpnNbr>
+                        </InConnectionWithInfo>
+                        <ReasonForIssuance>
+                            <RFIC>
+                                <Code>C</Code>
+                            </RFIC>
+                            <Code>0CD</Code>
+                            <Description>CHECKED BAG SECOND</Description>
+                        </ReasonForIssuance>
+                    </CouponInfo>
+                </TicketDocument>
+                <PassengerReference>SH2</PassengerReference>
+            </TicketDocInfo>
+            <TicketDocInfo>
+                <TicketDocument>
+                    <TicketDocNbr>9584321015039</TicketDocNbr>
+                    <Type>
+                        <Code>eTicket</Code>
+                    </Type>
+                    <NumberofBooklets>1</NumberofBooklets>
+                    <DateOfIssue>2018-10-15</DateOfIssue>
+                </TicketDocument>
+                <PassengerReference>SH2</PassengerReference>
+            </TicketDocInfo>
+        </TicketDocInfos>
+        <DataLists>
+            <RecognizedTravelerList>
+                <RecognizedTraveler ObjectKey="SH1">
+                    <PTC>ADT</PTC>
+                    <Name>
+                        <Surname>Kasimatis</Surname>
+                        <Given>Vasilis</Given>
+                        <Title>Mr</Title>
+                    </Name>
+                    <ProfileID>11292037825917650</ProfileID>
+                    <Gender>Male</Gender>
+                    <Contacts>
+                        <Contact>
+                            <EmailContact>
+                                <Address>v.kasimatis@jrtechnologies.com</Address>
+                            </EmailContact>
+                            <PhoneContact>
+                                <Number>+303542345234532</Number>
+                            </PhoneContact>
+                        </Contact>
+                    </Contacts>
+                    <Remarks>
+                        <Remark>primary</Remark>
+                    </Remarks>
+                </RecognizedTraveler>
+                <RecognizedTraveler ObjectKey="SH2">
+                    <PTC>ADT</PTC>
+                    <Name>
+                        <Surname>Adams</Surname>
+                        <Given>Johan</Given>
+                        <Title>Mr</Title>
+                    </Name>
+                    <ProfileID>199062646020575</ProfileID>
+                    <Gender>Male</Gender>
+                    <Contacts>
+                        <Contact>
+                            <EmailContact>
+                                <Address>johan@ggmail.com</Address>
+                            </EmailContact>
+                            <PhoneContact>
+                                <Number>+30234523452345234</Number>
+                            </PhoneContact>
+                        </Contact>
+                    </Contacts>
+                </RecognizedTraveler>
+            </RecognizedTravelerList>
+            <FlightSegmentList>
+                <FlightSegment SegmentKey="SEG1">
+                    <Departure>
+                        <AirportCode>AUA</AirportCode>
+                        <Date>2018-12-14</Date>
+                        <Time>23:35</Time>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>CUR</AirportCode>
+                        <Date>2018-12-15</Date>
+                        <Time>00:10</Time>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>408</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>408</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>F50</AircraftCode>
+                        <Name>F50</Name>
+                    </Equipment>
+                    <ClassOfService refs="PC1">
+                        <Code>Y</Code>
+                        <MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT0H35M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+                <FlightSegment SegmentKey="SEG2">
+                    <Departure>
+                        <AirportCode>CUR</AirportCode>
+                        <Date>2018-12-15</Date>
+                        <Time>05:45</Time>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>BON</AirportCode>
+                        <Date>2018-12-15</Date>
+                        <Time>06:10</Time>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>301</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>301</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>F50</AircraftCode>
+                        <Name>F50</Name>
+                    </Equipment>
+                    <ClassOfService refs="PC1">
+                        <Code>Y</Code>
+                        <MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT0H25M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+                <FlightSegment SegmentKey="SEG3">
+                    <Departure>
+                        <AirportCode>BON</AirportCode>
+                        <Date>2018-12-16</Date>
+                        <Time>11:20</Time>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>CUR</AirportCode>
+                        <Date>2018-12-16</Date>
+                        <Time>11:45</Time>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>304</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>304</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>F50</AircraftCode>
+                        <Name>F50</Name>
+                    </Equipment>
+                    <ClassOfService refs="PC1">
+                        <Code>Y</Code>
+                        <MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT0H25M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+                <FlightSegment SegmentKey="SEG4">
+                    <Departure>
+                        <AirportCode>CUR</AirportCode>
+                        <Date>2018-12-16</Date>
+                        <Time>18:15</Time>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>AUA</AirportCode>
+                        <Date>2018-12-16</Date>
+                        <Time>18:50</Time>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>405</FlightNumber>
+                    </MarketingCarrier>
+                    <OperatingCarrier>
+                        <AirlineID>7I</AirlineID>
+                        <FlightNumber>405</FlightNumber>
+                    </OperatingCarrier>
+                    <Equipment>
+                        <AircraftCode>F50</AircraftCode>
+                        <Name>F50</Name>
+                    </Equipment>
+                    <ClassOfService refs="PC1">
+                        <Code>Y</Code>
+                        <MarketingName>E_ECONOMY_FLEXIBLE</MarketingName>
+                    </ClassOfService>
+                    <FlightDetail>
+                        <FlightDuration>
+                            <Value>P0DT0H35M0S</Value>
+                        </FlightDuration>
+                    </FlightDetail>
+                </FlightSegment>
+            </FlightSegmentList>
+            <FlightList>
+                <Flight FlightKey="FL_AUABON">
+                    <Journey>
+                        <Time>P0DT6H35M0S</Time>
+                    </Journey>
+                    <SegmentReferences>SEG1 SEG2</SegmentReferences>
+                </Flight>
+                <Flight FlightKey="FL_BONAUA">
+                    <Journey>
+                        <Time>P0DT7H30M0S</Time>
+                    </Journey>
+                    <SegmentReferences>SEG3 SEG4</SegmentReferences>
+                </Flight>
+            </FlightList>
+            <OriginDestinationList>
+                <OriginDestination OriginDestinationKey="AUABON">
+                    <DepartureCode>AUA</DepartureCode>
+                    <ArrivalCode>BON</ArrivalCode>
+                    <FlightReferences>FL_AUABON</FlightReferences>
+                </OriginDestination>
+                <OriginDestination OriginDestinationKey="BONAUA">
+                    <DepartureCode>BON</DepartureCode>
+                    <ArrivalCode>AUA</ArrivalCode>
+                    <FlightReferences>FL_BONAUA</FlightReferences>
+                </OriginDestination>
+            </OriginDestinationList>
+            <PriceClassList>
+                <PriceClass ObjectKey="PC1">
+                    <Name>E_ECONOMY_FLEXIBLE</Name>
+                    <FareBasisCode>
+                        <Code>Y</Code>
+                    </FareBasisCode>
+                </PriceClass>
+            </PriceClassList>
+            <ServiceList>
+                <Service ObjectKey="SVC00038">
+                    <ServiceID Owner="7I">SVC00038</ServiceID>
+                    <Name>Free Bag</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>You can carry one  bag per person of up to 23Kg, for free. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total Code="USD">0.00</Total>
+                        <PassengerReferences>SH1 SH2</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG3 SEG1 SEG2 SEG4</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH2</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG3 SEG1 SEG2 SEG4</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SVC00059">
+                    <ServiceID Owner="7I">SVC00059</ServiceID>
+                    <Name>Seat Selection</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>Your preferred seat can be purchased at any time prior to your flight.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total Code="USD">0.00</Total>
+                        <PassengerReferences>SH1 SH2</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG3 SEG1 SEG2 SEG4</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH2</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <SegmentReferences>SEG3 SEG1 SEG2 SEG4</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+                <Service ObjectKey="SVC00039">
+                    <ServiceID Owner="7I">SVC00039</ServiceID>
+                    <Name>Second Bag</Name>
+                    <Descriptions>
+                        <Description>
+                            <Text>You can carry 2nd bag per person up to 23 kg, for an extra fee. Items of baggage that are heavier than 23Kg and up to 32kg will be carried as excess baggage for a flat fee of USD 40.</Text>
+                        </Description>
+                    </Descriptions>
+                    <Price>
+                        <Total Code="USD">40.00</Total>
+                        <PassengerReferences>SH1 SH2</PassengerReferences>
+                    </Price>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH1</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <OriginDestinationReferences>AUABON BONAUA</OriginDestinationReferences>
+                            <SegmentReferences>SEG3 SEG1 SEG4 SEG2</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                    <Associations>
+                        <Traveler>
+                            <TravelerReferences>SH2</TravelerReferences>
+                        </Traveler>
+                        <Flight>
+                            <OriginDestinationReferences>AUABON</OriginDestinationReferences>
+                            <SegmentReferences>SEG1 SEG2</SegmentReferences>
+                        </Flight>
+                    </Associations>
+                </Service>
+            </ServiceList>
+        </DataLists>
+    </Response>
+</OrderViewRS>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ARR_UpdateItinerary xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.SWF">
+    <segmentsToAddField>
+        <flightInfoDetailsField>
+            <ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>AUA</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2019-01-23</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>902</flightNumberField>
+                </marketingAirlineField>
+                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <bookingClassAvailField>
+                    <ns2:resBookDesigCodeField>Y</ns2:resBookDesigCodeField>
+                    <ns2:resBookDesigQuantityField>1</ns2:resBookDesigQuantityField>
+                    <ns2:resBookDesigStatusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </bookingClassAvailField>
+                <fareInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>BON</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2019-01-24</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>303</flightNumberField>
+                </marketingAirlineField>
+                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <bookingClassAvailField>
+                    <ns2:resBookDesigCodeField>Y</ns2:resBookDesigCodeField>
+                    <ns2:resBookDesigQuantityField>1</ns2:resBookDesigQuantityField>
+                    <ns2:resBookDesigStatusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </bookingClassAvailField>
+                <fareInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+        </flightInfoDetailsField>
+    </segmentsToAddField>
+    <segmentsToChangeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <segmentsToRemoveField>
+        <flightInfoDetailsField>
+            <ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>BON</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>AUA</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2019-01-25</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>111</flightNumberField>
+                </marketingAirlineField>
+                <rPHField>1</rPHField>
+            </ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+        </flightInfoDetailsField>
+    </segmentsToRemoveField>
+    <ticketingInfosField>
+        <residingDatabaseField>7I</residingDatabaseField>
+        <ticketingInfoField>
+            <ARR_UpdateItineraryTicketingInfosTicketingInfo>
+                <ns3:airlineAccountingCodeField>958</ns3:airlineAccountingCodeField>
+                <ns3:formAndSerialNumberField>4321014896</ns3:formAndSerialNumberField>
+            </ARR_UpdateItineraryTicketingInfosTicketingInfo>
+        </ticketingInfoField>
+    </ticketingInfosField>
+</ns2:ARR_UpdateItinerary>

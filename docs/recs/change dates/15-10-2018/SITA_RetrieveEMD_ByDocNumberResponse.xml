@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RetrieveEMD_ByDocNumberResponse xmlns="http://sita.aero/SITA_RetrieveEMD_ByDocNumber/4/0" xmlns:common="http://sita.aero/common/3/0" xmlns:fares="http://sita.aero/fares/common/4/0" xmlns:ticketing="http://sita.aero/ticketing/common/3/0">
+  <Success/>
+  <PassengerInfo>
+    <common:BookingInfo>
+      <common:BookingReferenceID ID="P161W">
+        <common:CompanyName Code="958"/>
+      </common:BookingReferenceID>
+    </common:BookingInfo>
+    <common:PassengerName>
+      <common:GivenName>VASILIS MR</common:GivenName>
+      <common:Surname>KASIMATIS</common:Surname>
+    </common:PassengerName>
+    <common:PassengerType Code="ADT"/>
+    <EMD_Info>
+      <ticketing:TicketDocument DateOfIssue="2018-10-15" IssueIATA="73704444" IssuingAgentType="G" ReservationsCityCode="WWW001" TicketDocumentNbr="9584550016950">
+        <ticketing:CouponInfo CurrencyCode="USD" DateOfService="2018-12-21" RPH="1" Status="OPEN FOR USE" Value="40.00">
+          <ticketing:PresentInfo>
+            <ticketing:DepartureAirport LocationCode="AUA"/>
+            <ticketing:ArrivalAirport LocationCode="CUR"/>
+          </ticketing:PresentInfo>
+          <ticketing:ValidatingAirline Code="7I"/>
+          <ticketing:ReasonForIssuance SubCode="0CD"/>
+        </ticketing:CouponInfo>
+        <ticketing:CouponInfo CurrencyCode="USD" DateOfService="2018-12-15" RPH="2" Status="OPEN FOR USE" Value=".00">
+          <ticketing:PresentInfo>
+            <ticketing:DepartureAirport LocationCode="CUR"/>
+            <ticketing:ArrivalAirport LocationCode="BON"/>
+          </ticketing:PresentInfo>
+          <ticketing:ValidatingAirline Code="7I"/>
+          <ticketing:ReasonForIssuance SubCode="0CD"/>
+        </ticketing:CouponInfo>
+        <ticketing:CouponInfo CurrencyCode="USD" DateOfService="2018-12-23" RPH="3" Status="OPEN FOR USE" Value="40.00">
+          <ticketing:PresentInfo>
+            <ticketing:DepartureAirport LocationCode="BON"/>
+            <ticketing:ArrivalAirport LocationCode="CUR"/>
+          </ticketing:PresentInfo>
+          <ticketing:ValidatingAirline Code="7I"/>
+          <ticketing:ReasonForIssuance SubCode="0CD"/>
+        </ticketing:CouponInfo>
+        <ticketing:CouponInfo CurrencyCode="USD" DateOfService="2018-12-16" RPH="4" Status="OPEN FOR USE" Value=".00">
+          <ticketing:PresentInfo>
+            <ticketing:DepartureAirport LocationCode="CUR"/>
+            <ticketing:ArrivalAirport LocationCode="AUA"/>
+          </ticketing:PresentInfo>
+          <ticketing:ValidatingAirline Code="7I"/>
+          <ticketing:ReasonForIssuance SubCode="0CD"/>
+        </ticketing:CouponInfo>
+      </ticketing:TicketDocument>
+    </EMD_Info>
+  </PassengerInfo>
+  <PTC_FareBreakdowns>
+    <PTC_FareBreakdown>
+      <fares:PassengerFare>
+        <fares:TotalFare Amount="80.00" CurrencyCode="USD"/>
+        <fares:BaseFare Amount="80.00" CurrencyCode="USD"/>
+      </fares:PassengerFare>
+    </PTC_FareBreakdown>
+  </PTC_FareBreakdowns>
+  <Endorsements>
+    <common:Endorsement>NON END/CHANGEFEEMAYAPPLY</common:Endorsement>
+  </Endorsements>
+  <PaymentDetails>
+    <PaymentDetail PaymentType="CA">
+      <ticketing:PaymentAmount Amount="80.00" CurrencyCode="USD"/>
+    </PaymentDetail>
+  </PaymentDetails>
+</SITA_RetrieveEMD_ByDocNumberResponse>

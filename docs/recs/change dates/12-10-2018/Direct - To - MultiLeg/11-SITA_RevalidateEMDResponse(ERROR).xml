@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SITA_RevalidateEMDResponse xmlns="http://sita.aero/SITA_RevalidateEMD/5/1" xmlns:error="http://sita.aero/errors/1">
+  <Errors>
+    <error:Error Code="1000" Source="HOST" Type="1">ORIG/DEST CHANGE NOT ALLOWED;</error:Error>
+  </Errors>
+</SITA_RevalidateEMDResponse>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ARR_ExecuteReprice xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <baggageInfoField>
+        <newBaggageIndField>true</newBaggageIndField>
+    </baggageInfoField>
+    <commissionField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <endorsementsField/>
+    <passengerInfoField>
+        <additionalPassengerInfoField>ADT</additionalPassengerInfoField>
+        <emailAddressField>vkasimatis@jrtechnologies.com</emailAddressField>
+        <emailIndicatorField>true</emailIndicatorField>
+        <sequenceNumberField>1</sequenceNumberField>
+        <ticketingInfoField>
+            <ns4:airlineAccountingCodeField>958</ns4:airlineAccountingCodeField>
+            <ns4:formAndSerialNumberField>4321014896</ns4:formAndSerialNumberField>
+            <salesReportInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <sponsorInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <tourCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ticketingInfoField>
+    </passengerInfoField>
+    <paymentDetailsField>
+        <ns2:PaymentDetailType>
+            <ns2:miscChargeOrderField>
+                <ns2:couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:couponRPHsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:originalIssueDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:originalIssueIATAField>35200421</ns2:originalIssueIATAField>
+                <ns2:originalIssuePlaceField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:originalPaymentFormField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:originalTicketNumberField>9584321014896</ns2:originalTicketNumberField>
+                <ns2:paperMCO_ExistIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:ticketNumberField>9584321014896</ns2:ticketNumberField>
+            </ns2:miscChargeOrderField>
+            <ns2:paymentAmountField>
+                <ns2:amountField>19.25</ns2:amountField>
+                <ns2:approvalCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:currencyCodeField>USD</ns2:currencyCodeField>
+                <ns2:decimalPlacesField>2</ns2:decimalPlacesField>
+            </ns2:paymentAmountField>
+            <ns2:paymentCardField>
+                <ns2:addressField>
+                    <ns2:addressLineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <ns2:typeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <ns2:cityNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <ns2:countryField>
+                        <ns2:codesField>
+                            <ns2:CountryCodesTypeCode>
+                                <ns2:textField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <ns2:typeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </ns2:CountryCodesTypeCode>
+                        </ns2:codesField>
+                        <ns2:nameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns2:countryField>
+                    <ns2:countyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <ns2:formattedIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <ns2:postalCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <ns2:stateProvField>
+                        <ns2:stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns2:textField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns2:stateProvField>
+                </ns2:addressField>
+                <ns2:cardCodeField>VI</ns2:cardCodeField>
+                <ns2:cardHolderNameField>VENIZELOS KOSTAS</ns2:cardHolderNameField>
+                <ns2:cardNumberField>4111111111111111</ns2:cardNumberField>
+                <ns2:effectiveDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:expireDateField>0621</ns2:expireDateField>
+                <ns2:seriesCodeField>123</ns2:seriesCodeField>
+                <ns2:cardPresentIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:cardTypeField>CC</ns2:cardTypeField>
+                <ns2:countryOfIssueField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:extendPaymentIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:extendedPaymentQuantityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:maskedCardNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:remarkField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ns2:paymentCardField>
+            <ns2:paymentReferenceDataField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns2:paymentTypeField>CC</ns2:paymentTypeField>
+            <ns2:primaryPaymentIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns2:splitPaymentIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns2:documentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns2:passengerRPHListField>1</ns2:passengerRPHListField>
+        </ns2:PaymentDetailType>
+    </paymentDetailsField>
+    <penaltyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns2:ARR_ExecuteReprice>

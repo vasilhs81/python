@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Header>
+		<ns7:Config xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.RES.HalService" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns5="http://tempuri.org/" xmlns:ns6="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns7="http://sita.aero/hal" xmlns:ns8="http://schemas.microsoft.com/2003/10/Serialization/" subscriberId="7I"/>
+	</S:Header>
+	<S:Body>
+		<ns5:ARR_UpdateItinerary xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.RES.HalService" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns5="http://tempuri.org/" xmlns:ns6="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns7="http://sita.aero/hal" xmlns:ns8="http://schemas.microsoft.com/2003/10/Serialization/">
+			<ns5:sessionID>cc81ac89-8f07-4da2-a97d-1f50e6d819a5</ns5:sessionID>
+			<ns5:ARR_UpdateItineraryRQ>
+				<ns4:segmentsToAddField>
+					<ns4:flightInfoDetailsField>
+						<ns4:ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+							<ns4:arrivalAirportField>
+								<ns4:locationCodeField>BON</ns4:locationCodeField>
+							</ns4:arrivalAirportField>
+							<ns4:departureAirportField>
+								<ns4:locationCodeField>AUA</ns4:locationCodeField>
+							</ns4:departureAirportField>
+							<ns4:departureDateField>2018-11-16</ns4:departureDateField>
+							<ns4:marketingAirlineField>
+								<ns4:codeField>7I</ns4:codeField>
+								<ns4:flightNumberField>791</ns4:flightNumberField>
+							</ns4:marketingAirlineField>
+							<ns4:rPHField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true">1</ns4:rPHField>
+							<ns4:bookingClassAvailField>
+								<ns3:resBookDesigCodeField>Y</ns3:resBookDesigCodeField>
+								<ns3:resBookDesigQuantityField>2</ns3:resBookDesigQuantityField>
+								<ns3:resBookDesigStatusCodeField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+							</ns4:bookingClassAvailField>
+							<ns4:fareInfoField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+						</ns4:ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+					</ns4:flightInfoDetailsField>
+				</ns4:segmentsToAddField>
+				<ns4:segmentsToChangeField xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+				<ns4:segmentsToRemoveField>
+					<ns4:flightInfoDetailsField>
+						<ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+							<ns4:arrivalAirportField>
+								<ns4:locationCodeField>CUR</ns4:locationCodeField>
+							</ns4:arrivalAirportField>
+							<ns4:departureAirportField>
+								<ns4:locationCodeField>AUA</ns4:locationCodeField>
+							</ns4:departureAirportField>
+							<ns4:departureDateField>2018-11-16</ns4:departureDateField>
+							<ns4:marketingAirlineField>
+								<ns4:codeField>7I</ns4:codeField>
+								<ns4:flightNumberField>795</ns4:flightNumberField>
+							</ns4:marketingAirlineField>
+							<ns4:rPHField>1</ns4:rPHField>
+						</ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+						<ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+							<ns4:arrivalAirportField>
+								<ns4:locationCodeField>BON</ns4:locationCodeField>
+							</ns4:arrivalAirportField>
+							<ns4:departureAirportField>
+								<ns4:locationCodeField>CUR</ns4:locationCodeField>
+							</ns4:departureAirportField>
+							<ns4:departureDateField>2018-11-17</ns4:departureDateField>
+							<ns4:marketingAirlineField>
+								<ns4:codeField>7I</ns4:codeField>
+								<ns4:flightNumberField>777</ns4:flightNumberField>
+							</ns4:marketingAirlineField>
+							<ns4:rPHField>2</ns4:rPHField>
+						</ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+					</ns4:flightInfoDetailsField>
+				</ns4:segmentsToRemoveField>
+				<ns4:ticketingInfosField>
+					<ns4:residingDatabaseField>7I</ns4:residingDatabaseField>
+					<ns4:ticketingInfoField>
+						<ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+							<ns6:airlineAccountingCodeField>958</ns6:airlineAccountingCodeField>
+							<ns6:formAndSerialNumberField>4321014902</ns6:formAndSerialNumberField>
+						</ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+						<ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+							<ns6:airlineAccountingCodeField>958</ns6:airlineAccountingCodeField>
+							<ns6:formAndSerialNumberField>4321014903</ns6:formAndSerialNumberField>
+						</ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo>
+					</ns4:ticketingInfoField>
+				</ns4:ticketingInfosField>
+			</ns5:ARR_UpdateItineraryRQ>
+		</ns5:ARR_UpdateItinerary>
+	</S:Body>
+</S:Envelope>

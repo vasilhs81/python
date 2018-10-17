@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sita:SITA_AirfareFlightShopRS xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:sita="http://www.sita.aero/PTS/fare/2005/12/FlightShopRS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AXITransactionIdentifier="7669103a0ad81a087ea826cfdc0201d3-2E36E15143D4E9D982010DB064B4CC5D.laaxiyy001q.atl2.dc.sita.aero" EchoToken="501077" Target="Test" TimeStamp="2018-10-15T06:29:40" Version="0.001">
+  <sita:Success/>
+  <sita:Warnings>
+    <ota:Warning Type="448">90001 - Fares not found for some dates</ota:Warning>
+    <ota:Warning Type="448">90004 - Some journeys had no seats available</ota:Warning>
+  </sita:Warnings>
+  <sita:AvailableJourneys>
+    <sita:AvailableJourney RPH="01">
+      <sita:DepartureAirport LocationCode="AUA"/>
+      <sita:ArrivalAirport LocationCode="BON"/>
+      <sita:AvailJourneyOption RPH="0101">
+        <sita:Flight ArrivalDateTime="2018-11-16T19:00:00" DepartureDateTime="2018-11-16T01:00:00" FlightNumber="111" RPH="010101" StopQuantity="1">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0102">
+        <sita:Flight ArrivalDateTime="2018-11-16T19:00:00" DepartureDateTime="2018-11-16T17:00:00" FlightNumber="791" RPH="010201" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F70"/>
+          <sita:ResBookDesigList>B:9,C:9,D:9,J:9,M:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0103">
+        <sita:Flight ArrivalDateTime="2018-11-16T19:55:00" DepartureDateTime="2018-11-16T19:20:00" FlightNumber="406" RPH="010301" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:6,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T16:45:00" DepartureDateTime="2018-11-17T16:20:00" FlightNumber="305" RPH="010302" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:6,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0104">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:10:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="404" RPH="010401" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-16T16:45:00" DepartureDateTime="2018-11-16T16:20:00" FlightNumber="305" RPH="010402" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0105">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:30:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="402" RPH="010501" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="TEST"/>
+          <sita:Equipment AirEquipType="M82"/>
+          <sita:ResBookDesigList>B:9,E:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,P:9,Q:9,S:9,T:9,U:9,V:9,W:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-16T16:45:00" DepartureDateTime="2018-11-16T16:20:00" FlightNumber="305" RPH="010502" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0106">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:30:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="402" RPH="010601" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="TEST"/>
+          <sita:Equipment AirEquipType="M82"/>
+          <sita:ResBookDesigList>B:9,E:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,P:9,Q:9,S:9,T:9,U:9,V:9,W:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T10:55:00" DepartureDateTime="2018-11-17T10:30:00" FlightNumber="303" RPH="010602" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0107">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:30:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="402" RPH="010701" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="TEST"/>
+          <sita:Equipment AirEquipType="M82"/>
+          <sita:ResBookDesigList>B:9,E:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,P:9,Q:9,S:9,T:9,U:9,V:9,W:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T11:00:00" DepartureDateTime="2018-11-17T09:00:00" FlightNumber="223" RPH="010702" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0108">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:30:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="250" RPH="010801" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="M82"/>
+          <sita:ResBookDesigList>B:9,E:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,P:9,Q:9,S:9,T:9,U:9,V:9,W:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T10:55:00" DepartureDateTime="2018-11-17T10:30:00" FlightNumber="303" RPH="010802" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0109">
+        <sita:Flight ArrivalDateTime="2018-11-16T06:00:00" DepartureDateTime="2018-11-16T01:00:00" FlightNumber="111" RPH="010901" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-16T10:55:00" DepartureDateTime="2018-11-16T10:30:00" FlightNumber="303" RPH="010902" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0110">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:10:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="9008" RPH="011001" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="737"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T08:00:00" DepartureDateTime="2018-11-17T06:00:00" FlightNumber="1066" RPH="011002" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0111">
+        <sita:Flight ArrivalDateTime="2018-11-16T12:00:00" DepartureDateTime="2018-11-16T08:00:00" FlightNumber="7720" RPH="011101" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T19:00:00" DepartureDateTime="2018-11-17T12:00:00" FlightNumber="111" RPH="011102" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0112">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:10:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="903" RPH="011201" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T08:00:00" DepartureDateTime="2018-11-17T06:00:00" FlightNumber="98" RPH="011202" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0113">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:10:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="902" RPH="011301" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="101"/>
+          <sita:ResBookDesigList>C:9,D:9,J:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T08:00:00" DepartureDateTime="2018-11-17T06:00:00" FlightNumber="66" RPH="011302" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0114">
+        <sita:Flight ArrivalDateTime="2018-11-16T12:00:00" DepartureDateTime="2018-11-16T08:00:00" FlightNumber="795" RPH="011401" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T11:00:00" DepartureDateTime="2018-11-17T09:00:00" FlightNumber="777" RPH="011402" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0115">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:10:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="505" RPH="011501" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:8,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T06:10:00" DepartureDateTime="2018-11-17T05:45:00" FlightNumber="555" RPH="011502" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0116">
+        <sita:Flight ArrivalDateTime="2018-11-16T14:30:00" DepartureDateTime="2018-11-16T13:35:00" FlightNumber="488" RPH="011601" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F70"/>
+          <sita:ResBookDesigList>B:9,C:9,D:9,J:9,M:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T11:00:00" DepartureDateTime="2018-11-17T09:00:00" FlightNumber="331" RPH="011602" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,E:9,G:9,H:9,I:9,K:9,L:9,M:9,N:9,O:9,Q:9,S:9,T:9,U:9,V:9,W:9,X:9,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0117">
+        <sita:Flight ArrivalDateTime="2018-11-17T00:10:00" DepartureDateTime="2018-11-16T23:35:00" FlightNumber="408" RPH="011701" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:9,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-17T06:10:00" DepartureDateTime="2018-11-17T05:45:00" FlightNumber="301" RPH="011702" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:1,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      <sita:AvailJourneyOption RPH="0118">
+        <sita:Flight ArrivalDateTime="2018-11-16T19:55:00" DepartureDateTime="2018-11-16T19:20:00" FlightNumber="406" RPH="011801" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:6,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+        <sita:Flight ArrivalDateTime="2018-11-16T21:00:00" DepartureDateTime="2018-11-16T20:35:00" FlightNumber="307" RPH="011802" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:5,H:9,L:7,M:9,S:2,T:9,W:5,Y:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+    </sita:AvailableJourney>
+  </sita:AvailableJourneys>
+  <sita:PricedJourneys>
+    <sita:PricedJourney>
+      <sita:JourneyPriceOptions>
+        <sita:JourneyPriceOption SequenceNumber="1">
+          <sita:PTC_FareBreakdowns>
+            <sita:PTC_FareBreakdown PricingSource="Published">
+              <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+              <sita:FareBasisCodes>
+                <sita:FareBasisCode>LOW</sita:FareBasisCode>
+              </sita:FareBasisCodes>
+              <sita:PassengerFare>
+                <sita:BaseFare Amount="115.55" CurrencyCode="USD"/>
+                <sita:TPA_Extensions/>
+              </sita:PassengerFare>
+            </sita:PTC_FareBreakdown>
+          </sita:PTC_FareBreakdowns>
+          <sita:FareInfos>
+            <sita:FareInfo NegotiatedFare="false">
+              <sita:FareReference>LOW</sita:FareReference>
+              <sita:RuleInfo/>
+              <sita:FilingAirline Code="7I"/>
+              <sita:DepartureAirport LocationCode="AUA"/>
+              <sita:ArrivalAirport LocationCode="BON"/>
+              <sita:TPA_Extensions>
+                <sita:FlightShopFareInfoExt>
+                  <sita:FlightResBookDesigCodes>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY" OriginLocationCode="AUA" ResBookDesigCode="L" SegmentRPH="1"/>
+                  </sita:FlightResBookDesigCodes>
+                </sita:FlightShopFareInfoExt>
+              </sita:TPA_Extensions>
+            </sita:FareInfo>
+          </sita:FareInfos>
+        </sita:JourneyPriceOption>
+        <sita:JourneyPriceOption SequenceNumber="2">
+          <sita:PTC_FareBreakdowns>
+            <sita:PTC_FareBreakdown PricingSource="Published">
+              <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+              <sita:FareBasisCodes>
+                <sita:FareBasisCode>LOW</sita:FareBasisCode>
+              </sita:FareBasisCodes>
+              <sita:PassengerFare>
+                <sita:BaseFare Amount="115.55" CurrencyCode="USD"/>
+                <sita:TPA_Extensions/>
+              </sita:PassengerFare>
+            </sita:PTC_FareBreakdown>
+          </sita:PTC_FareBreakdowns>
+          <sita:FareInfos>
+            <sita:FareInfo NegotiatedFare="false">
+              <sita:FareReference>LOW</sita:FareReference>
+              <sita:RuleInfo/>
+              <sita:FilingAirline Code="7I"/>
+              <sita:DepartureAirport LocationCode="AUA"/>
+              <sita:ArrivalAirport LocationCode="BON"/>
+              <sita:TPA_Extensions>
+                <sita:FlightShopFareInfoExt>
+                  <sita:FlightResBookDesigCodes>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="CUR" FareMarketingType="E_ECONOMY" OriginLocationCode="AUA" ResBookDesigCode="L" SegmentRPH="1"/>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY" OriginLocationCode="CUR" ResBookDesigCode="L" SegmentRPH="2"/>
+                  </sita:FlightResBookDesigCodes>
+                </sita:FlightShopFareInfoExt>
+              </sita:TPA_Extensions>
+            </sita:FareInfo>
+          </sita:FareInfos>
+        </sita:JourneyPriceOption>
+        <sita:JourneyPriceOption SequenceNumber="3">
+          <sita:PTC_FareBreakdowns>
+            <sita:PTC_FareBreakdown PricingSource="Published">
+              <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+              <sita:FareBasisCodes>
+                <sita:FareBasisCode>TOW</sita:FareBasisCode>
+              </sita:FareBasisCodes>
+              <sita:PassengerFare>
+                <sita:BaseFare Amount="132.77" CurrencyCode="USD"/>
+                <sita:TPA_Extensions/>
+              </sita:PassengerFare>
+            </sita:PTC_FareBreakdown>
+          </sita:PTC_FareBreakdowns>
+          <sita:FareInfos>
+            <sita:FareInfo NegotiatedFare="false">
+              <sita:FareReference>TOW</sita:FareReference>
+              <sita:RuleInfo/>
+              <sita:FilingAirline Code="7I"/>
+              <sita:DepartureAirport LocationCode="AUA"/>
+              <sita:ArrivalAirport LocationCode="BON"/>
+              <sita:TPA_Extensions>
+                <sita:FlightShopFareInfoExt>
+                  <sita:FlightResBookDesigCodes>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="CUR" FareMarketingType="E_ECONOMY" OriginLocationCode="AUA" ResBookDesigCode="T" SegmentRPH="1"/>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY" OriginLocationCode="CUR" ResBookDesigCode="T" SegmentRPH="2"/>
+                  </sita:FlightResBookDesigCodes>
+                </sita:FlightShopFareInfoExt>
+              </sita:TPA_Extensions>
+            </sita:FareInfo>
+          </sita:FareInfos>
+        </sita:JourneyPriceOption>
+        <sita:JourneyPriceOption SequenceNumber="4">
+          <sita:PTC_FareBreakdowns>
+            <sita:PTC_FareBreakdown PricingSource="Published">
+              <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+              <sita:FareBasisCodes>
+                <sita:FareBasisCode>YOW</sita:FareBasisCode>
+              </sita:FareBasisCodes>
+              <sita:PassengerFare>
+                <sita:BaseFare Amount="166.66" CurrencyCode="USD"/>
+                <sita:TPA_Extensions/>
+              </sita:PassengerFare>
+            </sita:PTC_FareBreakdown>
+          </sita:PTC_FareBreakdowns>
+          <sita:FareInfos>
+            <sita:FareInfo NegotiatedFare="false">
+              <sita:FareReference>YOW</sita:FareReference>
+              <sita:RuleInfo/>
+              <sita:FilingAirline Code="7I"/>
+              <sita:DepartureAirport LocationCode="AUA"/>
+              <sita:ArrivalAirport LocationCode="BON"/>
+              <sita:TPA_Extensions>
+                <sita:FlightShopFareInfoExt>
+                  <sita:FlightResBookDesigCodes>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY_FLEXIBLE" OriginLocationCode="AUA" ResBookDesigCode="Y" SegmentRPH="1"/>
+                  </sita:FlightResBookDesigCodes>
+                </sita:FlightShopFareInfoExt>
+              </sita:TPA_Extensions>
+            </sita:FareInfo>
+          </sita:FareInfos>
+        </sita:JourneyPriceOption>
+        <sita:JourneyPriceOption SequenceNumber="5">
+          <sita:PTC_FareBreakdowns>
+            <sita:PTC_FareBreakdown PricingSource="Published">
+              <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+              <sita:FareBasisCodes>
+                <sita:FareBasisCode>YOW</sita:FareBasisCode>
+              </sita:FareBasisCodes>
+              <sita:PassengerFare>
+                <sita:BaseFare Amount="166.66" CurrencyCode="USD"/>
+                <sita:TPA_Extensions/>
+              </sita:PassengerFare>
+            </sita:PTC_FareBreakdown>
+          </sita:PTC_FareBreakdowns>
+          <sita:FareInfos>
+            <sita:FareInfo NegotiatedFare="false">
+              <sita:FareReference>YOW</sita:FareReference>
+              <sita:RuleInfo/>
+              <sita:FilingAirline Code="7I"/>
+              <sita:DepartureAirport LocationCode="AUA"/>
+              <sita:ArrivalAirport LocationCode="BON"/>
+              <sita:TPA_Extensions>
+                <sita:FlightShopFareInfoExt>
+                  <sita:FlightResBookDesigCodes>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="CUR" FareMarketingType="E_ECONOMY_FLEXIBLE" OriginLocationCode="AUA" ResBookDesigCode="Y" SegmentRPH="1"/>
+                    <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY_FLEXIBLE" OriginLocationCode="CUR" ResBookDesigCode="Y" SegmentRPH="2"/>
+                  </sita:FlightResBookDesigCodes>
+                </sita:FlightShopFareInfoExt>
+              </sita:TPA_Extensions>
+            </sita:FareInfo>
+          </sita:FareInfos>
+        </sita:JourneyPriceOption>
+      </sita:JourneyPriceOptions>
+    </sita:PricedJourney>
+    <sita:PriceAvailabilityBindings>
+      <sita:PriceAvailabilityBinding SequenceNumber="1">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0101"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="4">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0101"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="4">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0102"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0103"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0103"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="3">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0104"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0104"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="3">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0105"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0105"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0106"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0106"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0107"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0107"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0108"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0108"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0109"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0109"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0110"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0110"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0111"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0111"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0112"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0112"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0114"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0114"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0115"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0115"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0116"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0117"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0117"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0118"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0118"/>
+      </sita:PriceAvailabilityBinding>
+    </sita:PriceAvailabilityBindings>
+  </sita:PricedJourneys>
+  <sita:PricedTrips>
+    <sita:TripPrice SequenceNumber="1">
+      <sita:AirItineraryPricingInfo>
+        <sita:ItinTotalFare>
+          <sita:BaseFare Amount="116.00" CurrencyCode="USD"/>
+        </sita:ItinTotalFare>
+        <sita:PTC_FareBreakdowns>
+          <sita:PTC_FareBreakdown PricingSource="Published">
+            <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+            <sita:FareBasisCodes>
+              <sita:FareBasisCode>LOW</sita:FareBasisCode>
+            </sita:FareBasisCodes>
+            <sita:PassengerFare>
+              <sita:BaseFare Amount="116.00" CurrencyCode="USD"/>
+              <sita:Taxes>
+                <sita:Tax Amount="20.00" CurrencyCode="USD" TaxCode="XT"/>
+                <sita:Tax Amount="20.00" CurrencyCode="USD" TaxCode="AW"/>
+              </sita:Taxes>
+            </sita:PassengerFare>
+          </sita:PTC_FareBreakdown>
+        </sita:PTC_FareBreakdowns>
+        <sita:FareInfos>
+          <sita:FareInfo NegotiatedFare="false">
+            <sita:FareReference>LOW</sita:FareReference>
+            <sita:RuleInfo/>
+            <sita:FilingAirline Code="7I"/>
+            <sita:DepartureAirport LocationCode="AUA"/>
+            <sita:ArrivalAirport LocationCode="BON"/>
+            <sita:TPA_Extensions>
+              <sita:FlightShopFareInfoExt>
+                <sita:FlightResBookDesigCodes>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY" OriginLocationCode="AUA" ResBookDesigCode="L" SegmentRPH="1"/>
+                </sita:FlightResBookDesigCodes>
+              </sita:FlightShopFareInfoExt>
+            </sita:TPA_Extensions>
+          </sita:FareInfo>
+        </sita:FareInfos>
+      </sita:AirItineraryPricingInfo>
+    </sita:TripPrice>
+    <sita:TripPrice SequenceNumber="2">
+      <sita:AirItineraryPricingInfo>
+        <sita:ItinTotalFare>
+          <sita:BaseFare Amount="116.00" CurrencyCode="USD"/>
+        </sita:ItinTotalFare>
+        <sita:PTC_FareBreakdowns>
+          <sita:PTC_FareBreakdown PricingSource="Published">
+            <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+            <sita:FareBasisCodes>
+              <sita:FareBasisCode>LOW</sita:FareBasisCode>
+            </sita:FareBasisCodes>
+            <sita:PassengerFare>
+              <sita:BaseFare Amount="116.00" CurrencyCode="USD"/>
+              <sita:Taxes>
+                <sita:Tax Amount="39.25" CurrencyCode="USD" TaxCode="XT"/>
+                <sita:Tax Amount="34.25" CurrencyCode="USD" TaxCode="AW"/>
+                <sita:Tax Amount="5.00" CurrencyCode="USD" TaxCode="AN"/>
+              </sita:Taxes>
+            </sita:PassengerFare>
+          </sita:PTC_FareBreakdown>
+        </sita:PTC_FareBreakdowns>
+        <sita:FareInfos>
+          <sita:FareInfo NegotiatedFare="false">
+            <sita:FareReference>LOW</sita:FareReference>
+            <sita:RuleInfo/>
+            <sita:FilingAirline Code="7I"/>
+            <sita:DepartureAirport LocationCode="AUA"/>
+            <sita:ArrivalAirport LocationCode="BON"/>
+            <sita:TPA_Extensions>
+              <sita:FlightShopFareInfoExt>
+                <sita:FlightResBookDesigCodes>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="CUR" FareMarketingType="E_ECONOMY" OriginLocationCode="AUA" ResBookDesigCode="L" SegmentRPH="1"/>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY" OriginLocationCode="CUR" ResBookDesigCode="L" SegmentRPH="2"/>
+                </sita:FlightResBookDesigCodes>
+              </sita:FlightShopFareInfoExt>
+            </sita:TPA_Extensions>
+          </sita:FareInfo>
+        </sita:FareInfos>
+      </sita:AirItineraryPricingInfo>
+    </sita:TripPrice>
+    <sita:TripPrice SequenceNumber="3">
+      <sita:AirItineraryPricingInfo>
+        <sita:ItinTotalFare>
+          <sita:BaseFare Amount="133.00" CurrencyCode="USD"/>
+        </sita:ItinTotalFare>
+        <sita:PTC_FareBreakdowns>
+          <sita:PTC_FareBreakdown PricingSource="Published">
+            <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+            <sita:FareBasisCodes>
+              <sita:FareBasisCode>TOW</sita:FareBasisCode>
+            </sita:FareBasisCodes>
+            <sita:PassengerFare>
+              <sita:BaseFare Amount="133.00" CurrencyCode="USD"/>
+              <sita:Taxes>
+                <sita:Tax Amount="39.25" CurrencyCode="USD" TaxCode="XT"/>
+                <sita:Tax Amount="34.25" CurrencyCode="USD" TaxCode="AW"/>
+                <sita:Tax Amount="5.00" CurrencyCode="USD" TaxCode="AN"/>
+              </sita:Taxes>
+            </sita:PassengerFare>
+          </sita:PTC_FareBreakdown>
+        </sita:PTC_FareBreakdowns>
+        <sita:FareInfos>
+          <sita:FareInfo NegotiatedFare="false">
+            <sita:FareReference>TOW</sita:FareReference>
+            <sita:RuleInfo/>
+            <sita:FilingAirline Code="7I"/>
+            <sita:DepartureAirport LocationCode="AUA"/>
+            <sita:ArrivalAirport LocationCode="BON"/>
+            <sita:TPA_Extensions>
+              <sita:FlightShopFareInfoExt>
+                <sita:FlightResBookDesigCodes>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="CUR" FareMarketingType="E_ECONOMY" OriginLocationCode="AUA" ResBookDesigCode="T" SegmentRPH="1"/>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY" OriginLocationCode="CUR" ResBookDesigCode="T" SegmentRPH="2"/>
+                </sita:FlightResBookDesigCodes>
+              </sita:FlightShopFareInfoExt>
+            </sita:TPA_Extensions>
+          </sita:FareInfo>
+        </sita:FareInfos>
+      </sita:AirItineraryPricingInfo>
+    </sita:TripPrice>
+    <sita:TripPrice SequenceNumber="4">
+      <sita:AirItineraryPricingInfo>
+        <sita:ItinTotalFare>
+          <sita:BaseFare Amount="167.00" CurrencyCode="USD"/>
+        </sita:ItinTotalFare>
+        <sita:PTC_FareBreakdowns>
+          <sita:PTC_FareBreakdown PricingSource="Published">
+            <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+            <sita:FareBasisCodes>
+              <sita:FareBasisCode>YOW</sita:FareBasisCode>
+            </sita:FareBasisCodes>
+            <sita:PassengerFare>
+              <sita:BaseFare Amount="167.00" CurrencyCode="USD"/>
+              <sita:Taxes>
+                <sita:Tax Amount="20.00" CurrencyCode="USD" TaxCode="XT"/>
+                <sita:Tax Amount="20.00" CurrencyCode="USD" TaxCode="AW"/>
+              </sita:Taxes>
+            </sita:PassengerFare>
+          </sita:PTC_FareBreakdown>
+        </sita:PTC_FareBreakdowns>
+        <sita:FareInfos>
+          <sita:FareInfo NegotiatedFare="false">
+            <sita:FareReference>YOW</sita:FareReference>
+            <sita:RuleInfo/>
+            <sita:FilingAirline Code="7I"/>
+            <sita:DepartureAirport LocationCode="AUA"/>
+            <sita:ArrivalAirport LocationCode="BON"/>
+            <sita:TPA_Extensions>
+              <sita:FlightShopFareInfoExt>
+                <sita:FlightResBookDesigCodes>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY_FLEXIBLE" OriginLocationCode="AUA" ResBookDesigCode="Y" SegmentRPH="1"/>
+                </sita:FlightResBookDesigCodes>
+              </sita:FlightShopFareInfoExt>
+            </sita:TPA_Extensions>
+          </sita:FareInfo>
+        </sita:FareInfos>
+      </sita:AirItineraryPricingInfo>
+    </sita:TripPrice>
+    <sita:TripPrice SequenceNumber="5">
+      <sita:AirItineraryPricingInfo>
+        <sita:ItinTotalFare>
+          <sita:BaseFare Amount="167.00" CurrencyCode="USD"/>
+        </sita:ItinTotalFare>
+        <sita:PTC_FareBreakdowns>
+          <sita:PTC_FareBreakdown PricingSource="Published">
+            <sita:PassengerTypeQuantity Code="ADT" CodeContext="SITA"/>
+            <sita:FareBasisCodes>
+              <sita:FareBasisCode>YOW</sita:FareBasisCode>
+            </sita:FareBasisCodes>
+            <sita:PassengerFare>
+              <sita:BaseFare Amount="167.00" CurrencyCode="USD"/>
+              <sita:Taxes>
+                <sita:Tax Amount="39.25" CurrencyCode="USD" TaxCode="XT"/>
+                <sita:Tax Amount="34.25" CurrencyCode="USD" TaxCode="AW"/>
+                <sita:Tax Amount="5.00" CurrencyCode="USD" TaxCode="AN"/>
+              </sita:Taxes>
+            </sita:PassengerFare>
+          </sita:PTC_FareBreakdown>
+        </sita:PTC_FareBreakdowns>
+        <sita:FareInfos>
+          <sita:FareInfo NegotiatedFare="false">
+            <sita:FareReference>YOW</sita:FareReference>
+            <sita:RuleInfo/>
+            <sita:FilingAirline Code="7I"/>
+            <sita:DepartureAirport LocationCode="AUA"/>
+            <sita:ArrivalAirport LocationCode="BON"/>
+            <sita:TPA_Extensions>
+              <sita:FlightShopFareInfoExt>
+                <sita:FlightResBookDesigCodes>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="CUR" FareMarketingType="E_ECONOMY_FLEXIBLE" OriginLocationCode="AUA" ResBookDesigCode="Y" SegmentRPH="1"/>
+                  <sita:FlightResBookDesigCode Cabin="ECONOMY" DestinationLocationCode="BON" FareMarketingType="E_ECONOMY_FLEXIBLE" OriginLocationCode="CUR" ResBookDesigCode="Y" SegmentRPH="2"/>
+                </sita:FlightResBookDesigCodes>
+              </sita:FlightShopFareInfoExt>
+            </sita:TPA_Extensions>
+          </sita:FareInfo>
+        </sita:FareInfos>
+      </sita:AirItineraryPricingInfo>
+    </sita:TripPrice>
+    <sita:PriceAvailabilityBindings>
+      <sita:PriceAvailabilityBinding SequenceNumber="1">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0101" JourneySeqNumber="1"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0118" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0117" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0109" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0115" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0110" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0112" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0106" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0108" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0103" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0107" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0114" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="2">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0111" JourneySeqNumber="2"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="3">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0104" JourneySeqNumber="3"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="3">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0105" JourneySeqNumber="3"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="4">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0102" JourneySeqNumber="4"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="4">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0101" JourneySeqNumber="4"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0118" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0104" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0105" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0117" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0109" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0115" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0110" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0112" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0106" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0108" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0103" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0107" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0116" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0114" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+      <sita:PriceAvailabilityBinding SequenceNumber="5">
+        <sita:AvailJourneyBinding AvailJourneyRPH="0111" JourneySeqNumber="5"/>
+      </sita:PriceAvailabilityBinding>
+    </sita:PriceAvailabilityBindings>
+  </sita:PricedTrips>
+</sita:SITA_AirfareFlightShopRS>

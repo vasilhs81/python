@@ -1,0 +1,2080 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ARR_UpdateItinerary xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.SWF">
+    <segmentsToAddField>
+        <flightInfoDetailsField>
+            <ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>AUA</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-21</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>408</flightNumberField>
+                </marketingAirlineField>
+                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <bookingClassAvailField>
+                    <ns2:resBookDesigCodeField>Y</ns2:resBookDesigCodeField>
+                    <ns2:resBookDesigQuantityField>2</ns2:resBookDesigQuantityField>
+                    <ns2:resBookDesigStatusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </bookingClassAvailField>
+                <fareInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>BON</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-22</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>301</flightNumberField>
+                </marketingAirlineField>
+                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <bookingClassAvailField>
+                    <ns2:resBookDesigCodeField>Y</ns2:resBookDesigCodeField>
+                    <ns2:resBookDesigQuantityField>2</ns2:resBookDesigQuantityField>
+                    <ns2:resBookDesigStatusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </bookingClassAvailField>
+                <fareInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>BON</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-23</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>304</flightNumberField>
+                </marketingAirlineField>
+                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <bookingClassAvailField>
+                    <ns2:resBookDesigCodeField>Y</ns2:resBookDesigCodeField>
+                    <ns2:resBookDesigQuantityField>2</ns2:resBookDesigQuantityField>
+                    <ns2:resBookDesigStatusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </bookingClassAvailField>
+                <fareInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>AUA</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-23</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>405</flightNumberField>
+                </marketingAirlineField>
+                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <bookingClassAvailField>
+                    <ns2:resBookDesigCodeField>Y</ns2:resBookDesigCodeField>
+                    <ns2:resBookDesigQuantityField>2</ns2:resBookDesigQuantityField>
+                    <ns2:resBookDesigStatusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </bookingClassAvailField>
+                <fareInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ARR_UpdateItinerarySegmentsToAddFlightLegInfo>
+        </flightInfoDetailsField>
+    </segmentsToAddField>
+    <segmentsToChangeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <segmentsToRemoveField>
+        <flightInfoDetailsField>
+            <ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>AUA</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-14</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>408</flightNumberField>
+                </marketingAirlineField>
+                <rPHField>4</rPHField>
+            </ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>BON</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-15</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>301</flightNumberField>
+                </marketingAirlineField>
+                <rPHField>1</rPHField>
+            </ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>BON</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-16</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>304</flightNumberField>
+                </marketingAirlineField>
+                <rPHField>2</rPHField>
+            </ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+            <ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+                <arrivalAirportField>
+                    <locationCodeField>AUA</locationCodeField>
+                </arrivalAirportField>
+                <departureAirportField>
+                    <locationCodeField>CUR</locationCodeField>
+                </departureAirportField>
+                <departureDateField>2018-12-16</departureDateField>
+                <marketingAirlineField>
+                    <codeField>7I</codeField>
+                    <flightNumberField>405</flightNumberField>
+                </marketingAirlineField>
+                <rPHField>3</rPHField>
+            </ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo>
+        </flightInfoDetailsField>
+    </segmentsToRemoveField>
+    <ticketingInfosField>
+        <residingDatabaseField>7I</residingDatabaseField>
+        <ticketingInfoField>
+            <ARR_UpdateItineraryTicketingInfosTicketingInfo>
+                <ns3:airlineAccountingCodeField>958</ns3:airlineAccountingCodeField>
+                <ns3:formAndSerialNumberField>4321015039</ns3:formAndSerialNumberField>
+            </ARR_UpdateItineraryTicketingInfosTicketingInfo>
+            <ARR_UpdateItineraryTicketingInfosTicketingInfo>
+                <ns3:airlineAccountingCodeField>958</ns3:airlineAccountingCodeField>
+                <ns3:formAndSerialNumberField>4321015040</ns3:formAndSerialNumberField>
+            </ARR_UpdateItineraryTicketingInfosTicketingInfo>
+        </ticketingInfoField>
+    </ticketingInfosField>
+</ns2:ARR_UpdateItinerary>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ARR_UpdateItineraryResponse xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <ns2:errorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:passengerNameRecordField>
+        <bookingInfoField>
+            <bookingReferenceIDField>
+                <UniqueID_Type>
+                    <companyNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <iD_ContextField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <idField>P161W</idField>
+                    <instanceField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <typeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <uRLField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </UniqueID_Type>
+            </bookingReferenceIDField>
+            <statusCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <statusNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </bookingInfoField>
+        <flightInfoDetailsField>
+            <flightLegInfoField>
+                <FlightInfoDetailsTypeFlightLegInfo>
+                    <aPI_RequiredIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <aircraftOwnerField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <arrivalAirportField>
+                        <FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                            <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <locationCodeField>CUR</locationCodeField>
+                            <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        </FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                    </arrivalAirportField>
+                    <arrivalDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-22</ns3:string>
+                        </textField>
+                    </arrivalDateField>
+                    <arrivalTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>00:10:00</scheduledField>
+                    </arrivalTimeField>
+                    <bookingClassField>
+                        <FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                            <resBookDesigCodeField>Y</resBookDesigCodeField>
+                            <resBookDesigQuantityField>2</resBookDesigQuantityField>
+                        </FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                    </bookingClassField>
+                    <bookingInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <cabinTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <commentField>
+                        <ns3:string>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</ns3:string>
+                    </commentField>
+                    <couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <daysOfOperationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureAirportField>
+                        <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <locationCodeField>AUA</locationCodeField>
+                        <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </departureAirportField>
+                    <departureDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-21</ns3:string>
+                        </textField>
+                    </departureDateField>
+                    <departureDayField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>23:35:00</scheduledField>
+                    </departureTimeField>
+                    <eTicketableIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightDestinationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightStatusField>HK</flightStatusField>
+                    <handlingAgentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingAirlinesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingCabinField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <onTimeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <operatingAirlineField>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>408</flightNumberField>
+                        <resBookDesigCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </operatingAirlineField>
+                    <passengersCheckInStatusField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <rPHField>1</rPHField>
+                    <routingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidEndDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidStartDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledFlightTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <seatingDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <secureFlightIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <sequenceNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <smokingAllowedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopOverIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopQuantityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <travelerTotalsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </FlightInfoDetailsTypeFlightLegInfo>
+                <FlightInfoDetailsTypeFlightLegInfo>
+                    <aPI_RequiredIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <aircraftOwnerField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <arrivalAirportField>
+                        <FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                            <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <locationCodeField>BON</locationCodeField>
+                            <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        </FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                    </arrivalAirportField>
+                    <arrivalDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-22</ns3:string>
+                        </textField>
+                    </arrivalDateField>
+                    <arrivalTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>06:10:00</scheduledField>
+                    </arrivalTimeField>
+                    <bookingClassField>
+                        <FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                            <resBookDesigCodeField>Y</resBookDesigCodeField>
+                            <resBookDesigQuantityField>2</resBookDesigQuantityField>
+                        </FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                    </bookingClassField>
+                    <bookingInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <cabinTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <commentField>
+                        <ns3:string>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</ns3:string>
+                    </commentField>
+                    <couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <daysOfOperationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureAirportField>
+                        <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <locationCodeField>CUR</locationCodeField>
+                        <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </departureAirportField>
+                    <departureDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-22</ns3:string>
+                        </textField>
+                    </departureDateField>
+                    <departureDayField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>05:45:00</scheduledField>
+                    </departureTimeField>
+                    <eTicketableIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightDestinationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightStatusField>HK</flightStatusField>
+                    <handlingAgentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingAirlinesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingCabinField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <onTimeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <operatingAirlineField>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>301</flightNumberField>
+                        <resBookDesigCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </operatingAirlineField>
+                    <passengersCheckInStatusField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <rPHField>2</rPHField>
+                    <routingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidEndDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidStartDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledFlightTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <seatingDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <secureFlightIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <sequenceNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <smokingAllowedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopOverIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopQuantityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <travelerTotalsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </FlightInfoDetailsTypeFlightLegInfo>
+                <FlightInfoDetailsTypeFlightLegInfo>
+                    <aPI_RequiredIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <aircraftOwnerField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <arrivalAirportField>
+                        <FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                            <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <locationCodeField>CUR</locationCodeField>
+                            <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        </FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                    </arrivalAirportField>
+                    <arrivalDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-23</ns3:string>
+                        </textField>
+                    </arrivalDateField>
+                    <arrivalTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>11:45:00</scheduledField>
+                    </arrivalTimeField>
+                    <bookingClassField>
+                        <FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                            <resBookDesigCodeField>Y</resBookDesigCodeField>
+                            <resBookDesigQuantityField>2</resBookDesigQuantityField>
+                        </FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                    </bookingClassField>
+                    <bookingInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <cabinTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <commentField>
+                        <ns3:string>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</ns3:string>
+                    </commentField>
+                    <couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <daysOfOperationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureAirportField>
+                        <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <locationCodeField>BON</locationCodeField>
+                        <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </departureAirportField>
+                    <departureDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-23</ns3:string>
+                        </textField>
+                    </departureDateField>
+                    <departureDayField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>11:20:00</scheduledField>
+                    </departureTimeField>
+                    <eTicketableIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightDestinationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightStatusField>HK</flightStatusField>
+                    <handlingAgentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingAirlinesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingCabinField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <onTimeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <operatingAirlineField>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>304</flightNumberField>
+                        <resBookDesigCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </operatingAirlineField>
+                    <passengersCheckInStatusField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <rPHField>3</rPHField>
+                    <routingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidEndDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidStartDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledFlightTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <seatingDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <secureFlightIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <sequenceNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <smokingAllowedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopOverIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopQuantityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <travelerTotalsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </FlightInfoDetailsTypeFlightLegInfo>
+                <FlightInfoDetailsTypeFlightLegInfo>
+                    <aPI_RequiredIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <aircraftOwnerField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <arrivalAirportField>
+                        <FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                            <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <locationCodeField>AUA</locationCodeField>
+                            <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        </FlightInfoDetailsTypeFlightLegInfoArrivalAirport>
+                    </arrivalAirportField>
+                    <arrivalDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-23</ns3:string>
+                        </textField>
+                    </arrivalDateField>
+                    <arrivalTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>18:50:00</scheduledField>
+                    </arrivalTimeField>
+                    <bookingClassField>
+                        <FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                            <resBookDesigCodeField>Y</resBookDesigCodeField>
+                            <resBookDesigQuantityField>2</resBookDesigQuantityField>
+                        </FlightInfoDetailsTypeFlightLegInfoBookingClass>
+                    </bookingClassField>
+                    <bookingInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <cabinTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <commentField>
+                        <ns3:string>*ELECTRONIC TKTG AVAILABLE ON THIS FLIGHT*</ns3:string>
+                    </commentField>
+                    <couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <daysOfOperationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureAirportField>
+                        <cityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <countryCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <locationCodeField>CUR</locationCodeField>
+                        <locationNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <stateCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </departureAirportField>
+                    <departureDateField>
+                        <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <textField>
+                            <ns3:string>2018-12-23</ns3:string>
+                        </textField>
+                    </departureDateField>
+                    <departureDayField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <departureTimeField>
+                        <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <scheduledField>18:15:00</scheduledField>
+                    </departureTimeField>
+                    <eTicketableIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightDestinationField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <flightStatusField>HK</flightStatusField>
+                    <handlingAgentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingAirlinesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <marketingCabinField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <onTimeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <operatingAirlineField>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>405</flightNumberField>
+                        <resBookDesigCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </operatingAirlineField>
+                    <passengersCheckInStatusField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <rPHField>4</rPHField>
+                    <routingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidEndDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduleValidStartDateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledFlightTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <seatingDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <secureFlightIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <sequenceNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <smokingAllowedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopOverIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <stopQuantityField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <travelerTotalsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </FlightInfoDetailsTypeFlightLegInfo>
+            </flightLegInfoField>
+            <warningsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </flightInfoDetailsField>
+        <groupInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <passengerInfoField>
+            <PassengerNameRecordTypePassengerInfo>
+                <bookingInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <commentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <contactInfoField>
+                    <PassengerInfoBaseTypeContactInfo>
+                        <addressField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <contactTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <emailField>
+                            <EmailType>
+                                <emailType1Field xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <remarkField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <textField>
+                                    <ns3:string>V.KASIMATIS@JRTECHNOLOGIES.COM</ns3:string>
+                                </textField>
+                            </EmailType>
+                            <EmailType>
+                                <emailType1Field xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <remarkField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <textField>
+                                    <ns3:string>JOHAN@GGMAIL.COM</ns3:string>
+                                </textField>
+                            </EmailType>
+                        </emailField>
+                        <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <telephoneField>
+                            <TelephoneBaseType>
+                                <areaCityCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <countryAccessCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <extensionField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <phoneNumberField>+303542345234532</phoneNumberField>
+                                <phoneTypeField>1</phoneTypeField>
+                                <remarkField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TelephoneBaseType>
+                            <TelephoneBaseType>
+                                <areaCityCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <countryAccessCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <extensionField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <phoneNumberField>+30234523452345234</phoneNumberField>
+                                <phoneTypeField>1</phoneTypeField>
+                                <remarkField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TelephoneBaseType>
+                        </telephoneField>
+                        <allPaxIndField>true</allPaxIndField>
+                    </PassengerInfoBaseTypeContactInfo>
+                </contactInfoField>
+                <hasInfantIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <infantIndexNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <partNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <passengerNameField>
+                    <givenNameField>
+                        <ns3:string>JOHAN</ns3:string>
+                    </givenNameField>
+                    <middleNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <namePrefixField>
+                        <ns3:string>MR</ns3:string>
+                    </namePrefixField>
+                    <nameSuffixField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameTitleField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <surnameField>ADAMS</surnameField>
+                    <surnamePrefixField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </passengerNameField>
+                <passengerRPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <passengerTypeField>
+                    <ageField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <codeField>ADT</codeField>
+                    <dateOfBirthField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </passengerTypeField>
+                <rPHField>1</rPHField>
+                <sequenceNumberField>1</sequenceNumberField>
+                <ticketingInfoField>
+                    <airlineAccountingCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <formAndSerialNumberField>4321015039</formAndSerialNumberField>
+                    <paperTicketIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <residingDatabaseField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </ticketingInfoField>
+            </PassengerNameRecordTypePassengerInfo>
+            <PassengerNameRecordTypePassengerInfo>
+                <bookingInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <commentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <contactInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <hasInfantIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <infantIndexNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <partNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <passengerNameField>
+                    <givenNameField>
+                        <ns3:string>VASILIS</ns3:string>
+                    </givenNameField>
+                    <middleNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <namePrefixField>
+                        <ns3:string>MR</ns3:string>
+                    </namePrefixField>
+                    <nameSuffixField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameTitleField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <surnameField>KASIMATIS</surnameField>
+                    <surnamePrefixField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </passengerNameField>
+                <passengerRPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <passengerTypeField>
+                    <ageField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <codeField>ADT</codeField>
+                    <dateOfBirthField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </passengerTypeField>
+                <rPHField>2</rPHField>
+                <sequenceNumberField>2</sequenceNumberField>
+                <ticketingInfoField>
+                    <airlineAccountingCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <couponInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <formAndSerialNumberField>4321015040</formAndSerialNumberField>
+                    <paperTicketIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <residingDatabaseField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </ticketingInfoField>
+            </PassengerNameRecordTypePassengerInfo>
+        </passengerInfoField>
+        <queuesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <specialReqDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ticketingField>
+            <TicketingType>
+                <pseudoCityCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ticketAdvisoryField>
+                    <ns3:string>*T</ns3:string>
+                </ticketAdvisoryField>
+                <ticketTimeLimitField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ticketTypeField>eTicket</ticketTypeField>
+                <ticketingStatusField>3</ticketingStatusField>
+                <travelerRefNumberField>1 2</travelerRefNumberField>
+            </TicketingType>
+        </ticketingField>
+    </ns2:passengerNameRecordField>
+    <ns2:responseStatusField>0</ns2:responseStatusField>
+    <ns2:warningsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ARR_UpdateItineraryResponse>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:ARR_RepriceItinerary xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+    <ns2:repriceOptionsField>
+        <includeNegotiatedFaresField>false</includeNegotiatedFaresField>
+        <includeNegotiatedFaresFieldSpecified>false</includeNegotiatedFaresFieldSpecified>
+        <negotiatedFareCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <negotiatedFaresOnlyField>false</negotiatedFaresOnlyField>
+        <negotiatedFaresOnlyFieldSpecified>true</negotiatedFaresOnlyFieldSpecified>
+        <passengerTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <pricingSourceField>Both</pricingSourceField>
+        <pricingSourceFieldSpecified>false</pricingSourceFieldSpecified>
+        <waiverField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:currencyConversionCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:ignoreTaxItemsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:overrideInterlineAgreementField>false</ns2:overrideInterlineAgreementField>
+        <ns2:taxExemptItemsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:tourCodesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </ns2:repriceOptionsField>
+    <ns2:ticketingInfoField>
+        <airlineAccountingCodeField>958</airlineAccountingCodeField>
+        <formAndSerialNumberField>4321015039</formAndSerialNumberField>
+        <ns2:residingDatabaseField>7I</ns2:residingDatabaseField>
+    </ns2:ticketingInfoField>
+</ns3:ARR_RepriceItinerary>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ARR_RepriceItineraryResponse xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <ns2:errorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:pricedItineraryField>
+        <ns2:flightInfoDetailsField>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-22</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>00:10:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>AUA</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-21</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>23:35:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>408</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>1</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>BON</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-22</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>06:10:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-22</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>05:45:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>301</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>2</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>11:45:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>BON</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>11:20:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>304</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>3</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>AUA</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>18:50:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>18:15:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>405</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>4</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+        </ns2:flightInfoDetailsField>
+        <ns2:pTC_FareBreakdownsField>
+            <ns4:SWF_PTC_FareBreakdownType>
+                <ns4:endorsementsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns4:fareBasisCodesField>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>1</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>2</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>3</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>4</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                </ns4:fareBasisCodesField>
+                <ns4:passengerFareField>
+                    <ns4:baseFareField>
+                        <ns4:amountField>600</ns4:amountField>
+                        <ns4:currencyCodeField>AWG</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:exchangeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:fromCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:toCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:baseFareField>
+                    <ns4:equivFareField>
+                        <ns4:amountField>333.00</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:equivFareField>
+                    <ns4:taxesField>
+                        <amountField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <taxField>
+                            <TaxType>
+                                <amountField>34.25</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AW</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>10.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AN</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>4.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>E9</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>9.84</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>PC</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                        </taxField>
+                    </ns4:taxesField>
+                    <ns4:totalFareField>
+                        <ns4:amountField>391.09</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:totalFareField>
+                    <ns4:unstructuredFareCalcField>
+                        <fareCalcModeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>aua 7i x/cur 7i bon166.66yow 7i x/cur 7i aua166.66yow nuc333.32end roe1.800000</ns3:string>
+                        </ns4:textField>
+                    </ns4:unstructuredFareCalcField>
+                </ns4:passengerFareField>
+                <ns4:ticketDesignatorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ns4:SWF_PTC_FareBreakdownType>
+        </ns2:pTC_FareBreakdownsField>
+    </ns2:pricedItineraryField>
+    <ns2:repriceFareInfoField>
+        <ns2:cat35SellingReissueInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:endorsementsField>
+            <ns2:EndorsementsTypeEndorsement>
+                <ns2:messageNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:valueField>nonref/nonend</ns2:valueField>
+            </ns2:EndorsementsTypeEndorsement>
+            <ns2:EndorsementsTypeEndorsement>
+                <ns2:messageNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:valueField>valid only 7i</ns2:valueField>
+            </ns2:EndorsementsTypeEndorsement>
+        </ns2:endorsementsField>
+        <ns2:fareField>
+            <ns2:originalFareAddCollectField>0.00</ns2:originalFareAddCollectField>
+            <ns2:originalFareResidualIgnoredField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns2:reissueConversionRateField>0.55555556</ns2:reissueConversionRateField>
+            <ns2:reissueCurrencyCodeField>USD</ns2:reissueCurrencyCodeField>
+            <ns2:reissueDecimalPlacesField>2</ns2:reissueDecimalPlacesField>
+            <ns2:reissueFareAddCollectField>0.00</ns2:reissueFareAddCollectField>
+            <ns2:reissueFareRefundField>0.00</ns2:reissueFareRefundField>
+            <ns2:reissueItineraryChangeChargeField>0.00</ns2:reissueItineraryChangeChargeField>
+            <ns2:reissueSurchargeAmountField>0.00</ns2:reissueSurchargeAmountField>
+            <ns2:reissueTotalAddCollectField>0.00</ns2:reissueTotalAddCollectField>
+            <ns2:reissueTotalRefundField>0.00</ns2:reissueTotalRefundField>
+        </ns2:fareField>
+        <ns2:formOfRefundField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:reissueRevalidationIndField>A</ns2:reissueRevalidationIndField>
+        <ns2:residualIgnoredField>N</ns2:residualIgnoredField>
+        <ns2:taxesField>
+            <amountField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <taxField>
+                <TaxType>
+                    <amountField>34.25</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>AW</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+                <TaxType>
+                    <amountField>10.00</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>AN</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+                <TaxType>
+                    <amountField>4.00</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>E9</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+                <TaxType>
+                    <amountField>9.84</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>PC</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+            </taxField>
+        </ns2:taxesField>
+        <ns2:tourCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:waiverField>N</ns2:waiverField>
+    </ns2:repriceFareInfoField>
+    <ns2:responseStatusField>1</ns2:responseStatusField>
+    <ns2:ticketedFareInfoField>
+        <ns2:pTC_FareBreakdownsField>
+            <ns4:SWF_PTC_FareBreakdownType>
+                <ns4:endorsementsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns4:fareBasisCodesField>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>1</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>2</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>3</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>4</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                </ns4:fareBasisCodesField>
+                <ns4:passengerFareField>
+                    <ns4:baseFareField>
+                        <ns4:amountField>600</ns4:amountField>
+                        <ns4:currencyCodeField>AWG</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:exchangeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:fromCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:toCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:baseFareField>
+                    <ns4:equivFareField>
+                        <ns4:amountField>333.00</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:equivFareField>
+                    <ns4:taxesField>
+                        <amountField>58.09</amountField>
+                        <taxField>
+                            <TaxType>
+                                <amountField>34.25</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AW</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>10.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AN</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>4.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>E9</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>9.84</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>PC</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                        </taxField>
+                    </ns4:taxesField>
+                    <ns4:totalFareField>
+                        <ns4:amountField>391.09</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:totalFareField>
+                    <ns4:unstructuredFareCalcField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </ns4:passengerFareField>
+                <ns4:ticketDesignatorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ns4:SWF_PTC_FareBreakdownType>
+        </ns2:pTC_FareBreakdownsField>
+    </ns2:ticketedFareInfoField>
+    <ns2:warningsField>
+        <WarningType>
+            <codeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <shortTextField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <statusField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <textField>
+                <ns3:string>02123 - ONLY ALLOWS REISSUE</ns3:string>
+            </textField>
+            <typeField>448</typeField>
+        </WarningType>
+    </ns2:warningsField>
+</ARR_RepriceItineraryResponse>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:ARR_RepriceItinerary xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns3="http://schemas.datacontract.org/2004/07/Sita.Services.HalService">
+    <ns2:repriceOptionsField>
+        <includeNegotiatedFaresField>false</includeNegotiatedFaresField>
+        <includeNegotiatedFaresFieldSpecified>false</includeNegotiatedFaresFieldSpecified>
+        <negotiatedFareCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <negotiatedFaresOnlyField>false</negotiatedFaresOnlyField>
+        <negotiatedFaresOnlyFieldSpecified>true</negotiatedFaresOnlyFieldSpecified>
+        <passengerTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <pricingSourceField>Both</pricingSourceField>
+        <pricingSourceFieldSpecified>false</pricingSourceFieldSpecified>
+        <waiverField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:currencyConversionCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:ignoreTaxItemsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:overrideInterlineAgreementField>false</ns2:overrideInterlineAgreementField>
+        <ns2:taxExemptItemsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:tourCodesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </ns2:repriceOptionsField>
+    <ns2:ticketingInfoField>
+        <airlineAccountingCodeField>958</airlineAccountingCodeField>
+        <formAndSerialNumberField>4321015040</formAndSerialNumberField>
+        <ns2:residingDatabaseField>7I</ns2:residingDatabaseField>
+    </ns2:ticketingInfoField>
+</ns3:ARR_RepriceItinerary>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ARR_RepriceItineraryResponse xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <ns2:errorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:pricedItineraryField>
+        <ns2:flightInfoDetailsField>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-22</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>00:10:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>AUA</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-21</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>23:35:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>408</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>1</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>BON</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-22</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>06:10:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-22</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>05:45:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>301</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>2</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>11:45:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>BON</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>11:20:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>304</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>3</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+            <FlightSegmentBaseType>
+                <arrivalAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>AUA</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </arrivalAirportField>
+                <arrivalDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </arrivalDateField>
+                <arrivalTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>18:50:00</scheduledField>
+                </arrivalTimeField>
+                <departureAirportField>
+                    <gateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <locationCodeField>CUR</locationCodeField>
+                    <terminalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureAirportField>
+                <departureDateField>
+                    <dateChangeDecrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeIncrementIndField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <dateChangeNbrField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <textField>
+                        <ns3:string>2018-12-23</ns3:string>
+                    </textField>
+                </departureDateField>
+                <departureTimeField>
+                    <actualField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <estimatedField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nextAdvisoryTimeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <reasonCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <scheduledField>18:15:00</scheduledField>
+                    <boardingField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <julianDateOfDepartureField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </departureTimeField>
+                <equipmentField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <marketingAirlinesField>
+                    <OperatingAirlineType>
+                        <airAllianceNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <codeField>7I</codeField>
+                        <companyShortNameField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <flightNumberField>405</flightNumberField>
+                        <resBookDesigCodeField>Y</resBookDesigCodeField>
+                    </OperatingAirlineType>
+                </marketingAirlinesField>
+                <operatingAirlineField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <rPHField>4</rPHField>
+                <stopQuantityField>0</stopQuantityField>
+            </FlightSegmentBaseType>
+        </ns2:flightInfoDetailsField>
+        <ns2:pTC_FareBreakdownsField>
+            <ns4:SWF_PTC_FareBreakdownType>
+                <ns4:endorsementsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns4:fareBasisCodesField>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>1</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>2</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>3</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>4</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                </ns4:fareBasisCodesField>
+                <ns4:passengerFareField>
+                    <ns4:baseFareField>
+                        <ns4:amountField>600</ns4:amountField>
+                        <ns4:currencyCodeField>AWG</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:exchangeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:fromCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:toCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:baseFareField>
+                    <ns4:equivFareField>
+                        <ns4:amountField>333.00</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:equivFareField>
+                    <ns4:taxesField>
+                        <amountField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <taxField>
+                            <TaxType>
+                                <amountField>34.25</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AW</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>10.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AN</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>4.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>E9</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>9.84</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>PC</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField>001</taxTransactionTypeField>
+                            </TaxType>
+                        </taxField>
+                    </ns4:taxesField>
+                    <ns4:totalFareField>
+                        <ns4:amountField>391.09</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:totalFareField>
+                    <ns4:unstructuredFareCalcField>
+                        <fareCalcModeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>aua 7i x/cur 7i bon166.66yow 7i x/cur 7i aua166.66yow nuc333.32end roe1.800000</ns3:string>
+                        </ns4:textField>
+                    </ns4:unstructuredFareCalcField>
+                </ns4:passengerFareField>
+                <ns4:ticketDesignatorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ns4:SWF_PTC_FareBreakdownType>
+        </ns2:pTC_FareBreakdownsField>
+    </ns2:pricedItineraryField>
+    <ns2:repriceFareInfoField>
+        <ns2:cat35SellingReissueInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:endorsementsField>
+            <ns2:EndorsementsTypeEndorsement>
+                <ns2:messageNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:valueField>nonref/nonend</ns2:valueField>
+            </ns2:EndorsementsTypeEndorsement>
+            <ns2:EndorsementsTypeEndorsement>
+                <ns2:messageNumberField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns2:valueField>valid only 7i</ns2:valueField>
+            </ns2:EndorsementsTypeEndorsement>
+        </ns2:endorsementsField>
+        <ns2:fareField>
+            <ns2:originalFareAddCollectField>0.00</ns2:originalFareAddCollectField>
+            <ns2:originalFareResidualIgnoredField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <ns2:reissueConversionRateField>0.55555556</ns2:reissueConversionRateField>
+            <ns2:reissueCurrencyCodeField>USD</ns2:reissueCurrencyCodeField>
+            <ns2:reissueDecimalPlacesField>2</ns2:reissueDecimalPlacesField>
+            <ns2:reissueFareAddCollectField>0.00</ns2:reissueFareAddCollectField>
+            <ns2:reissueFareRefundField>0.00</ns2:reissueFareRefundField>
+            <ns2:reissueItineraryChangeChargeField>0.00</ns2:reissueItineraryChangeChargeField>
+            <ns2:reissueSurchargeAmountField>0.00</ns2:reissueSurchargeAmountField>
+            <ns2:reissueTotalAddCollectField>0.00</ns2:reissueTotalAddCollectField>
+            <ns2:reissueTotalRefundField>0.00</ns2:reissueTotalRefundField>
+        </ns2:fareField>
+        <ns2:formOfRefundField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:reissueRevalidationIndField>A</ns2:reissueRevalidationIndField>
+        <ns2:residualIgnoredField>N</ns2:residualIgnoredField>
+        <ns2:taxesField>
+            <amountField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <taxField>
+                <TaxType>
+                    <amountField>34.25</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>AW</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+                <TaxType>
+                    <amountField>10.00</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>AN</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+                <TaxType>
+                    <amountField>4.00</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>E9</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+                <TaxType>
+                    <amountField>9.84</amountField>
+                    <currencyCodeField>USD</currencyCodeField>
+                    <decimalPlacesField>2</decimalPlacesField>
+                    <paidIndicatorField>P</paidIndicatorField>
+                    <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxCodeField>PC</taxCodeField>
+                    <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </TaxType>
+            </taxField>
+        </ns2:taxesField>
+        <ns2:tourCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ns2:waiverField>N</ns2:waiverField>
+    </ns2:repriceFareInfoField>
+    <ns2:responseStatusField>1</ns2:responseStatusField>
+    <ns2:ticketedFareInfoField>
+        <ns2:pTC_FareBreakdownsField>
+            <ns4:SWF_PTC_FareBreakdownType>
+                <ns4:endorsementsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <ns4:fareBasisCodesField>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>1</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>2</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>3</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                    <ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                        <flightRPHField>4</flightRPHField>
+                        <notValidAfterField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <notValidBeforeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:textField>
+                            <ns3:string>YOW</ns3:string>
+                        </ns4:textField>
+                    </ns4:SWF_PTC_FareBreakdownTypeFareBasisCode>
+                </ns4:fareBasisCodesField>
+                <ns4:passengerFareField>
+                    <ns4:baseFareField>
+                        <ns4:amountField>600</ns4:amountField>
+                        <ns4:currencyCodeField>AWG</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:exchangeRateField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:fromCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <ns4:toCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:baseFareField>
+                    <ns4:equivFareField>
+                        <ns4:amountField>333.00</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:equivFareField>
+                    <ns4:taxesField>
+                        <amountField>58.09</amountField>
+                        <taxField>
+                            <TaxType>
+                                <amountField>34.25</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AW</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>10.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>AN</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>4.00</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>E9</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                            <TaxType>
+                                <amountField>9.84</amountField>
+                                <currencyCodeField>USD</currencyCodeField>
+                                <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <paidIndicatorField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxBreakdownsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxCodeField>PC</taxCodeField>
+                                <taxCountryField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                                <taxTransactionTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            </TaxType>
+                        </taxField>
+                    </ns4:taxesField>
+                    <ns4:totalFareField>
+                        <ns4:amountField>391.09</ns4:amountField>
+                        <ns4:currencyCodeField>USD</ns4:currencyCodeField>
+                        <ns4:fareAmountTypeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </ns4:totalFareField>
+                    <ns4:unstructuredFareCalcField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </ns4:passengerFareField>
+                <ns4:ticketDesignatorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </ns4:SWF_PTC_FareBreakdownType>
+        </ns2:pTC_FareBreakdownsField>
+    </ns2:ticketedFareInfoField>
+    <ns2:warningsField>
+        <WarningType>
+            <codeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <rPHField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <shortTextField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <statusField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <textField>
+                <ns3:string>02123 - ONLY ALLOWS REISSUE</ns3:string>
+            </textField>
+            <typeField>448</typeField>
+        </WarningType>
+    </ns2:warningsField>
+</ARR_RepriceItineraryResponse>
+
+[main] WARN com.datastax.driver.core.CodecRegistry - Ignoring codec LocalTimeCodec [time <-> java.time.LocalTime] because it collides with previously registered codec LocalTimeCodec [time <-> java.time.LocalTime]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ARR_ExecuteReprice xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <baggageInfoField>
+        <newBaggageIndField>true</newBaggageIndField>
+    </baggageInfoField>
+    <commissionField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <endorsementsField/>
+    <passengerInfoField>
+        <additionalPassengerInfoField>ADT</additionalPassengerInfoField>
+        <emailAddressField>johan@ggmail.com</emailAddressField>
+        <emailIndicatorField>true</emailIndicatorField>
+        <sequenceNumberField>1</sequenceNumberField>
+        <ticketingInfoField>
+            <ns4:airlineAccountingCodeField>958</ns4:airlineAccountingCodeField>
+            <ns4:formAndSerialNumberField>4321015039</ns4:formAndSerialNumberField>
+            <salesReportInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <sponsorInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <tourCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ticketingInfoField>
+    </passengerInfoField>
+    <paymentDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <penaltyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns2:ARR_ExecuteReprice>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ARR_ExecuteRepriceResponse xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <ns2:errorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:responseStatusField>0</ns2:responseStatusField>
+    <ns2:ticketItemInfoField>
+        <airlineAccountingCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <formAndSerialNumberField>4321015041</formAndSerialNumberField>
+        <penaltyTotalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <settlementAuthCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ticketTotalField>
+            <amountField>NO ADC</amountField>
+            <currencyCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ticketTotalField>
+        <totalAmountCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <totalAmountField>NO ADC</totalAmountField>
+        <transactionAmountField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <transactionTotalField>
+            <amountField>0</amountField>
+            <currencyCodeField>USD</currencyCodeField>
+            <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </transactionTotalField>
+        <typeField>eTicket</typeField>
+    </ns2:ticketItemInfoField>
+    <ns2:warningsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ARR_ExecuteRepriceResponse>
+
+[INFO ] 2018-10-15 17:21:11.796 [main] SitaARRCommons - Execute Reprice Success for Session ID: e4ada423-716d-4741-ada9-8e5c207eee9b, Ticket: 9584321015039
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ARR_ExecuteReprice xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns4="http://schemas.datacontract.org/2004/07/Sita.Services.SWF" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <baggageInfoField>
+        <newBaggageIndField>true</newBaggageIndField>
+    </baggageInfoField>
+    <commissionField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <endorsementsField/>
+    <passengerInfoField>
+        <additionalPassengerInfoField>ADT</additionalPassengerInfoField>
+        <emailAddressField>v.kasimatis@jrtechnologies.com</emailAddressField>
+        <emailIndicatorField>true</emailIndicatorField>
+        <sequenceNumberField>2</sequenceNumberField>
+        <ticketingInfoField>
+            <ns4:airlineAccountingCodeField>958</ns4:airlineAccountingCodeField>
+            <ns4:formAndSerialNumberField>4321015040</ns4:formAndSerialNumberField>
+            <salesReportInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <sponsorInfoField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <tourCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ticketingInfoField>
+    </passengerInfoField>
+    <paymentDetailsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <penaltyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns2:ARR_ExecuteReprice>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ARR_ExecuteRepriceResponse xmlns="http://schemas.datacontract.org/2004/07/Sita.Services.HalService" xmlns:ns2="http://schemas.datacontract.org/2004/07/Sita.Services.ARR" xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <ns2:errorsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns2:responseStatusField>0</ns2:responseStatusField>
+    <ns2:ticketItemInfoField>
+        <airlineAccountingCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <formAndSerialNumberField>4321015042</formAndSerialNumberField>
+        <penaltyTotalField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <settlementAuthCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <ticketTotalField>
+            <amountField>NO ADC</amountField>
+            <currencyCodeField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </ticketTotalField>
+        <totalAmountCurrencyField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <totalAmountField>NO ADC</totalAmountField>
+        <transactionAmountField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <transactionTotalField>
+            <amountField>0</amountField>
+            <currencyCodeField>USD</currencyCodeField>
+            <decimalPlacesField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </transactionTotalField>
+        <typeField>eTicket</typeField>
+    </ns2:ticketItemInfoField>
+    <ns2:warningsField xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ARR_ExecuteRepriceResponse>
+
+[INFO ] 2018-10-15 17:21:13.454 [main] SitaARRCommons - Execute Reprice Success for Session ID: e4ada423-716d-4741-ada9-8e5c207eee9b, Ticket: 9584321015040
+[INFO ] 2018-10-15 17:21:13.454 [main] SitaARRCommons - ARR Sign Out for SessionID: e4ada423-716d-4741-ada9-8e5c207eee9b
+[INFO ] 2018-10-15 17:21:13.693 [main] SitaARRCommons - Sign Out Status: Success
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:SITA_RevalidateEMD xmlns="http://sita.aero/common/4/1" xmlns:ns2="http://sita.aero/SITA_RevalidateEMD/5/1">
+    <ns2:POS>
+        <Source AgentSine="" PseudoCityCode="" ISOCountry="" AgentDutyCode="" AirlineVendorID="" AirportCode="" ERSP_UserID="">
+            <RequestorID Type="" ID=""/>
+        </Source>
+    </ns2:POS>
+    <ns2:FlightInfoDetails>
+        <FlightLegInfo RPH="1" FlightStatus="HK">
+            <DepartureAirport LocationCode="AUA"/>
+            <ArrivalAirport LocationCode="CUR"/>
+            <OperatingAirline Code="7I" FlightNumber="408" ResBookDesigCode="Y"/>
+            <DepartureDate>2018-12-21</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-12-22</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+        <FlightLegInfo RPH="2" FlightStatus="HK">
+            <DepartureAirport LocationCode="CUR"/>
+            <ArrivalAirport LocationCode="BON"/>
+            <OperatingAirline Code="7I" FlightNumber="301" ResBookDesigCode="Y"/>
+            <DepartureDate>2018-12-22</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-12-22</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+    </ns2:FlightInfoDetails>
+    <ns2:TicketDocument TicketDocumentNbr="9584550016950" ResidingDatabase="7I">
+        <ns2:CouponInfo DateOfService="2018-12-21" CouponNumber="1"/>
+        <ns2:CouponInfo CouponNumber="2"/>
+    </ns2:TicketDocument>
+    <ns2:BookingInfo>
+        <BookingReferenceID ID="P161W"/>
+    </ns2:BookingInfo>
+</ns2:SITA_RevalidateEMD>
+
+<SITA_RevalidateEMDResponse xmlns="http://sita.aero/SITA_RevalidateEMD/5/1"><Success/></SITA_RevalidateEMDResponse>
+[INFO ] 2018-10-15 17:21:14.591 [main] OrderChangeImpl - Revalidate EMD for 9584550016950 Completed Successfully 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:SITA_RevalidateEMD xmlns="http://sita.aero/common/4/1" xmlns:ns2="http://sita.aero/SITA_RevalidateEMD/5/1">
+    <ns2:POS>
+        <Source AgentSine="" PseudoCityCode="" ISOCountry="" AgentDutyCode="" AirlineVendorID="" AirportCode="" ERSP_UserID="">
+            <RequestorID Type="" ID=""/>
+        </Source>
+    </ns2:POS>
+    <ns2:FlightInfoDetails>
+        <FlightLegInfo RPH="4" FlightStatus="HK">
+            <DepartureAirport LocationCode="BON"/>
+            <ArrivalAirport LocationCode="CUR"/>
+            <OperatingAirline Code="7I" FlightNumber="304" ResBookDesigCode="Y"/>
+            <DepartureDate>2018-12-23</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-12-23</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+        <FlightLegInfo RPH="3" FlightStatus="HK">
+            <DepartureAirport LocationCode="CUR"/>
+            <ArrivalAirport LocationCode="AUA"/>
+            <OperatingAirline Code="7I" FlightNumber="405" ResBookDesigCode="Y"/>
+            <DepartureDate>2018-12-23</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-12-23</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+    </ns2:FlightInfoDetails>
+    <ns2:TicketDocument TicketDocumentNbr="9584550016950" ResidingDatabase="7I">
+        <ns2:CouponInfo DateOfService="2018-12-23" CouponNumber="3"/>
+        <ns2:CouponInfo CouponNumber="4"/>
+    </ns2:TicketDocument>
+    <ns2:BookingInfo>
+        <BookingReferenceID ID="P161W"/>
+    </ns2:BookingInfo>
+</ns2:SITA_RevalidateEMD>
+
+<SITA_RevalidateEMDResponse xmlns="http://sita.aero/SITA_RevalidateEMD/5/1"><Success/></SITA_RevalidateEMDResponse>
+[INFO ] 2018-10-15 17:21:15.506 [main] OrderChangeImpl - Revalidate EMD for 9584550016950 Completed Successfully 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:SITA_RevalidateEMD xmlns="http://sita.aero/common/4/1" xmlns:ns2="http://sita.aero/SITA_RevalidateEMD/5/1">
+    <ns2:POS>
+        <Source AgentSine="" PseudoCityCode="" ISOCountry="" AgentDutyCode="" AirlineVendorID="" AirportCode="" ERSP_UserID="">
+            <RequestorID Type="" ID=""/>
+        </Source>
+    </ns2:POS>
+    <ns2:FlightInfoDetails>
+        <FlightLegInfo RPH="1" FlightStatus="HK">
+            <DepartureAirport LocationCode="AUA"/>
+            <ArrivalAirport LocationCode="CUR"/>
+            <OperatingAirline Code="7I" FlightNumber="408" ResBookDesigCode="Y"/>
+            <DepartureDate>2018-12-21</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-12-22</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+        <FlightLegInfo RPH="2" FlightStatus="HK">
+            <DepartureAirport LocationCode="CUR"/>
+            <ArrivalAirport LocationCode="BON"/>
+            <OperatingAirline Code="7I" FlightNumber="301" ResBookDesigCode="Y"/>
+            <DepartureDate>2018-12-22</DepartureDate>
+            <DepartureTime Scheduled="00:00"/>
+            <ArrivalDate>2019-12-22</ArrivalDate>
+            <ArrivalTime Scheduled="00:00"/>
+            <BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+        </FlightLegInfo>
+    </ns2:FlightInfoDetails>
+    <ns2:TicketDocument TicketDocumentNbr="9584550016949" ResidingDatabase="7I">
+        <ns2:CouponInfo DateOfService="2018-12-21" CouponNumber="1"/>
+        <ns2:CouponInfo CouponNumber="2"/>
+    </ns2:TicketDocument>
+    <ns2:BookingInfo>
+        <BookingReferenceID ID="P161W"/>
+    </ns2:BookingInfo>
+</ns2:SITA_RevalidateEMD>
+
+<SITA_RevalidateEMDResponse xmlns="http://sita.aero/SITA_RevalidateEMD/5/1"><Success/></SITA_RevalidateEMDResponse>
