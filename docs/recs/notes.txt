@@ -1,0 +1,2180 @@
+Rocket Chat:
+v.kasimatis
+jr321#@!
+
+
+importkey
+
+v.kasimatis@jrtechnologies.com
+vasilis123
+
+cT3XC7PH3J
+cT3XC7PH3J
+v.kasimatis@jrtechnologies.com
+
+http://mail.jrtechnologies.com/Default.aspx
+
+skype:
+v.kasimatis@jrtechnologies.com
+v.kasimatis
+
+
+
+http://www.eclipse.org/webtools/community/education/web/t320/Implementing_a_Simple_Web_Service.pdf
+http://www.softwareagility.gr/index.php?q=node/29
+http://www.eclipse.org/webtools/community/tutorials/BottomUpAxis2WebService/bu_tutorial.html
+http://127.0.0.1:9876/ts
+http://127.0.0.1:9876/ts?wsdl
+http://www.jrtechnologiesweb.com/services
+http://www.iata.org/whatwedo/airline-distribution/ndc/pages/default.aspx
+
+
+vision key:76N63-99RQM-6DBKT-88MFV-RGBJF
+
+
+///////////////////// To setup a WS manually:
+First Make webservice:
+Test1Service.java (Interface) ,Test1ServiceImpl.java (Implementation of Interface), Test1ServicePublisher.java (publisher)
+* javac all
+* wsgen -cp . test1.Test1ServiceImpl
+* execute publisher (java test1.Test1ServicePublisher)
+* in the working dir or other : wsimport -p tests -keep http://localhost:8888/test1?wsdl
+* Write the client (TimeClient.java), and compile javac
+* run client java TimeClient
+
+/////// To setup a WS with NetBeans: (https://netbeans.org/kb/docs/websvc/flower_ws.html)
+1) new Project ->Web Application (TestNetBeansService)
+2) right click TestNetBeansService project -> new Web Service (from scratch, Stateless Session Bean)
+3) edit HelloService.java (exei kai design view, add, parameters, exception)
+4) Right-click the Project node and select Deploy (starts also grassfish webserver)
+5) Expand the project's Web Services node. Right-click the HelloService and select Test Web Service. 
+6) Create Client application: File -> New Project ->Java Application (TestNetBeansClient)
+7) Right-click the  project node and choose New > Web Service Client -> WSDL radio button (Url: http://localhost:8080/HelloService/HelloService?wsdl )
+	Accept all other default values, including a blank package name. 
+
+8) Edit TestNetBeansClient.java:
+   import hello.HelloService;
+   import hello.HelloService_Service;
+   ......
+   HelloService_Service serv=new HelloService_Service();
+   final HelloService port = serv.getHelloServicePort();
+   ..........
+   List<String> teams = port.getTeams(10);
+    for(String ss:teams)
+      System.out.format("# %s # \n",ss);
+ 
+9) Run Project..
+/////////////////////////////////////3rd approach , use  SOAP with Attachments API for Java (SAAJ) 
+SOAP with Attachments API for Java (SAAJ) is mainly used for dealing directly with SOAP Request/Response messages which happens behind the scenes in any Web Service API. It allows the developers to directly send and receive soap messages instead of using JAX-WS.
+See below a working example (run it!) of a SOAP web service call using SAAJ. It calls this web service.
+see : http://stackoverflow.com/questions/15940234/how-to-do-a-soap-web-service-call-from-java-class
+
+//////////////////////////////If you just want to use java.net.URL to send plain XML files:
+C:\Dev\work\TestSitaWS\src\testsitaws\TestSoapUrl.java
+
+////Use Jaxb to marshall unmarshall java objects from and to xml
+
+
+http://www.sita.aero/PTS/fare/2005/12/PingRQ
+
+/////virtual box mounting commands:
+sudo mkdir /media/windows-share
+
+//Of course you may choose an alternative path for your mountpoint. With your mountpoint created you can now mount the shared folder, like this:
+
+# sudo mount -t vboxsf folder-name /media/windows-share
+
+''''''''''''''''''''''''''''''''
+>keytool -genkey -alias replserver -keyalg RSA -keystore key.jks -dname "cn=localhost, ou=IT, o=Continuent,  c=US" -storepass password -keypass 123456
+>keytool -import -keystore clientkeystore -file sws.qa.sita.aero.crt -alias client
+ 
+keytool -importcert -keystore secure.ts -alias client  -storepass 123456 -file sws.qa.sita.aero.crt
+
+
+to import your .pfx cert run the following command:
+pkcs12import.bat -file cert.pfx -pass changeit -keystore keystore.jks -alias youralias -storepass changeit
+
+
+
+keytool -importkeystore -srckeystore TempCert.pfx -srcstoretype pkcs12 -destkeystore keystore.jks -srcalias client -destalias client -destkeypass 123456
+
+
+
+to import an axysting pfx file to keystore:
+keytool -importkeystore -srckeystore mypfxfile.pfx -srcstoretype pkcs12 -destkeystore clientcert.jks -deststoretype JKS
+
+Mar2015
+
+
+build.xml debuging info:
+add..
+<jvmarg value="-Djavax.net.debug=all"/>
+////////////////////////////////
+
+</classpath>
+         <jvmarg value="-Djavax.net.debug=all"/>
+      </java>
+   </target>
+
+   <target name="clean">
+      <delete dir="build" />
+   </target>
+</project>
+///////////////////////////More easy way to install certificate:
+right click -> crt ->install certificate
+then enter pfx arxeio and enter Mar2015
+
+
+;;;;;;;;;;;;;;;;;;;;;;; Kassandra ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+http://www.tutorialspoint.com/cassandra/cassandra_create_keyspace.htm
+
+libraries that you must add  (right click ->properties->libraries->add jar)
+guava-16.0.1.jar
+metrics-core-3.0.2.jar
+cassandra-driver-core-2.0.4.jar
+netty-3.9.0.Final.jar
+slf4j-api-1.7.5.jar
+slf4j-api-1.6.2.jar
+slf4j-simple-1.6.2.jar
+''''''''''''''''''''''''''''''''''
+data center: http://localhost:8888/opscenter/index.html
+
+182.94.241.186
+941 256
+
+'''''''''''''''''''''''''
+http://uat.jrtechnologies.in/JRTCMS_v0.2/
+http://7icms.jrtechnologies.com/JRTCMS/
+\\ELENA-PC\Users\Elena\Downloads\JRT Shared\Presentation Video Captures
+''''''''''''''''''''''
+System login details:
+IP address : 10.0.0.21
+Userid : administrator
+Password : jrt@123
+ 
+Code Location: /opt/pim_code_10_sep_2015/ndc_pim_service_workspace_10_sep_2015.zip
+''''''''''''''''
+mail.jrtechnologies.com
+smtp.jrtechnologies.com
+
+
+///////to install git localy:
+1) install Git-2.5.2.2-64-bit.exe with the default options
+2) make a directory, create a text file inside
+3) right click , git bash here..
+4)
+git config --global user.name "Firstname Lastname"
+git config --global user.email "your_email@youremail.com"
+5) git init (1)
+6) git add .  (2)
+7) git commit (3)
+
+1) Create a /path/to/my/codebase/.git directory.
+2) Add all existing files to the index.
+3) Record the pristine state as the first commit in the history.
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+convert an arbitrary xml , schema to java class:
+1) xjc -p foo myschema.xsd   (mesa ston fakelo me ola ta xsd giati yparxoyn dependencies)
+2) javac jaxbnbc/*.java foo/*.java
+3) java jaxbndc.JaxbNdc
+
+/////
+\\ELENA-PC\Users\Elena\Downloads\JRT Shared
+
+
+************************VPN
+IP : 182.74.241.186
+Auth : user/password
+tunel mod hybrid
+
+user: GreeceUser1
+pass: greece@123
+
+TFS access :
+
+TFS IP : 10.0.0.16
+
+User: GreeceUser1
+
+Password: greece@123
+***************************
+xjc -npa  -nv -p ota.airfarepricerq OTA_SimpleTypes.xsd OTA_AirCommonTypes.xsd SITA_AirfarePrice.xsd
+
+file:///C:/Dev/temp/ota-schema-tools/docs/index.html
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+bind sita schema:
+## Prwta vale ston fakelo ma ta SITA , ola ta antistoixa OTA xsd files (apo ton Ota 20030A folder)
+1) renamed bookingreference id
+2) 
+replace headers with..
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" version="0.3" id="SITA200525">
+
+e.g.
+<xs:schema targetNamespace="http://www.opentravel.org/OTA/2003/05" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.000" id="OTA2003A">
+me..
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" version="0.3" id="SITA200525">
+
+
+3) replace import statement to opentravel with ""
+
+3) replace all "ota2005a:" or "ota:" with ""
+4) do the above for all dependencies
+5) xjc -p sita.airfarecalculatecurrencyrq OTA_SimpleTypes.xsd OTA_CommonTypes.xsd OTA_AirCommonTypes.xsd SITA_AirfareFlightShopRQ.xsd
+
+
+*** you get sita xsd files from folder:
+04AUG2015
+and ndc: NDCSchema_1.1.5_3rdSep2015
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+demo CMS:
+http://uat.jrtechnologies.in/JRTCMS_v0.2
+chaniadevs@jrtechnologies.com
+/////new Shared pc (conference)
+\\192.168.1.6
+user:user
+pass:1
+///////////////XML SPY:
+Στο \\CONFERENCE-ROOM\Software υπάρχει το πρόγραμμα XML spy.
+
+Αφού το εγκαταστήσετε, βάλτε στο activation τα εξής:
+
+USER: JR Technologies, Inc.
+COMPANY: JR Technologies, Inc.
+KEY: 4R646WM-BYK7I0N-CCL143J-8ZSC2G7-JW7HPYI
+/////////////////////change Permissions java
+* goto C:\Program Filoes\Java\jre1.6...
+* goto \lib\security
+* open java.policy
+* immediately after grant{
+   add: permission java.security.AllPermission;
+* Save   
+   
+///////////////////////////how to setup spring application
+The Beans.xml is used to assign unique IDs to different beans and to control the creation of objects with different values without impacting any of the Spring source files. For example, using below file you can pass any value for "message" variable and so you can print different values of message without impacting HelloWorld.java and MainApp.java files. Let us see how it works
+
+Genika mporeis na xrhsimopoihseis polla tests , gia tis idies function, me diaforetika inputs
+http://www.tutorialspoint.com/spring/spring_hello_world_example.htm
+1)
+Create Java Project
+The first step is to create a simple Java Project using Eclipse IDE. Follow the option File -> New -> Project and finally select Java Project wizard from the wizard list. Now name your project as HelloSpring using the wizard window as follows:
+
+Step 2 - Add Required Libraries:
+ Add External JARs button available under Libraries tab to add the following core JARs from Spring Framework and Common Logging installation directories:
+ 
+ Add External JARs button available under Libraries tab to add the following core JARs from Spring Framework and Common Logging installation directories:
+
+commons-logging-1.1.1 (C:\Dev\NetBeans 8.0.2\enterprise\modules\ext\aws-sdk)
+spring-aop-4.1.6.RELEASE (C:\Dev\NetBeans 8.0.2\java\modules\ext\spring-4)
+spring-aspects-4.1.6.RELEASE    >>
+spring-beans-4.1.6.RELEASE
+spring-context-4.1.6.RELEASE
+spring-context-support-4.1.6.RELEASE
+spring-core-4.1.6.RELEASE
+spring-expression-4.1.6.RELEASE
+spring-instrument-4.1.6.RELEASE
+spring-instrument-tomcat-4.1.6.RELEASE
+spring-jdbc-4.1.6.RELEASE
+spring-jms-4.1.6.RELEASE
+spring-messaging-4.1.6.RELEASE
+spring-orm-4.1.6.RELEASE
+spring-oxm-4.1.6.RELEASE
+spring-test-4.1.6.RELEASE
+spring-tx-4.1.6.RELEASE
+spring-web-4.1.6.RELEASE
+spring-webmvc-4.1.6.RELEASE
+spring-webmvc-portlet-4.1.6.RELEASE
+spring-websocket-4.1.6.RELEASE
+
+( folders: 
+
+Step 3 - Create Source Files:
+////HelloWorld.java
+package com.tutorialspoint;
+
+public class HelloWorld {
+   private String message;
+
+   public void setMessage(String message){
+      this.message  = message;
+   }
+
+   public void getMessage(){
+      System.out.println("Your Message : " + message);
+   }
+}
+
+///MainApp.java
+package com.tutorialspoint;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+   public static void main(String[] args) {
+      ApplicationContext context = 
+             new ClassPathXmlApplicationContext("Beans.xml");
+
+      HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+
+      obj.getMessage();
+   }
+}
+
+
+
+//This file needs to be created under the src directory as shown below:
+//C:\Dev\Eclipse_workspace\HelloSpring\bin
+////Beans.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="helloWorld" class="com.tutorialspoint.HelloWorld">
+       <property name="message" value="Hello World!"/>
+   </bean>
+
+</beans>
+//////////////////////////////////////////////////////////////END OF SPRING APP
+
+/////How to use XML RPC:
+http://www.tutorialspoint.com/xml-rpc/xml_rpc_examples.htm
+
+1) build java XML-RPC client:
+
+import java.net.URL;
+import java.util.*;
+import org.apache.xmlrpc.client.XmlRpcClient;
+import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
+public class JavaClient {
+   public static void main (String [] args) {
+   
+      try {
+          
+          
+          XmlRpcClientConfigImpl config = new XmlRpcClientConfigImpl();
+    config.setServerURL(new URL("http://127.0.0.1:80/xmlrpc"));
+    XmlRpcClient client = new XmlRpcClient();
+    client.setConfig(config);
+          
+         
+         Vector params = new Vector();
+         
+         params.addElement(new Integer(17));
+         params.addElement(new Integer(13));
+
+         Object result = client.execute("sample.sum", params);
+
+         int sum = ((Integer) result).intValue();
+         System.out.println("The sum is: "+ sum);
+
+      } catch (Exception exception) {
+         System.err.println("JavaClient: " + exception);
+      }
+   }
+}
+
+2) Build XML-RPC java server:
+
+import org.apache.xmlrpc.server.PropertyHandlerMapping;
+import org.apache.xmlrpc.server.XmlRpcServer;
+import org.apache.xmlrpc.webserver.WebServer;
+/**
+ *
+ * @author Vasilis
+ */
+public class JavaServer {
+    public Integer sum(int x, int y){
+      return new Integer(x+y);
+   }
+
+   public static void main (String [] args){
+   
+      try {
+
+         System.out.println("Attempting to start XML-RPC Server...");
+         
+         WebServer server = new WebServer(80);
+         XmlRpcServer xmlRpcServer =server.getXmlRpcServer();
+         
+         PropertyHandlerMapping phm = new PropertyHandlerMapping();
+         
+         phm.addHandler("sample",JavaServer.class);
+         xmlRpcServer.setHandlerMapping(phm);
+         server.start();
+         
+         System.out.println("Started successfully.");
+         System.out.println("Accepting requests. (Halt program to stop.)");
+         
+      } catch (Exception exception){
+         System.err.println("JavaServer: " + exception);
+      }
+   }
+    
+    
+}
+
+3) add library from :
+"C:\Dev\NetBeans 8.0.2\ide\modules\org-apache-xmlrpc.jar"
+
+4) Run server:
+Shift-F6
+5) Run client 
+Shift-f6
+
+''''''''''''''''XSLT java convert xml to xml
+http://www.java2s.com/Tutorials/Java/Java_XML/0200__Java_XSLT_Intro.htm
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+http://130.211.82.154:8084/users/sign_in
+v.kasimatis@jrtechnologies.com
+vasilis123
+
+
+
+cd c:/dev/Initial-NDC-SITA-Mapping/
+ git clone http://10.10.10.226:8084/inselair/XSLT_Transformations.git 
+ git pull REMOTE NAME-OF-BRANCH -u
+ 
+ git checkout -b b1 //create new branch
+ git checkout b1 //use that branch
+  git add "just test file.txt"
+   git status
+ git commit -m "initial changes"
+  git push http://130.211.82.154:8084/Kasimatis/Initial-NDC-SITA-Mapping.git b1
+''''''''''''''''''''''''''''''''''''''''
+youtrack guide:
+https://confluence.jetbrains.com/display/YTD65/Quick+Start+Guide.+Searching+for+Issues
+'''''xsl guide:
+https://docs.oracle.com/javase/tutorial/jaxp/xslt/transformingXML.html
+''''''''''''''''''PostMan
+http://kronos.jrtechnologies.com/dondc
+POST Body: raw, XML(application xml)
+<?xml version="1.0" encoding="UTF-8"?>
+<AirShoppingRQ xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="1.1.5" xsi:schemaLocation="http://www.iata.org/IATA/EDIST AirShoppingRQ.xsd">
+ <PointOfSale>
+  <Location>
+   <CountryCode>US</CountryCode>
+   <CityCode>WAS</CityCode>
+  </Location>
+  <RequestTime Zone="EST">2015-10-12T07:38:00</RequestTime>
+  <TouchPoint>
+   <Device>
+    <Code>2</Code>
+    <Definition>Web Browser</Definition>
+    <Position>
+     <Latitude>38.89756</Latitude>
+     <Longitude>-77.03650</Longitude>
+     <NAC>8KD7V PGGM0</NAC>
+    </Position>
+   </Device>
+   <Event>
+    <Code>9</Code>
+    <Definition>Shop</Definition>
+   </Event>
+  </TouchPoint>
+ </PointOfSale>
+ <Document>
+  <Name>KRONOS NDC GATEWAY</Name>
+  <ReferenceVersion>1.0</ReferenceVersion>
+ </Document>
+ <Party>
+  <Sender>
+   <TravelAgencySender>
+    <Contacts>
+     <Contact>
+      <EmailContact>
+       <Address>ndc@usdtravel.com</Address>
+      </EmailContact>
+     </Contact>
+    </Contacts>
+    <PseudoCity>A4A</PseudoCity>
+    <IATA_Number>98417900</IATA_Number>
+    <AgencyID Owner="C9">C9</AgencyID>
+    <AgentUser>
+     <Name>ksmith</Name>
+     <AgentUserID>ksmith212</AgentUserID>
+     <UserRole>Admin</UserRole>
+    </AgentUser>
+   </TravelAgencySender>
+  </Sender>
+ </Party>
+ <Parameters>
+  <CurrCodes>
+   <CurrCode>EUR</CurrCode>
+  </CurrCodes>
+ </Parameters>
+ <Travelers>
+  <Traveler>
+   <AnonymousTraveler>
+    <PTC Quantity="1">ADT</PTC>
+   </AnonymousTraveler>
+  </Traveler>
+ </Travelers>
+ <CoreQuery>
+  <OriginDestinations>
+   <OriginDestination>
+    <Departure>
+     <AirportCode>ARN</AirportCode>
+     <Date>2016-05-05</Date>
+    </Departure>
+    <Arrival>
+     <AirportCode>RIX</AirportCode>
+    </Arrival>
+    <MarketingCarrierAirline>
+     <AirlineID>C9</AirlineID>
+     <Name>Kronos Air</Name>
+    </MarketingCarrierAirline>
+   </OriginDestination>
+  </OriginDestinations>
+ </CoreQuery>
+ <Preferences>
+  <Preference>
+   <AirlinePreferences>
+    <Airline>
+     <AirlineID>C9</AirlineID>
+    </Airline>
+   </AirlinePreferences>
+  </Preference>
+  <Preference>
+   <CabinPreferences>
+    <CabinType>
+     <Code>M</Code>
+    </CabinType>
+   </CabinPreferences>
+  </Preference>
+ </Preferences>
+ <Metadata>
+  <Other>
+   <OtherMetadata>
+    <CurrencyMetadatas>
+     <CurrencyMetadata MetadataKey="EUR">
+      <Decimals>2</Decimals>
+     </CurrencyMetadata>
+    </CurrencyMetadatas>
+   </OtherMetadata>
+  </Other>
+ </Metadata>
+</AirShoppingRQ>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;Kundera
+https://github.com/impetus-opensource/Kundera/wiki/Getting-Started-in-5-minutes
+https://anismiles.wordpress.com/2010/06/30/kundera-knight-in-the-shining-armor/
+https://anismiles.wordpress.com/2010/07/14/kundera-now-jpa-1-0-compatible/#entity-manager
+http://www.tutorialspoint.com/cassandra/cassandra_read_data.htm
+http://kundera.googlecode.com/svn/maven2/maven-missing-resources/
+'''''''''''''''how to create persistence.xml file:
+file ->new ->Persistence Unit
+and then edit the persistence.xml that creates automatically``
+''''''''''''''cassandra google cloud
+cassandra.schema=kronosndcgateway
+
+cassandra.nodes=104.155.27.177
+
+#cassandra credentials
+cassandra.uid=cassandra
+cassandra.pwd=cassandra
+
+p[pppppppppppppppppppppppppppppppppppppppp
+select * from servicebasedonflights;
+http://www.jsoneditoronline.org/
+''''''''''''''''''''''''''''''''''''''''''''''''Spring data with cassandra:
+http://examples.javacodegeeks.com/enterprise-java/spring/spring-data-cassandra-example/
+''''
+10.10.10.224
+http://10.10.10.28:8080/ndcweb/
+
+\\JRTBACKUP
+********************* SITA Client Prerequisities ***************
+No: TransactionIdentifier="TRN12345"
+<ota:POS>
+   <ota:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <ota:RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+  </ota:POS>
+*****************************************************
+demo client BA: http://216.226.146.108/BA_Demo/WebPages/NDCSearchWidget.aspx
+
+;;;;;;;;;;;;;;;;SITA Request:
+<SITA_AirfareFlightShopRQ xmlns="http://www.sita.aero/PTS/fare/2005/12/FlightShopRQ" xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.001">
+ <ota:OTA_AirLowFareSearchRQ Version="1.000">
+  <ota:POS>
+   <ota:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <ota:RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+  </ota:POS>
+  <ota:OriginDestinationInformation>
+   <ota:DepartureDateTime>2017-08-11</ota:DepartureDateTime>
+   <ota:OriginLocation LocationCode= "AUA"/>
+   <ota:DestinationLocation LocationCode= "CUR"/>
+  </ota:OriginDestinationInformation>  
+  <ota:OriginDestinationInformation>
+   <ota:DepartureDateTime>2017-08-18</ota:DepartureDateTime>
+   <ota:OriginLocation LocationCode= "CUR"/>
+   <ota:DestinationLocation LocationCode= "AUA"/>
+  </ota:OriginDestinationInformation>  
+
+
+  <ota:TravelerInfoSummary>
+   <ota:AirTravelerAvail>
+    <ota:PassengerTypeQuantity Code="ADT" Quantity= "1"/>
+   </ota:AirTravelerAvail>
+  </ota:TravelerInfoSummary>
+ </ota:OTA_AirLowFareSearchRQ>
+</SITA_AirfareFlightShopRQ>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ResBookDesigCode="Q" NumberInParty="1"
+ <sita:AvailJourneyOption RPH="0107">
+        <sita:Flight ArrivalDateTime="2016-05-05T22:35:00" DepartureDateTime="2016-05-05T20:50:00" FlightNumber="431" RPH="010701" StopQuantity="1">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,G:9,H:9,L:9,M:9,T:9,W:9,Y:9,Z:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+      
+    <sita:AvailJourneyOption RPH="0204">
+        <sita:Flight ArrivalDateTime="2016-05-06T20:10:00" DepartureDateTime="2016-05-06T19:35:00" FlightNumber="431" RPH="020401" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="CUR"/>
+          <sita:ArrivalAirport LocationCode="AUA"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,G:9,H:9,L:9,M:9,T:9,W:9,Y:9,Z:9</sita:ResBookDesigList>
+        </sita:Flight>
+      </sita:AvailJourneyOption>
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;      
+<SITA_AirfareFlightShopRQ xmlns="http://www.sita.aero/PTS/fare/2005/12/FlightShopRQ" xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.001">
+ <ota:OTA_AirLowFareSearchRQ Version="1.000">
+  <ota:POS>
+   <ota:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <ota:RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+  </ota:POS>
+  <ota:OriginDestinationInformation>
+   <ota:DepartureDateTime>2016-05-05</ota:DepartureDateTime>
+   <ota:OriginLocation LocationCode= "AUA"/>
+   <ota:DestinationLocation LocationCode= "CUR"/>
+  </ota:OriginDestinationInformation>  
+  <ota:OriginDestinationInformation>
+   <ota:DepartureDateTime>2016-05-06</ota:DepartureDateTime>
+   <ota:OriginLocation LocationCode= "CUR"/>
+   <ota:DestinationLocation LocationCode= "AUA"/>
+  </ota:OriginDestinationInformation>  
+
+
+  <ota:TravelerInfoSummary>
+   <ota:AirTravelerAvail>
+    <ota:PassengerTypeQuantity Code="ADT" Quantity= "1"/>
+   </ota:AirTravelerAvail>
+  </ota:TravelerInfoSummary>
+ </ota:OTA_AirLowFareSearchRQ>
+<AdditionalShopRQData JourneyPricingInd="false" CombinableFaresInd="true" FlightAvailabilityInd="false" IncludeTaxInd="true" MaxRoutingOptions="1">
+
+</AdditionalShopRQData>
+</SITA_AirfareFlightShopRQ>
+*******************************************************
+<AdditionalShopRQData JourneyPricingInd="true"  CabinDownsellPermitted="true" CabinUpsellPermitted="true">
+		<AvailableJourneys>
+			<AvailableJourney RPH="1">
+				<DepartureAirport LocationCode="AUA"/>
+				<ArrivalAirport LocationCode="CUR"/>
+				<AvailJourneyOption RPH="0101">
+					<Flight DepartureDateTime="2016-05-05" ArrivalDateTime="2016-05-05" FlightNumber="431" RPH="01010">
+						<DepartureAirport LocationCode="AUA"  />
+						<ArrivalAirport LocationCode="CUR"/>
+						<Equipment AirEquipType="F50"/>
+						<MarketingAirline Code="7I"/>
+						<ResBookDesigList>Y:9,S:9,K:9,M:9,B:9,L:9,T:5,W:2</ResBookDesigList>
+					</Flight>
+				</AvailJourneyOption>
+			</AvailableJourney>
+		</AvailableJourneys>
+	</AdditionalShopRQData>
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[	
+<OriginDestinationInformation RPH= "01">
+   <DepartureDateTime>2016-03-20</DepartureDateTime>
+   <OriginLocation LocationCode= "MIA"/>
+   <DestinationLocation LocationCode= "CUR"/>
+  </OriginDestinationInformation>
+  
+   <OriginDestinationInformation RPH= "02">
+   <DepartureDateTime>2016-03-21</DepartureDateTime>
+   <OriginLocation LocationCode= "CUR"/>
+   <DestinationLocation LocationCode= "AUA"/>
+  </OriginDestinationInformation>
+  999999999999999999999999999999999999999999999999999999999
+  Kassandra:
+ select * from discountbasedonroutingrules;
+select * from discountbasedonlocationrules;
+select * from servicebasedonflights;
+select * from bundlebasedonflights;
+
+
+delete from servicebasedonflights where ond=667978678582 and flightnumber=431;
+
+Google Cloud, keyspace:inselair
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+select * from discountbasedonroutingrules;
+select * from discountbasedonlocationrules;
+
+
+select * from servicebasedonflights;
+select * from bundlebasedonflights;
+
+
+select * from servicebasedonflights where ond=667978678582 and flightnumber=431;
+select * from servicebasedonflights where ond=667978678582 and serviceid=1010;
+
+
+//!!!!!!
+delete from servicebasedonflights where ond=667978678582 and flightnumber=431;
+//!!!!!!
+
+select * from orderbyflightnumber;
+select * from orderbyflightnumbersenderid;
+select * from lastcreatedorderdatebyflightnumber;
+select * from orderbyarrival;
+select * from orderbyarrivalsenderid;
+select * from orderbydeparture;
+select * from orderbydeparturesenderid;
+select * from orderbyorigindestinations;
+select * from orderbyorigindestinationsenderid;
+select * from lastcreateddatebypaymentstatus;
+select * from orderbypaymentstatussenderid;
+select * from orderbypaymentstatus;
+select * from orderbyagencyid;
+select * from orderbyagencyidbysenderid;
+select * from lastcreateddatebyagencyid;
+select * from lastcreatedorderdatebyagencyname;
+select * from orderbyagencyname;
+select * from orderbyagencynamesenderid;
+select * from orderbyiatanumber;
+select * from orderbyiatanumbersenderid;
+select * from lastcreateddatebyiatanumber;
+
+select * from orderbyairlineid;
+select * from orderbyairlineidsenderid;
+select * from lastcreateddatebyairlineid;
+select * from orderbypaxlastname;
+select * from orderbypaxlastnamesenderid;
+select * from lastcreatedorderdatebypaxlastname;
+select * from orderbymaskedcardnumber;
+select * from orderbytraveldate;
+select * from orderbytraveldatesenderid;
+select * from orderbycreatedate;
+select * from orderbycreatedatesenderid;
+select * from orderbycanceldate;
+select * from orderbycanceldatesenderid;
+select * from orderrule;
+select * from ordermaster;
+select * from orderpayment;
+select * from ordermasterhistory;
+select * from orderitemflight;
+select * from orderpaymentbyreceiptid;
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&AUA BON CUR
+<SITA_AirfareFlightShopRQ xmlns="http://www.sita.aero/PTS/fare/2005/12/FlightShopRQ" xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.001">
+ <ota:OTA_AirLowFareSearchRQ Version="1.000">
+  <ota:POS>
+   <ota:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <ota:RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+  </ota:POS>
+  <ota:OriginDestinationInformation>
+   <ota:DepartureDateTime>2016-05-05</ota:DepartureDateTime>
+   <ota:OriginLocation LocationCode= "AUA"/>
+   <ota:DestinationLocation LocationCode= "BON"/>
+  </ota:OriginDestinationInformation>  
+  <ota:OriginDestinationInformation>
+   <ota:DepartureDateTime>2016-05-06</ota:DepartureDateTime>
+   <ota:OriginLocation LocationCode= "BON"/>
+   <ota:DestinationLocation LocationCode= "CUR"/>
+  </ota:OriginDestinationInformation>  
+
+
+  <ota:TravelerInfoSummary>
+   <ota:AirTravelerAvail>
+    <ota:PassengerTypeQuantity Code="ADT" Quantity= "1"/>
+   </ota:AirTravelerAvail>
+  </ota:TravelerInfoSummary>
+ </ota:OTA_AirLowFareSearchRQ>
+</SITA_AirfareFlightShopRQ>
+****************************************Response:
+ <sita:Flight ArrivalDateTime="2016-05-05T21:35:00" DepartureDateTime="2016-05-05T20:50:00" FlightNumber="431" RPH="010101" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="AUA"/>
+          <sita:ArrivalAirport LocationCode="BON"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,G:9,H:9,L:9,M:9,T:9,W:9,Y:9,Z:9</sita:ResBookDesigList>
+        </sita:Flight>
+
+ <sita:Flight ArrivalDateTime="2016-05-06T22:35:00" DepartureDateTime="2016-05-06T22:05:00" FlightNumber="431" RPH="020601" StopQuantity="0">
+          <sita:DepartureAirport LocationCode="BON"/>
+          <sita:ArrivalAirport LocationCode="CUR"/>
+          <sita:MarketingAirline Code="7I"/>
+          <sita:OperatingAirline Code="7I"/>
+          <sita:Equipment AirEquipType="F50"/>
+          <sita:ResBookDesigList>B:9,G:9,H:9,L:9,M:9,T:9,W:9,Y:9,Z:9</sita:ResBookDesigList>
+        </sita:Flight>
+
+
+************** IATA 9873 9800 9825
+W Y Q B
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Orderviewrs
+diavazoyn apo 
+OrderMaster, OrderPayment, OrderSecurity, OrderRule
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+C:\Dev\CS NDC Gateway\Development\NDC_1.1.4\Source\NDCGateway\Source\NDCGateway.Business\OrderManagement
+[[[[[[[[[[[[[[[[ AirBookRQ
+
+Also add API info as the DOCS SSR which should be constructed as per Airimp standards, 
+
+Where components of the document information are not provided, an oblique (/) is inserted to 
+indicate an element is missing. 
+
+(f) Travel Document Type 1–2a I 
+(g) Travel Document Issuing Country/State 1–3a USA 
+(h) Travel Document Number Max. 15an D23145890 
+(i) Passenger Nationality 1–3a USA 
+(j) Date of Birth 7an 12JUL64 
+DDMMMYY 
+(k) Gender of Passenger 1–2a M 
+F = female, M = male, FI = female infant, MI = male infant and 
+U = Undisclosed Gender 
+(l) Travel Document Expiry Date 7an 12JUL04 
+DDMMMYY 
+(m) (1)1Travel DocumentSurname Max. 30a STEVENSON 
+(n) (1) Travel Document First Given Name Max. 30a JOHN 
+(o) (1) Travel Document Second Given Name Max. 30a RICHARD 
+(p) If multi-passenger passport and this SSR is for the primary 1a H 
+passport holder, include the letter (H) 
+
+
+<Text>/P/US/T056736/US/13AUG67/M/18Jul33/Smith/John/H</Text> 
+
+************************ Status Codes *************************
+HK = "Held Confirmed" (reservation but not ticketed)
+OK = "OK" (ticketed and confirmed)
+SS = "Seat Saved" (reservation with seat assignment)
+RQ = Waitlisted
+NN = "Need/Need" (seat requested)
+CV = "Checked In/Virtual" (checked in via internet)
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&]
+It depends on what you mean. On a ticket, you will only ever see:
+OK - Confirmed Space (Unless the flight is overbooked, you may still get bumped with compensation)
+WL - Wait-listed
+RQ - On request
+
+The others are more commonly seen in airlines and agents systems
+HK - Seat confirmed on a flight
+HS - Seat sold but booking not ended and re-retireved
+SS - Same as above, but depends on the airlines link to the reservation system
+NN - Need Need. Again depends on the airlines link and the number of seats available on the flight at time of booking.
+RR - Reconfirmed by passenger.
+UN - Flight cancelled by airline
+TK - Timing changed by the airline on a confirmed sector.
+TL - Timing changed by the airline on a waitlisted sector.
+*************
+http://www.cyraxx.de/stuff/AIRIMP.pdf  Status Codes (7.1.4)
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+http://10.10.10.226:8084/inselair/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+http://216.226.146.134/inselair1/WebPages/NDCSearchWidget.aspx#horizontalTab1
+@@@@@@@@@@@@@@@@@
+git clone http://10.10.10.226:8084/inselair/XSLT_Transformations.git 
+@@@@@@@@@@@@@@@@@@@
+http://7i.jrtechnologies.com/WebPages/NDCSearchWidget.aspx demo 
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<Payments  xmlns="http://www.iata.org/IATA/EDIST" >
+    
+		<Payment>
+				<Method>
+         				<Cash CashInd="true"/>
+         		</Method>
+         		<Amount Code="USD">150.93</Amount>
+         </Payment>
+   
+		
+      </Payments>
+222222222222222222222222222222222222222222222      
+      
+      <PricedFlightOffer xmlns="http://www.iata.org/IATA/EDIST">
+
+pppppppppppppppppppppppppppppppppppppppp
+Live Production SITA Demo https://sws.sita.aero/sws/OTA_AirAvail
+
+<POS>
+			<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" PseudoCityCode="MIA501"/>
+			<RequestorID ID="PnZ7a-88gQ4-r9K2e-S83H9" Type="7" ID_Context="Airfare"/>
+		</POS>
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<OTA_AirFlifoRQ TransactionIdentifier="" Target="Production"> 
+      	<POS>
+			<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" PseudoCityCode="MIA501"/>
+			<RequestorID ID="PnZ7a-88gQ4-r9K2e-S83H9" Type="7" ID_Context="Airfare"/>
+		</POS>
+<Airline Code="7I"/><FlightNumber>431</FlightNumber><DepartureDate>2016-04-22</DepartureDate>
+</OTA_AirFlifoRQ> 
+
+
+
+[[[[[[[[[[[[[[[[[[[[[[[[[[
+keytool -import -alias sws_testing -file "C:\Dev\Eclipse_workspace\SWSJavaClient_v2\SWSJavaClient\Working Certificate\sws.qa.sita.aero.crt" -keystore "C:/Dev/jdk1.7.0_21/jre/lib/security/cacerts" 
+"changeit"
+//////////////////////////////////
+server address:
+http://216.226.146.134/inselair2/WebPages/ViewXML.aspx
+;;;;;;;;;;;;;;;;;;;;
+http://7i.jrtechnologies.com/WebPages/OrderView.aspx?Id=1cf5db0286224958a7b091e5ffc63370#horizontalTab3
+pppppppppppppppppppppppppppppppppppppppp\
+<SITA_AirfarePriceRQ 
+xmlns:sita="http://www.sita.aero/PTS/fare/2005/12/PriceRQ" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ota="http://www.opentravel.org/OTA/2003/05" 
+Version="0.001">
+	<ota:OTA_AirPriceRQ Version="1.000" TimeStamp="2013-02-14T21:24:13">
+		<ota:POS> 
+			<ota:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501" /> 
+			<ota:RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+		</ota:POS>
+		<ota:AirItinerary>
+			<ota:OriginDestinationOptions>
+				<ota:OriginDestinationOption>
+
+					<ota:FlightSegment DepartureDateTime="2016-09-10T09:20:00" ArrivalDateTime="2016-09-10T10:00:00" StopQuantity="0" RPH="1" FlightNumber="341" Status="998">
+						<ota:DepartureAirport LocationCode="AUA"/>
+						<ota:ArrivalAirport LocationCode="CUR"/>
+						<ota:MarketingAirline Code="7I"/>
+						<ota:BookingClassAvails/>
+					</ota:FlightSegment>
+				</ota:OriginDestinationOption>
+			</ota:OriginDestinationOptions>
+		</ota:AirItinerary>
+		<ota:TravelerInfoSummary>
+
+			<AirTravelerAvail>
+				<PassengerTypeQuantity Code="ADT" Quantity="1" RPH="1" />
+			</AirTravelerAvail>
+			<ota:PriceRequestInformation PricingSource="Both"/>
+		</ota:TravelerInfoSummary>
+	</ota:OTA_AirPriceRQ>
+
+	<AdditionalPriceRQData  CheckInterlineAgreements="false" TaxSummaryInd="true" TaxBreakdownInd="true" CurrencyConversionCode="EUR">
+		<AdditionalSegmentInfos/>
+
+		<TourCodes/>
+	</AdditionalPriceRQData>
+</SITA_AirfarePriceRQ>
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+Seat Codes IATA PADIS:
+9825, 9864, 3227, 9976
+9800 Res Book Designator
+9978 Cabin Facitilies characteristic
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+new demo BA 216.226.146.134/inselair2/WebPages/NDCSearchWidget.aspx
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+UE40H6200
+ooooooooooooooooooooooooooooooooooo Booking manager: http://7ibm.jrtechnologies.com/  http://10.0.0.14/7ibm/
+C:\Dev\CS NDC Gateway\Development\NDC_1.1.4\Source\NDCGateway\Source\NDCGateway.Business\BM\DataAccess.cs
+C:\Dev\CS NDC Gateway\Development\NDC_1.1.4\Source\NDCGateway\Source\NDCGateway.Services\OrderManagement\ORMService.cs
+C:\Dev\CS NDC Gateway\Development\NDC_1.1.4\Source\NDCGateway\Source\NDCGateway.Services\AirShopping\OFMSService.cs
+;;;;;;;;;;;;;;;;;;;;; Building Web Page in Java: https://netbeans.org/kb/docs/web/quickstart-webapps.html
+In order to build a project from git to local directory:
+\\JRTBACKUP\Public\JRT Shared\maven -> take settings.xml and put it to C:\Users\Vasilis\.m2 .
+Then edit it, and replace v.kasimatis, 1234
+;;;;;;;;;;;;;postman ndc entrypoint:
+216.226.146.183:8080/ndcgateway
+check 15.2 to 1.1.5
+;;;;;;;;;;;;;;;;;;;;;;;;; Update snapshots maven:
+go to:
+	C:\Dev\work\inselair-xml>mvn clean install -U
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+C:\Users\Vasilis\Desktop\listgen>mvn org.apache.maven.plugins:maven-install-plug
+in:2.5.2:install-file -Dfile="ServiceListGenerator-1.0-SNAPSHOT.jar" -Dsources="
+ServiceListGenerator-1.0-SNAPSHOT-sources.jar" -Djavadoc="ServiceListGenerator-1
+.0-SNAPSHOT-javadoc.jar"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;deploy maven:
+1) go to pom.xml from netbeans
+2) Goals: deploy
+3) Update snapshots
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+username:v.kassimatis
+pass:kassimatis
+http://10.10.10.226:8081/artifactory/webapp/#/home
+libs-release-local
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+static { ClassLoader.getSystemClassLoader().setDefaultAssertionStatus(true); }
+OTA_AirCheckIn.xsd
+//////    \\JRTBACKUP\Public credentials:
+user / P5p?PK
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+http://216.226.146.134/inselair2/WebPages/NDCSearchWidget.aspx
+new demo site; dev /DY$G4bsYT
+///////////////////////////sita different res book design codes:
+B E G H I K L M N O Q S T U V W X Y Z
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+P8RLG
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AirSeatMap
+<OTA_AirSeatMapRQ Version="1.001"  xmlns="http://sita.aero/SITA_AirSeatMapRQ/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+		<POS>
+			<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501" ISOCurrency="USD">
+				<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+				<BookingChannel Type="5"/>
+			</Source>
+		</POS>
+		<SeatMapRequests>
+			<SeatMapRequest>
+				<FlightSegmentInfo DepartureDateTime="2016-05-06T22:05:00" ArrivalDateTime="2016-05-05T22:35:00" FlightNumber="431">
+					<DepartureAirport LocationCode="BON"/>
+					<ArrivalAirport LocationCode="CUR"/>
+					<OperatingAirline Code="7I" FlightNumber="431"/>
+					<Equipment AirEquipType="F50"/>
+					<MarketingAirline Code="7I"/>
+				</FlightSegmentInfo>
+				<SeatDetails>
+					<CabinClass CabinType="Y"/>
+				</SeatDetails>
+			</SeatMapRequest>
+		</SeatMapRequests>
+		<AirTravelers>
+			<AirTraveler PassengerTypeCode="ADT">
+				<PassengerTypeQuantity Code="ADT" Quantity="1"/>
+			</AirTraveler>
+		</AirTravelers>
+	</OTA_AirSeatMapRQ>
+	pppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+	NetBeans shortcut: refactor rename: Ctr+R
+	Alt+Shift = move lines up...
+	https://netbeans.org/kb/73/java/editor-codereference.html
+	manolis , pass#word123
+	
+	'''''''''''''''''Certificate :
+	> keytool -import -alias sws_testing -file sws.qa.sita.aero.crt -keystore C:/dev/jdk1.8.0_66/jre/lib/
+security/cacerts
+	pass: changeit
+	
+	//////////////////robocopy
+	netbeans itirete variables: Ctr + K , Ctr + L
+	https://netbeans.org/competition/win-with-netbeans/stop-typing-source-code.html
+	netbeans code templates:
+	Ps : public static
+	Psf: publis static final
+	St : String
+	br: break
+	ex: extends
+	f: final
+	for, forc, fore, fori,form,forst: 
+	if, ife, ifelse
+	ir: import
+	pm: private Method
+	pr: private;
+	ps: private static
+	re: return;
+	serr: sout, soutv
+	spl : for split
+	sw: switch
+	sy: synchronized
+	trycatch
+	tw :throw
+	wh: while
+	
+	/////////////////////////////////////////
+	cassandra]
+	The Partition Key is responsible for data distribution accross your nodes.
+The Clustering Key is responsible for data sorting within the partition.
+The Primary Key is equivalent to the Partition Key in a single-field-key table.
+The Composite/Compund Key is just a multiple-columns key
+	'''''''''''''''' Interceptor
+	C:\Dev\NDCGatewayJava\Development\Schema_1.1.3\Source\ndcweb\jrt-interceptor\src\jrt\lib\interceptor
+
+
+	CREATE TABLE inselair.sitagatewaylog(
+	transactionid text,
+	messageid int,
+	sequence_nbr int,
+	rqtimestamp timestamp,
+	rstimestamp timestamp,
+	duration bigint,
+	rqxml text,
+	rsxml text,
+	PRIMARY KEY (transactionid, messageid,sequence_nbr)
+)
+orange:
+http://orangehrm.chq.jrtechnologies.com/symfony/web/index.php/dashboard
+v.kasimatis
+vhawkgr81
+''''''''''''''''''''''''''''''''
+<ns:OTA_ReadRQ Target="Test" Version="1.0" xmlns:ns="http://sita.aero/SITA_ReadRQ/3/0" xmlns:ns1="http://sita.aero/common/1/0">
+    <ns:POS>
+        <ns1:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"></ns1:Source>
+    </ns:POS>
+    <ns:UniqueID ID="P0BMS" Type="0"></ns:UniqueID>
+</ns:OTA_ReadRQ>
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+cassandra:
+InselairDev στην IP 216.226.146.240
+InselairTest  στην IP 216.226.146.241
+manolis / yL!2v9-Vaz
+''''''''''''''''''''''''''''''''''
+serverIp=104.155.27.177
+port=9042
+username=cassandra
+password=cassandra
+keyspace=inselair
+'''''''''''''''''''''''''''''''
+
+*innotaflights*
+arrivalairport
+arrivalairportname
+arrivalcity
+arrivalcityname
+arrivalcountry
+arrivalcountryname
+classes
+departure/////
+flightdistance
+inflightservice (9)
+meals (S S S)
+servicetype (j)
+''''''''''''''''''''''''''''''''''''''''''''
+\\JRTBACKUP\Public\JRT Shared\Innovata file\JRTechnologies_20151022
+κατσαμπάς.
+void emd:
+'''''''''''''''''''''''''''
+<SITA_VoidEMD xmlns="http://sita.aero/SITA_VoidEMD/5/0" xmlns:common="http://sita.aero/common/4/0" xmlns:ns1="http://sita.aero/SITA_VoidEMD/4/0" xmlns:ticketing="http://sita.aero/ticketing/common/4/0"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://sita.aero/SITA_VoidEMD/5/0 C:\Dev\messagingSWS_v4\dev\client_interfaces\xsd\hal\tkt\SITA_VoidEMD.xsd" Target="QAA">
+                <POS>
+                                <common:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501">
+                                                <common:RequestorID ID="82411556" Type="5"/>
+                                </common:Source>
+                </POS>
+                <EMD_Info IssueIATA="82411556"  IssueCity="MIA">
+                                <ticketing:TicketDocument TicketDocumentNbr="9584550058361" ResidingDatabase="7I" SettlementAuthCode="421"/>
+                </EMD_Info>
+</SITA_VoidEMD>
+'''''''''''''''''''''''''''''
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathFactory;
+'''''''''''''''''''visualVM profiler , jConsole
+schematron
+http://www.xml.com/pub/a/2003/11/12/schematron.html?page=2
+http://zvon.org/xxl/SchematronTutorial/General/toc.html
+
+///////repository git:
+1) First make repository on http://10.10.10.226:8084/inselair
+Since you are learning Git, know that this has little to do with git but with the text editor configured for use. In vim, you can press i to start entering text and save by pressing esc and :wq and enter, this will commit with the message you typed. In your current state, to just come out without committing, you can do :q instead of the :wq as mentioned above.
+
+Alternatively, you can just do git commit -m '<message>' instead of having git open the editor to type the message.
+''''''''''''''''''''''''
+cd existing_folder
+git init
+git remote add origin http://10.10.10.226:8084/inselair/schematron.git
+git add .
+git commit
+git push -u origin master
+[[[[[[[[[[[[[[[[[[[[
+ EmailType="HOME"
+ PFZRT
+ ''''''''''''''''''
+ sto sxhma pou phra apo ton Manoli prin liges meres, "NDC_XSDs_16.2_FOR_APPROVAL_0.9.iak" to AirShoppingRS/AirShoppingProcessing einai ypoxrewtiko. Sto kainoyrio
+sxhma pou esteiles shmera einai proeraitiko.
+Epishs h allagh pou anafereis gia to Party/Participants/Participant/CorporateParticipant isxyei gia ola ta RQ mhnymata pou exoyn Party (oxi mono gia to AirShoppingRQ)
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+assembly:single gia jar
+http://www.mkyong.com/java/jackson-2-convert-java-object-to-from-json/
+''''''''''''''''''''''
+ xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDCSchema%2015.2/AirShoppingRQ.xsd"
+ xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/FlightPriceRS.xsd"
+ xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/AirShoppingRS.xsd"
+  xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/OrderCreateRQ.xsd"
+  xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/ItinReshopRQ.xsd"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+http://www.javaspecialists.eu/courses.jsp
+jrt123!@#
+'''''''''''''''''
+select * from ndcgatewaylog where transactionid='323edafe806e46a1ad82455b87de93be' and messageid=213
+
+#OrderView: xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/OrderViewRS.xsd"
+#OrderRetrieve: xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/OrderRetrieveRQ.xsd"
+#OrderChange: xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/OrderChangeRQ.xsd"
+#AirDocIssueRQ: xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/AirDocIssueRQ.xsd"
+'''''''''''''''''' sky bird
+jd-gui
+'''''''''''''''''''self-booking-manager:
+1) localhost:8081/app/auth/login
+{"email":"meskinis@sth.com", "password":"e2wsS@E"}
+2) get a json airshoping, put a  "EchoToken":"abdccc1234455656",
+	authorization: Bearer + token from login
+	localhost:8081/app/api/air-shopping
+[[[[[[[[[[[[[[[[ HipChat [[[[[[[[[[[[[[[[[[[	
+https://spring.io/guides/gs/serving-web-content/
+http://schemas.liquid-technologies.com/OpenTravel/2008B/
+http://www.visualschema.com/vs/opentravel/OTA_LoyaltyAccountCreateRQ/
+[[[[[[[[[[[[[[[[[[[[[[
+ the PNR and system returns CHECK EMAIL/MOBILE CONTACT form host ThePhoneLocationType attribute is set to 7 and PhoneTechType to 5 (Mobile) 
+<Telephone  PhoneLocationType="7"  PhoneTechType="5">										  
+===========================================
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_CancelRQ xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Target="Test" Version="1.0" PrimaryLangID="en" AltLangID="en">
+	<POS>
+		<Source xmlns:common="http://sita.aero/common/1/0" AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+	</POS>
+	<UniqueID Type="15" ID="P1QN9" Reason="Cancelled by user"/>
+</OTA_CancelRQ>
+==============================================
+to skip tests:
+
+git checkout dev
+^C
+git status
+git pull
+git merge feature-order-list
+git deff dev..feature-order-list
+'''''''''''''
+gpupdate as admin
+''''''''''''''''''''
+Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdGF2cm9zQHN0aC5jb20iLCJiaXJ0aGRhdGUiOjY5NjkwMjQwMDAwMCwidXVpZCI6IjYwNjVjZDAxLWFmZTItNDIzOC1hMzNlLWFhNmRiMWNjNzNmNiJ9.aokaj_S38Baj_Uy5wn_ohzNxvju3msbPB3-Aj0yw-n4
+application-auth: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang
+'''''''''''''''''''
+gateway.url=http://216.226.146.183
+#gateway.url=http://216.226.146.183
+gateway.url=http://127.0.0.1
+'''POM Exclude main classes:
+ <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>com/jrtechnologies/ordermanagementservice/Test/*.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+'''''''''''''''''''''''''''''''''            
+http://7i.jrtechnologies.com/
+''''''''''''''''''''''
+echo "# efzin" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/vasilhs81/efzin.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/vasilhs81/efzin.git
+git push -u origin master
+'''''''''''''''''''''''''''''
+config services.propterties:
+xqInitialSize=100
+''''''''
+gpedit.msc
+http://www.howtogeek.com/224471/how-to-prevent-windows-10-from-automatically-downloading-updates/
+'''''''''''''''''''''''''''''
+Flow for Service Management:
+1) UserCreate POST localhost:8089/app/user
+    Header: application-auth
+    key:application-auth
+    value: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang
+	(this is the agency auth token)
+	
+	Body:
+	{
+	"email":"v.kasimatis@jrtechnologies.com",
+	"firstname": "vasilis",
+	"lastname":"kasimatis",
+	"birthdate":"1985-05-02",
+	"baseUrl":"http://localhost:8080",
+	"password":"1223423423!@#Vasi"
+	}
+	
+	It sends activation email, with token
+2) 	Confirm GET, 
+	Header: application-auth
+    localhost:8089/app/user/confirm/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Lmthc2ltYXRpc0BqcnRlY2hub2xvZ2llcy5jb20iLCJleHAiOjE0NzU2NzI0NTh9.OkjkWNEofgpLnG6AoXGJkgDY2WYG3-rd-Ome1NO780E
+	The token has been taken from confirmation email.
+		
+3) Login, POST, localhost:8089/app/auth/login
+	Header: application-auth
+	Body: {"email":"v.kasimatis@jrtechnologies.com", "password":"1223423423!@#Vasi"}
+	Responds with access token
+
+4) UserGet, Get, localhost:8089/app/api/user/v.kasimatis@jrtechnologies.com	
+	Header: application-auth
+	Header: Key: Authorization, value: 	Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Lmthc2ltYXRpc0BqcnRlY2hub2xvZ2llcy5jb20iLCJiaXJ0aGRhdGUiOjQ4Mzg0MDAwMDAwMCwidXVpZCI6MTg0NjI1NTM4ODQ4MDAxMDF9.-VNI-MslidTEzO8856SB5PBc5eUxHClQD-FvcPSPSR0
+	
+5) User Update,
+		Header: application-auth
+		Header: Key: Authorization, value: 	Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2Lmthc2ltYXRpc0BqcnRlY2hub2xvZ2llcy5jb20iLCJiaXJ0aGRhdGUiOjQ4Mzg0MDAwMDAwMCwidXVpZCI6MTg0NjI1NTM4ODQ4MDAxMDF9.-VNI-MslidTEzO8856SB5PBc5eUxHClQD-FvcPSPSR0
+		Body:
+		{
+		"email":"v.kasimatis@jrtechnologies.com",
+		"firstname": "vasilis",
+		"lastname":"Kasimof",
+		"birthdate":"1986-05-02",
+		"baseUrl":"http://localhost:8080",
+		"password":"1223423423!@#Vasi"
+		}
+''''''''''''''''''''''
+Excellent transaction and fast shipping. Thank you!
+'''''''''''''''''''''''''''
+"C:\Dev\work\XSLT_Tester\OTA_AirSeatMap - SeatAvailability\senario2\5- SeatAvailabilityRS (with Components and CabinLayout).xml"
+http://tutorials.jenkov.com/java-json/jackson-annotations.html#jsonpropertyorder
+///to cancel: AG43235
+A1BSDT2: Q023Z
+/////////////
+git fetch
+git status
+ git branch --set-upstream-to=origin/dev dev
+git log
+git merge master
+////////////////
+Orders:
+241:A1BSE42
+BookingReferece:Q037K
+Wilson,
+hejesel@hotmail.com
+profileId:18653355922870301
+168.25
+ <Departure>
+<AirportCode>AUA</AirportCode>
+<Date>2016-12-12</Date>
+<Time>17:15</Time>
+</Departure>
+<Arrival>
+<AirportCode>CUR</AirportCode>
+<Date>2016-12-12</Date>
+<Time>17:50</Time>
+</Arrival>
+<MarketingCarrier>
+<AirlineID>7I</AirlineID>
+<FlightNumber>402</FlightNumber>
+
+/////////////////////
+java -jar "web-layer-0.0.18.jar"
+/
+C:\Dev\work\Commons\src\main\java\com\jrtechnologies\commons\utils\Utils.java
+
+//////////////////////
+GENERIC	IdleTime	
+JRTSANDBOX	Development	routing
+JRTIAG	Development	serviceList wrapper
+
+/////netbeans plugin: findbug
+//////////////
+<OTA_AirFlifoRQ Version="0" xmlns="http://www.opentravel.org/OTA/2003/05" >
+  <POS>
+   <Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+  </POS>
+  <Airline Code="7I"/>
+ <FlightNumber>301</FlightNumber>
+  <DepartureDate>2016-12-12</DepartureDate>
+</OTA_AirFlifoRQ>
+//////////netbeans
+Removal of trailing spaces
+For a single file (place the carret in the code file): Source > Remove Trailing Spaces. Or during every save: Tools > Options > Editor > On Save > Remove Trailing Whitespace.
+/////////////////////////////////////
+//application.properties:
+#gateway.url=http://216.226.146.239
+#gateway.url=http://216.226.146.183
+gateway.url=http://127.0.0.1
+/////////////
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_AirScheduleRQ xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05
+OTA_AirScheduleRQ.xsd" EchoToken="75657" TimeStamp="2003-03-17T09:30:47-05:00" Target="Test" Version="1.002" SequenceNmbr="1">
+  <POS>
+   <Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+  </POS>
+	<OriginDestinationInformation>
+		<DepartureDateTime>2016-08-01T09:00:00</DepartureDateTime>
+		<OriginLocation LocationCode="AUA"/>
+		<DestinationLocation LocationCode="MIA"/>
+	</OriginDestinationInformation>
+	<FlightInfo>
+		<BookingClassPref ResBookDesigCode="W" PreferLevel="Preferred"/>
+	</FlightInfo>
+	<VendorPref Code="7I" PreferLevel="Only"/>
+</OTA_AirScheduleRQ>
+
+/////////////////maven plugin check versions:
+<build>
+<plugins>
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>versions-maven-plugin</artifactId>
+    <version>2.1</version>
+    <executions>
+        <execution>
+            <id>display-dependency-updates</id>
+            <goals>
+                <goal>display-dependency-updates</goal>
+            </goals>
+            <phase>verify</phase>
+        </execution>
+    </executions>
+</plugin>
+
+</plugins>
+</build>
+
+///////////// mvn command:
+mvn versions:display-dependency-updates
+
+mvn dependency:tree
+mvn dependency:tree -Dexcludes=org.apache.maven*,org.codehaus.plexus
+mvn clean install
+mvn dependency:tree -DoutputType=graphml -DoutputFile=dependency.graphml
+//and then open them with yEd java graph editor
+
+mvn clean install site
+mvn clean dependency:copy-dependencies package
+mvn deploy -Dmaven.test.skip=true
+/////show dependency graph:
+Show Dependency Graph has been replaced with Open POM; the graph is shown as a tab in the pom.xml editor window. 
+////////////////////////////////check dependencies..
+<plugin>
+  <groupId>com.ning.maven.plugins</groupId>
+  <artifactId>maven-dependency-versions-check-plugin</artifactId>
+  <executions>
+    <execution>
+      <phase>verify</phase>
+      <goals>
+        <goal>check</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>
+////////////////////////Intelij:
+To open any class in the editor quickly, press Ctrl+N (Navigate | Class) and start typing the name of the class. Choose the class from a drop-down list that appears.
+Use Ctrl+Shift+F7: to quickly highlight usages of some variable in the current file.
+Use F3 and Shift+F3 keys to navigate through highlighted usages.
+
+//////////////
+You can quickly find all places where a particular class, method or variable is used in the whole project by positioning the caret at the symbol's name or at its usage in code and pressing Alt+F7 (Edit | Find | Find Usages in the popup menu).
+///////////////
+4111111111111111 VISA
+http://it.chania/support/
+''''''''''''''' delete all files in subdirectories
+del /S C:\Path\to\directory\*
+''''''''''intllij
+String s = (<caret is here> 
+and press Ctrl+Shift+Space to see what happens.
+////////////////////
+ERC 219  MS - LINK DATA REJECTED ,
+/////////// How to Renew jks certificate:
+1) >keytool -v -list -keystore keystore.jks
+    tsimpas to "alias" (=>"key")
+2) keytool  -selfcert -alias  key -validity 382 -keystore keystore.jks    
+   it will create a new certificate request using your existing key pair.
+3) keytool -certreq  -alias key -keystore keystore.jks -file request.csr   (password: "Mar2016" )
+  generates a Certificate Signing Request based on the information in this new certificate.
+4) When you get the CA certificate reply, import it:
+    keytool -import -alias key -file reply.cer  
+  or keytool -keystore keystore.jks -import -alias key -file reply.crt -trustcacerts  
+* Use KeyStore Explorer to view keys
+* https://security.stackexchange.com/questions/48496/how-to-go-about-an-ssl-certificate-renewal
+* http://docs.oracle.com/javase/1.5.0/docs/tooldocs/windows/keytool.html#selfcertCmd
+  (Changing Your Distinguished Name but Keeping your Key Pair)
+* https://docs.oracle.com/javase/1.5.0/docs/tooldocs/windows/keytool.html#selfcertCmd
+* https://www.sslshopper.com/article-most-common-java-keytool-keystore-commands.html  
+//////////
+fs.chania\Files\JRTShared\refactoring17_1
+\\fs.chania\Files\JRTShared\NDC\NDC Schemas\17_1 schemas_EDIST_JRT
+//////////////// PimPassenger
+{
+"nameSurname":"Swatcheneger",
+"nameGiven" : "Arlond",
+"nameMiddle":"",
+"gender":"",
+"ptc":"",
+"birthDate":"",
+"contactEmails":[{"emailAddress" : "swatch@gymail.com"}],
+"objectKey":null
+}
+///
+localhost:8086/ndcweb/passengerIdentificationJsonService?passengerJson=%7B%0A%22nameSurname%22%3A%22Swatcheneger%22%2C%0A%22nameGiven%22%20%3A%20%22Arlond%22%2C%0A%22nameMiddle%22%3A%22%22%2C%0A%22gender%22%3A%22%22%2C%0A%22ptc%22%3A%22%22%2C%0A%22birthDate%22%3A%22%22%2C%0A%22contactEmails%22%3A%5B%7B%22emailAddress%22%20%3A%20%22swatch%40gymail.com%22%7D%5D%2C%0A%22objectKey%22%3Anull%0A%7D
+////
+{
+"nameSurname":"Swatcheneger",
+"nameGiven" : "Arlond"
+}
+//////////////////////NetBeans plugins:
+EditorZoom
+Code outline
+NbExtractCode
+Obsidian Color Theme
+NbOpenedFiles
+Dark Look And Feel Themes
+Git
+Dead Code Detector
+shift+shift open go to symbol
+AutSaveModified
+-- TagMyCode
+Show path in titlebar
+Explore from here
+Copy qualified name
+maven
+Open file fast
+Close other Documents
+''''''''''''''junit tests : http://www.vogella.com/tutorials/JUnit/article.html
+''''git fetch from remote and diff
+git remote -v
+git remote add inselair http://10.10.10.226:8084/inselair/OrderManagementService.git
+git fetch inselair
+'''''''''''''''
+john, 
+ta projects:
+InselairToJsonMapping
+ServiceListGenerator
+NdcGatewayStatistics
+NdcGatewayIndexing
+
+exoun afaire8ei.
+
+Sto Schematron, eixan graftei rules mono gia 15.2 ndc.
+''''''''''''''''''''''python 3 path
+C:\Users\v.kasimatis\AppData\Local\Programs\Python\Python36-32
+T17040604753
+''''''''''''''''''scim curl
+curl -v -k --user admin:admin --data '{"schemas":[],"name":{"familyName":"jayawardana","givenName":"vindula"},"userName":"vindula","password":"vindula","emails":[{"primary":true,"value":"vindula_home.com","type":"home"},{"value":"vindula_work.com","type":"work"}]}' --header "Content-Type:application/json" https://localhost:9443/scim2/Users
+''''''''''''''
+/Schemas/schemaId:Users/userId
+urn:scim:schemas:core:1.0
+2ef2e2769eed14af4bdf6dbdcbf02e3a9097273c
+''''''''''''''''''''''Remote desktop connection
+m@n0l1s
+ http://216.226.146.237:8080/v1/ServiceProviderConfigs
+ charonAdmin:charonAdmin
+ ////////////////
+ c:\Dev>7z.exe a work.7z C:\dev\work\* -r -x!*.jar -x!*.exe -x!*.war
+ ////alias:importKey pass:importKey
+ 
+ <Logger name="com.jrtechnologies" level="TRACE">
+            <Appender-Ref ref="f1"/>
+        </Logger>
+          <Logger name="org.wso2.charon" level="debug">
+            <Appender-Ref ref="f1"/>
+        </Logger>
+	    
+///////////////////////////
+Merge takes all the changes in one branch and merges them into another branch in one commit.
+Rebase says I want the point at which I branched to move to a new starting point
+/////////////////////////////// impossible to override spring boot dependencies in maven..
+https://stackoverflow.com/questions/27934418/how-to-exclude-transitive-dependencies-of-spring-boot-dependencies-from-maven-im
+////word hard links: Alt + F9
+//////////////////////////////////////////
+There are mainly four GDS system allocated to manage and distribute online rates of Airlines which are Amedeaus, Sabre, Galalio/TravelPort ,Abbacus (Abbacus is now acquired by Sabre).
+
+So to answer your question TravelPort is one of the GDS system who can allow you to search and book Flight tickets. Off-course this is a b2b platform so it's only open for business entities and not end consumers.
+//////////////////////////////////////////////
+REST is more dynamic, no need for creating and updating UDDI.
+REST is not restricted to XML format. REST web services can send plain text, JSON, and also XML.
+///////////////////////////Travelport links
+https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-Galileo.htm
+https://github.com/Travelport
+https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air-Galileo.htm#001
+https://support.travelport.com/webhelp/uapi/Content/Air/Air_Availability/Air_Availability.htm
+https://support.travelport.com/webhelp/uapi/Content/Getting_Started/Easy_Overview/Understanding_UAPI_Services_and_Schema.htm
+https://support.travelport.com/webhelp/uapi/Content/Getting_Started/Universal_API_Schemas_and_WSDLs.htm
+https://www.scribd.com/document/7276649/Ssim-Impguide-03-1-Oct03
+//////////////////////////////////////////
+https://support.travelport.com/webhelp/uapi/Content/SampleWeb/Samples_Air.htm#1G
+https://support.travelport.com/webhelp/uapi/Content/Getting_Started/Easy_Overview/Complete_Services_List.htm
+/////////////////////////////////////////////
+http://www.nachrichtenleicht.de
+/////////////////
+The Universal API services are document-style SOAP Web Services
+////Travelport getting credentials:
+https://support.travelport.com/webhelp/uapi/Content/Getting_Started/Easy_Overview/Getting_Credentials.htm
+http://axis.apache.org/axis2/java/core/
+
+///////Covert edi to xsd: https://www.altova.com/forum/default.aspx?g=posts&t=564
+/////////////////////////////
+https://www.progress.com/data-integration/data-sources/edi-standards/iata-padis
+http://www.iata.org/whatwedo/workgroups/Pages/padis.aspx
+
+(PADIS) EDI standard 92.1
+//////////////////////////
+skype /secondary
+///////////////////
+server for ibe:
+216.226.146.134
+manolis
+pass#word123
+////////////////////
+cybersource:
+https://ebctest.cybersource.com/ebctest/login/Login.do
+//Merchant account:
+merchanitID: jrtechnologies_mID
+jrtechnologies
+0p9o8i*!!
+//Normal account:
+jrtechnologies_mid_acct
+jrtechnologies
+0p9o8i*!!
+/////////////
+Secret questions
+Fiat
+tenis
+melon
+Michalis
+Vasilis
+///////////////
+4988309415830177097528 
+Profile ID: 7580AB57-919F-4355-B707-FA5FC1A972DA
+Access Key: 539dd7fbd70c3c2b80e5782c7ff67001
+Secret Key: b403d3dc0bdd4dfd8e240f0b46e4c359ef0ed9a75dbe471eb9245014188731147d517345365c4f5fae65a996ed94ab5869e701a6050843049a30030ee458f19d5cb592fdd1b542c198e88d547bce85c9aa8b1e03edca4a27a57e8011958b49609e851fb229c146e99ae4ceb06134fb606a258a03e5f04282b524e3fb8138f23f
+****************************
+key2:
+Access key: 2b377d21044d3ce5ae71ebac088e1aad
+secret Key:
+329d1d02abed4ed49edafc3232b8bdfa31ee87826ee54d17846d8c364ae3868d863a88a6227e48c08eed2143e903cdf3e4a7a980f6d5432da44213e2d95e056ff2fb736549974033ba944a1799a49e547143d425ffd146a3b325331529f5a4081a7c9634bc0442be84ba6182e7156312e53c229c02a54780a97946fbc95b862b
+
+
+
+
+//////////////////////////////
+new profile:
+Profile ID: 4545F081-842B-40CD-9041-72467E8F4F00
+Acess key:10422118add73f82b01c5a144aa1ef3b
+Secret Key:
+61d14a1897ea4025a0bcab6ae6f409067ec279916bf34b2b92bd0e944e8badf8f0ac70185423447daac2c8d19bd9a88e4482c707d3a84a358526c4a0911b822d9a13ac3cf9d847ea9eb77450630b0fc03b523aaf8ede49809c420c0f24a2117c97beef97aa8a4e60a3390a316d9601489ac26733afa545abb5c8479862eb7116
+////////////////////
+key2:
+Access key: 2b377d21044d3ce5ae71ebac088e1aad
+secret Key:
+329d1d02abed4ed49edafc3232b8bdfa31ee87826ee54d17846d8c364ae3868d863a88a6227e48c08eed2143e903cdf3e4a7a980f6d5432da44213e2d95e056ff2fb736549974033ba944a1799a49e547143d425ffd146a3b325331529f5a4081a7c9634bc0442be84ba6182e7156312e53c229c02a54780a97946fbc95b862b
+//////////////////OLD account
+CyberSource  ID: jrtechnologies_acct
+username: gmjr
+password: 0p9o8i*!!
+/////////// MerchantID
+jrtechnologies
+username: gmjr
+password: 0p9o8i*!!
+///////////////
+new Pass:0P9o9i*!!
+
+
+http://www.iata.org/whatwedo/workgroups/Pages/padis.aspx
+https://extranet2.iata.org/_layouts/15/Extranet/login.aspx?ReturnUrl=%2fsites%2fpadis%2f_layouts%2fAuthenticate.aspx%3fSource%3d%252Fsites%252Fpadis%252Fdefault%252Easpx&Source=%2Fsites%2Fpadis%2Fdefault%2Easpx
+
+Jr123!@#
+
+ xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/tmp/NDC_XSDs_16.2_FOR_APPROVAL_0.9_July/SeatAvailabilityRS.xsd"
+
+//Datastax community edition: http://localhost:8888/opscenter/index.html
+C:\> cd "C:\Program Files\DataStax Community\apache-cassandra\bin"
+C:\> nodetool status
+https://docs.nomagic.com/display/CEDW183/Installing+and+configuring+Cassandra+on+Windows
+local cassandra credentials: vasilis/jr123!@#
+https://www.youtube.com/watch?v=fspXzjwfii0
+//initiall scipt: 
+cqlsh> create keyspace people with replication = {'class': 'SimpleStrategy','replication_factor':3};
+cqlsh>  describe keyspace people;
+/////////////////////
+ It should only be AUA, BON, CUR and SXM to query without issues.
+ ///////////////////////////
+
+#com.jrt.cassandra.host=216.226.146.240
+#com.jrt.cassandra.port=9042
+#com.jrt.cassandra.username=manolis
+#com.jrt.cassandra.password=yL!2v9-Vaz
+#com.jrt.cassandra.keyspace=inselair
+
+com.jrt.cassandra.host=216.226.146.241
+com.jrt.cassandra.port=9042
+com.jrt.cassandra.username=inselair_developer
+com.jrt.cassandra.password=ins@devel@per
+com.jrt.cassandra.keyspace=inselair_gateway
+
+//////////////////////////////
+cqlsh 216.226.146.241 9042 -u inselair_developer -p "ins@devel@per" --cqlversion="3.1.0"
+http://10.10.10.226:8084/inselair/SitaMockWebServiceProcessor/blob/develop/src/main/java/com/jrtechnologies/airlinewebserviceprocessor/SitaMockPSSProcessor.java#L28
+
+/////////////////////
+"C:\Program Files\DataStax Community\utils\prunsrv.exe" //RS//DataStax_OpsCenter_Community
+"C:\Program Files\DataStax Community\utils\prunsrv.exe" //RS//DataStax_OpsCenter_Agent
+"C:\Program Files\DataStax Community\utils\prunsrv_old.exe" //RS//DataStax_Cassandra_Community_Server
+CASSANDRA_HOME,C:\Program Files\DataStax Community\apache-cassandra\
+
+Set-ExecutionPolicy Unrestricted
+netstat -a -b
+/////////////// How to install cassandra locally from scratch:
+1) Administrative powershell, run : Set-ExecutionPolicy Unrestricted
+2) Edit cassandra.bat: "if NOT DEFINED CASSANDRA_HOME set CASSANDRA_HOME=%CD%" -> set CASSANDRA_HOME=%CD%
+3) run cassandra.bat 
+4) run "nodetool status" in bin directory
+5) run cqlsh in bin directory and execute :
+    create keyspace people with replication = {'class': 'SimpleStrategy','replication_factor':3};
+    describe keyspace people.
+6) add bin path to glabal variable path
+7) run cqlsh -f "C:\Dev\Database scripts\Initialize_Local_Inselair.cql" to run initial scripts..
+/////////////////////////////////////
+\\fs.chania\Files\JRTShared\PR-InselAir\Inselair-Ryan    
+////Compile in C++11
+g++ -std=c++11 Euler215.cpp -o out.exe
+///////create and use symbolic links
+mklink Link Target //for files
+mklink /D Link Target //when you want to create a sof link pointing to a directory.
+mklink /H Link Target //Hard link case
+mklink /J Link Target 
+e..g mklink /J "C:\Link To Folder" "C:\Users\Name\Original Folder"
+mklink /J ".jrt" "C:\Dev\UNISYS\ndc-configs\.jrt"
+from powershell:
+cmd /c mklink c:\path\to\symlink c:\target\file
+
+/////////////////Cybersource:
+jrtechnologies
+username: gmjr_m
+password: 0p9o8i*!!
+////Updated Password: 1P9o8i*!!
+Profile ID: D1779ED5-4446-4DF2-9221-EFDD4AF8197A
+http://216.226.146.134:8081/cyb-payment
+http://146.148.29.140
+
+http://www.dw.com/de/deutsch-lernen/nachrichten/s-8030
+////////////////////////////
+C:\Users\v.kasimatis\Desktop\google_vpn.ovpn
+
+https://hasbrouck.org/articles/PNR.html
+ftp://hiretracknx.com/pub/cybiko/apps/trivial/TRV%20File%20Format.txt
+///////////////////////////////////
+git stash push -m welcome_cart app/views/cart/welcome.thtml.
+
+in source tree:
+To stash select files:
+1. Stage the files you want to stash
+2. Then stash all files, but making sure that 'Keep staged changes' is checked.
+3. Now you only have the files you want to stash in your current working copy.
+4. Stash all files, with 'Keep staged changes' unchecked.
+You can then re-apply the first stash, and discard the files that you wanted to stash.
+///////////////////////////
+http://10.10.10.226:8084/search?utf8=%E2%9C%93&project_id=246&group_id=&snippets=&scope=&search=BasicAuthentication
+//////////////
+<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+/////////////////			
+<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+<slf4j.version>1.7.25</slf4j.version>
+<log4j.version>2.8.2</log4j.version>
+///////////////////////////
+http://10.10.10.226:8084/UNISYS/AirlineWebServiceProcessor/edit
+				
+Unrecognized cabin code. Available [F, C, M, K, J]				
+////////////////////////////////
+MSP - ORD
+BLR - DEL
+FRA - LAX
+-------------------
+additional:
+MSP - HNL
+HNL - LAX
+IAH - CCD
+MSP - IAH
+MSP-LAX 
+FLIGHT Information
+------------------------
+1501(Flight Number),C(Suffix),BLR(Orgin),DEL(Destination)
+1502(Flight Number),C(Suffix),FRA(Orgin),LAX(Destination)
+//////////////////////////////////
+SSH key:
+vasilisKey
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC54vyL9PXdSsJhaNdTwRmZoumdxV5kK1D+eSw1qaifnOeiK91f9uWYf4HoArZAOg0YCS2HJ5L6zTyiqFsuwe9FTnHKsFlhPXUZqvDfEp322CmHOKYKEYdj/4uamoTZ/ErtWUfjPidlnb3KMVlB5gtrLuP1kZ7R2GVIPeHlOayNB0gxFS/ZWI+MAbxyCKrc6boH6Od+KKVgXdviybEYJCG7zHy9QpT1s/ZNtGbVhKEZJbaYohjfKFcvdFGDUSueVGrABqxavSt3PKp3JJ3HqWUBL83y23WpNqHUKERoP2p75kv3mMN7diH51fp1HqSljMIjPTolYr4HxvVm9+5wxS4F v.kasimatis@jrtechnologies.com
+//////////////////////
+git tag -d 12345
+git push origin :refs/tags/12345
+//////////////
+find ./ -type f -name config -exec sed -i 's/10\.10\.10\.226\:8084/git\.chania/g' {} \;
+ find ./ -type f -name config -exec sed -i 's/10\.10\.10\.226/git\.chania/g' {} \;
+ //////////////////////////
+  <distributionManagement>
+            <repository>
+                <id>central</id>
+                <name>chaniadevs.localdomain-releases</name>
+                <url>http://10.10.10.226:8081/artifactory/libs-release-local</url>
+            </repository>
+            <snapshotRepository>
+                <id>snapshots</id>
+                <name>chaniadevs.localdomain-snapshots</name>
+                <url>http://10.10.10.226:8081/artifactory/libs-snapshot-local</url>
+            </snapshotRepository>
+        </distributionManagement>
+///////////////////////////// notepad++ replace regular expression "WITH ...;"       
+\)\s+WITH[^;]+;
+\);
+/////////////
+ \r\n
+ \r\n drop table 
+ 
+ \r\n
+ ; \r\n
+ /////////////
+ https://seafile.greece/d/ae253a8e56/
+ /////////////////////
+ ins@devel@per
+ o8srqQF9P+i0/AbBHOU2Fg==
+ /////////////////
+ <Warnings>
+				<Warning>
+					<WarningDescription>No Return flight is Available.</WarningDescription>
+				</Warning>
+			</Warnings>
+///////////////			
+ '########.##'
+ http://sharepoint/Unisys/_layouts/15/start.aspx#/SitePages/Home.aspx
+ Gify
+ https://www.w3.org/TR/xpath/
+ ////////////////////////////
+ do not use flightNumber 1000
+ only 112, 131,6000
+ ////////////
+ 8	Invalid OrderViewRS	"There are cases, OrderViewRS message is invalid, as it is missing the mandatory attribute: ""Code"".
+The complete xpath: /OrderViewRS/Response/Order/TotalOrderPrice/DetailCurrencyPrice/Total/@Code"	Unisys	1/11/2017		
+//////////////
+ https://community.tyk.io/t/installing-tyk-on-windows-server/1583
+ https://tyk.io/docs/get-started/with-tyk-on-premise/
+ https://tyk.io/docs/tyk-api-gateway-v1-9/setup/
+ 
+  
+ https://www.mashery.com/api/gateway
+ https://github.com/tibcosoftware/mashling
+ https://eval230252.admin.mashery.com/control-center/tasks
+ http://eval230252.mashery.com/
+ http://eval230252.api.mashery.com/
+ http://tibco.lookbookhq.com/tibco-mashery-30-day-free-trial/getting-started-guide
+ //////////////////////////////
+ !gif
+ '''''''''''''''''''
+ Vas123!@# -Vas321#@!
+ inselair pass
+ --excel count frequency:
+ =COUNTIF(A1:A1314;A1)
+ --sort the columns
+ - Remove Duplicates command in the data tools group on the data tab
+ /////////////////////////////
+ 1.	ActionContext is missing from Request.
+2.	ResponseID is missing from Request.
+3. /edis:OrderChangeRQ/Query/Order/OrderItems/OrderItem/FlightItem/OriginDestination
+   different from other flight segment.
+////////////////
+OrderReshopRS/Response/RepricedOffer/RepricedOfferItem/OriginalOrderItem/TotalPriceDetail
+OrderReshopRS/Response/ReshopResults/RepricedOffer/RepricedOfferItem/OriginalOrderItem/TotalPrice
+ ///
+ 00F6 φ
+ 00E4 δ
+ 00DF ί
+ 00FC ό
+ 
+ //////////////
+ uniperf
+ jf097xhj!
+ ////
+ tail -f nohup
+ //////////
+δ ό φ
+///////////////// jrt22
+ /////sudo pass#word123
+ 
+ 
+ runas /user:administrator /savecred c:\batchfile.bat
+ //////////
+ v.kasimatis: 3392d6d221588a9df41e5e7ac2c74fa5f4d93f00
+ /////////////////
+ 1. move plexus from old repository
+ 2. make a main in dummy project
+ /////////////////////////////////
+ SEG011601
+FL0116
+SVC00044
+1100
+AUA CUR
+28-02-2018
+///// openoffice record macro:
+Tools > Macros > Record Macro 
+ Tools > Customize > Keyboard. 
+ /////////AliasPrivKeyCertRequestHandler 
+ just fix typo error in client-security.xml file in resources.
+ 
+ 
+ //how i solved the ssh problem in git:
+ //your ssh key is at vasilis (eikonidio panw deksia_ -> settings)
+ 
+ //your public / private keys are at : C:\Users\v.kasimatis\.ssh
+ ... I had to fix my known_hosts file:
+ see also:
+ https://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname
+ 1. git bash: ssh-keyscan -t rsa git.chania
+ 2. copy the :
+ git.chania ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuVDoKdxG8VO7V9YZuZVBj7ieiQtyu3OISwkK3wk0waRK2e8qPAf7YtHGHQNHKmBzFi1/NE10QFea5WWSDxbVTDy+tyR85izWaM+2AWuhoGqGpzB4nK1hfpbakuUkymY8oXi/zv9gtjem/QOycv2J16qGTV+2Ouu9hkYgQVJujf5xJeTwti56waGNMSW5KyxqYAChDk5q3Ifsnqo223eIZDjqjc3FXnkM+WUoYa4Zm8geShjA1pjFxs9S0ug3A9Ws1eunTGZSeLvo2E0lDjV8aWEC6QkYmf+Cqb1YaPIJLjzu0igMo5cvPrHOhaTo6pOYkFgHw8EACYdcF8qiNLxBP
+ 
+ and put it in the known hosts file, replacing the existing git.chania row.
+ 
+ to see your current set public key:
+  ssh-keyscan -t rsa git.chania
+ 
+ ////////////////////////////////////
+ in order to make sourcetree to work: goto system try, find Pageant icon, add key, 
+ and add C:\Dev\UNISYS\keys\keys2 private key.
+ /////////////net beans how to push upstream:
+ select git as username, and give the path to private key: C:/dev/UNISYS/keys/keys2/private.ppk
+ passprase: keno
+ ////////////////
+ https://vkasimatis.visualstudio.com/_git/MyFirstProject
+ Cybersource current credentials:
+ User ID: gmjr_m	Merchant ID: jrtechnologies
+ pass:c5AMD3e3Tb
+ account: jrtechnologies_acct
+ /////////////////
+ jrtchania@gmail.com
+ Pass#word123
+ ////////////////////
+azure:
+
+ Please use the following credentials to login to Cassandras of Inselair’s dev environment in azure (with extra permissions granted).
+IPs: 
+•	35.189.215.59
+•	35.190.210.255
+•	35.195.194.202
+username: inselair_editor
+password: E@ditF$@r
+You have been granted alter, drop and create permissions in  inselair & pim keyspaces
+///////////////////////////////////////////delete folders with a specific name recursively
+for /d /r . %d in (_svn) do @if exist "%d" rd /s/q "%d"
+ ////something strange with XSDs in jdk:
+ jaxp.properties.bin
+/////////////////////////////////////////
+ IBE Portal URL
+
+UI http://inselairdev.azurewebsites.net
+Wireframes Location
+
+..\JRTShared\Inselair HTML files 22.05.2018
+BRDs Location
+
+Internal Documents -> Requirements
+Connection Endpoints
+
+Entrypoint http://40.67.223.47:8080
+OFMS http://40.67.223.47:8081
+ORMS http://40.67.223.47:8082
+PIM http://40.67.223.47:8083
+IBE-Backend http://40.67.223.47:8084
+IBE-Backend https://40.67.223.47:8086
+CBT http://40.67.223.47:8087
+Developers logs Access
+
+http://40.67.223.47:8085/
+CBT Portal URL
+
+http://inseair-cbt-dev.azurewebsites.net
+ //////////////
+ Vasilis123!@#
+ http://40.67.223.47:8080
+ /////////////////////////////
+ hwxDNbuNJJmfTI4X-2sngsk3IhC3ZYqATT12y7jN0kTvnozC
+ //////////////////////////////// bypass javadoc..
+ 				<configuration>
+					
+
+                                        <additionalJOption>-Xdoclint:none</additionalJOption>
+				</configuration>
+
+/////////////////////////////////////////
+IBE Portal URL
+
+UI http://ibe-inselair-dev.azurewebsites.net
+CBT Portal URL
+
+UI http://cbt-inselair-dev.azurewebsites.net
+Kubernetes Services
+
+ 
+entrypoint: 104.40.248.142:8080
+ibe: 137.117.150.102:8080
+cbt: 137.117.147.58:8080
+pim: 13.73.141.142:8080
+Wireframes Location
+
+..\JRTShared\Inselair HTML files 22.05.2018
+BRDs Location
+
+Internal Documents -> Requirements
+Developers logs Access (Obsolete)
+
+http://40.67.223.47:8085/
+Connection Endpoints (Obsolete)
+
+Entrypoint http://40.67.223.47:8080
+OFMS http://40.67.223.47:8081
+ORMS http://40.67.223.47:8082
+PIM http://40.67.223.47:8083
+IBE-Backend http://40.67.223.47:8084
+IBE-Backend https://40.67.223.47:8086
+CBT http://40.67.223.47:8087
+////////////////////////////////////////////////////
+vkasimatis@jrtechnologies.com
+Vasilis123!@#
+////////////security java :
+download http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html
+and put local_policy.jar and US_export_policy.jar into 	C:\dev\jdk1.8.0_101\jre\lib\security			
+////
+D12345UY8
+D12345SM8
+//////
+<SITA_RetrieveTicketsByRecordLocator xmlns="http://sita.aero/SITA_RetrieveTicketsByRecordLocator/5/0" Target="QAA">
+    <POS>
+        <Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501">
+        </Source>
+    </POS>
+    <BookingInfo>
+        <BookingReferenceID ID="P0Y33"/>
+    </BookingInfo>
+</SITA_RetrieveTicketsByRecordLocator>
+
+//////////////////
+AirlineCommons.getInstance().getAirlineProperties().getProperties().getProperty("airline.code");				
+/////////////////////
+Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2a2FzaW1hdGlzQGpydGVjaG5vbG9naWVzLmNvbSIsImZpcnN0TmFtZSI6IlZhc2lsaXMiLCJsYXN0TmFtZSI6Ikthc2ltYXRpcyIsImdlbmRlciI6Ik1hbGUiLCJiaXJ0aGRhdGUiOi04MDY4MDMyMDAwMDAsInV1aWQiOiIxMTgyNTIyNDY2ODYyMDQ1MSIsImV4cCI6MTU0OTczNTY0NX0.3-Bg2myYiE1tQL-zdHjxt6vpWaE3YbtTISteEg2Tt_0
+
+///6615
+////////////////////////
+102= OrderRetrieve
+113= orderlist
+103 = OrderCreateRQ
+215 = SeatAvailability
+213 = FlightPrice
+201 = AirShopping
+109 = Cancel
+////////////////
+vkasimatis@jrtechnologies.com
+Vasilis123!@#
+////RequestorIDs: 73704444 , 82411556, PnZ7a-88gQ4-r9K2e-S83H9, f0uZ2-Jp55B-70YgW-OmEa6
+
+<OTA_AirDetailsRQ xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Target="Test">
+	<POS>
+		<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="WWW001">
+			<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" ID_Context="Airfare" Type="7"/>
+		</Source>
+	</POS>
+	<AirDetail>
+		<Airline Code="7I"/>
+		<FlightNumber>401</FlightNumber>
+		<DepartureAirport LocationCode="CUR"/>
+		<ArrivalAirport LocationCode="AUA"/>
+		<DepartureDate>2019-09-12</DepartureDate>
+	</AirDetail>
+</OTA_AirDetailsRQ>
+////////////////////////////
+<SITA_RetrieveTicketByTicketNumber xmlns="http://sita.aero/SITA_RetrieveTicketByTicketNumber/5/0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Target="Test" >
+   <POS>
+			<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501" ISOCurrency="USD">
+				<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+			</Source>
+		</POS>
+    <TicketingInfo AirlineAccountingCode="958" FormAndSerialNumber="2100396181" ResidingDatabase="7I"/>
+</SITA_RetrieveTicketByTicketNumber>
+//////////////////////// live requestorID: PnZ7a-88gQ4-r9K2e-S83H9
+48 flow for cybersource.
+Bugs returned: 11944
+///////////////////
+<n1:SITA_RetrieveEMDsByEticketNumber xmlns:common="http://sita.aero/common/4/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://sita.aero/SITA_RetrieveEMDsByEticketNumber/5/0" xsi:schemaLocation="http://sita.aero/SITA_RetrieveEMDsByEticketNumber/5/0 file:///C:/Docs/SITA/2018/xsds/SITA_RetrieveEMDsByEticketNumber_C133.xsd">
+
+<n1:POS>
+   <common:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" PseudoCityCode="WWW001">
+   <common:RequestorID ID="73704444" Type="7" ID_Context="Airfare"/>
+</common:Source>
+</n1:POS>
+
+<n1:TicketingInfo ResidingDatabase="7I" AirlineAccountingCode="958"  FormAndSerialNumber="2100396258"/>
+
+</n1:SITA_RetrieveEMDsByEticketNumber>
+////////////////////////////
+<n1:SITA_RevalidateEMD xmlns:common="http://sita.aero/common/4/1" xmlns:n1="http://sita.aero/SITA_RevalidateEMD/5/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://sita.aero/SITA_RevalidateEMD/5/1 ../../../../../../Dev/hal_sws_4_1/dev/client_interfaces/xsd/hal/tkt/SITA_RevalidateEMD.xsd">
+       <n1:POS>
+              <common:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" PseudoCityCode="WWW001">
+                     <common:RequestorID ID="73704444" Type="5"/>
+              </common:Source>
+       </n1:POS>
+       <n1:FlightInfoDetails>
+              <common:FlightLegInfo FlightStatus="HK" RPH="1">
+                     <common:DepartureAirport LocationCode="BON"/>
+                     <common:ArrivalAirport LocationCode="CUR"/>
+                     <common:OperatingAirline Code="7I" FlightNumber="306" ResBookDesigCode="Y"/>
+                     <common:DepartureDate>2018-10-30</common:DepartureDate>
+                     <common:DepartureTime Scheduled="17:10:00"/>
+                     <common:ArrivalDate>2018-10-30</common:ArrivalDate>
+                     <common:ArrivalTime Scheduled="17:35:00"/>
+                     <common:BookingClass ResBookDesigCode="Y" ResBookDesigQuantity="1"/>
+              </common:FlightLegInfo>
+       </n1:FlightInfoDetails>
+       <n1:TicketDocument TicketDocumentNbr="9584550015054" ResidingDatabase="7I">
+              <n1:CouponInfo CouponNumber="1" DateOfService="2018-10-30"/>
+       </n1:TicketDocument>
+       <n1:BookingInfo>
+              <common:BookingReferenceID ID="P1391"/>
+       </n1:BookingInfo>
+</n1:SITA_RevalidateEMD>
+////////////////////////////////////////////
+<SITA_RetrieveEMD_ByDocNumber xmlns="http://sita.aero/SITA_RetrieveEMD_ByDocNumber/4/0" xmlns:common="http://sita.aero/common/3/0" xmlns:ticketing="http://sita.aero/ticketing/common/3/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<POS>
+   <Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+   <RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
+</POS>
+<EMD_Info>
+<ticketing:TicketDocument ResidingDatabase="XS" TicketDocumentNbr="9584550015054"/>
+</EMD_Info>
+</SITA_RetrieveEMD_ByDocNumber>
+//////////////old git repository
+url = git@git.chania:inselair/sita-service-adapters.git
+url = git@git.chania:inselair/InselairServiceAdapter.git
+git@git.chania:inselair/inselair_3_config.git
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/InselAir/InselairServiceAdapter
+url = git@git.chania:inselair/inselair_3_config.git
+url = git@git.chania:inselair/sita-arr-api.git
+
+git@git.chania:NDCGateway/message-processor.git
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/message-processor
+
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/data-access
+git@git.chania:NDCGateway/data-access.git
+
+///////////////////cancel ticket:
+<OTA_CancelRQ Target="Test" Version="1.0" RetransmissionIndicator="true" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<POS>
+		<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501"/>
+	</POS>
+	<UniqueID Type="30" ID="2100212729" />
+</OTA_CancelRQ>
+/////////////////////

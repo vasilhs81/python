@@ -1350,7 +1350,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Cancel Flow" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Cancel Flow" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -1580,7 +1580,7 @@ xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot
                      &lt;sita1:negotiatedFaresOnlyFieldSpecified&gt;true&lt;/sita1:negotiatedFaresOnlyFieldSpecified&gt;&#xd;
                      &lt;sita1:overrideInterlineAgreementField&gt;false&lt;/sita1:overrideInterlineAgreementField&gt;&#xd;
                      &lt;sita1:passengerTypeField&gt;&#xd;
-                     	&lt;sita1:codeField&gt;ADT&lt;/sita1:codeField&gt;&#xd;
+                     	&lt;sita1:codeField&gt;${PTC}&lt;/sita1:codeField&gt;&#xd;
 						&lt;sita1:revisedCodeField/&gt;&#xd;
                      &lt;/sita1:passengerTypeField&gt;&#xd;
                      &lt;sita1:pricingSourceField&gt;Both&lt;/sita1:pricingSourceField&gt;&#xd;
@@ -1591,7 +1591,7 @@ xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot
                   &lt;/sita:refundOptionsField&gt;&#xd;
                   &lt;sita:ticketingInfoField&gt;&#xd;
                     &lt;sita1:airlineAccountingCodeField&gt;958&lt;/sita1:airlineAccountingCodeField&gt;&#xd;
-                    &lt;sita1:formAndSerialNumberField&gt;4321007075&lt;/sita1:formAndSerialNumberField&gt;&#xd;
+                    &lt;sita1:formAndSerialNumberField&gt;${ticketNbr}&lt;/sita1:formAndSerialNumberField&gt;&#xd;
 					&lt;sita:residingDatabaseField&gt;7I&lt;/sita:residingDatabaseField&gt;&#xd;
                   &lt;/sita:ticketingInfoField&gt;&#xd;
                &lt;/sita:ARR_RetrieveRefundDetailsPassengerInfo&gt;&#xd;
@@ -1628,6 +1628,186 @@ xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">SOAPAction</stringProp>
                   <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_RetrieveRefundDetails</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-APIKey</stringProp>
+                  <stringProp name="Header.value">bb82253bff639e7b4987759717821486</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">sws.qa.sita.aero</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="false">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+</stringProp>
+              <stringProp name="TestPlan.comments">//gets information from user defined values
+//put a new variabel to the user defined variables</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ExecuteRefund" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sita=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.HalService&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;&#xd;
+    &lt;soapenv:Header&gt;&#xd;
+        &lt;hal:Config subscriberId=&quot;7I&quot; xmlns:hal=&quot;http://sita.aero/hal&quot;&gt;&#xd;
+            &lt;/hal:Config&gt;&#xd;
+        &lt;/soapenv:Header&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;tem:ARR_ExecuteRefund&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;tem:sessionID&gt;${SessionID}&lt;/tem:sessionID&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;tem:ARR_ExecuteRefundRQ&gt;&#xd;
+            &lt;sita:commissionField&gt;&#xd;
+               &lt;sita1:amountField&gt;0&lt;/sita1:amountField&gt;&#xd;
+               &lt;sita1:currencyCodeField&gt;USD&lt;/sita1:currencyCodeField&gt;&#xd;
+               &lt;sita1:decimalPlacesField&gt;2&lt;/sita1:decimalPlacesField&gt;&#xd;
+               &lt;sita1:passengerRPHListField&gt;&lt;/sita1:passengerRPHListField&gt;&#xd;
+               &lt;sita1:percentField&gt;&lt;/sita1:percentField&gt;&#xd;
+            &lt;/sita:commissionField&gt;&#xd;
+            &lt;sita:originalPaymentDetailsField/&gt;&#xd;
+            &lt;sita:paymentDetailsField&gt;&#xd;
+               &lt;!--Zero or more repetitions:--&gt;&#xd;
+               &lt;sita1:PaymentDetailType&gt;&#xd;
+                  &lt;sita1:miscChargeOrderField&gt;&#xd;
+                     &lt;sita1:couponInfoField/&gt;&#xd;
+                     &lt;sita1:couponRPHsField&gt;&lt;/sita1:couponRPHsField&gt;&#xd;
+                     &lt;sita1:originalIssueDateField&gt;&lt;/sita1:originalIssueDateField&gt;&#xd;
+                     &lt;sita1:originalIssueIATAField&gt;73704444&lt;/sita1:originalIssueIATAField&gt;&#xd;
+                     &lt;sita1:originalIssuePlaceField&gt;&lt;/sita1:originalIssuePlaceField&gt;&#xd;
+                     &lt;sita1:originalPaymentFormField&gt;&lt;/sita1:originalPaymentFormField&gt;&#xd;
+                     &lt;sita1:originalTicketNumberField&gt;958${ticketNbr}&lt;/sita1:originalTicketNumberField&gt;&#xd;
+                     &lt;sita1:paperMCO_ExistIndField&gt;&lt;/sita1:paperMCO_ExistIndField&gt;&#xd;
+                     &lt;sita1:ticketNumberField&gt;958${ticketNbr}&lt;/sita1:ticketNumberField&gt;&#xd;
+                  &lt;/sita1:miscChargeOrderField&gt;&#xd;
+                  &lt;sita1:paymentAmountField&gt;&#xd;
+                     &lt;sita1:amountField&gt;${refundAmount}&lt;/sita1:amountField&gt;&#xd;
+                     &lt;sita1:approvalCodeField&gt;&lt;/sita1:approvalCodeField&gt;&#xd;
+                     &lt;sita1:currencyCodeField&gt;USD&lt;/sita1:currencyCodeField&gt;&#xd;
+                     &lt;sita1:decimalPlacesField&gt;2&lt;/sita1:decimalPlacesField&gt;&#xd;
+                  &lt;/sita1:paymentAmountField&gt;&#xd;
+                  &#xd;
+				  &lt;sita1:paymentCardField&gt;&#xd;
+				  &#xd;
+                  &#xd;
+				 &lt;sita1:addressField&gt;&#xd;
+                        &lt;sita1:addressLineField&gt;&#xd;
+                           &lt;arr:string/&gt;&#xd;
+                        &lt;/sita1:addressLineField&gt;&#xd;
+                        &lt;sita1:typeField&gt;&lt;/sita1:typeField&gt;&#xd;
+                        &lt;sita1:cityNameField&gt;&lt;/sita1:cityNameField&gt;&#xd;
+                        &lt;sita1:countryField&gt;&#xd;
+                           &lt;sita1:codesField&gt;&#xd;
+                              &lt;sita1:CountryCodesTypeCode&gt;&#xd;
+                                 &lt;sita1:textField&gt;&#xd;
+                                    &lt;arr:string&gt;&lt;/arr:string&gt;&#xd;
+                                 &lt;/sita1:textField&gt;&#xd;
+                                 &lt;sita1:typeField&gt;&lt;/sita1:typeField&gt;&#xd;
+                              &lt;/sita1:CountryCodesTypeCode&gt;&#xd;
+                           &lt;/sita1:codesField&gt;&#xd;
+                           &lt;sita1:nameField&gt;&lt;/sita1:nameField&gt;&#xd;
+                        &lt;/sita1:countryField&gt;&#xd;
+                        &lt;sita1:countyField&gt;&lt;/sita1:countyField&gt;&#xd;
+                        &lt;sita1:formattedIndField&gt;&lt;/sita1:formattedIndField&gt;&#xd;
+                        &lt;sita1:postalCodeField&gt;&lt;/sita1:postalCodeField&gt;&#xd;
+                        &lt;sita1:stateProvField&gt;&#xd;
+                           &lt;sita1:stateCodeField&gt;&lt;/sita1:stateCodeField&gt;&#xd;
+                           &lt;sita1:textField&gt;&#xd;
+                           &#xd;
+                              &lt;arr:string&gt;&lt;/arr:string&gt;&#xd;
+                           &lt;/sita1:textField&gt;&#xd;
+                        &lt;/sita1:stateProvField&gt;&#xd;
+                     &lt;/sita1:addressField&gt;&#xd;
+                        &#xd;
+                           &#xd;
+                        &#xd;
+                     &lt;sita1:cardCodeField&gt;VI&lt;/sita1:cardCodeField&gt;&#xd;
+                     &lt;sita1:cardHolderNameField&gt;&lt;/sita1:cardHolderNameField&gt;&#xd;
+                     &lt;sita1:cardNumberField&gt;4111111111111111&lt;/sita1:cardNumberField&gt;&#xd;
+                     &lt;sita1:effectiveDateField&gt;&lt;/sita1:effectiveDateField&gt;&#xd;
+                     &lt;sita1:expireDateField&gt;0522&lt;/sita1:expireDateField&gt;&#xd;
+                     &lt;sita1:seriesCodeField&gt;&lt;/sita1:seriesCodeField&gt;&#xd;
+                     &lt;sita1:cardPresentIndField&gt;&lt;/sita1:cardPresentIndField&gt;&#xd;
+                     &lt;sita1:cardTypeField&gt;&lt;/sita1:cardTypeField&gt;&#xd;
+                     &lt;sita1:countryOfIssueField&gt;&lt;/sita1:countryOfIssueField&gt;&#xd;
+                     &lt;sita1:extendPaymentIndicatorField&gt;&lt;/sita1:extendPaymentIndicatorField&gt;&#xd;
+                     &lt;sita1:extendedPaymentQuantityField&gt;&lt;/sita1:extendedPaymentQuantityField&gt;&#xd;
+                     &lt;sita1:maskedCardNumberField&gt;&lt;/sita1:maskedCardNumberField&gt;&#xd;
+                     &lt;sita1:remarkField&gt;&lt;/sita1:remarkField&gt;&#xd;
+                  &lt;/sita1:paymentCardField&gt;&#xd;
+                  &lt;sita1:paymentReferenceDataField&gt;&lt;/sita1:paymentReferenceDataField&gt;&#xd;
+                  &lt;sita1:paymentTypeField&gt;CC&lt;/sita1:paymentTypeField&gt;&#xd;
+                  &lt;sita1:primaryPaymentIndField&gt;&lt;/sita1:primaryPaymentIndField&gt;&#xd;
+                  &lt;sita1:splitPaymentIndField&gt;&lt;/sita1:splitPaymentIndField&gt;&#xd;
+                  &lt;sita1:documentField&gt;&#xd;
+                     &lt;sita1:documentInfoRPHField&gt;&lt;/sita1:documentInfoRPHField&gt;&#xd;
+                     &lt;sita1:originalDocPaymentDetailRPHField&gt;&lt;/sita1:originalDocPaymentDetailRPHField&gt;&#xd;
+                  &lt;/sita1:documentField&gt;&#xd;
+                  &lt;sita1:passengerRPHListField&gt;1&lt;/sita1:passengerRPHListField&gt;&#xd;
+               &lt;/sita1:PaymentDetailType&gt;&#xd;
+            &lt;/sita:paymentDetailsField&gt;&#xd;
+            &lt;sita:ticketingInfoField&gt;&#xd;
+               &lt;sita:salesReportInfoField&gt;&lt;/sita:salesReportInfoField&gt;&#xd;
+               &lt;sita:sponsorInfoField&gt;&lt;/sita:sponsorInfoField&gt;&#xd;
+               &lt;sita:tourCodeField&gt;&lt;/sita:tourCodeField&gt;&#xd;
+            &lt;/sita:ticketingInfoField&gt;&#xd;
+         &lt;/tem:ARR_ExecuteRefundRQ&gt;&#xd;
+      &lt;/tem:ARR_ExecuteRefund&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">https://sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/xml</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">SOAPAction</stringProp>
+                  <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_ExecuteRefund</stringProp>
                 </elementProp>
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">X-APIKey</stringProp>
@@ -2650,6 +2830,31 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">${delay}</stringProp>
         </TestAction>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="ticketNbr" elementType="Argument">
+              <stringProp name="Argument.name">ticketNbr</stringProp>
+              <stringProp name="Argument.value">4321015503</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="pnr" elementType="Argument">
+              <stringProp name="Argument.name">pnr</stringProp>
+              <stringProp name="Argument.value">P1B9M</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="refundAmount" elementType="Argument">
+              <stringProp name="Argument.name">refundAmount</stringProp>
+              <stringProp name="Argument.value">187.00</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PTC" elementType="Argument">
+              <stringProp name="Argument.name">PTC</stringProp>
+              <stringProp name="Argument.value">CNN</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (Multi-To-Direct AUA-BON)" enabled="false">
@@ -19066,7 +19271,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT AUA-CUR)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT AUA-CUR)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>

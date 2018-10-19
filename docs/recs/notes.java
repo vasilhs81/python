@@ -2600,3 +2600,54 @@ airDemandDoc.getDocumentElement().getElementsByTagName("TicketDocument").item(0)
 List< OrderItemHolder> thisPaxThisServiceOrderItems = thisPaxOrderItems.stream().filter(a -> a.getServiceList().get(0).getServiceDefinitionRef().equals(serviceID)).
                     sorted((o1, o2) -> segmentHolderMap.get(o1.getServiceList().get(0).getApplicableFlights().get(0).get(0).toString()).compareTo(segmentHolderMap.get(o2.getServiceList().get(0).getApplicableFlights().get(0).get(0).toString()))).
                     collect(Collectors.toList());
+
+////////////////////
+ public static Object convertXmlToObject(String xml,  Class classType) throws GatewayException {
+        Object o = null;
+        Unmarshaller jaxbUnmarshaller;
+            jaxbUnmarshaller = unmarsalers.computeIfAbsent(classType.getName(), (b)->{
+                    Unmarshaller jaxbUnmarshaller1 = null;
+                    try {
+                       JAXBContext jaxbContext = JAXBContext.newInstance(classType);
+                       jaxbUnmarshaller1 = jaxbContext.createUnmarshaller();
+                    } catch (JAXBException e) {
+                            e.printStackTrace();
+                    }
+                    return jaxbUnmarshaller1;
+            });
+            
+
+            StringReader reader = new StringReader(xml);
+            try {
+                o = jaxbUnmarshaller.unmarshal(reader);
+            } catch (JAXBException e) {
+                e.printStackTrace();
+                throw new GatewayException("Unable to Unmarshal: "+ classType.getName());
+            }
+        return o;
+   }
+
+    public static String convertObjectToXml(Object o, Class classType) throws Exception {
+        String xmlString = null;
+            Marshaller jaxbMarshaller;
+            
+            jaxbMarshaller = marsalers.computeIfAbsent(classType.getName(), (b)->{
+                 Marshaller jaxbMarshaller1 = null;
+                try {
+                    JAXBContext jaxbContext = JAXBContext.newInstance(classType);
+                    jaxbMarshaller1 = jaxbContext.createMarshaller();
+                    jaxbMarshaller1.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+                
+                } catch (JAXBException e) {
+                    e.printStackTrace();
+                }
+                return jaxbMarshaller1;
+            });
+            
+            StringWriter sw = new StringWriter();
+            jaxbMarshaller.marshal(o, sw);
+            xmlString = sw.toString();
+
+        return xmlString;
+    }
+/////////////////////////////    
