@@ -2170,6 +2170,18 @@ jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/message-pro
 jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/data-access
 git@git.chania:NDCGateway/data-access.git
 
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/ndcg-parent
+git@git.chania:NDCGateway/NDCSandbox.git
+
+git@git.chania:NDCGateway/EntryPointService.git
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/EntryPointService
+
+git@git.chania:NDCGateway/OrderManagementService.git
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/OrderManagementService
+
+git@git.chania:NDCGateway/OfferManagementService.git
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/OfferManagementService
+
 ///////////////////cancel ticket:
 <OTA_CancelRQ Target="Test" Version="1.0" RetransmissionIndicator="true" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<POS>
@@ -2177,4 +2189,5 @@ git@git.chania:NDCGateway/data-access.git
 	</POS>
 	<UniqueID Type="30" ID="2100212729" />
 </OTA_CancelRQ>
-/////////////////////
+/////////////////////9081
+select * from airline_portal.ibe_fin_rep where transaction_date='2018-10-24' allow filtering;
