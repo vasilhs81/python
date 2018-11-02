@@ -59,12 +59,12 @@
           </elementProp>
           <elementProp name="StartDate" elementType="Argument">
             <stringProp name="Argument.name">StartDate</stringProp>
-            <stringProp name="Argument.value">2018-10-05</stringProp>
+            <stringProp name="Argument.value">2018-11-01</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="EndDate" elementType="Argument">
             <stringProp name="Argument.name">EndDate</stringProp>
-            <stringProp name="Argument.value">2019-10-05</stringProp>
+            <stringProp name="Argument.value">2019-11-05</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -1350,7 +1350,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Cancel Flow" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Cancel Flow" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -22722,7 +22722,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT AUA-CUR)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT AUA-CUR)" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -22741,12 +22741,12 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <collectionProp name="Arguments.arguments">
             <elementProp name="ticketNbr" elementType="Argument">
               <stringProp name="Argument.name">ticketNbr</stringProp>
-              <stringProp name="Argument.value">4321015442</stringProp>
+              <stringProp name="Argument.value">4321017441</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pnr" elementType="Argument">
               <stringProp name="Argument.name">pnr</stringProp>
-              <stringProp name="Argument.value">P162P</stringProp>
+              <stringProp name="Argument.value">P1P20</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="ticketNbr2" elementType="Argument">
@@ -22766,22 +22766,22 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="oldDepartureDate" elementType="Argument">
               <stringProp name="Argument.name">oldDepartureDate</stringProp>
-              <stringProp name="Argument.value">2019-05-06</stringProp>
+              <stringProp name="Argument.value">2019-01-16</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newDepartureDate" elementType="Argument">
               <stringProp name="Argument.name">newDepartureDate</stringProp>
-              <stringProp name="Argument.value">2019-05-13</stringProp>
+              <stringProp name="Argument.value">2019-01-23</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="oldFlightNumber" elementType="Argument">
               <stringProp name="Argument.name">oldFlightNumber</stringProp>
-              <stringProp name="Argument.value">406</stringProp>
+              <stringProp name="Argument.value">795</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newFlightNumber" elementType="Argument">
               <stringProp name="Argument.name">newFlightNumber</stringProp>
-              <stringProp name="Argument.value">406</stringProp>
+              <stringProp name="Argument.value">795</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="rph" elementType="Argument">
@@ -32159,7 +32159,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <collectionProp name="Arguments.arguments">
             <elementProp name="onds" elementType="Argument">
               <stringProp name="Argument.name">onds</stringProp>
-              <stringProp name="Argument.value">AUA,CUR,BON,LHR</stringProp>
+              <stringProp name="Argument.value">AUA,CUR,AUA,BON</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
               <stringProp name="Argument.desc">MSP,ORD,MPN,ASI,BOM,DEL,BOM,SCL</stringProp>
             </elementProp>
@@ -32170,14 +32170,31 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="Authorization" elementType="Argument">
               <stringProp name="Argument.name">Authorization</stringProp>
-              <stringProp name="Argument.value">Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2a2FzaW1hdGlzQGpydGVjaG5vbG9naWVzLmNvbSIsImZpcnN0TmFtZSI6IlZhc2lsaXMiLCJsYXN0TmFtZSI6Ikthc2ltYXRpcyIsImdlbmRlciI6Ik1hbGUiLCJiaXJ0aGRhdGUiOi04MDY4MDMyMDAwMDAsInV1aWQiOiIxMTgyNTIyNDY2ODYyMDQ1MSIsImV4cCI6MTUzODY1NjM0OH0.ONDVZSwLaL7OGcGTredD-JDoqlEZqniduYv7xZBLAyA</stringProp>
+              <stringProp name="Argument.value">Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2a2FzaW1hdGlzQGpydGVjaG5vbG9naWVzLmNvbSIsImZpcnN0TmFtZSI6IlZhc2lsaXMiLCJsYXN0TmFtZSI6Ikthc2ltYXRpcyIsImdlbmRlciI6Ik1hbGUiLCJiaXJ0aGRhdGUiOi04MDY4MDMyMDAwMDAsInV1aWQiOiIxMTgyNTIyNDY2ODYyMDQ1MSIsImV4cCI6MTU0MTMzODI0OX0.3YF-StMVFT-E3K9_qD4HYLwYzxTeyA5dyLs0xGeqEE0</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2a2FzaW1hdGlzQGpydGVjaG5vbG9naWVzLmNvbSIsImZpcnN0TmFtZSI6IlZhc2lsaXMiLCJsYXN0TmFtZSI6Ikthc2ltYXRpcyIsImdlbmRlciI6Ik1hbGUiLCJiaXJ0aGRhdGUiOi04MDY4MDMyMDAwMDAsInV1aWQiOiIxMTgyNTIyNDY2ODYyMDQ1MSIsImV4cCI6MTUzODY1NjM0OH0.ONDVZSwLaL7OGcGTredD-JDoqlEZqniduYv7xZBLAyA</stringProp>
             </elementProp>
             <elementProp name="endpoint" elementType="Argument">
               <stringProp name="Argument.name">endpoint</stringProp>
-              <stringProp name="Argument.value">http://localhost:8458/app/api/air-shopping?mode=both</stringProp>
+              <stringProp name="Argument.value">http://40.113.125.72:8080/app/api/air-shopping?mode=both</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
-              <stringProp name="Argument.desc">http://23.100.12.1:8080/app/api/air-shopping?mode=both</stringProp>
+              <stringProp name="Argument.desc">http://23.100.12.1:8080/app/api/air-shopping?mode=both; http://13.80.2.61:8080/app/api/air-shopping?mode=both</stringProp>
+            </elementProp>
+            <elementProp name="_endpoint" elementType="Argument">
+              <stringProp name="Argument.name">_endpoint</stringProp>
+              <stringProp name="Argument.value">13.80.2.61</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">23.100.12.1</stringProp>
+            </elementProp>
+            <elementProp name="port" elementType="Argument">
+              <stringProp name="Argument.name">port</stringProp>
+              <stringProp name="Argument.value">8080</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="isRoundTrip" elementType="Argument">
+              <stringProp name="Argument.name">isRoundTrip</stringProp>
+              <stringProp name="Argument.value">false</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
           <stringProp name="TestPlan.comments">http://23.100.12.1:8080/app/api/air-shopping?mode=both
@@ -32240,7 +32257,7 @@ vars.put(&quot;start&quot;, s);
 
 calendar.setTimeInMillis(randomTime2);
 s = formatter.format(calendar.getTime());
-vars.put(&quot;end&quot;,s );
+vars.put(&quot;returnDate&quot;,s );
 
 //calendar.setTimeInMillis(randomTime3);
 //vars.put(&quot;end2&quot;, formatter.format(calendar.getTime()));
@@ -32252,6 +32269,15 @@ vars.put(&quot;end&quot;,s );
 
 </stringProp>
         </BeanShellPreProcessor>
+        <hashTree/>
+        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="bound_nbr" enabled="true">
+          <stringProp name="maximumValue">2</stringProp>
+          <stringProp name="minimumValue">1</stringProp>
+          <stringProp name="outputFormat"></stringProp>
+          <boolProp name="perThread">true</boolProp>
+          <stringProp name="randomSeed"></stringProp>
+          <stringProp name="variableName">bound_nbr</stringProp>
+        </RandomVariableConfig>
         <hashTree/>
         <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="adt_number" enabled="true">
           <stringProp name="maximumValue">2</stringProp>
@@ -32276,13 +32302,18 @@ vars.put(&quot;end&quot;,s );
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirShoppingRQ OneWay ADT CHD" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="isRoundTrip" enabled="true">
+            <stringProp name="IfController.condition">${bound_nbr}&gt;1</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirShoppingRQ RoundTrip ADT CHD" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
 	&quot;EchoToken&quot;: &quot;${cntr}-${origin}-${destination}-${adt_number}ADT-${chd_number}CHD-2OND&quot;,&#xd;
 	&quot;RecaptchaResponse&quot;: &quot;dummy&quot;,&#xd;
 	&quot;MsgType&quot;: &quot;AirShopping&quot;,&#xd;
@@ -32298,7 +32329,18 @@ vars.put(&quot;end&quot;,s );
 			&quot;Arrival&quot;: {&#xd;
 				&quot;AirportCode&quot;: &quot;${destination}&quot;&#xd;
 			}&#xd;
+		},&#xd;
+		{&#xd;
+			&quot;Departure&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${destination}&quot;,&#xd;
+				&quot;Date&quot;: &quot;${returnDate}&quot;&#xd;
+			},&#xd;
+			&quot;Arrival&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${origin}&quot;&#xd;
+			}&#xd;
 		}&#xd;
+&#xd;
+		&#xd;
 	],&#xd;
 	&quot;AnonymousTraveler&quot;: [{&#xd;
 			&quot;PTC&quot;: &quot;ADT&quot;,&#xd;
@@ -32316,47 +32358,47 @@ vars.put(&quot;end&quot;,s );
 	}&#xd;
 }&#xd;
 </stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">23.100.12.1</stringProp>
-            <stringProp name="HTTPSampler.port">8080</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${endpoint}</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">${Authorization}</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">application-auth</stringProp>
-                  <stringProp name="Header.value">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import java.util.Random;
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${Authorization}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">application-auth</stringProp>
+                    <stringProp name="Header.value">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script">import java.util.Random;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -32375,60 +32417,60 @@ vars.put(&quot;destination&quot;, destination);
 
 
 </stringProp>
-            </BeanShellPreProcessor>
-            <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
-              <stringProp name="JSONPostProcessor.referenceNames">NoOfferResponse</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">$.AirShoppingRS.Offers</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">0</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getResponseID" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getResponseID</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/ShoppingResponseID/ResponseID</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPriceGuaranteeTimeLimit" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getPriceGuaranteeTimeLimit</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/PriceGuaranteeTimeLimit/@Timestamp</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getTicketBy" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getTicketBy</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/TicketByTimeLimit/TicketBy</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getErrorsAndWarnings" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getErrorsAndWarnings</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">count(/AirShoppingRS/Warnings|/AirShoppingRS/Errors)</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script">import java.io.*;
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+                <stringProp name="JSONPostProcessor.referenceNames">NoOfferResponse</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.AirShoppingRS.Offers</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">0</stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getResponseID" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getResponseID</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/ShoppingResponseID/ResponseID</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPriceGuaranteeTimeLimit" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getPriceGuaranteeTimeLimit</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/PriceGuaranteeTimeLimit/@Timestamp</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getTicketBy" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getTicketBy</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/TicketByTimeLimit/TicketBy</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getErrorsAndWarnings" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getErrorsAndWarnings</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">count(/AirShoppingRS/Warnings|/AirShoppingRS/Errors)</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import java.io.*;
 import javax.xml.parsers.*;
 import java.util.Arrays;
 import org.w3c.dom.*;
@@ -32930,8 +32972,672 @@ try {
 
 
     </stringProp>
-            </BeanShellPostProcessor>
-            <hashTree/>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Else" enabled="true">
+            <stringProp name="IfController.condition">${bound_nbr}==1</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirShoppingRQ OneWay ADT CHD" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+	&quot;EchoToken&quot;: &quot;${cntr}-${origin}-${destination}-${adt_number}ADT-${chd_number}CHD-2OND&quot;,&#xd;
+	&quot;RecaptchaResponse&quot;: &quot;dummy&quot;,&#xd;
+	&quot;MsgType&quot;: &quot;AirShopping&quot;,&#xd;
+	&quot;Parameters&quot;: {&#xd;
+		&quot;Languages&quot;: [&quot;en&quot;],&#xd;
+		&quot;CurrencyCodes&quot;: [&quot;USD&quot;]&#xd;
+	},&#xd;
+	&quot;OriginDestinations&quot;: [{&#xd;
+			&quot;Departure&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${origin}&quot;,&#xd;
+				&quot;Date&quot;: &quot;${start}&quot;&#xd;
+			},&#xd;
+			&quot;Arrival&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${destination}&quot;&#xd;
+			}&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;AnonymousTraveler&quot;: [{&#xd;
+			&quot;PTC&quot;: &quot;ADT&quot;,&#xd;
+			&quot;Quantity&quot;: ${adt_number}&#xd;
+		},&#xd;
+		{&#xd;
+			&quot;PTC&quot;: &quot;CNN&quot;,&#xd;
+			&quot;Quantity&quot;:${chd_number}&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;Metadata&quot;: {&#xd;
+		&quot;LanguageMetadata&quot;: {&#xd;
+			&quot;Display&quot;: &quot;en&quot;&#xd;
+		}&#xd;
+	}&#xd;
+}&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${Authorization}</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">application-auth</stringProp>
+                    <stringProp name="Header.value">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+
+
+</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="false">
+                <stringProp name="JSONPostProcessor.referenceNames">NoOfferResponse</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.AirShoppingRS.Offers</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">0</stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getResponseID" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getResponseID</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/ShoppingResponseID/ResponseID</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPriceGuaranteeTimeLimit" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getPriceGuaranteeTimeLimit</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/PriceGuaranteeTimeLimit/@Timestamp</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getTicketBy" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getTicketBy</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/TicketByTimeLimit/TicketBy</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getErrorsAndWarnings" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getErrorsAndWarnings</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">count(/AirShoppingRS/Warnings|/AirShoppingRS/Errors)</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import java.io.*;
+import javax.xml.parsers.*;
+import java.util.Arrays;
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+import org.xml.sax.InputSource;
+import org.apache.jmeter.samplers.SampleResult;
+import java.io.StringReader;
+import java.io.StringWriter;
+import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Document;
+import javBeax.xml.xpath.XPathConstants;
+import javBeax.xml.xpath.XPathConstants.NODESET;
+import javax.xml.namespace.NamespaceContext;
+import java.util.Random;
+import java.util.ArrayList;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.dom.DOMSource;
+
+
+String domToXML(Node n){ 
+    TransformerFactory tFactory = TransformerFactory.newInstance();
+    Transformer transformer = tFactory.newTransformer();
+    transformer.setOutputProperty(&quot;indent&quot;, &quot;yes&quot;);
+    StringWriter sw = new StringWriter();
+    StreamResult result = new StreamResult(sw);
+    DOMSource source = new DOMSource(n);
+    transformer.transform(source, result);
+    return sw.toString();
+
+}
+    
+try {
+        DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
+        domFactory.setNamespaceAware(true);
+        DocumentBuilder builder = domFactory.newDocumentBuilder();
+
+
+
+        // access result of parent sampler via &quot;ctx&quot; BeanShell variable        
+        SampleResult result = ctx.getPreviousResult();
+
+        InputSource is = new InputSource(new StringReader(result.getResponseDataAsString()));
+
+        //Construct a dom Document to access airshopping rs
+        Document doc = builder.parse(is);
+
+
+        // Extract global variable nodes and elements
+        Element dataListElement =(Element) doc.getDocumentElement().getElementsByTagName(&quot;DataLists&quot;).item(0);
+        NodeList ondNodes = (NodeList) dataListElement.getElementsByTagName(&quot;OriginDestination&quot;);
+        NodeList travelersList = dataListElement.getElementsByTagName(&quot;AnonymousTraveler&quot;);
+        NodeList flightNodes  = ((Element) (dataListElement.getElementsByTagName(&quot;FlightList&quot;).item(0))).getElementsByTagName(&quot;Flight&quot;);
+        NodeList serviceListNodes = ((Element)dataListElement.getElementsByTagName(&quot;ServiceList&quot;).item(0)).getElementsByTagName(&quot;Service&quot;);
+        NodeList flightSegmentNodes  = dataListElement.getElementsByTagName(&quot;FlightSegment&quot;);
+        
+
+        int i=0;
+        Element n = null;
+        ArrayList paxRefs = new ArrayList();
+
+        // Extract all travelers and store travelers objectkey.
+        for(i=0; i&lt;travelersList.getLength(); i++){
+            Element el = (Element) travelersList.item(i);
+            paxRefs.add(el.getAttribute(&quot;ObjectKey&quot;));
+        }
+
+
+
+        String outBoundflightRef = &quot;&quot;;
+        String inBoundflightRef = &quot;&quot;;
+        String[] outBoundSegRefsString = null;
+        String[] inBoundSegRefsString = null;
+
+        String departureAirportCode = &quot;&quot;;
+        String arrivalAirportCode = &quot;&quot;;
+        
+        
+        
+        //******** The following lines, find and store the outbound/inbound flights.
+        // We include only the flights with flightNumber stored in &quot;valid_flight_numbers&quot;
+        // variable.
+        
+
+        //iterate all onds.
+        for (i = 0; i &lt; ondNodes.getLength(); i++) {
+            n = (Element) ondNodes.item(i);
+
+            // find the flightReference of the onde (1 Flight per ond)
+            String[] flightRefs = n.getElementsByTagName(&quot;FlightReferences&quot;)
+                .item(0).getTextContent().split(&quot;\\s+&quot;);		
+            
+            
+            int r = 0;
+            // if &quot;valid_flight_numbers&quot; is not set, just choose a random flight.
+            if(vars.get(&quot;valid_flight_numbers&quot;)==null)
+                r = new Random().nextInt(flightRefs.length);
+            
+            else{
+                List validFlightNumbers = Arrays
+                    .asList(vars.get(&quot;valid_flight_numbers&quot;).split(&quot;\\,&quot;));
+                
+                
+                int found =0;
+
+                //iterate all flight options
+                for(r=0; r&lt;flightRefs.length; r++){
+                    if(found&gt;0){
+                        r--;
+                        break;
+                    }
+                    String f = flightRefs[r];
+                    //iterate all flight nodes to find the specific flight node.
+                    for (int k = 0; k &lt; flightNodes.getLength(); k++) {
+                        Element nn = (Element) flightNodes.item(k);
+                        if(nn.getAttribute(&quot;FlightKey&quot;).equals(f)){ 
+                            String[] segs = nn.getElementsByTagName(&quot;SegmentReferences&quot;)
+                                .item(0).getTextContent().split(&quot;\\s+&quot;);	
+
+
+                            //iterate all segment of the specific flight
+                            found =1;
+                            for(String ss: segs){
+                                //iterate all flight segment nodes to find the specific segment
+                                for(int m=0; m&lt;flightSegmentNodes.getLength(); m++){
+                                    Element nnn = (Element)flightSegmentNodes.item(m);
+                                    if(nnn.getAttribute(&quot;SegmentKey&quot;).equals(ss)){
+                                        String fn = nnn.getElementsByTagName(&quot;FlightNumber&quot;)
+                                            .item(0).getTextContent();
+                                        if(!validFlightNumbers.contains(fn)){
+                                            found = -1;
+                                            break;
+                                        }
+                                        break;
+                                    }
+                                }
+                                if(found&lt;0){
+                                    break;
+                                }
+
+                            }
+                            break;
+                        }
+                    }
+                }
+                // this should not happen.. FlightRef couldn&apos;t be found
+                if(r==flightRefs.length){
+                    r = new Random().nextInt(flightRefs.length);
+                }
+            }
+
+            
+            if(n.getAttribute(&quot;OriginDestinationKey&quot;).equals(&quot;OD1&quot;)){
+                //this is the outbound ond.
+
+                
+                outBoundflightRef = flightRefs[r];
+
+                departureAirportCode  = n.getElementsByTagName(&quot;DepartureCode&quot;)
+                    .item(0).getTextContent();
+                arrivalAirportCode  = n.getElementsByTagName(&quot;ArrivalCode&quot;)
+                    .item(0).getTextContent();
+            }else{
+                // this is the inbound ond.
+                
+                inBoundflightRef = flightRefs[r];
+            }
+        }
+
+        //save inbound/outbound flight references.
+        vars.put(&quot;OutBoundFlightRef&quot;,outBoundflightRef);
+
+        vars.put(&quot;OutBoundDepartureCode&quot;,departureAirportCode );
+        vars.put(&quot;OutBoundArrivalCode&quot;,arrivalAirportCode);
+
+        vars.put(&quot;InBoundFlightRef&quot;,inBoundflightRef);
+        vars.put(&quot;InBoundDepartureCode&quot;,arrivalAirportCode );
+        vars.put(&quot;InBoundArrivalCode&quot;,departureAirportCode);
+                
+
+
+
+        String flightListNodes = &quot;&quot;;
+
+
+        for (i = 0; i &lt; flightNodes.getLength(); i++) {
+            n = (Element) flightNodes.item(i);
+
+            if(n.getAttribute(&quot;FlightKey&quot;).equals(outBoundflightRef)){
+
+                    outBoundSegRefsString = n.getElementsByTagName(&quot;SegmentReferences&quot;)
+                        .item(0).getTextContent().split(&quot;\\s+&quot;);	
+            }else if (n.getAttribute(&quot;FlightKey&quot;).equals(inBoundflightRef)){
+                inBoundSegRefsString = n.getElementsByTagName(&quot;SegmentReferences&quot;)
+                    .item(0).getTextContent().split(&quot;\\s+&quot;);	
+
+            }else{
+                continue;
+            }
+            flightListNodes += domToXML(n);
+        }
+
+        // trim out redundant namespace attribute.
+        vars.put(&quot;FlightListNodes&quot;,flightListNodes.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+        
+        
+
+        String outBoundSegmentListNodes = &quot;&quot;;
+        String inBoundSegmentListNodes = &quot;&quot;;
+        ArrayList outBoundSegmentList = new ArrayList();
+        ArrayList inBoundSegmentList = new ArrayList();
+
+        // extract inbound/outbound segment nodes and keys
+        for (i = 0; i &lt; flightSegmentNodes.getLength(); i++) {
+            n = (Element) flightSegmentNodes.item(i);
+            for(int j=0; j&lt;outBoundSegRefsString.length; j++){
+
+                if(outBoundSegRefsString[j].equals(n.getAttribute(&quot;SegmentKey&quot;))){
+                    outBoundSegmentList.add(n);
+                    outBoundSegmentListNodes += domToXML(n);
+                    break;
+                }
+
+            }
+			
+            for(int j=0; j&lt;inBoundSegRefsString.length; j++){
+
+                if(inBoundSegRefsString[j].equals(n.getAttribute(&quot;SegmentKey&quot;))){
+                    inBoundSegmentList.add(n);
+                    outBoundSegmentListNodes += domToXML(n);
+                    break;
+                }
+
+
+            }
+
+        }
+        
+        vars.put(&quot;FlightSegmentListNodes&quot;,
+            outBoundSegmentListNodes.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;) + &quot;\n&quot; +
+            inBoundSegmentListNodes.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+
+     	
+        String allSegmentRefs = &quot;&quot;;
+
+        for(i=0; i&lt;inBoundSegRefsString.length-1; i++){
+            allSegmentRefs += inBoundSegRefsString[i] +&quot; &quot;;
+        }
+        allSegmentRefs +=  inBoundSegRefsString[i] + &quot; &quot;;
+
+        for(i=0; i&lt;outBoundSegRefsString.length-1; i++){
+            allSegmentRefs += outBoundSegRefsString[i] + &quot; &quot;;
+        }
+        allSegmentRefs +=  outBoundSegRefsString[i];
+
+        vars.put(&quot;AllSegmentRefs&quot;,allSegmentRefs);
+
+
+        // Find the offer for the outbound Flight
+
+        String outBoundOfferId = &quot;&quot;;
+        String inBoundOfferId = &quot;&quot;;
+
+        NodeList offersElements = doc.getDocumentElement()
+            .getElementsByTagName(&quot;AirlineOffer&quot;);
+
+        Element outBoundOfferElement = null;
+        Element inBoundOfferElement = null;
+
+        for(i=0; i&lt;offersElements.getLength(); i++){
+
+            n = (Element)offersElements.item(i);
+            String offerFlightRef = n.getElementsByTagName(&quot;FlightReferences&quot;)
+                .item(0).getTextContent();
+
+            if(offerFlightRef.equals(outBoundflightRef)){
+                    outBoundOfferId = 	n.getElementsByTagName(&quot;OfferID&quot;)
+                        .item(0).getTextContent();
+                    outBoundOfferElement = n;
+            }
+            else if(offerFlightRef.equals(inBoundflightRef)){
+                    inBoundOfferId = 	n.getElementsByTagName(&quot;OfferID&quot;)
+                        .item(0).getTextContent();
+                    inBoundOfferElement = n;
+            }
+        }
+
+        vars.put(&quot;OutBoundOfferId&quot;,outBoundOfferId);
+        vars.put(&quot;InBoundOfferId&quot;,inBoundOfferId);
+
+        ///Construct OutBound-Offer Flights
+        String flightsOutBound = &quot;&quot;;
+
+
+        for(i=0; i&lt;outBoundSegmentList.size(); i++){
+
+            Element el = (Element) outBoundSegmentList.get(i);
+            flightsOutBound += &quot;&lt;Flight&gt;&quot;;
+
+            String departAirportCode = ((Element) (el.getElementsByTagName(&quot;Departure&quot;)
+                .item(0))).getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            String departDate = ((Element)el.getElementsByTagName(&quot;Departure&quot;)
+                .item(0)).getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+            String departTime = ((Element)el.getElementsByTagName(&quot;Departure&quot;)
+                .item(0)).getElementsByTagName(&quot;Time&quot;).item(0).getTextContent();
+
+
+            flightsOutBound += &quot;&lt;Departure&gt;&lt;AirportCode&gt;&quot; + departAirportCode 
+                + &quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; + departDate 
+                + &quot;&lt;/Date&gt;&lt;Time&gt;&quot; + departTime + &quot;&lt;/Time&gt;&lt;/Departure&gt;&quot;;
+
+
+            String arrAirportCode = ((Element)el.getElementsByTagName(&quot;Arrival&quot;)
+                .item(0)).getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            
+            String arrDate = ((Element)el.getElementsByTagName(&quot;Arrival&quot;).item(0))
+                .getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+
+            flightsOutBound += &quot;&lt;Arrival&gt;&lt;AirportCode&gt;&quot; + arrAirportCode 
+                + &quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; + arrDate + &quot;&lt;/Date&gt;&lt;/Arrival&gt;&quot;;
+
+
+            String markCarrierId = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;)
+                .item(0)).getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String markCarrierFN = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;).
+                item(0)).getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            String operCarrierId = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;)
+                .item(0)).getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String operCarrierFN = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;)
+                .item(0)).getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            flightsOutBound += &quot;&lt;MarketingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + markCarrierId+&quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + markCarrierFN+&quot;&lt;/FlightNumber&gt;&lt;/MarketingCarrier&gt;&quot;;
+            
+            flightsOutBound += &quot;&lt;OperatingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + operCarrierId +&quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + operCarrierFN+&quot;&lt;/FlightNumber&gt;&lt;/OperatingCarrier&gt;&quot;;
+            flightsOutBound += &quot;&lt;/Flight&gt;&quot;;
+        }
+
+        vars.put(&quot;flightsOutBound&quot;,flightsOutBound );  
+
+        ///Construct InBound-Offer Flights
+        String flightsInBound =&quot;&quot; ;
+        for(i=0; i&lt;inBoundSegmentList.size(); i++){
+            Element el = (Element) inBoundSegmentList.get(i);
+            flightsInBound += &quot;&lt;Flight&gt;&quot;;
+
+            String departAirportCode = ((Element)el.getElementsByTagName(&quot;Departure&quot;).
+                item(0)).getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            String departDate = ((Element)el.getElementsByTagName(&quot;Departure&quot;).
+                item(0)).getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+            String departTime = ((Element)el.getElementsByTagName(&quot;Departure&quot;).item(0))
+                .getElementsByTagName(&quot;Time&quot;).item(0).getTextContent();
+            
+            flightsInBound += &quot;&lt;Departure&gt;&lt;AirportCode&gt;&quot; 
+                + departAirportCode+&quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; 
+                + departDate + &quot;&lt;/Date&gt;&lt;Time&gt;&quot; + departTime + &quot;&lt;/Time&gt;&lt;/Departure&gt;&quot;;
+
+
+            String arrAirportCode = ((Element)el.getElementsByTagName(&quot;Arrival&quot;).item(0))
+                .getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            
+            String arrDate = ((Element)el.getElementsByTagName(&quot;Arrival&quot;).item(0))
+                .getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+
+            flightsInBound += &quot;&lt;Arrival&gt;&lt;AirportCode&gt;&quot; 
+                + arrAirportCode + &quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; + arrDate + &quot;&lt;/Date&gt;&lt;/Arrival&gt;&quot;;
+
+
+            String markCarrierId = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;).
+                item(0)).getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String markCarrierFN = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;).item(0))
+                .getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            String operCarrierId = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;).item(0))
+                .getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String operCarrierFN = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;).item(0))
+                .getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            flightsInBound += &quot;&lt;MarketingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + markCarrierId + &quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + markCarrierFN + &quot;&lt;/FlightNumber&gt;&lt;/MarketingCarrier&gt;&quot;;
+            
+            flightsInBound += &quot;&lt;OperatingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + operCarrierId +&quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + operCarrierFN + &quot;&lt;/FlightNumber&gt;&lt;/OperatingCarrier&gt;&quot;;
+
+            flightsInBound += &quot;&lt;/Flight&gt;&quot;;
+        }
+
+
+        vars.put(&quot;flightsInBound&quot;,flightsInBound );  
+        
+        ///Construct fare detail for outbound
+        int j;
+        NodeList fareDetails = outBoundOfferElement.getElementsByTagName(&quot;OfferPrice&quot;);
+        for(i=0; i&lt;fareDetails.getLength(); i++){
+            n = (Element) fareDetails.item(i);
+            String offerItemId = n.getAttribute(&quot;OfferItemID&quot;);
+            String remark = n.getElementsByTagName(&quot;Remark&quot;).
+                item(n.getElementsByTagName(&quot;Remark&quot;).getLength()-1).getTextContent();
+            Element fareDetail = (Element) n.getElementsByTagName(&quot;FareDetail&quot;).item(0);
+            NodeList fareComponents = fareDetail.getElementsByTagName(&quot;FareComponent&quot;);
+            
+            for(j=0; j&lt;fareComponents.getLength(); j++){
+                ((Element)fareComponents.item(j)).
+                    getElementsByTagName(&quot;Remark&quot;).item(0).setTextContent(remark);
+            }
+            String flightDetailsString = &quot;&quot;;
+            flightDetailsString+= domToXML(fareDetail);
+
+            for(Object paxO: paxRefs){        
+                String pax = (String)paxO;
+                if(offerItemId.equals(outBoundOfferId+ &quot;#&quot; + pax)){
+                    vars.put(&quot;OutBoundFareDetails&quot; 
+                        + pax,flightDetailsString.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+                    break;
+                }
+            }
+        }
+
+        ///Construct fare detail for inbound
+        NodeList fareDetails1 = inBoundOfferElement.getElementsByTagName(&quot;OfferPrice&quot;);
+
+        for(i=0; i&lt;fareDetails1.getLength(); i++){
+            n = (Element) fareDetails1.item(i);
+            String offerItemId = n.getAttribute(&quot;OfferItemID&quot;);
+            String remark = n.getElementsByTagName(&quot;Remark&quot;)
+                .item(n.getElementsByTagName(&quot;Remark&quot;).getLength()-1).getTextContent();
+            Element fareDetail = (Element) n.getElementsByTagName(&quot;FareDetail&quot;).item(0);
+            NodeList fareComponents = fareDetail.getElementsByTagName(&quot;FareComponent&quot;);
+
+            for(j=0; j&lt;fareComponents.getLength(); j++){
+                Element el = (Element)fareComponents.item(j);
+                if(el.getElementsByTagName(&quot;Remark&quot;).getLength()&gt;0){
+                    el.getElementsByTagName(&quot;Remark&quot;).item(0).setTextContent(remark);
+                }
+            }
+
+            String flightDetailsString = &quot;&quot;;
+            flightDetailsString += domToXML(fareDetail);
+            for(Object paxO: paxRefs){        
+              String pax = (String)paxO;
+              if(offerItemId.equals(inBoundOfferId + &quot;#&quot; + pax)){
+                  vars.put(&quot;InBoundFareDetails&quot; 
+                      + pax ,flightDetailsString.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+                  break;
+              }
+            }
+        }
+
+        
+        // Find total payment amount, by summing 
+        // all &quot;TotalPrice&quot; values of InBound/Outbound Offers.    
+        float payment = 0.0F;
+
+        payment +=
+        Float.parseFloat(
+            ((Element)outBoundOfferElement.getElementsByTagName(&quot;TotalPrice&quot;)
+                .item(0)).getElementsByTagName(&quot;Total&quot;).item(0).getTextContent()
+            );
+
+        payment +=
+        Float.parseFloat(
+            ((Element)inBoundOfferElement.getElementsByTagName(&quot;TotalPrice&quot;)
+                .item(0)).getElementsByTagName(&quot;Total&quot;).item(0).getTextContent()
+            );
+
+        // sum service amounts.
+        for(i=0; i&lt;serviceListNodes.getLength(); i++){
+            n = (Element)serviceListNodes.item(i);
+
+            float sprice= 
+                Float.parseFloat(
+                n.getElementsByTagName(&quot;Total&quot;).item(0).getTextContent());
+
+            int numOfPassengers = n.getElementsByTagName(&quot;PassengerReferences&quot;)
+                .item(0).getTextContent().split(&quot;\\s+&quot;).length;
+
+            payment += sprice * numOfPassengers * (outBoundSegmentList.size()
+                + inBoundSegmentList.size());
+
+        }
+        vars.put(&quot;payment&quot;, String.valueOf(payment));
+
+    } catch (Exception ex) {
+        IsSuccess = false;
+        log.error(ex.getMessage());
+        ex.printStackTrace();
+    }
+
+
+    </stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+            </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Valid Response" enabled="false">
             <stringProp name="IfController.condition">${getErrorsAndWarnings}==0</stringProp>
@@ -33417,13 +34123,18 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirShoppingRQ OneWay ADT" enabled="true">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&#xd;
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="isRoundTrip" enabled="true">
+            <stringProp name="IfController.condition">${bound_nbr}&gt;1</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirShoppingRQ RoundTrip ADT" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
 	&quot;EchoToken&quot;: &quot;${cntr}-${origin}-${destination}-${adt_number}ADT-${chd_number}CHD-2OND&quot;,&#xd;
 	&quot;RecaptchaResponse&quot;: &quot;dummy&quot;,&#xd;
 	&quot;MsgType&quot;: &quot;AirShopping&quot;,&#xd;
@@ -33439,6 +34150,15 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
 			&quot;Arrival&quot;: {&#xd;
 				&quot;AirportCode&quot;: &quot;${destination}&quot;&#xd;
 			}&#xd;
+		},&#xd;
+		{&#xd;
+			&quot;Departure&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${destination}&quot;,&#xd;
+				&quot;Date&quot;: &quot;${returnDate}&quot;&#xd;
+			},&#xd;
+			&quot;Arrival&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${origin}&quot;&#xd;
+			}&#xd;
 		}&#xd;
 	],&#xd;
 	&quot;AnonymousTraveler&quot;: [{&#xd;
@@ -33453,47 +34173,47 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
 	}&#xd;
 }&#xd;
 </stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">23.100.12.1</stringProp>
-            <stringProp name="HTTPSampler.port">8080</stringProp>
-            <stringProp name="HTTPSampler.protocol">http</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">${endpoint}</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">application-auth</stringProp>
-                  <stringProp name="Header.value">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Authorization</stringProp>
-                  <stringProp name="Header.value">${Authorization}</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="true">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import java.util.Random;
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">application-auth</stringProp>
+                    <stringProp name="Header.value">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${Authorization}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script">import java.util.Random;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -33512,54 +34232,54 @@ vars.put(&quot;destination&quot;, destination);
 
 
 </stringProp>
-            </BeanShellPreProcessor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getResponseID" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getResponseID</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/ShoppingResponseID/ResponseID</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPriceGuaranteeTimeLimit" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getPriceGuaranteeTimeLimit</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/PriceGuaranteeTimeLimit/@Timestamp</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getTicketBy" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getTicketBy</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/TicketByTimeLimit/TicketBy</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPayment" enabled="false">
-              <stringProp name="XPathExtractor.default">0</stringProp>
-              <stringProp name="XPathExtractor.refname">getPayment</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">sum(/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[1]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/Taxes/Total | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[1]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/BaseAmount | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[8]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/Taxes/Total | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[8]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/BaseAmount)+ 25*3*(${adt_number} + ${chd_number}) </stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-              <stringProp name="TestPlan.comments">${__doubleSum(${getBaseAmountSEG1ADT1}, ${getTaxAmountSEG1ADT1},${getBaseAmountSEG1CHD1},${getTaxAmountSEG1CHD1} )}</stringProp>
-            </XPathExtractor>
-            <hashTree/>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script">import java.io.*;
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getResponseID" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getResponseID</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/ShoppingResponseID/ResponseID</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPriceGuaranteeTimeLimit" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getPriceGuaranteeTimeLimit</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/PriceGuaranteeTimeLimit/@Timestamp</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getTicketBy" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getTicketBy</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/TicketByTimeLimit/TicketBy</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPayment" enabled="false">
+                <stringProp name="XPathExtractor.default">0</stringProp>
+                <stringProp name="XPathExtractor.refname">getPayment</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">sum(/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[1]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/Taxes/Total | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[1]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/BaseAmount | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[8]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/Taxes/Total | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[8]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/BaseAmount)+ 25*3*(${adt_number} + ${chd_number}) </stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+                <stringProp name="TestPlan.comments">${__doubleSum(${getBaseAmountSEG1ADT1}, ${getTaxAmountSEG1ADT1},${getBaseAmountSEG1CHD1},${getTaxAmountSEG1CHD1} )}</stringProp>
+              </XPathExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import java.io.*;
 import javax.xml.parsers.*;
 import java.util.Arrays;
 import org.w3c.dom.*;
@@ -34059,18 +34779,680 @@ try {
 
 
     </stringProp>
-            </BeanShellPostProcessor>
-            <hashTree/>
-            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getErrorsAndWarnings" enabled="false">
-              <stringProp name="XPathExtractor.default">null</stringProp>
-              <stringProp name="XPathExtractor.refname">getErrorsAndWarnings</stringProp>
-              <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
-              <stringProp name="XPathExtractor.xpathQuery">count(/AirShoppingRS/Warnings|/AirShoppingRS/Errors)</stringProp>
-              <boolProp name="XPathExtractor.validate">false</boolProp>
-              <boolProp name="XPathExtractor.tolerant">false</boolProp>
-              <boolProp name="XPathExtractor.namespace">false</boolProp>
-            </XPathExtractor>
-            <hashTree/>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getErrorsAndWarnings" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getErrorsAndWarnings</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">count(/AirShoppingRS/Warnings|/AirShoppingRS/Errors)</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Else" enabled="true">
+            <stringProp name="IfController.condition">${bound_nbr}==1</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirShoppingRQ OneWay ADT" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+	&quot;EchoToken&quot;: &quot;${cntr}-${origin}-${destination}-${adt_number}ADT-${chd_number}CHD-2OND&quot;,&#xd;
+	&quot;RecaptchaResponse&quot;: &quot;dummy&quot;,&#xd;
+	&quot;MsgType&quot;: &quot;AirShopping&quot;,&#xd;
+	&quot;Parameters&quot;: {&#xd;
+		&quot;Languages&quot;: [&quot;en&quot;],&#xd;
+		&quot;CurrencyCodes&quot;: [&quot;USD&quot;]&#xd;
+	},&#xd;
+	&quot;OriginDestinations&quot;: [{&#xd;
+			&quot;Departure&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${origin}&quot;,&#xd;
+				&quot;Date&quot;: &quot;${start}&quot;&#xd;
+			},&#xd;
+			&quot;Arrival&quot;: {&#xd;
+				&quot;AirportCode&quot;: &quot;${destination}&quot;&#xd;
+			}&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;AnonymousTraveler&quot;: [{&#xd;
+			&quot;PTC&quot;: &quot;ADT&quot;,&#xd;
+			&quot;Quantity&quot;: ${adt_number}&#xd;
+		}&#xd;
+	],&#xd;
+	&quot;Metadata&quot;: {&#xd;
+		&quot;LanguageMetadata&quot;: {&#xd;
+			&quot;Display&quot;: &quot;en&quot;&#xd;
+		}&#xd;
+	}&#xd;
+}&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.port">${port}</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">${endpoint}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">application-auth</stringProp>
+                    <stringProp name="Header.value">eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MDM3YzAyZS0yOTViLTQxMTQtYjMzMS0yNGY0YTA0NmI1OWIiLCJuYW1lIjoiODJkYzA1ZTMtNTg2OS00ODg3LTljMGUtYzExMWRhYjVhNDExIn0.jRHDyM-oj4U4z393x7Tql_yA36UScN1CeWGJndpuang</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Authorization</stringProp>
+                    <stringProp name="Header.value">${Authorization}</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+
+
+</stringProp>
+              </BeanShellPreProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getResponseID" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getResponseID</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/ShoppingResponseID/ResponseID</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPriceGuaranteeTimeLimit" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getPriceGuaranteeTimeLimit</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/PriceGuaranteeTimeLimit/@Timestamp</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getTicketBy" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getTicketBy</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer/TimeLimits/OtherLimits/OtherLimit/TicketByTimeLimit/TicketBy</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getPayment" enabled="false">
+                <stringProp name="XPathExtractor.default">0</stringProp>
+                <stringProp name="XPathExtractor.refname">getPayment</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">sum(/AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[1]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/Taxes/Total | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[1]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/BaseAmount | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[8]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/Taxes/Total | /AirShoppingRS/OffersGroup/AirlineOffers/AirlineOffer[8]/PricedOffer/OfferPrice[.]/FareDetail/FareComponent[.]/PriceBreakdown/Price/BaseAmount)+ 25*3*(${adt_number} + ${chd_number}) </stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+                <stringProp name="TestPlan.comments">${__doubleSum(${getBaseAmountSEG1ADT1}, ${getTaxAmountSEG1ADT1},${getBaseAmountSEG1CHD1},${getTaxAmountSEG1CHD1} )}</stringProp>
+              </XPathExtractor>
+              <hashTree/>
+              <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+                <boolProp name="resetInterpreter">false</boolProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import java.io.*;
+import javax.xml.parsers.*;
+import java.util.Arrays;
+import org.w3c.dom.*;
+import org.xml.sax.SAXException;
+import org.xml.sax.InputSource;
+import org.apache.jmeter.samplers.SampleResult;
+import java.io.StringReader;
+import java.io.StringWriter;
+import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Document;
+import javBeax.xml.xpath.XPathConstants;
+import javBeax.xml.xpath.XPathConstants.NODESET;
+import javax.xml.namespace.NamespaceContext;
+import java.util.Random;
+import java.util.ArrayList;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.dom.DOMSource;
+
+
+String domToXML(Node n){ 
+    TransformerFactory tFactory = TransformerFactory.newInstance();
+    Transformer transformer = tFactory.newTransformer();
+    transformer.setOutputProperty(&quot;indent&quot;, &quot;yes&quot;);
+    StringWriter sw = new StringWriter();
+    StreamResult result = new StreamResult(sw);
+    DOMSource source = new DOMSource(n);
+    transformer.transform(source, result);
+    return sw.toString();
+
+}
+    
+try {
+        DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
+        domFactory.setNamespaceAware(true);
+        DocumentBuilder builder = domFactory.newDocumentBuilder();
+
+
+
+        // access result of parent sampler via &quot;ctx&quot; BeanShell variable        
+        SampleResult result = ctx.getPreviousResult();
+
+        InputSource is = new InputSource(new StringReader(result.getResponseDataAsString()));
+
+        //Construct a dom Document to access airshopping rs
+        Document doc = builder.parse(is);
+
+
+        // Extract global variable nodes and elements
+        Element dataListElement =(Element) doc.getDocumentElement().getElementsByTagName(&quot;DataLists&quot;).item(0);
+        NodeList ondNodes = (NodeList) dataListElement.getElementsByTagName(&quot;OriginDestination&quot;);
+        NodeList travelersList = dataListElement.getElementsByTagName(&quot;AnonymousTraveler&quot;);
+        NodeList flightNodes  = ((Element) (dataListElement.getElementsByTagName(&quot;FlightList&quot;).item(0))).getElementsByTagName(&quot;Flight&quot;);
+        NodeList serviceListNodes = ((Element)dataListElement.getElementsByTagName(&quot;ServiceList&quot;).item(0)).getElementsByTagName(&quot;Service&quot;);
+        NodeList flightSegmentNodes  = dataListElement.getElementsByTagName(&quot;FlightSegment&quot;);
+        
+
+        int i=0;
+        Element n = null;
+        ArrayList paxRefs = new ArrayList();
+
+        // Extract all travelers and store travelers objectkey.
+        for(i=0; i&lt;travelersList.getLength(); i++){
+            Element el = (Element) travelersList.item(i);
+            paxRefs.add(el.getAttribute(&quot;ObjectKey&quot;));
+        }
+
+
+
+        String outBoundflightRef = &quot;&quot;;
+        String inBoundflightRef = &quot;&quot;;
+        String[] outBoundSegRefsString = null;
+        String[] inBoundSegRefsString = null;
+
+        String departureAirportCode = &quot;&quot;;
+        String arrivalAirportCode = &quot;&quot;;
+        
+        
+        
+        //******** The following lines, find and store the outbound/inbound flights.
+        // We include only the flights with flightNumber stored in &quot;valid_flight_numbers&quot;
+        // variable.
+        
+
+        //iterate all onds.
+        for (i = 0; i &lt; ondNodes.getLength(); i++) {
+            n = (Element) ondNodes.item(i);
+
+            // find the flightReference of the onde (1 Flight per ond)
+            String[] flightRefs = n.getElementsByTagName(&quot;FlightReferences&quot;)
+                .item(0).getTextContent().split(&quot;\\s+&quot;);		
+            
+            
+            int r = 0;
+            // if &quot;valid_flight_numbers&quot; is not set, just choose a random flight.
+            if(vars.get(&quot;valid_flight_numbers&quot;)==null)
+                r = new Random().nextInt(flightRefs.length);
+            
+            else{
+                List validFlightNumbers = Arrays
+                    .asList(vars.get(&quot;valid_flight_numbers&quot;).split(&quot;\\,&quot;));
+                
+                
+                int found =0;
+
+                //iterate all flight options
+                for(r=0; r&lt;flightRefs.length; r++){
+                    if(found&gt;0){
+                        r--;
+                        break;
+                    }
+                    String f = flightRefs[r];
+                    //iterate all flight nodes to find the specific flight node.
+                    for (int k = 0; k &lt; flightNodes.getLength(); k++) {
+                        Element nn = (Element) flightNodes.item(k);
+                        if(nn.getAttribute(&quot;FlightKey&quot;).equals(f)){ 
+                            String[] segs = nn.getElementsByTagName(&quot;SegmentReferences&quot;)
+                                .item(0).getTextContent().split(&quot;\\s+&quot;);	
+
+
+                            //iterate all segment of the specific flight
+                            found =1;
+                            for(String ss: segs){
+                                //iterate all flight segment nodes to find the specific segment
+                                for(int m=0; m&lt;flightSegmentNodes.getLength(); m++){
+                                    Element nnn = (Element)flightSegmentNodes.item(m);
+                                    if(nnn.getAttribute(&quot;SegmentKey&quot;).equals(ss)){
+                                        String fn = nnn.getElementsByTagName(&quot;FlightNumber&quot;)
+                                            .item(0).getTextContent();
+                                        if(!validFlightNumbers.contains(fn)){
+                                            found = -1;
+                                            break;
+                                        }
+                                        break;
+                                    }
+                                }
+                                if(found&lt;0){
+                                    break;
+                                }
+
+                            }
+                            break;
+                        }
+                    }
+                }
+                // this should not happen.. FlightRef couldn&apos;t be found
+                if(r==flightRefs.length){
+                    r = new Random().nextInt(flightRefs.length);
+                }
+            }
+
+            
+            if(n.getAttribute(&quot;OriginDestinationKey&quot;).equals(&quot;OD1&quot;)){
+                //this is the outbound ond.
+
+                
+                outBoundflightRef = flightRefs[r];
+
+                departureAirportCode  = n.getElementsByTagName(&quot;DepartureCode&quot;)
+                    .item(0).getTextContent();
+                arrivalAirportCode  = n.getElementsByTagName(&quot;ArrivalCode&quot;)
+                    .item(0).getTextContent();
+            }else{
+                // this is the inbound ond.
+                
+                inBoundflightRef = flightRefs[r];
+            }
+        }
+
+        //save inbound/outbound flight references.
+        vars.put(&quot;OutBoundFlightRef&quot;,outBoundflightRef);
+        vars.put(&quot;OutBoundDepartureCode&quot;,departureAirportCode );
+        vars.put(&quot;OutBoundArrivalCode&quot;,arrivalAirportCode);
+
+        vars.put(&quot;InBoundFlightRef&quot;,inBoundflightRef);
+        vars.put(&quot;InBoundDepartureCode&quot;,arrivalAirportCode );
+        vars.put(&quot;InBoundArrivalCode&quot;,departureAirportCode);
+
+
+
+        String flightListNodes = &quot;&quot;;
+
+
+        for (i = 0; i &lt; flightNodes.getLength(); i++) {
+            n = (Element) flightNodes.item(i);
+
+            if(n.getAttribute(&quot;FlightKey&quot;).equals(outBoundflightRef)){
+
+                    outBoundSegRefsString = n.getElementsByTagName(&quot;SegmentReferences&quot;)
+                        .item(0).getTextContent().split(&quot;\\s+&quot;);	
+            }else if (n.getAttribute(&quot;FlightKey&quot;).equals(inBoundflightRef)){
+                inBoundSegRefsString = n.getElementsByTagName(&quot;SegmentReferences&quot;)
+                    .item(0).getTextContent().split(&quot;\\s+&quot;);	
+
+            }else{
+                continue;
+            }
+            flightListNodes += domToXML(n);
+        }
+
+        // trim out redundant namespace attribute.
+        vars.put(&quot;FlightListNodes&quot;,flightListNodes.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+        
+        
+
+        String outBoundSegmentListNodes = &quot;&quot;;
+        String inBoundSegmentListNodes = &quot;&quot;;
+        ArrayList outBoundSegmentList = new ArrayList();
+        ArrayList inBoundSegmentList = new ArrayList();
+
+        // extract inbound/outbound segment nodes and keys
+        for (i = 0; i &lt; flightSegmentNodes.getLength(); i++) {
+            n = (Element) flightSegmentNodes.item(i);
+            for(int j=0; j&lt;outBoundSegRefsString.length; j++){
+
+                if(outBoundSegRefsString[j].equals(n.getAttribute(&quot;SegmentKey&quot;))){
+                    outBoundSegmentList.add(n);
+                    outBoundSegmentListNodes += domToXML(n);
+                    break;
+                }
+
+            }
+
+            for(int j=0; j&lt;inBoundSegRefsString.length; j++){
+
+                if(inBoundSegRefsString[j].equals(n.getAttribute(&quot;SegmentKey&quot;))){
+                    inBoundSegmentList.add(n);
+                    outBoundSegmentListNodes += domToXML(n);
+                    break;
+                }
+
+
+            }
+
+
+        }
+        vars.put(&quot;FlightSegmentListNodes&quot;,
+            outBoundSegmentListNodes.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;) + &quot;\n&quot; +
+            inBoundSegmentListNodes.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+
+
+        String allSegmentRefs = &quot;&quot;;
+
+        for(i=0; i&lt;inBoundSegRefsString.length-1; i++){
+            allSegmentRefs += inBoundSegRefsString[i] +&quot; &quot;;
+        }
+        allSegmentRefs +=  inBoundSegRefsString[i] + &quot; &quot;;
+
+        for(i=0; i&lt;outBoundSegRefsString.length-1; i++){
+            allSegmentRefs += outBoundSegRefsString[i] + &quot; &quot;;
+        }
+        allSegmentRefs +=  outBoundSegRefsString[i];
+
+        vars.put(&quot;AllSegmentRefs&quot;,allSegmentRefs);
+
+
+        // Find the offer for the outbound Flight
+
+        String outBoundOfferId = &quot;&quot;;
+        String inBoundOfferId = &quot;&quot;;
+
+        NodeList offersElements = doc.getDocumentElement()
+            .getElementsByTagName(&quot;AirlineOffer&quot;);
+
+        Element outBoundOfferElement = null;
+        Element inBoundOfferElement = null;
+
+        for(i=0; i&lt;offersElements.getLength(); i++){
+
+            n = (Element)offersElements.item(i);
+            String offerFlightRef = n.getElementsByTagName(&quot;FlightReferences&quot;)
+                .item(0).getTextContent();
+
+            if(offerFlightRef.equals(outBoundflightRef)){
+                    outBoundOfferId = 	n.getElementsByTagName(&quot;OfferID&quot;)
+                        .item(0).getTextContent();
+                    outBoundOfferElement = n;
+            }
+            else if(offerFlightRef.equals(inBoundflightRef)){
+                    inBoundOfferId = 	n.getElementsByTagName(&quot;OfferID&quot;)
+                        .item(0).getTextContent();
+                    inBoundOfferElement = n;
+            }
+        }
+
+        vars.put(&quot;OutBoundOfferId&quot;,outBoundOfferId);
+        vars.put(&quot;InBoundOfferId&quot;,inBoundOfferId);
+
+        ///Construct OutBound-Offer Flights
+        String flightsOutBound = &quot;&quot;;
+
+
+        for(i=0; i&lt;outBoundSegmentList.size(); i++){
+
+            Element el = (Element) outBoundSegmentList.get(i);
+            flightsOutBound += &quot;&lt;Flight&gt;&quot;;
+
+            String departAirportCode = ((Element) (el.getElementsByTagName(&quot;Departure&quot;)
+                .item(0))).getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            String departDate = ((Element)el.getElementsByTagName(&quot;Departure&quot;)
+                .item(0)).getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+            String departTime = ((Element)el.getElementsByTagName(&quot;Departure&quot;)
+                .item(0)).getElementsByTagName(&quot;Time&quot;).item(0).getTextContent();
+
+
+            flightsOutBound += &quot;&lt;Departure&gt;&lt;AirportCode&gt;&quot; + departAirportCode 
+                + &quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; + departDate 
+                + &quot;&lt;/Date&gt;&lt;Time&gt;&quot; + departTime + &quot;&lt;/Time&gt;&lt;/Departure&gt;&quot;;
+
+
+            String arrAirportCode = ((Element)el.getElementsByTagName(&quot;Arrival&quot;)
+                .item(0)).getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            
+            String arrDate = ((Element)el.getElementsByTagName(&quot;Arrival&quot;).item(0))
+                .getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+
+            flightsOutBound += &quot;&lt;Arrival&gt;&lt;AirportCode&gt;&quot; + arrAirportCode 
+                + &quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; + arrDate + &quot;&lt;/Date&gt;&lt;/Arrival&gt;&quot;;
+
+
+            String markCarrierId = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;)
+                .item(0)).getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String markCarrierFN = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;).
+                item(0)).getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            String operCarrierId = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;)
+                .item(0)).getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String operCarrierFN = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;)
+                .item(0)).getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            flightsOutBound += &quot;&lt;MarketingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + markCarrierId+&quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + markCarrierFN+&quot;&lt;/FlightNumber&gt;&lt;/MarketingCarrier&gt;&quot;;
+            
+            flightsOutBound += &quot;&lt;OperatingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + operCarrierId +&quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + operCarrierFN+&quot;&lt;/FlightNumber&gt;&lt;/OperatingCarrier&gt;&quot;;
+            flightsOutBound += &quot;&lt;/Flight&gt;&quot;;
+        }
+
+        vars.put(&quot;flightsOutBound&quot;,flightsOutBound );  
+
+        ///Construct InBound-Offer Flights
+        String flightsInBound =&quot;&quot; ;
+        for(i=0; i&lt;inBoundSegmentList.size(); i++){
+            Element el = (Element) inBoundSegmentList.get(i);
+            flightsInBound += &quot;&lt;Flight&gt;&quot;;
+
+            String departAirportCode = ((Element)el.getElementsByTagName(&quot;Departure&quot;).
+                item(0)).getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            String departDate = ((Element)el.getElementsByTagName(&quot;Departure&quot;).
+                item(0)).getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+            String departTime = ((Element)el.getElementsByTagName(&quot;Departure&quot;).item(0))
+                .getElementsByTagName(&quot;Time&quot;).item(0).getTextContent();
+            
+            flightsInBound += &quot;&lt;Departure&gt;&lt;AirportCode&gt;&quot; 
+                + departAirportCode+&quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; 
+                + departDate + &quot;&lt;/Date&gt;&lt;Time&gt;&quot; + departTime + &quot;&lt;/Time&gt;&lt;/Departure&gt;&quot;;
+
+
+            String arrAirportCode = ((Element)el.getElementsByTagName(&quot;Arrival&quot;).item(0))
+                .getElementsByTagName(&quot;AirportCode&quot;).item(0).getTextContent();
+            
+            String arrDate = ((Element)el.getElementsByTagName(&quot;Arrival&quot;).item(0))
+                .getElementsByTagName(&quot;Date&quot;).item(0).getTextContent();
+
+            flightsInBound += &quot;&lt;Arrival&gt;&lt;AirportCode&gt;&quot; 
+                + arrAirportCode + &quot;&lt;/AirportCode&gt;&lt;Date&gt;&quot; + arrDate + &quot;&lt;/Date&gt;&lt;/Arrival&gt;&quot;;
+
+
+            String markCarrierId = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;).
+                item(0)).getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String markCarrierFN = ((Element)el.getElementsByTagName(&quot;MarketingCarrier&quot;).item(0))
+                .getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            String operCarrierId = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;).item(0))
+                .getElementsByTagName(&quot;AirlineID&quot;).item(0).getTextContent();
+            
+            String operCarrierFN = ((Element)el.getElementsByTagName(&quot;OperatingCarrier&quot;).item(0))
+                .getElementsByTagName(&quot;FlightNumber&quot;).item(0).getTextContent();
+
+            flightsInBound += &quot;&lt;MarketingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + markCarrierId + &quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + markCarrierFN + &quot;&lt;/FlightNumber&gt;&lt;/MarketingCarrier&gt;&quot;;
+            
+            flightsInBound += &quot;&lt;OperatingCarrier&gt;&lt;AirlineID&gt;&quot; 
+                + operCarrierId +&quot;&lt;/AirlineID&gt;&lt;FlightNumber&gt;&quot; 
+                + operCarrierFN + &quot;&lt;/FlightNumber&gt;&lt;/OperatingCarrier&gt;&quot;;
+
+            flightsInBound += &quot;&lt;/Flight&gt;&quot;;
+        }
+
+
+        vars.put(&quot;flightsInBound&quot;,flightsInBound );  
+        
+        ///Construct fare detail for outbound
+        int j;
+        NodeList fareDetails = outBoundOfferElement.getElementsByTagName(&quot;OfferPrice&quot;);
+        for(i=0; i&lt;fareDetails.getLength(); i++){
+            n = (Element) fareDetails.item(i);
+            String offerItemId = n.getAttribute(&quot;OfferItemID&quot;);
+            String remark = n.getElementsByTagName(&quot;Remark&quot;).
+                item(n.getElementsByTagName(&quot;Remark&quot;).getLength()-1).getTextContent();
+            Element fareDetail = (Element) n.getElementsByTagName(&quot;FareDetail&quot;).item(0);
+            NodeList fareComponents = fareDetail.getElementsByTagName(&quot;FareComponent&quot;);
+            
+            for(j=0; j&lt;fareComponents.getLength(); j++){
+                ((Element)fareComponents.item(j)).
+                    getElementsByTagName(&quot;Remark&quot;).item(0).setTextContent(remark);
+            }
+            String flightDetailsString = &quot;&quot;;
+            flightDetailsString+= domToXML(fareDetail);
+
+            for(Object paxO: paxRefs){        
+                String pax = (String)paxO;
+                if(offerItemId.equals(outBoundOfferId+ &quot;#&quot; + pax)){
+                    vars.put(&quot;OutBoundFareDetails&quot; 
+                        + pax,flightDetailsString.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+                    break;
+                }
+            }
+        }
+
+        ///Construct fare detail for inbound
+        NodeList fareDetails1 = inBoundOfferElement.getElementsByTagName(&quot;OfferPrice&quot;);
+
+        for(i=0; i&lt;fareDetails1.getLength(); i++){
+            n = (Element) fareDetails1.item(i);
+            String offerItemId = n.getAttribute(&quot;OfferItemID&quot;);
+            String remark = n.getElementsByTagName(&quot;Remark&quot;)
+                .item(n.getElementsByTagName(&quot;Remark&quot;).getLength()-1).getTextContent();
+            Element fareDetail = (Element) n.getElementsByTagName(&quot;FareDetail&quot;).item(0);
+            NodeList fareComponents = fareDetail.getElementsByTagName(&quot;FareComponent&quot;);
+
+            for(j=0; j&lt;fareComponents.getLength(); j++){
+                Element el = (Element)fareComponents.item(j);
+                if(el.getElementsByTagName(&quot;Remark&quot;).getLength()&gt;0){
+                    el.getElementsByTagName(&quot;Remark&quot;).item(0).setTextContent(remark);
+                }
+            }
+
+            String flightDetailsString = &quot;&quot;;
+            flightDetailsString += domToXML(fareDetail);
+            for(Object paxO: paxRefs){        
+              String pax = (String)paxO;
+              if(offerItemId.equals(inBoundOfferId + &quot;#&quot; + pax)){
+                  vars.put(&quot;InBoundFareDetails&quot; 
+                      + pax ,flightDetailsString.replaceAll(&quot;\\&lt;\\?xml[^\\&gt;]+\\&gt;&quot;,&quot;&quot;));
+                  break;
+              }
+            }
+        }
+
+        
+        // Find total payment amount, by summing 
+        // all &quot;TotalPrice&quot; values of InBound/Outbound Offers.    
+        float payment = 0.0F;
+
+        payment +=
+        Float.parseFloat(
+            ((Element)outBoundOfferElement.getElementsByTagName(&quot;TotalPrice&quot;)
+                .item(0)).getElementsByTagName(&quot;Total&quot;).item(0).getTextContent()
+            );
+
+        payment +=
+        Float.parseFloat(
+            ((Element)inBoundOfferElement.getElementsByTagName(&quot;TotalPrice&quot;)
+                .item(0)).getElementsByTagName(&quot;Total&quot;).item(0).getTextContent()
+            );
+
+        // sum service amounts.
+        for(i=0; i&lt;serviceListNodes.getLength(); i++){
+            n = (Element)serviceListNodes.item(i);
+
+            float sprice= 
+                Float.parseFloat(
+                n.getElementsByTagName(&quot;Total&quot;).item(0).getTextContent());
+
+            int numOfPassengers = n.getElementsByTagName(&quot;PassengerReferences&quot;)
+                .item(0).getTextContent().split(&quot;\\s+&quot;).length;
+
+            payment += sprice * numOfPassengers * (outBoundSegmentList.size()
+                + inBoundSegmentList.size());
+
+        }
+        vars.put(&quot;payment&quot;, String.valueOf(payment));
+
+    } catch (Exception ex) {
+        IsSuccess = false;
+        log.error(ex.getMessage());
+        ex.printStackTrace();
+    }
+
+
+    </stringProp>
+              </BeanShellPostProcessor>
+              <hashTree/>
+              <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="getErrorsAndWarnings" enabled="false">
+                <stringProp name="XPathExtractor.default">null</stringProp>
+                <stringProp name="XPathExtractor.refname">getErrorsAndWarnings</stringProp>
+                <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+                <stringProp name="XPathExtractor.xpathQuery">count(/AirShoppingRS/Warnings|/AirShoppingRS/Errors)</stringProp>
+                <boolProp name="XPathExtractor.validate">false</boolProp>
+                <boolProp name="XPathExtractor.tolerant">false</boolProp>
+                <boolProp name="XPathExtractor.namespace">false</boolProp>
+              </XPathExtractor>
+              <hashTree/>
+            </hashTree>
           </hashTree>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Valid Response" enabled="false">
             <stringProp name="IfController.condition">${getErrorsAndWarnings}==0</stringProp>

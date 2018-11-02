@@ -2077,6 +2077,7 @@ Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2a2FzaW1hdGlzQGpydGVjaG5vbG9naWVzLmNvbSIs
 213 = FlightPrice
 201 = AirShopping
 109 = Cancel
+107 = itinReshop
 ////////////////
 vkasimatis@jrtechnologies.com
 Vasilis123!@#
@@ -2181,6 +2182,9 @@ jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/OrderManage
 
 git@git.chania:NDCGateway/OfferManagementService.git
 jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/JRT-NDCPLTF/OfferManagementService
+
+jrtechnologies@vs-ssh.visualstudio.com:v3/jrtechnologies/InselAir/inselair_3_config
+git@git.chania:inselair/inselair_3_config.git
 
 ///////////////////cancel ticket:
 <OTA_CancelRQ Target="Test" Version="1.0" RetransmissionIndicator="true" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
