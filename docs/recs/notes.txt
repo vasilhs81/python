@@ -2195,3 +2195,65 @@ git@git.chania:inselair/inselair_3_config.git
 </OTA_CancelRQ>
 /////////////////////9081
 select * from airline_portal.ibe_fin_rep where transaction_date='2018-10-24' allow filtering;
+////// P1P8R  P1P90 P1P9H P1PC5
+///
+
+let startTimestamp = ago(60m);
+KubePodInventory
+    | where TimeGenerated > startTimestamp
+    | where ClusterName =~ "inselair-KubeCluster"
+    | distinct ContainerID
+| join
+(
+  ContainerLog
+  | where TimeGenerated > startTimestamp
+  | where Image == "inselairacr.azurecr.io/test/orms:1.5.2-SNAPSHOT-45"  
+)
+on ContainerID
+  | project LogEntrySource, LogEntry, TimeGenerated, Computer, Image, Name, ContainerID
+  | order by TimeGenerated desc
+  | render table
+
+
+//https://portal.azure.com
+
+////////////////////////////////
+<Payments>
+			<Payment>
+				<Method>
+					<PaymentCard>
+						<CardType>Credit</CardType>
+						<CardCode>VI</CardCode>
+						<CardNumber>4111111111111111</CardNumber>
+						<SeriesCode>123</SeriesCode>
+						<CardHolderName>Kasimatis Vasilis</CardHolderName>
+						<CardHolderBillingAddress>
+							<Street>askds 12</Street>
+							<CityName>Chqwww</CityName>
+							<StateProv>Chania</StateProv>
+							<PostalCode>3434</PostalCode>
+							<CountryCode>DZ</CountryCode>
+							<County>Chania</County>
+						</CardHolderBillingAddress>
+						<EffectiveExpireDate>
+							<Expiration>0424</Expiration>
+						</EffectiveExpireDate>
+					</PaymentCard>
+				</Method>
+				<Amount Code="USD">188.25</Amount>
+				<Payer>
+					<Name>
+						<Surname>Kasimatis</Surname>
+						<Given>Vasilis</Given>
+					</Name>
+					<Contacts>
+						<Contact>
+							<EmailContact>
+								<Address>v.kasimatis@jrtechnologies.com</Address>
+							</EmailContact>
+						</Contact>
+					</Contacts>
+				</Payer>
+			</Payment>
+		</Payments>
+//////////////////////////////		
