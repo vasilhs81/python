@@ -1367,30 +1367,14 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
       <hashTree>
         <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments">
-            <elementProp name="onds" elementType="Argument">
-              <stringProp name="Argument.name">onds</stringProp>
-              <stringProp name="Argument.value">MSP,ORD,MPN,ASI,BOM,DEL,BOM,SCL,BOM,BJS</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-              <stringProp name="Argument.desc">MSP,ORD,MPN,ASI,BOM,DEL,BOM,SCL,BOM,BJS</stringProp>
-            </elementProp>
-            <elementProp name="year" elementType="Argument">
-              <stringProp name="Argument.name">year</stringProp>
-              <stringProp name="Argument.value">2017</stringProp>
-              <stringProp name="Argument.metadata">=</stringProp>
-            </elementProp>
-          </collectionProp>
-        </Arguments>
-        <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-          <collectionProp name="Arguments.arguments">
             <elementProp name="ticketNbr" elementType="Argument">
               <stringProp name="Argument.name">ticketNbr</stringProp>
-              <stringProp name="Argument.value">4321017555</stringProp>
+              <stringProp name="Argument.value">2100408099</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pnr" elementType="Argument">
               <stringProp name="Argument.name">pnr</stringProp>
-              <stringProp name="Argument.value">P1PC0</stringProp>
+              <stringProp name="Argument.value">P1QWV</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="refundAmount" elementType="Argument">
@@ -1691,7 +1675,7 @@ vars.put(&quot;destination&quot;, destination);
             </BeanShellPreProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ExecuteRefund" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ExecuteRefund" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -5916,7 +5900,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Cancel Flow THREE Pax" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Cancel Flow THREE Pax" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -6017,6 +6001,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </CookieManager>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SignIn1" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
@@ -6066,7 +6051,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
               </elementProp>
             </collectionProp>
           </elementProp>
-          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -6155,6 +6139,7 @@ vars.put(&quot;destination&quot;, destination);
         </IfController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="RetrieveRefundDetails1" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -6203,7 +6188,6 @@ xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -6416,6 +6400,7 @@ vars.put(&quot;destination&quot;, destination);
         </IfController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="RetrieveRefundDetails2" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -6464,7 +6449,6 @@ xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -7100,6 +7084,7 @@ vars.put(&quot;destination&quot;, destination);
             </hashTree>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SignOut1" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -7128,7 +7113,6 @@ vars.put(&quot;destination&quot;, destination);
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -7493,6 +7477,7 @@ vars.put(&quot;destination&quot;, destination);
             </hashTree>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="SignOut2" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -7521,7 +7506,6 @@ vars.put(&quot;destination&quot;, destination);
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
             <stringProp name="HTTPSampler.port"></stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -7909,6 +7893,7 @@ vars.put(&quot;destination&quot;, destination);
         </IfController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderCreateRQ One Way ADT" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -8244,7 +8229,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -8285,6 +8269,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirDocIssueRQ" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -8379,7 +8364,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -8406,6 +8390,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderRetrieveRQ" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -8470,7 +8455,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -8501,6 +8485,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderHistoryRQ" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -8563,7 +8548,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -8594,6 +8578,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderListRQ" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -8660,7 +8645,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -8691,6 +8675,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderCancelRQ" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
@@ -8754,7 +8739,6 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <stringProp name="HTTPSampler.domain">${endpoint}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -14749,7 +14733,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <collectionProp name="Arguments.arguments">
             <elementProp name="ticketNbr" elementType="Argument">
               <stringProp name="Argument.name">ticketNbr</stringProp>
-              <stringProp name="Argument.value">4321015825</stringProp>
+              <stringProp name="Argument.value">4321019517</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pnr" elementType="Argument">
@@ -14759,7 +14743,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="ticketNbr2" elementType="Argument">
               <stringProp name="Argument.name">ticketNbr2</stringProp>
-              <stringProp name="Argument.value">4321015412</stringProp>
+              <stringProp name="Argument.value">4321019518</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="departureCode" elementType="Argument">
@@ -14824,7 +14808,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="arrivalCode2" elementType="Argument">
               <stringProp name="Argument.name">arrivalCode2</stringProp>
-              <stringProp name="Argument.value">BON</stringProp>
+              <stringProp name="Argument.value">AUA</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="flightNumber1" elementType="Argument">
@@ -14834,37 +14818,37 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="flightNumber2" elementType="Argument">
               <stringProp name="Argument.name">flightNumber2</stringProp>
-              <stringProp name="Argument.value">307</stringProp>
+              <stringProp name="Argument.value">407</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="rph1" elementType="Argument">
               <stringProp name="Argument.name">rph1</stringProp>
-              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.value">3</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="rph2" elementType="Argument">
               <stringProp name="Argument.name">rph2</stringProp>
-              <stringProp name="Argument.value">2</stringProp>
+              <stringProp name="Argument.value">4</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="oldDepartureDate1" elementType="Argument">
               <stringProp name="Argument.name">oldDepartureDate1</stringProp>
-              <stringProp name="Argument.value">2018-12-17</stringProp>
+              <stringProp name="Argument.value">2018-12-18</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="oldDepartureDate2" elementType="Argument">
               <stringProp name="Argument.name">oldDepartureDate2</stringProp>
-              <stringProp name="Argument.value">2018-12-17</stringProp>
+              <stringProp name="Argument.value">2018-12-18</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newDepartureDate1" elementType="Argument">
               <stringProp name="Argument.name">newDepartureDate1</stringProp>
-              <stringProp name="Argument.value">2018-12-24</stringProp>
+              <stringProp name="Argument.value">2018-12-25</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newDepartureDate2" elementType="Argument">
               <stringProp name="Argument.name">newDepartureDate2</stringProp>
-              <stringProp name="Argument.value">2018-12-24</stringProp>
+              <stringProp name="Argument.value">2018-12-25</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="oldFlightNumber1" elementType="Argument">
@@ -14874,7 +14858,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="oldFlightNumber2" elementType="Argument">
               <stringProp name="Argument.name">oldFlightNumber2</stringProp>
-              <stringProp name="Argument.value">307</stringProp>
+              <stringProp name="Argument.value">407</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newFlightNumber1" elementType="Argument">
@@ -14884,7 +14868,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="newFlightNumber2" elementType="Argument">
               <stringProp name="Argument.name">newFlightNumber2</stringProp>
-              <stringProp name="Argument.value">307</stringProp>
+              <stringProp name="Argument.value">407</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -15310,7 +15294,7 @@ vars.put(&quot;destination&quot;, destination);
             </BeanShellPreProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_UpdateItinerary (1 ticket)" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_UpdateItinerary (1 ticket)" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -15408,6 +15392,183 @@ vars.put(&quot;destination&quot;, destination);
 						&lt;ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo&gt;&#xd;
 							&lt;ns6:airlineAccountingCodeField&gt;958&lt;/ns6:airlineAccountingCodeField&gt;&#xd;
 							&lt;ns6:formAndSerialNumberField&gt;${ticketNbr}&lt;/ns6:formAndSerialNumberField&gt;&#xd;
+						&lt;/ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo&gt;&#xd;
+					&lt;/ns4:ticketingInfoField&gt;&#xd;
+				&lt;/ns4:ticketingInfosField&gt;&#xd;
+			&lt;/ns5:ARR_UpdateItineraryRQ&gt;&#xd;
+		&lt;/ns5:ARR_UpdateItinerary&gt;&#xd;
+	&lt;/S:Body&gt;&#xd;
+&lt;/S:Envelope&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">https://sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/xml</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">SOAPAction</stringProp>
+                  <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_UpdateItinerary</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-APIKey</stringProp>
+                  <stringProp name="Header.value">bb82253bff639e7b4987759717821486</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">sws.qa.sita.aero</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="false">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+</stringProp>
+              <stringProp name="TestPlan.comments">//gets information from user defined values
+//put a new variabel to the user defined variables</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_UpdateItinerary (ADT-INF)" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#xd;
+	&lt;S:Header&gt;&#xd;
+		&lt;ns7:Config xmlns=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.RES.HalService&quot; xmlns:ns2=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot; xmlns:ns3=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.HalService&quot; xmlns:ns4=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:ns5=&quot;http://tempuri.org/&quot; xmlns:ns6=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot; xmlns:ns7=&quot;http://sita.aero/hal&quot; xmlns:ns8=&quot;http://schemas.microsoft.com/2003/10/Serialization/&quot; subscriberId=&quot;7I&quot;/&gt;&#xd;
+	&lt;/S:Header&gt;&#xd;
+	&lt;S:Body&gt;&#xd;
+		&lt;ns5:ARR_UpdateItinerary xmlns=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.RES.HalService&quot; xmlns:ns2=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot; xmlns:ns3=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.HalService&quot; xmlns:ns4=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:ns5=&quot;http://tempuri.org/&quot; xmlns:ns6=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot; xmlns:ns7=&quot;http://sita.aero/hal&quot; xmlns:ns8=&quot;http://schemas.microsoft.com/2003/10/Serialization/&quot;&gt;&#xd;
+			&lt;ns5:sessionID&gt;${SessionID}&lt;/ns5:sessionID&gt;&#xd;
+			&lt;ns5:ARR_UpdateItineraryRQ&gt;&#xd;
+				&lt;ns4:segmentsToAddField&gt;&#xd;
+					&lt;ns4:flightInfoDetailsField&gt;&#xd;
+						&lt;ns4:ARR_UpdateItinerarySegmentsToAddFlightLegInfo&gt;&#xd;
+							&lt;ns4:arrivalAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${arrivalCode1}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:arrivalAirportField&gt;&#xd;
+							&lt;ns4:departureAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${departureCode1}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:departureAirportField&gt;&#xd;
+							&lt;ns4:departureDateField&gt;${newDepartureDate1}&lt;/ns4:departureDateField&gt;&#xd;
+							&lt;ns4:marketingAirlineField&gt;&#xd;
+								&lt;ns4:codeField&gt;7I&lt;/ns4:codeField&gt;&#xd;
+								&lt;ns4:flightNumberField&gt;${newFlightNumber1}&lt;/ns4:flightNumberField&gt;&#xd;
+							&lt;/ns4:marketingAirlineField&gt;&#xd;
+							&lt;ns4:rPHField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;&gt;1&lt;/ns4:rPHField&gt;&#xd;
+							&lt;ns4:bookingClassAvailField&gt;&#xd;
+								&lt;ns3:resBookDesigCodeField&gt;Y&lt;/ns3:resBookDesigCodeField&gt;&#xd;
+								&lt;ns3:resBookDesigQuantityField&gt;1&lt;/ns3:resBookDesigQuantityField&gt;&#xd;
+								&lt;ns3:resBookDesigStatusCodeField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;/&gt;&#xd;
+							&lt;/ns4:bookingClassAvailField&gt;&#xd;
+							&lt;ns4:fareInfoField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;/ns4:ARR_UpdateItinerarySegmentsToAddFlightLegInfo&gt;&#xd;
+						&lt;ns4:ARR_UpdateItinerarySegmentsToAddFlightLegInfo&gt;&#xd;
+							&lt;ns4:arrivalAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${arrivalCode2}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:arrivalAirportField&gt;&#xd;
+							&lt;ns4:departureAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${departureCode2}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:departureAirportField&gt;&#xd;
+							&lt;ns4:departureDateField&gt;${newDepartureDate2}&lt;/ns4:departureDateField&gt;&#xd;
+							&lt;ns4:marketingAirlineField&gt;&#xd;
+								&lt;ns4:codeField&gt;7I&lt;/ns4:codeField&gt;&#xd;
+								&lt;ns4:flightNumberField&gt;${newFlightNumber2}&lt;/ns4:flightNumberField&gt;&#xd;
+							&lt;/ns4:marketingAirlineField&gt;&#xd;
+							&lt;ns4:rPHField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;&gt;1&lt;/ns4:rPHField&gt;&#xd;
+							&lt;ns4:bookingClassAvailField&gt;&#xd;
+								&lt;ns3:resBookDesigCodeField&gt;Y&lt;/ns3:resBookDesigCodeField&gt;&#xd;
+								&lt;ns3:resBookDesigQuantityField&gt;1&lt;/ns3:resBookDesigQuantityField&gt;&#xd;
+								&lt;ns3:resBookDesigStatusCodeField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;/&gt;&#xd;
+							&lt;/ns4:bookingClassAvailField&gt;&#xd;
+							&lt;ns4:fareInfoField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;/ns4:ARR_UpdateItinerarySegmentsToAddFlightLegInfo&gt;&#xd;
+					&lt;/ns4:flightInfoDetailsField&gt;&#xd;
+				&lt;/ns4:segmentsToAddField&gt;&#xd;
+				&lt;ns4:segmentsToChangeField xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:nil=&quot;true&quot;/&gt;&#xd;
+				&lt;ns4:segmentsToRemoveField&gt;&#xd;
+					&lt;ns4:flightInfoDetailsField&gt;&#xd;
+						&lt;ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo&gt;&#xd;
+							&lt;ns4:arrivalAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${arrivalCode1}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:arrivalAirportField&gt;&#xd;
+							&lt;ns4:departureAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${departureCode1}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:departureAirportField&gt;&#xd;
+							&lt;ns4:departureDateField&gt;${oldDepartureDate1}&lt;/ns4:departureDateField&gt;&#xd;
+							&lt;ns4:marketingAirlineField&gt;&#xd;
+								&lt;ns4:codeField&gt;7I&lt;/ns4:codeField&gt;&#xd;
+								&lt;ns4:flightNumberField&gt;${oldFlightNumber1}&lt;/ns4:flightNumberField&gt;&#xd;
+							&lt;/ns4:marketingAirlineField&gt;&#xd;
+							&lt;ns4:rPHField&gt;3&lt;/ns4:rPHField&gt;&#xd;
+						&lt;/ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo&gt;&#xd;
+						&lt;ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo&gt;&#xd;
+							&lt;ns4:arrivalAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${arrivalCode2}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:arrivalAirportField&gt;&#xd;
+							&lt;ns4:departureAirportField&gt;&#xd;
+								&lt;ns4:locationCodeField&gt;${departureCode2}&lt;/ns4:locationCodeField&gt;&#xd;
+							&lt;/ns4:departureAirportField&gt;&#xd;
+							&lt;ns4:departureDateField&gt;${oldDepartureDate2}&lt;/ns4:departureDateField&gt;&#xd;
+							&lt;ns4:marketingAirlineField&gt;&#xd;
+								&lt;ns4:codeField&gt;7I&lt;/ns4:codeField&gt;&#xd;
+								&lt;ns4:flightNumberField&gt;${oldFlightNumber2}&lt;/ns4:flightNumberField&gt;&#xd;
+							&lt;/ns4:marketingAirlineField&gt;&#xd;
+							&lt;ns4:rPHField&gt;4&lt;/ns4:rPHField&gt;&#xd;
+						&lt;/ns4:ARR_UpdateItinerarySegmentsToRemoveFlightLegInfo&gt;&#xd;
+					&lt;/ns4:flightInfoDetailsField&gt;&#xd;
+				&lt;/ns4:segmentsToRemoveField&gt;&#xd;
+				&lt;ns4:ticketingInfosField&gt;&#xd;
+					&lt;ns4:residingDatabaseField&gt;7I&lt;/ns4:residingDatabaseField&gt;&#xd;
+&#xd;
+					&lt;ns4:ticketingInfoField&gt;&#xd;
+						&lt;ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo&gt;&#xd;
+							&lt;ns6:airlineAccountingCodeField&gt;958&lt;/ns6:airlineAccountingCodeField&gt;&#xd;
+							&lt;ns6:formAndSerialNumberField&gt;${ticketNbr}&lt;/ns6:formAndSerialNumberField&gt;&#xd;
+						&lt;/ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo&gt;&#xd;
+						&lt;ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo&gt;&#xd;
+							&lt;ns6:airlineAccountingCodeField&gt;958&lt;/ns6:airlineAccountingCodeField&gt;&#xd;
+							&lt;ns6:formAndSerialNumberField&gt;${ticketNbr2}&lt;/ns6:formAndSerialNumberField&gt;&#xd;
 						&lt;/ns4:ARR_UpdateItineraryTicketingInfosTicketingInfo&gt;&#xd;
 					&lt;/ns4:ticketingInfoField&gt;&#xd;
 				&lt;/ns4:ticketingInfosField&gt;&#xd;
@@ -15887,7 +16048,7 @@ vars.put(&quot;destination&quot;, destination);
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="false">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -16074,7 +16235,7 @@ vars.put(&quot;destination&quot;, destination);
             <boolProp name="IfController.evaluateAll">false</boolProp>
           </IfController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="false">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -26221,7 +26382,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT CUR-SXM)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT CUR-SXM)" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -26240,13 +26401,13 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <collectionProp name="Arguments.arguments">
             <elementProp name="ticketNbr" elementType="Argument">
               <stringProp name="Argument.name">ticketNbr</stringProp>
-              <stringProp name="Argument.value">4321015439</stringProp>
+              <stringProp name="Argument.value">4321019720</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
               <stringProp name="Argument.desc">MSP,ORD,MPN,ASI,BOM,DEL,BOM,SCL,BOM,BJS</stringProp>
             </elementProp>
             <elementProp name="pnr" elementType="Argument">
               <stringProp name="Argument.name">pnr</stringProp>
-              <stringProp name="Argument.value">P1B0B</stringProp>
+              <stringProp name="Argument.value">P261J</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="ticketNbr2" elementType="Argument">
@@ -26266,12 +26427,12 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="oldDepartureDate" elementType="Argument">
               <stringProp name="Argument.name">oldDepartureDate</stringProp>
-              <stringProp name="Argument.value">2019-04-11</stringProp>
+              <stringProp name="Argument.value">2019-01-10</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newDepartureDate" elementType="Argument">
               <stringProp name="Argument.name">newDepartureDate</stringProp>
-              <stringProp name="Argument.value">2019-04-18</stringProp>
+              <stringProp name="Argument.value">2019-01-17</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="oldFlightNumber" elementType="Argument">
@@ -26311,7 +26472,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="totalPrice" elementType="Argument">
               <stringProp name="Argument.name">totalPrice</stringProp>
-              <stringProp name="Argument.value">151.00</stringProp>
+              <stringProp name="Argument.value">99.00</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -26951,7 +27112,188 @@ vars.put(&quot;destination&quot;, destination);
             </BeanShellPreProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice-CASH" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sita=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.HalService&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot; xmlns:sita2=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xd;
+	&lt;soapenv:Header&gt;&#xd;
+		&lt;hal:Config subscriberId=&quot;7I&quot; xmlns:hal=&quot;http://sita.aero/hal&quot;/&gt;&#xd;
+	&lt;/soapenv:Header&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;tem:ARR_ExecuteReprice&gt;&#xd;
+			&lt;tem:sessionID&gt;${SessionID}&lt;/tem:sessionID&gt;&#xd;
+			&lt;tem:ARR_ExecuteRepriceRQ&gt;&#xd;
+				&lt;sita:baggageInfoField&gt;&#xd;
+					&lt;sita:newBaggageIndField&gt;false&lt;/sita:newBaggageIndField&gt;&#xd;
+				&lt;/sita:baggageInfoField&gt;&#xd;
+				&lt;sita:commissionField xsi:nil=&quot;true&quot;/&gt;&#xd;
+				&lt;sita:endorsementsField&gt;&#xd;
+					&lt;arr:string xsi:nil=&quot;true&quot;/&gt;&#xd;
+				&lt;/sita:endorsementsField&gt;&#xd;
+				&lt;sita:passengerInfoField&gt;&#xd;
+					&lt;sita:additionalPassengerInfoField&gt;${PTC1}&lt;/sita:additionalPassengerInfoField&gt;&#xd;
+					&lt;sita:emailAddressField&gt;${paxEmail}&lt;/sita:emailAddressField&gt;&#xd;
+					&lt;sita:emailIndicatorField&gt;true&lt;/sita:emailIndicatorField&gt;&#xd;
+					&lt;sita:sequenceNumberField&gt;1&lt;/sita:sequenceNumberField&gt;&#xd;
+					&lt;sita:ticketingInfoField&gt;&#xd;
+						&lt;sita2:airlineAccountingCodeField&gt;958&lt;/sita2:airlineAccountingCodeField&gt;&#xd;
+						&lt;sita2:formAndSerialNumberField&gt;${ticketNbr}&lt;/sita2:formAndSerialNumberField&gt;&#xd;
+						&lt;sita:salesReportInfoField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita:sponsorInfoField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita:tourCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;/sita:ticketingInfoField&gt;&#xd;
+				&lt;/sita:passengerInfoField&gt;&#xd;
+				&lt;sita:paymentDetailsField&gt;&#xd;
+					&lt;sita1:PaymentDetailType&gt;&#xd;
+						&lt;sita1:miscChargeOrderField&gt;&#xd;
+&#xd;
+							&lt;sita1:couponInfoField/&gt;&#xd;
+							&lt;sita1:couponRPHsField/&gt;&#xd;
+							&lt;sita1:originalIssueDateField/&gt;&#xd;
+							&lt;sita1:originalIssueIATAField&gt;73704444&lt;/sita1:originalIssueIATAField&gt;&#xd;
+							&lt;sita1:originalIssuePlaceField/&gt;&#xd;
+							&lt;sita1:originalPaymentFormField/&gt;&#xd;
+							&lt;sita1:originalTicketNumberField&gt;958${ticketNbr}&lt;/sita1:originalTicketNumberField&gt;&#xd;
+							&lt;sita1:paperMCO_ExistIndField/&gt;&#xd;
+							&lt;sita1:ticketNumberField&gt;958${ticketNbr}&lt;/sita1:ticketNumberField&gt;&#xd;
+&#xd;
+						&lt;/sita1:miscChargeOrderField&gt;&#xd;
+						&lt;sita1:paymentAmountField&gt;&#xd;
+							&lt;sita1:amountField&gt;${totalPrice}&lt;/sita1:amountField&gt;&#xd;
+							&lt;sita1:approvalCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+							&lt;sita1:currencyCodeField&gt;USD&lt;/sita1:currencyCodeField&gt;&#xd;
+							&lt;sita1:decimalPlacesField&gt;2&lt;/sita1:decimalPlacesField&gt;&#xd;
+						&lt;/sita1:paymentAmountField&gt;&#xd;
+						&lt;sita1:paymentCardField&gt;&#xd;
+							&lt;sita1:addressField&gt;&#xd;
+								&lt;sita1:addressLineField&gt;&#xd;
+									&lt;!--Zero or more repetitions:--&gt;&#xd;
+									&lt;arr:string/&gt;&#xd;
+								&lt;/sita1:addressLineField&gt;&#xd;
+								&lt;sita1:typeField/&gt;&#xd;
+								&lt;sita1:cityNameField/&gt;&#xd;
+								&lt;sita1:countryField&gt;&#xd;
+									&lt;sita1:codesField&gt;&#xd;
+										&lt;!--Zero or more repetitions:--&gt;&#xd;
+										&lt;sita1:CountryCodesTypeCode&gt;&#xd;
+											&lt;sita1:textField&gt;&#xd;
+												&lt;!--Zero or more repetitions:--&gt;&#xd;
+												&lt;arr:string/&gt;&#xd;
+											&lt;/sita1:textField&gt;&#xd;
+											&lt;sita1:typeField/&gt;&#xd;
+										&lt;/sita1:CountryCodesTypeCode&gt;&#xd;
+									&lt;/sita1:codesField&gt;&#xd;
+									&lt;sita1:nameField/&gt;&#xd;
+								&lt;/sita1:countryField&gt;&#xd;
+								&lt;sita1:countyField/&gt;&#xd;
+								&lt;sita1:formattedIndField/&gt;&#xd;
+								&lt;sita1:postalCodeField/&gt;&#xd;
+								&lt;sita1:stateProvField&gt;&#xd;
+									&lt;sita1:stateCodeField/&gt;&#xd;
+									&lt;sita1:textField&gt;&#xd;
+										&lt;!--Zero or more repetitions:--&gt;&#xd;
+										&lt;arr:string/&gt;&#xd;
+									&lt;/sita1:textField&gt;&#xd;
+								&lt;/sita1:stateProvField&gt;&#xd;
+							&lt;/sita1:addressField&gt;&#xd;
+							&lt;sita1:cardCodeField&gt;VI&lt;/sita1:cardCodeField&gt;&#xd;
+							&lt;sita1:cardHolderNameField&gt;&lt;/sita1:cardHolderNameField&gt;&#xd;
+							&lt;sita1:cardNumberField&gt;&lt;/sita1:cardNumberField&gt;&#xd;
+							&lt;sita1:effectiveDateField/&gt;&#xd;
+							&lt;sita1:expireDateField&gt;&lt;/sita1:expireDateField&gt;&#xd;
+							&lt;sita1:seriesCodeField&gt;&lt;/sita1:seriesCodeField&gt;&#xd;
+							&lt;sita1:cardPresentIndField/&gt;&#xd;
+							&lt;sita1:cardTypeField&gt;&lt;/sita1:cardTypeField&gt;&#xd;
+							&lt;sita1:countryOfIssueField/&gt;&#xd;
+							&lt;sita1:extendPaymentIndicatorField/&gt;&#xd;
+							&lt;sita1:extendedPaymentQuantityField/&gt;&#xd;
+							&lt;sita1:maskedCardNumberField/&gt;&#xd;
+							&lt;sita1:remarkField/&gt;&#xd;
+						&lt;/sita1:paymentCardField&gt;&#xd;
+						&lt;sita1:paymentReferenceDataField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:paymentTypeField&gt;CA&lt;/sita1:paymentTypeField&gt;&#xd;
+						&lt;sita1:primaryPaymentIndField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:splitPaymentIndField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:documentField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:passengerRPHListField&gt;1&lt;/sita1:passengerRPHListField&gt;&#xd;
+					&lt;/sita1:PaymentDetailType&gt;&#xd;
+				&lt;/sita:paymentDetailsField&gt;&#xd;
+				&lt;sita:penaltyField xsi:nil=&quot;true&quot;/&gt;&#xd;
+			&lt;/tem:ARR_ExecuteRepriceRQ&gt;&#xd;
+		&lt;/tem:ARR_ExecuteReprice&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">https://sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/xml</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">SOAPAction</stringProp>
+                  <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_ExecuteReprice</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-APIKey</stringProp>
+                  <stringProp name="Header.value">bb82253bff639e7b4987759717821486</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">sws.qa.sita.aero</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="false">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+</stringProp>
+              <stringProp name="TestPlan.comments">//gets information from user defined values
+//put a new variabel to the user defined variables</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -30135,7 +30477,7 @@ vars.put(&quot;destination&quot;, destination);
           <boolProp name="IfController.evaluateAll">false</boolProp>
         </IfController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderCreateRQ One Way ADT" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderCreateRQ One Way ADT" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -30511,7 +30853,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </XMLSchemaAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirDocIssueRQ" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AirDocIssueRQ" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -30632,7 +30974,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderRetrieveRQ" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderRetrieveRQ" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -30727,7 +31069,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </XMLSchemaAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderHistoryRQ" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderHistoryRQ" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -30820,7 +31162,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </XMLSchemaAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderListRQ" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderListRQ" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -30917,7 +31259,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </XMLSchemaAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderCancelRQ" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OrderCancelRQ" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">

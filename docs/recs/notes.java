@@ -2652,3 +2652,5 @@ List< OrderItemHolder> thisPaxThisServiceOrderItems = thisPaxOrderItems.stream()
     }
 /////////////////////////////     
 Math.toIntExact : long to int
+////remove loading zero: 
+s.replaceFirst("^0+(?!$)", "")

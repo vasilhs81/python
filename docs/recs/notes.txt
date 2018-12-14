@@ -2258,3 +2258,56 @@ on ContainerID
 		</Payments>
 //////////////////////////////BROWN 		P1PGC
 //PROMO : I, K,V
+///////////////////////
+
+let startTimestamp = ago(1d);
+KubePodInventory
+    | where TimeGenerated > startTimestamp
+    | where ClusterName =~ "inselair-KubeCluster"
+    | distinct ContainerID
+| join
+(
+  ContainerLog
+  | where TimeGenerated > startTimestamp
+  | where Image contains "orms:1.5.2-SNAPSHOT-52" 
+  )
+on ContainerID
+  | project  LogEntry, TimeGenerated,ContainerID
+  | order by TimeGenerated desc
+  | render table
+
+/////////////////////////
+ ContainerLog
+  | where TimeGenerated > todatetime('2018-11-30T09:35:22.008')
+  | where Image contains "orms" 
+)
+////////////////////////////////////////
+            <version>[2.0,)</version>
+            <version>2.2.1</version>
+///////////////////////////////
+0 means no availability, 1 means one seat available in that fare class ... and 9 means 9 or more seats available 
+"M5" indicates that there are 5 seats available for "M" class and "V0" indicates that no seats are available for "V" class.
+////taxi bit
+<POS>
+		<common:Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="MIA" ERSP_UserID="NDC/9NDC7I" ISOCountry="US" ISOCurrency="USD" PseudoCityCode="MIA501">
+			<RequestorID ID="73704444" ID_Context="Airfare" Type="7"/>
+		</common:Source>
+	</POS>
+//////////////////////////	
+ContainerLog
+  | where TimeGenerated < todatetime('2018-12-11T14:39:16.972Z')
+  | where TimeGenerated > todatetime('2018-12-11T14:12:58.32Z')
+  | where Image contains "orms" 
+  | where Computer == "aks-agentpool-18128332-4" 
+  //////////////////////////
+  PJ0QH Goncalves
+  PDGH1 Wolff
+  PF1V2 Falarini
+  P988V jeanjacques
+  QLQWK Osepa
+  QWLVV DaCostaGomez
+  QR6DW Chirino
+  PF139 MenegazLozzer
+  
+  
+  
