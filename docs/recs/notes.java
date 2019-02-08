@@ -2654,3 +2654,9 @@ List< OrderItemHolder> thisPaxThisServiceOrderItems = thisPaxOrderItems.stream()
 Math.toIntExact : long to int
 ////remove loading zero: 
 s.replaceFirst("^0+(?!$)", "")
+////////////////
+Optional<UserDTO> userDTO = userService.getUserByEmail(currentPrincipalName);
+userDTO.ifPresent(userDTO1 -> errorLogDTO.setUserId(userDTO1.getId()));
+////////////////////
+[1:24 µ.µ.] Georgios Stylianakis
+@JsonIgnoreProperties(value={"bookName","bookCategory"}, allowSetters=true)

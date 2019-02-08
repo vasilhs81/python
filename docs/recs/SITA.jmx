@@ -26382,7 +26382,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT CUR-SXM)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT CUR-SXM)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -29003,7 +29003,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         </TestAction>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT AUA-CUR)" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ARR Update Segments Flow (1 ADT AUA-CUR)" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -29022,12 +29022,12 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
           <collectionProp name="Arguments.arguments">
             <elementProp name="ticketNbr" elementType="Argument">
               <stringProp name="Argument.name">ticketNbr</stringProp>
-              <stringProp name="Argument.value">4321017441</stringProp>
+              <stringProp name="Argument.value">4321025310</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="pnr" elementType="Argument">
               <stringProp name="Argument.name">pnr</stringProp>
-              <stringProp name="Argument.value">P1P20</stringProp>
+              <stringProp name="Argument.value">P2KNR</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="ticketNbr2" elementType="Argument">
@@ -29047,22 +29047,22 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
             </elementProp>
             <elementProp name="oldDepartureDate" elementType="Argument">
               <stringProp name="Argument.name">oldDepartureDate</stringProp>
-              <stringProp name="Argument.value">2019-01-16</stringProp>
+              <stringProp name="Argument.value">2019-02-14</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newDepartureDate" elementType="Argument">
               <stringProp name="Argument.name">newDepartureDate</stringProp>
-              <stringProp name="Argument.value">2019-01-23</stringProp>
+              <stringProp name="Argument.value">2019-02-21</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="oldFlightNumber" elementType="Argument">
               <stringProp name="Argument.name">oldFlightNumber</stringProp>
-              <stringProp name="Argument.value">795</stringProp>
+              <stringProp name="Argument.value">9008</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="newFlightNumber" elementType="Argument">
               <stringProp name="Argument.name">newFlightNumber</stringProp>
-              <stringProp name="Argument.value">795</stringProp>
+              <stringProp name="Argument.value">9008</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="rph" elementType="Argument">
@@ -29621,113 +29621,7 @@ vars.put(&quot;destination&quot;, destination);
             </BeanShellPreProcessor>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_RepriceItinerary2" enabled="false">
-            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-              <collectionProp name="Arguments.arguments">
-                <elementProp name="" elementType="HTTPArgument">
-                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sita=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xd;
-	&lt;soapenv:Header&gt;&#xd;
-		&lt;hal:Config subscriberId=&quot;7I&quot; xmlns:hal=&quot;http://sita.aero/hal&quot;/&gt;&#xd;
-	&lt;/soapenv:Header&gt;&#xd;
-	&lt;soapenv:Body&gt;&#xd;
-		&lt;tem:ARR_RepriceItinerary&gt;&#xd;
-			&lt;tem:sessionID&gt;${SessionID}&lt;/tem:sessionID&gt;&#xd;
-			&lt;tem:ARR_RepriceItineraryRQ&gt;&#xd;
-				&lt;sita:repriceOptionsField&gt;&#xd;
-					&lt;sita1:includeNegotiatedFaresField&gt;false&lt;/sita1:includeNegotiatedFaresField&gt;&#xd;
-					&lt;sita1:includeNegotiatedFaresFieldSpecified&gt;false&lt;/sita1:includeNegotiatedFaresFieldSpecified&gt;&#xd;
-					&lt;sita1:negotiatedFareCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
-					&lt;sita1:negotiatedFaresOnlyField&gt;false&lt;/sita1:negotiatedFaresOnlyField&gt;&#xd;
-					&lt;sita1:negotiatedFaresOnlyFieldSpecified&gt;true&lt;/sita1:negotiatedFaresOnlyFieldSpecified&gt;&#xd;
-					&lt;sita1:passengerTypeField xsi:nil=&quot;true&quot;/&gt;&#xd;
-					&lt;sita1:pricingSourceField&gt;Both&lt;/sita1:pricingSourceField&gt;&#xd;
-					&lt;sita1:pricingSourceFieldSpecified&gt;false&lt;/sita1:pricingSourceFieldSpecified&gt;&#xd;
-					&lt;sita1:waiverField xsi:nil=&quot;true&quot;/&gt;&#xd;
-					&lt;sita:currencyConversionCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
-					&lt;sita:ignoreTaxItemsField xsi:nil=&quot;true&quot;/&gt;&#xd;
-					&lt;sita:overrideInterlineAgreementField&gt;false&lt;/sita:overrideInterlineAgreementField&gt;&#xd;
-					&lt;sita:taxExemptItemsField xsi:nil=&quot;true&quot;/&gt;&#xd;
-					&lt;sita:tourCodesField xsi:nil=&quot;true&quot;/&gt;&#xd;
-				&lt;/sita:repriceOptionsField&gt;&#xd;
-				&lt;sita:ticketingInfoField&gt;&#xd;
-					&lt;sita1:airlineAccountingCodeField&gt;958&lt;/sita1:airlineAccountingCodeField&gt;&#xd;
-					&lt;sita1:formAndSerialNumberField&gt;${ticketNbr2}&lt;/sita1:formAndSerialNumberField&gt;&#xd;
-					&lt;sita:residingDatabaseField&gt;7I&lt;/sita:residingDatabaseField&gt;&#xd;
-				&lt;/sita:ticketingInfoField&gt;&#xd;
-			&lt;/tem:ARR_RepriceItineraryRQ&gt;&#xd;
-		&lt;/tem:ARR_RepriceItinerary&gt;&#xd;
-	&lt;/soapenv:Body&gt;&#xd;
-&lt;/soapenv:Envelope&gt;&#xd;
-</stringProp>
-                  <stringProp name="Argument.metadata">=</stringProp>
-                </elementProp>
-              </collectionProp>
-            </elementProp>
-            <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
-            <stringProp name="HTTPSampler.port"></stringProp>
-            <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">https://sws.qa.sita.aero/arr2b/</stringProp>
-            <stringProp name="HTTPSampler.method">POST</stringProp>
-            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-            <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          </HTTPSamplerProxy>
-          <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/xml</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">SOAPAction</stringProp>
-                  <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_RepriceItinerary</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">X-APIKey</stringProp>
-                  <stringProp name="Header.value">bb82253bff639e7b4987759717821486</stringProp>
-                </elementProp>
-                <elementProp name="" elementType="Header">
-                  <stringProp name="Header.name">Host</stringProp>
-                  <stringProp name="Header.value">sws.qa.sita.aero</stringProp>
-                </elementProp>
-              </collectionProp>
-            </HeaderManager>
-            <hashTree/>
-            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="false">
-              <stringProp name="filename"></stringProp>
-              <stringProp name="parameters"></stringProp>
-              <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import java.util.Random;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
-
-String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
-int idx = new Random().nextInt(categories.length/2);
-String origin = categories[idx*2];
-vars.put(&quot;origin&quot;, origin);
-
-int idx2 = idx * 2 + 1;
-String destination = categories[idx2];
-vars.put(&quot;destination&quot;, destination);
-
-
-
-</stringProp>
-              <stringProp name="TestPlan.comments">//gets information from user defined values
-//put a new variabel to the user defined variables</stringProp>
-            </BeanShellPreProcessor>
-            <hashTree/>
-          </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice No FOP" enabled="false">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -29798,6 +29692,293 @@ vars.put(&quot;destination&quot;, destination);
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">SOAPAction</stringProp>
                   <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_ExecuteReprice</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-APIKey</stringProp>
+                  <stringProp name="Header.value">bb82253bff639e7b4987759717821486</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">sws.qa.sita.aero</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="false">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+</stringProp>
+              <stringProp name="TestPlan.comments">//gets information from user defined values
+//put a new variabel to the user defined variables</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_ExecuteReprice With FOP" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sita=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.HalService&quot; xmlns:arr=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot; xmlns:sita2=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xd;
+	&lt;soapenv:Header&gt;&#xd;
+		&lt;hal:Config subscriberId=&quot;7I&quot; xmlns:hal=&quot;http://sita.aero/hal&quot;/&gt;&#xd;
+	&lt;/soapenv:Header&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;tem:ARR_ExecuteReprice&gt;&#xd;
+			&lt;tem:sessionID&gt;${SessionID}&lt;/tem:sessionID&gt;&#xd;
+			&lt;tem:ARR_ExecuteRepriceRQ&gt;&#xd;
+				&lt;sita:baggageInfoField&gt;&#xd;
+					&lt;sita:newBaggageIndField&gt;true&lt;/sita:newBaggageIndField&gt;&#xd;
+				&lt;/sita:baggageInfoField&gt;&#xd;
+				&lt;sita:commissionField xsi:nil=&quot;true&quot;/&gt;&#xd;
+				&lt;sita:endorsementsField&gt;&#xd;
+					&lt;arr:string xsi:nil=&quot;true&quot;/&gt;&#xd;
+				&lt;/sita:endorsementsField&gt;&#xd;
+				&lt;sita:passengerInfoField&gt;&#xd;
+					&lt;sita:additionalPassengerInfoField&gt;${PTC1}&lt;/sita:additionalPassengerInfoField&gt;&#xd;
+					&lt;sita:emailAddressField&gt;${paxEmail}&lt;/sita:emailAddressField&gt;&#xd;
+					&lt;sita:emailIndicatorField&gt;true&lt;/sita:emailIndicatorField&gt;&#xd;
+					&lt;sita:sequenceNumberField&gt;1&lt;/sita:sequenceNumberField&gt;&#xd;
+					&lt;sita:ticketingInfoField&gt;&#xd;
+						&lt;sita2:airlineAccountingCodeField&gt;958&lt;/sita2:airlineAccountingCodeField&gt;&#xd;
+						&lt;sita2:formAndSerialNumberField&gt;${ticketNbr}&lt;/sita2:formAndSerialNumberField&gt;&#xd;
+						&lt;sita:salesReportInfoField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita:sponsorInfoField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita:tourCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;/sita:ticketingInfoField&gt;&#xd;
+				&lt;/sita:passengerInfoField&gt;&#xd;
+				&lt;sita:paymentDetailsField&gt;&#xd;
+					&lt;sita1:PaymentDetailType&gt;&#xd;
+						&lt;sita1:miscChargeOrderField&gt;&#xd;
+&#xd;
+							&lt;sita1:couponInfoField/&gt;&#xd;
+							&lt;sita1:couponRPHsField/&gt;&#xd;
+							&lt;sita1:originalIssueDateField/&gt;&#xd;
+							&lt;sita1:originalIssueIATAField&gt;73704444&lt;/sita1:originalIssueIATAField&gt;&#xd;
+							&lt;sita1:originalIssuePlaceField/&gt;&#xd;
+							&lt;sita1:originalPaymentFormField/&gt;&#xd;
+							&lt;sita1:originalTicketNumberField&gt;958${ticketNbr}&lt;/sita1:originalTicketNumberField&gt;&#xd;
+							&lt;sita1:paperMCO_ExistIndField/&gt;&#xd;
+							&lt;sita1:ticketNumberField&gt;958${ticketNbr}&lt;/sita1:ticketNumberField&gt;&#xd;
+&#xd;
+						&lt;/sita1:miscChargeOrderField&gt;&#xd;
+						&lt;sita1:paymentAmountField&gt;&#xd;
+							&lt;sita1:amountField&gt;0&lt;/sita1:amountField&gt;&#xd;
+							&lt;sita1:approvalCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+							&lt;sita1:currencyCodeField&gt;USD&lt;/sita1:currencyCodeField&gt;&#xd;
+							&lt;sita1:decimalPlacesField&gt;2&lt;/sita1:decimalPlacesField&gt;&#xd;
+						&lt;/sita1:paymentAmountField&gt;&#xd;
+						&lt;sita1:paymentCardField&gt;&#xd;
+							&lt;sita1:addressField&gt;&#xd;
+								&lt;sita1:addressLineField&gt;&#xd;
+									&lt;!--Zero or more repetitions:--&gt;&#xd;
+									&lt;arr:string/&gt;&#xd;
+								&lt;/sita1:addressLineField&gt;&#xd;
+								&lt;sita1:typeField/&gt;&#xd;
+								&lt;sita1:cityNameField/&gt;&#xd;
+								&lt;sita1:countryField&gt;&#xd;
+									&lt;sita1:codesField&gt;&#xd;
+										&lt;!--Zero or more repetitions:--&gt;&#xd;
+										&lt;sita1:CountryCodesTypeCode&gt;&#xd;
+											&lt;sita1:textField&gt;&#xd;
+												&lt;!--Zero or more repetitions:--&gt;&#xd;
+												&lt;arr:string/&gt;&#xd;
+											&lt;/sita1:textField&gt;&#xd;
+											&lt;sita1:typeField/&gt;&#xd;
+										&lt;/sita1:CountryCodesTypeCode&gt;&#xd;
+									&lt;/sita1:codesField&gt;&#xd;
+									&lt;sita1:nameField/&gt;&#xd;
+								&lt;/sita1:countryField&gt;&#xd;
+								&lt;sita1:countyField/&gt;&#xd;
+								&lt;sita1:formattedIndField/&gt;&#xd;
+								&lt;sita1:postalCodeField/&gt;&#xd;
+								&lt;sita1:stateProvField&gt;&#xd;
+									&lt;sita1:stateCodeField/&gt;&#xd;
+									&lt;sita1:textField&gt;&#xd;
+										&lt;!--Zero or more repetitions:--&gt;&#xd;
+										&lt;arr:string/&gt;&#xd;
+									&lt;/sita1:textField&gt;&#xd;
+								&lt;/sita1:stateProvField&gt;&#xd;
+							&lt;/sita1:addressField&gt;&#xd;
+							&lt;sita1:cardCodeField/&gt;&#xd;
+							&lt;sita1:cardHolderNameField&gt;&lt;/sita1:cardHolderNameField&gt;&#xd;
+							&lt;sita1:cardNumberField&gt;&lt;/sita1:cardNumberField&gt;&#xd;
+							&lt;sita1:effectiveDateField/&gt;&#xd;
+							&lt;sita1:expireDateField&gt;&lt;/sita1:expireDateField&gt;&#xd;
+							&lt;sita1:seriesCodeField&gt;&lt;/sita1:seriesCodeField&gt;&#xd;
+							&lt;sita1:cardPresentIndField/&gt;&#xd;
+							&lt;sita1:cardTypeField&gt;&lt;/sita1:cardTypeField&gt;&#xd;
+							&lt;sita1:countryOfIssueField/&gt;&#xd;
+							&lt;sita1:extendPaymentIndicatorField/&gt;&#xd;
+							&lt;sita1:extendedPaymentQuantityField/&gt;&#xd;
+							&lt;sita1:maskedCardNumberField/&gt;&#xd;
+							&lt;sita1:remarkField/&gt;&#xd;
+						&lt;/sita1:paymentCardField&gt;&#xd;
+						&lt;sita1:paymentReferenceDataField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:paymentTypeField&gt;CA&lt;/sita1:paymentTypeField&gt;&#xd;
+						&lt;sita1:primaryPaymentIndField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:splitPaymentIndField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:documentField xsi:nil=&quot;true&quot;/&gt;&#xd;
+						&lt;sita1:passengerRPHListField&gt;1&lt;/sita1:passengerRPHListField &gt;&#xd;
+					&lt;/sita1:PaymentDetailType&gt;&#xd;
+				&lt;/sita:paymentDetailsField&gt;&#xd;
+				&lt;sita:penaltyField xsi:nil=&quot;true&quot;/&gt;&#xd;
+			&lt;/tem:ARR_ExecuteRepriceRQ&gt;&#xd;
+		&lt;/tem:ARR_ExecuteReprice&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">https://sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/xml</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">SOAPAction</stringProp>
+                  <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_ExecuteReprice</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-APIKey</stringProp>
+                  <stringProp name="Header.value">bb82253bff639e7b4987759717821486</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">sws.qa.sita.aero</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="destination generator" enabled="false">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">import java.util.Random;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+String[] categories = (vars.get(&quot;onds&quot;)).split(&quot;,&quot;);
+int idx = new Random().nextInt(categories.length/2);
+String origin = categories[idx*2];
+vars.put(&quot;origin&quot;, origin);
+
+int idx2 = idx * 2 + 1;
+String destination = categories[idx2];
+vars.put(&quot;destination&quot;, destination);
+
+
+
+</stringProp>
+              <stringProp name="TestPlan.comments">//gets information from user defined values
+//put a new variabel to the user defined variables</stringProp>
+            </BeanShellPreProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ARR_RepriceItinerary2" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sita=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.ARR&quot; xmlns:sita1=&quot;http://schemas.datacontract.org/2004/07/Sita.Services.SWF&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&#xd;
+	&lt;soapenv:Header&gt;&#xd;
+		&lt;hal:Config subscriberId=&quot;7I&quot; xmlns:hal=&quot;http://sita.aero/hal&quot;/&gt;&#xd;
+	&lt;/soapenv:Header&gt;&#xd;
+	&lt;soapenv:Body&gt;&#xd;
+		&lt;tem:ARR_RepriceItinerary&gt;&#xd;
+			&lt;tem:sessionID&gt;${SessionID}&lt;/tem:sessionID&gt;&#xd;
+			&lt;tem:ARR_RepriceItineraryRQ&gt;&#xd;
+				&lt;sita:repriceOptionsField&gt;&#xd;
+					&lt;sita1:includeNegotiatedFaresField&gt;false&lt;/sita1:includeNegotiatedFaresField&gt;&#xd;
+					&lt;sita1:includeNegotiatedFaresFieldSpecified&gt;false&lt;/sita1:includeNegotiatedFaresFieldSpecified&gt;&#xd;
+					&lt;sita1:negotiatedFareCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;sita1:negotiatedFaresOnlyField&gt;false&lt;/sita1:negotiatedFaresOnlyField&gt;&#xd;
+					&lt;sita1:negotiatedFaresOnlyFieldSpecified&gt;true&lt;/sita1:negotiatedFaresOnlyFieldSpecified&gt;&#xd;
+					&lt;sita1:passengerTypeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;sita1:pricingSourceField&gt;Both&lt;/sita1:pricingSourceField&gt;&#xd;
+					&lt;sita1:pricingSourceFieldSpecified&gt;false&lt;/sita1:pricingSourceFieldSpecified&gt;&#xd;
+					&lt;sita1:waiverField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;sita:currencyConversionCodeField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;sita:ignoreTaxItemsField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;sita:overrideInterlineAgreementField&gt;false&lt;/sita:overrideInterlineAgreementField&gt;&#xd;
+					&lt;sita:taxExemptItemsField xsi:nil=&quot;true&quot;/&gt;&#xd;
+					&lt;sita:tourCodesField xsi:nil=&quot;true&quot;/&gt;&#xd;
+				&lt;/sita:repriceOptionsField&gt;&#xd;
+				&lt;sita:ticketingInfoField&gt;&#xd;
+					&lt;sita1:airlineAccountingCodeField&gt;958&lt;/sita1:airlineAccountingCodeField&gt;&#xd;
+					&lt;sita1:formAndSerialNumberField&gt;${ticketNbr2}&lt;/sita1:formAndSerialNumberField&gt;&#xd;
+					&lt;sita:residingDatabaseField&gt;7I&lt;/sita:residingDatabaseField&gt;&#xd;
+				&lt;/sita:ticketingInfoField&gt;&#xd;
+			&lt;/tem:ARR_RepriceItineraryRQ&gt;&#xd;
+		&lt;/tem:ARR_RepriceItinerary&gt;&#xd;
+	&lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">https://sws.qa.sita.aero/arr2b/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/xml</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">SOAPAction</stringProp>
+                  <stringProp name="Header.value">http://tempuri.org/WorkflowService/ARR_RepriceItinerary</stringProp>
                 </elementProp>
                 <elementProp name="" elementType="Header">
                   <stringProp name="Header.name">X-APIKey</stringProp>
