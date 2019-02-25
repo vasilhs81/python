@@ -1,3 +1,4 @@
+PnZ7a-88gQ4-r9K2e-S83H9
 <POS>
 			<Source AgentDutyCode="41" AgentSine="906/1234A" AirlineVendorID="7I" AirportCode="ATL" ERSP_UserID="NDC/9NDC7I" ISOCountry="AN" PseudoCityCode="MIA501" ISOCurrency="USD">
 				<RequestorID ID="f0uZ2-Jp55B-70YgW-OmEa6" Type="7" ID_Context="Airfare"/>
@@ -6,7 +7,6 @@
 		</POS>
 	| where TimeGenerated > todatetime('2019-01-09T11:20:42.304Z')
     | where TimeGenerated < todatetime('2019-01-09T12:50:53.656Z') 
-
 Rocket Chat:
 v.kasimatis
 jr321#@!
@@ -24,7 +24,7 @@ jr321#@!
 						<CardHolderBillingAddress>
 							<Street>askds 12</Street>
 							<CityName>Chqwww</CityName>
-							<StateProv>Chania</StateProv>
+							<StateProv>Chania</StateProv>vhawkgr81
 							<PostalCode>3434</PostalCode>
 							<CountryCode>DZ</CountryCode>
 							<County>Chania</County>
@@ -2347,7 +2347,9 @@ error: failed to push some refs to 'jrtechnologies@vs-ssh.visualstudio.com:v3/jr
   C:\Dev\RCMS\rcms-backend\src\main\resources\config\application-dev.yml
   C:\Users\v.kasimatis\AppData\Local\Temp\jetty-0.0.0.0-8182-Cantaloupe-3.3.1.war-_-any-8619850452041368394.dir\webapp\WEB-INF\classes\public_html
 ///
-http://192.168.23.6:3000/ Akis
+http://192.168.23.6:3000/ 
+http://192.168.23.6:3002/
+Akis
 //////////////////cantaloupe:
 1. run  java -Dcantaloupe.config=cantaloupe.properties -Xmx2g -jar Cantaloupe-3.3.1.war
 2. check : http://127.0.0.1:8182/admin (admin, admin) , or http://127.0.0.1:8182
@@ -2366,5 +2368,57 @@ http://192.168.23.6:3000/ Akis
 //////////////////// 
 http://rcms-dev.jrtechnologies.com/services
 http://7i.jrtechnologies.com   
-   
-   
+/////////
+set PATH=%PATH%;C:\Dev\node-v10.15.1-win-x64
+rpm.cmd install   
+
+ng serve
+http://localhost:4200/
+
+//40957 kouvas   
+///////////////////////////
+Here are the credentials required for connecting to the RCMS cluster:
+
+IP address: 35.195.223.28
+Username: kasimatis
+Password: ZjBcu9qUtg7WUL6v
+////////////////////////////
+You have been granted view access in the UAT environment of Inselair
+
+IPs: 52.136.235.246, 104.45.26.217, 52.136.238.151
+•	username: viewer 
+•	password: qJRnjNt2wWWPPU3f
+
+
+rcms-dev.jrtechnologies.com/api
+////start mock rcms 
+cd C:\Dev\RCMS\rcms-configs\json-server
+npm i
+node server.js
+////////////////////////how to run rcms UI-Backend-RuleEngine:
+1. cd rcms-ui and run : ng serve  (the config for the ui: C:\Dev\RCMS\rcms-ui\src\environments\environment.ts)
+2. Build and Run RCMS Backend (you must config the roles for all users)
+http://localhost:4200/login
+3. Start RuleEngine connected to cassandra, and run from postman: localhost:8082/rule-engine/services
+4. run m-api mock server : node server.js
+////////////////
+cassandra scripts:
+C:\Users\v.kasimatis\.dbeaver4\General\Scripts
+c:\dev\Database Scripts
+///////////////////////
+cd "c:\dev\RCMS\rcms-ui"
+set PATH=%PATH%;C:\Dev\node-v10.15.1-win-x64
+start ng serve
+cd "C:\dev\RCMS\rcms-configs\json-server"
+node server.js
+///////////////
+http://7i.jrtechnologies.com/#/inselair/planMyTrip/search
+https://ana.jrtechnologies.com/#/air/planMyTrip/search
+
+
+
+
+
+
+
+

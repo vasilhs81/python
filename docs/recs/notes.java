@@ -1572,6 +1572,9 @@ public @interface UUID {
 ....
 	<checkstyle.skip>true</checkstyle.skip>
 </properties>
+//intellij configuration: 
+
+install -Dcheckstyle.skip
 ///find bugs exclusion:
  <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -2660,3 +2663,57 @@ userDTO.ifPresent(userDTO1 -> errorLogDTO.setUserId(userDTO1.getId()));
 ////////////////////
 [1:24 µ.µ.] Georgios Stylianakis
 @JsonIgnoreProperties(value={"bookName","bookCategory"}, allowSetters=true)
+
+@JsonInclude(Include.NON_NULL)
+
+//////////////////////cache in spring
+// https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#cache
+//https://spring.io/guides/gs/caching/
+//https://www.foreach.be/blog/spring-cache-annotations-some-tips-tricks
+@Repository("movieDao")
+public class MovieDaoImpl implements MovieDao{
+
+	//This "movieFindCache" is delcares in ehcache.xml
+	@Cacheable(value="movieFindCache", key="#name")
+	public Movie findByDirector(String name) {
+		slowQuery(2000L);
+		System.out.println("findByDirector is running...");
+		return new Movie(1,"Forrest Gump","Robert Zemeckis");
+	}
+	
+	@Cacheable (value = "product_count", key = "{#filter, #collection_uuid}")
+public Integer count(String filter, String collection_uuid)
+{
+   return productDao.count(filter, collection_uuid);
+}
+
+@Cacheable(value = "git.tags", key = "#node.getPath()", condition = "#refresh == false")
+public List<String> tags(Node node, boolean refresh) {
+    GitClient client = gitClientInstance(node);
+    try {
+        return client.tags();
+    } catch (GitException e) {
+        throw new IllegalStatusException("Cannot load tag list from git: " + e.getMessage());
+    }
+}
+@Cacheable(value = "telement_role", key = "'role_element_'+#role")
+public List<TElementVo> getListByRole(String role) {
+    List<TElementVo> resultList = new ArrayList<>();
+    List<TElement> tElements = mapper.getListByRole(role);
+    tElements.forEach(tElement -> {
+        TElementVo tElementVo = new TElementVo();
+        BeanUtils.copyProperties(tElement,tElementVo);
+        resultList.add(tElementVo);
+    });
+    return resultList;
+}
+@Cacheable(value = "busiSupport:securityService:userRoles", key = "#p0 + '_' +#p1")
+@CacheDuration
+@Override
+public List<Role> getUserRoleList(String username, Byte accountType) {
+    String systemCode = AccountType.getSystemCode(accountType);
+    CustomerUserDetail userDetail = securityDao.getUserDetailByName(username, accountType, systemCode);
+    return userDetail == null ? null : userDetail.getRoles();
+}
+
+//////////////////////	
