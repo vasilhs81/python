@@ -1,0 +1,38 @@
+1) transform serviceListRQ to an array containing requests per passenger per origin/destination
+2) check if the flights within origin/destination match a specific flight group
+3) collect information about the airports within the requests using the airport code
+4) using the city code of the request's POS, get geographical information
+5) using the seller code and the geographical information find any service's POS that match
+6) using the matching service's POS from previous step, find services that match it
+7) find the rulesets for these services
+8) find rich contents for these services
+9) find price optimizations for these services
+10) deep copy the matching services to be able to change values for each element of the array containing the requests from step 1
+11) for each element keep only matching services according to the service's rules and POS. The mathcing of services from step 5 is not enough, since it returns services that either match the seller or the geographical area. we need to match both.
+12) for each element find if any price optimization is applicable. Match POS and rules to find.
+13) if a price optimization is applicable, calculate the new price
+14) find all bundles
+15) find all rulesets for bundles
+16) find rich contents for bundles
+17) find price optimizations for bundles
+18) deep copy the bundles to be able to change values for each element of the array containing the requests from step 1
+19) for each element keep only matching bundles. A matching bundle is one that has all the service categories of the matching services and satisfies the rules
+20) for each matching bundle, calculate price as the sum of price of the matching services with the same service category
+21) for each matching bundle, check if a price optimization is applicable
+22) if a price optimization is applicable, calculate the new price
+23) collect services from all elements in a set
+24) collect bundles from all elements in a set
+25) for each service from the set and for each request, get matching POS to determine currency
+26) create a OfferItemServiceHolder entry containing information regarding the service if it does not already exist
+27) add the request's passenger in the entry
+28) add the segment in the entry if it does not already exist
+29) add the price for this service and this request in the entry if it does not already exist
+30) for each bundle from the set and for each request, create a OfferItemServiceHolder entry containing information regarding the bundle if it does not already exist
+31) add passenger key in the bundle entry
+32) add segment in the bundle entry if it does not already exist
+33) add price in the bundle entry if it does not already exist
+34) for each service in the set, get the matching POS and the matching rich content's language and then the matching device according to the initial request
+35) create a ServiceDefinitionHolder object with the service's and matching rich content's data
+36) for each bundle in the set, get the matching rich content's language and then the matching device according to the initial request
+37) create a serviceDefinitionHolder object with the bundle's and matching rich content's data
+38) return the RCMService object containing the OfferItemServiceHolder entries and ServiceDefinitionHolder objects

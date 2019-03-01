@@ -2716,4 +2716,31 @@ public List<Role> getUserRoleList(String username, Byte accountType) {
     return userDetail == null ? null : userDetail.getRoles();
 }
 
-//////////////////////	
+//////////////////////	java 8 sream peek
+//this method exists mainly to support debugging, where you want to see the elements as they flow past a certain point in a pipeline." //This is exactly what the example and output shown above demonstrate and is likely the most common application of 
+final List<String> strings  
+   = Stream.of("one", "two", "three", "four")  
+      .peek(e-> out.println("Original Element: " + e))  
+      .filter(e -> e.length() > 3)  
+      .peek(e -> out.println("Filtered value: " + e))  
+      .map(String::toUpperCase)  
+      .peek(e -> out.println("Mapped value: " + e))  
+      .collect(Collectors.toList());  
+out.println("Final Results: " + strings);
+/*
+Original Element: one
+Original Element: two
+Original Element: three
+Filtered value: three
+Mapped value: THREE
+Original Element: four
+Filtered value: four
+Mapped value: FOUR
+Final Results: [THREE, FOUR]
+*/
+Map<String, PriceOptimizationDTO> priceOptimizationMap = priceOptimizationService.findAll()
+            .stream().peek(p -> p.getRuleSets().forEach(r -> r.setRuleData(ruleSetMap.get(r.getId()).getRuleData())))
+            .collect(Collectors.toMap(PriceOptimizationDTO::getId, Function.identity()));
+            
+/////////////////////////////            
+
