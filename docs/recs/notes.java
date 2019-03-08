@@ -1480,7 +1480,7 @@ Date d = new Date(l.getMillisSinceEpoch());
 ////////////////////////// query with in statement!!       
 @Query("SELECT * FROM testkeyspace.roles_users WHERE role IN :roles")
 
-    Result<RoleUser> getUsersByRoles(@Param("roles") List<String> roles);
+Result<RoleUser> getUsersByRoles(@Param("roles") List<String> roles);
 ///////////test with xpath
  String orderRetrieveRQStr = fileToString("./src/test/resources/samples_17_1/OrderRetrieveRQ.xml",
                 StandardCharsets.UTF_8);
@@ -2742,5 +2742,45 @@ Map<String, PriceOptimizationDTO> priceOptimizationMap = priceOptimizationServic
             .stream().peek(p -> p.getRuleSets().forEach(r -> r.setRuleData(ruleSetMap.get(r.getId()).getRuleData())))
             .collect(Collectors.toMap(PriceOptimizationDTO::getId, Function.identity()));
             
-/////////////////////////////            
+/////////////////////////////Map sort by value:
+levels.entrySet().stream().sorted(Map.Entry.comparingByValue())
+/////use Mapper:
+@Repository
+public class MediaRepository {
 
+    private final Session session;
+
+    private Mapper<Media> mapper;
+
+    public MediaRepository(Session session) {
+        this.session = session;
+        this.mapper = new MappingManager(session).mapper(Media.class);
+    }
+
+    public List<Media> findMany(List<String> idList, String type) {
+        List<Media> result = new ArrayList<>();
+        List<ResultSetFuture> futures = new ArrayList<>();
+        for (String id : idList) {
+            futures.add(session.executeAsync(mapper.getQuery(type, id)));
+        }
+        for (ResultSetFuture future : futures) {
+            Media media = mapper.map(future.getUninterruptibly()).one();
+            if (media != null) {
+                result.add(media);
+            }
+        }
+        return result;
+    }
+}
+/////////////////////////////enable compression in spring boot
+# Whether response compression is enabled.
+server.compression.enabled=true
+
+# List of user-agents to exclude from compression.
+server.compression.excluded-user-agents= 
+
+# Comma-separated list of MIME types that should be compressed. Default mime-types are: text/html, text/xml, text/plain, text/css
+server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javascript,application/javascript 
+
+# Minimum "Content-Length" value that is required for compression to be performed.
+server.compression.min-response-size=2048
