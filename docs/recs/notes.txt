@@ -2418,8 +2418,12 @@ node server.js
 ///////////////
 http://7i.jrtechnologies.com/#/inselair/planMyTrip/search
 https://ana.jrtechnologies.com/#/air/planMyTrip/search
+/////intellij disable import asterisk
+Click on the Settings "wrench" icon on the toolbar, open "Imports" under "Code Style", and check the "Use single class import" selection. You can also completely remove entries under "Packages to use import with *", or specify a threshold value that only uses the "*" when the individual classes from a package exceeds that threshold.
 
+Update: in IDEA 13 "Use single class import" does not prevent wildcard imports. The solution is to go to Preferences (? + , on macOS / Ctrl + Alt + S on Windows) > Editor > Code Style > Java > Imports tab set Class count to use import with '*' and Names count to use static import with '*' to a higher value. Any value over 99 seems to work fine.
 
+///////////////////////
 
 
 

@@ -2784,3 +2784,12 @@ server.compression.mime-types=text/html,text/xml,text/plain,text/css,text/javasc
 
 # Minimum "Content-Length" value that is required for compression to be performed.
 server.compression.min-response-size=2048
+//////////////////////
+return new long[]{hours, minutes, secs};
+///////////////////////////
+ public ServiceListRQMessage parseServiceListRQ(InputStream stream) throws Exception {
+        String xmlString = IOUtils.toString(stream, UTF8_ENCODING);
+        return parseServiceListRQ(xmlString);
+    }
+/////////////////////////////    
+
