@@ -2791,5 +2791,51 @@ return new long[]{hours, minutes, secs};
         String xmlString = IOUtils.toString(stream, UTF8_ENCODING);
         return parseServiceListRQ(xmlString);
     }
-/////////////////////////////    
+/////////////////////////////    mysql:
 
+@Entity
+class Person {
+    @Id
+    private String guid;
+    private String firstName;
+    private String organisationGuid;
+    ...
+    ...
+}
+@Entity
+class Organisation {
+    @Id
+    private String guid;
+    private String name;
+    ...
+    ...
+}
+
+@Repository
+public interface PersonRepository extends CrudRepository<Person, String> {
+    @Query(nativeQuery = true, value = "select p.*, o.name as organisation_name from person p left join organisation o on p.organisation_guid = o.guid")
+    List<Person> findAll();
+}
+
+@Entity
+class Person {
+  @Id
+  private String guid;
+  private String firstName;
+
+  @ManyToOne
+  @JoinColumn(name = "organisationGuid")
+  private Organisation organisation;
+
+@Repository
+public interface PersonRepository extends CrudRepository<Person, String> {
+    @Query("select NEW com.mypkg.PersonOrganization(p.guid as guid ...
+                , o.name as organisationName) 
+            from person p left join p.organisation o")
+    List<PersonOrganization> findPersonWithOrganization();
+}
+/////
+@Mapping(target = "version", source = "version", expression = "java(java.util.UUID.randomUUID().toString())")
+    List<Airport> toEntity(List<AirportDTO> dtos);
+
+List<Flight> flightList = flightRepository.findByNameIn(idList)

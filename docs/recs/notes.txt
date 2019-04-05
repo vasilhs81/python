@@ -2425,8 +2425,11 @@ Update: in IDEA 13 "Use single class import" does not prevent wildcard imports. 
 
 ///////////////////////
 ./mvnw.cmd -Pprod -Dmaven.test.skip=true
-
-
+///////////////////////spring boot mysql references:
+https://spring.io/guides/gs/accessing-data-mysql/
+https://www.jeejava.com/spring-boot-data-jpa-left-right-inner-and-cross-join-examples/
+https://www.dev2qa.com/spring-boot-crud-example-with-mysql/
+http://zetcode.com/springboot/mysql/
 
 
 
