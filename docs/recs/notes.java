@@ -2839,3 +2839,66 @@ public interface PersonRepository extends CrudRepository<Person, String> {
     List<Airport> toEntity(List<AirportDTO> dtos);
 
 List<Flight> flightList = flightRepository.findByNameIn(idList)
+/////////////////////////
+public interface PointOfSaleMapper extends EntityMapper<PointOfSaleDTO, PointOfSale> {
+
+    PointOfSaleDTO toDto(PointOfSaleVM vm);
+
+    PointOfSaleVM toVm(PointOfSaleDTO dto);
+
+    @Override
+    PointOfSaleDTO toDto(PointOfSale pointOfSale);
+
+    List<PointOfSaleVM> toVm(List<PointOfSaleDTO> dtos);
+
+    default DeviceDTO codeToDevice(String code) {
+        DeviceDTO deviceDTO = new DeviceDTO();
+        deviceDTO.setCode(code);
+        deviceDTO.setId(RcmsConstants.DEVICES_CODES_MAP.get(code));
+        return deviceDTO;
+    }
+
+    default String deviceToCode(DeviceDTO device) {
+        return device.getCode();
+    }
+
+}
+///////////////////////////////////////
+List<Person> findByLastnameAndFirstnameAllIgnoreCase(String lastname, String firstname);
+
+  // Enabling static ORDER BY for a query
+  List<Person> findByLastnameOrderByFirstnameAsc(String lastname);
+  List<Person> findByLastnameOrderByFirstnameDesc(String lastname);
+  /////////////////////
+//  However, you can also define constraints by traversing nested properties. Assume Persons have Addresses with ZipCodes. In that case a method name of
+List<Person> findByAddressZipCode(ZipCode zipCode);
+////remove duplicates from a list using streams:
+List<Employee> unique = employee.stream()
+                                .collect(collectingAndThen(toCollection(() -> new TreeSet<>(comparingInt(Employee::getId))),
+                                                           ArrayList::new));
+///////////////////////////////                                                           
+  @Mapping(target = "status", ignore = true)
+    Service toEntity(ServiceDTO serviceDTO);
+  @AfterMapping
+    default void mapStatus(Service Service, @MappingTarget ServiceDTO serviceDTO) {
+        serviceDTO.setStatus(com.jrtechnologies.rcms.service.dto.enums.Status.getStatus(Service.getStatus().getValue()));
+    }
+
+    @AfterMapping
+    default void mapStatus(ServiceDTO serviceDTO, @MappingTarget Service Service) {
+        Service.setStatus(RcmsConstants.Status.getStatus(serviceDTO.getStatus().getValue()));
+    }
+//////////////////////////////////////        
+ @Mapping(target = "status", ignore = true)
+    @Mapping(target = "version", constant = "0")
+    Service toEntity(ServiceDTO serviceDTO);
+
+//    ServiceDTO toDto(Service service);
+
+//    @Mapping(target = "status", ignore = true)
+//	Service toVm(ServiceDTO dto);
+
+    @Mapping(target = "status", ignore = true)
+    @Mapping(target = "version", expression = "java(java.util.UUID.randomUUID())")
+	ServiceDTO toDto(Service vm);
+//////////////////////	
