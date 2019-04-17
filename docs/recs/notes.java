@@ -1,4 +1,6 @@
 //status bar component
+
+
 for (Map.Entry<String, OrderItemHolder> entry : orderItemMap.entrySet()) {
 public class StatusBar extends JLabel {
     
@@ -2902,3 +2904,56 @@ List<Employee> unique = employee.stream()
     @Mapping(target = "version", expression = "java(java.util.UUID.randomUUID())")
 	ServiceDTO toDto(Service vm);
 //////////////////////	
+
+public interface PersonRepository extends Repository<User, Long> {
+
+  List<Person> findByEmailAddressAndLastname(EmailAddress emailAddress, String lastname);
+
+  // Enables the distinct flag for the query
+  List<Person> findDistinctPeopleByLastnameOrFirstname(String lastname, String firstname);
+  List<Person> findPeopleDistinctByLastnameOrFirstname(String lastname, String firstname);
+
+  // Enabling ignoring case for an individual property
+  List<Person> findByLastnameIgnoreCase(String lastname);
+  // Enabling ignoring case for all suitable properties
+  List<Person> findByLastnameAndFirstnameAllIgnoreCase(String lastname, String firstname);
+
+  // Enabling static ORDER BY for a query
+  List<Person> findByLastnameOrderByFirstnameAsc(String lastname);
+  List<Person> findByLastnameOrderByFirstnameDesc(String lastname);
+}
+/////////////
+@Query( "select o from MyObject o where inventoryId in :ids" )
+List<MyObject> findByInventoryIds(@Param("ids") List<Long> inventoryIdList);
+
+/////////////////////
+I have the following config:
+
+applicationContext.xml:
+
+<cache:annotation-driven cache-manager="cacheManager"/>
+<bean id="ehCacheManagerFactory" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
+      p:configLocation="classpath:ehcache.xml" p:shared="true"/>
+<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager"
+      p:cacheManager-ref="ehCacheManagerFactory"/>
+ehcache.xml:
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+     updateCheck="true"
+     monitoring="autodetect"
+     dynamicConfig="true">
+
+<diskStore path="java.io.tmpdir" />
+
+<cache name="movieFindCache"
+       maxEntriesLocalHeap="10000"
+       maxEntriesLocalDisk="1000"
+       eternal="false"
+       diskSpoolBufferSizeMB="20"
+       timeToIdleSeconds="300" timeToLiveSeconds="600"
+       memoryStoreEvictionPolicy="LFU"
+       transactionalMode="off">
+    <persistence strategy="localTempSwap" />
+</cache>
+///////////////////
