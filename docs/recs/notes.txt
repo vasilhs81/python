@@ -2430,7 +2430,7 @@ https://spring.io/guides/gs/accessing-data-mysql/
 https://www.jeejava.com/spring-boot-data-jpa-left-right-inner-and-cross-join-examples/
 https://www.dev2qa.com/spring-boot-crud-example-with-mysql/
 http://zetcode.com/springboot/mysql/
-
+////////////////// PIM : 10.10.10.194:8083
 
 
 
