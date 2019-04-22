@@ -1,8 +1,11 @@
 import mysql.connector
 
-cnx = mysql.connector.connect(user='rcms_developer', password='rcms_d3v3l0p3r',
-                              host='127.0.0.1',
-                              database='rcms2')
+#local mysql
+#cnx = mysql.connector.connect(user='rcms_developer', password='rcms_d3v3l0p3r', host='127.0.0.1',database='rcms2')
+
+
+# remote mysql
+cnx = mysql.connector.connect(user='vkasimatis@rcms-dev', password='qE39ZRhQ77J9EvBA', host='rcms-dev.mysql.database.azure.com', database='rcms')
 
 
 def mysql_query_select(q):
