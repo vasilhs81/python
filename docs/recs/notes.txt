@@ -2431,6 +2431,10 @@ https://www.jeejava.com/spring-boot-data-jpa-left-right-inner-and-cross-join-exa
 https://www.dev2qa.com/spring-boot-crud-example-with-mysql/
 http://zetcode.com/springboot/mysql/
 ////////////////// PIM : 10.10.10.194:8083
+///change environment variables:
+setx -m JAVA_HOME "C:\Progra~1\Java\jdk1.8.0_XX"
+echo %JAVA_HOME%
+set JAVA_HOME=C:\Dev\jre1.8.0_131
 
 
 
