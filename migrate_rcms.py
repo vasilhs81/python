@@ -647,12 +647,40 @@ def save_bundles():
         unique_elements.add(s.id)
 
 
+def data_fixes_after2():
+    rows = mysql_query_select("select * from offer_price_optimization")
+    for r in rows:
+        po = r[1]
+        rows2 = mysql_query_select("select * from price_optimization where id=\""+po+"\"")
+        if len(rows2) ==0:
+            print "deleting offer_price_optimization  where offer_po_id=\""+r[0]+"\" and po_offer_id=\""+r[1]+"\""
+            mysql_exec("delete from offer_price_optimization where offer_po_id=\""+r[0]+"\" and po_offer_id=\""+r[1]+"\"")
+
+    rows = mysql_query_select("select * from offer_rule_set")
+    for r in rows:
+        po = r[1]
+        rows2 = mysql_query_select("select * from rule_set where id=\""+po+"\"")
+        if len(rows2) ==0:
+            print "deleting rule_set  where offer_rule_set_id=\""+r[0]+"\" and rule_set_offer_id=\""+r[1]+"\""
+            mysql_exec("delete from offer_rule_set where offer_rule_set_id=\""+r[0]+"\" and rule_set_offer_id=\""+r[1]+"\"")
+
+
+
+
 def data_fixes_after():
     mysql_exec("update media set created_at=NULL where true")
     mysql_exec("update seller set type=\"TRAVEL_AGENT\" where type=\"Travel Agent\"")
     mysql_exec("update seller set type=\"ONLINE_TRAVEL_AGENT\" where type=\"Online Travel Agent\"")
     mysql_exec("update seller set type=\"MOBILE_APP\" where type=\"Mobile App\"")
     mysql_exec("update seller set type=\"CORPORATE_PORTAL\" where type=\"Corporate Portal\"")
+
+
+
+
+
+
+
+
 
 def data_fixes_before():
     mysql_exec("insert IGNORE into region(code,name) values(\"XXX\", \"All\")")
@@ -665,27 +693,31 @@ def data_fixes_before():
 
 
 
-data_fixes_before()
-save_airports()
-save_equipment()
-save_fare_basis_code()
-save_flight_group()
-save_flights()
-save_flightgroup_flight()
-save_frequent_flyer_program()
-save_geographical_area()
-save_media()
-save_seller()
-save_point_of_sale()
-save_rich_content()
-save_rule_set()
-save_price_optimization()
-save_booking_designator()
-save_service_categories()
-save_services()
-save_cabin_class()
-save_bundles()
-data_fixes_after()
+# data_fixes_before()
+# save_airports()
+# save_equipment()
+# save_fare_basis_code()
+# save_flight_group()
+# save_flights()
+# save_flightgroup_flight()
+# save_frequent_flyer_program()
+# save_geographical_area()
+# save_media()
+# save_seller()
+# save_point_of_sale()
+# save_rich_content()
+# save_rule_set()
+# save_price_optimization()
+# save_booking_designator()
+# save_service_categories()
+# save_services()
+# save_cabin_class()
+# save_bundles()
+# data_fixes_after()
+data_fixes_after2()
+
+
+
 
 close_mysql()
 close_cassandra()
