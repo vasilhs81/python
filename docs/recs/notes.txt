@@ -2435,6 +2435,16 @@ http://zetcode.com/springboot/mysql/
 setx -m JAVA_HOME "C:\Progra~1\Java\jdk1.8.0_XX"
 echo %JAVA_HOME%
 set JAVA_HOME=C:\Dev\jre1.8.0_131
-
+/////////////////
+ mail:
+        host: smtp.gmail.com
+        port: 587
+        username:
+        password:
+        properties:
+            mail.smtp.auth: true
+            mail.smtp.starttls.enable : true
+-----------------------
+            
 
 
