@@ -2956,4 +2956,10 @@ ehcache.xml:
        transactionalMode="off">
     <persistence strategy="localTempSwap" />
 </cache>
-///////////////////
+///////////////////mappers and batchstatements:
+Mapper<MyObj> mapper = new MappingManager(getSession()).mapper(MyObj.class);
+BatchStatement batch = new BatchStatement();
+batch.add(mapper.saveQuery(myObj1));
+batch.add(mapper.saveQuery(myObj2));
+session.execute(batch);
+/////////////////////////////////
