@@ -2963,3 +2963,5 @@ batch.add(mapper.saveQuery(myObj1));
 batch.add(mapper.saveQuery(myObj2));
 session.execute(batch);
 /////////////////////////////////
+mvn -Dtest=ServiceServiceIntTest test
+./mvnw.cmd -Pdev clean verify

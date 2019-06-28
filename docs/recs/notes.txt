@@ -2449,6 +2449,10 @@ set JAVA_HOME=C:\Dev\jre1.8.0_131
 \d.+\:\s\d
 HP OfficePro 276 MFP Printer
 
-            
-
-
+UUID:            
+[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
+/////////////////////////////////
+([\d\.]+)\,([\d\.]+)
+$2,$1
+notepad++ replace
+//////////////////
