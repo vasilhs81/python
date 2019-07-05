@@ -2965,3 +2965,44 @@ session.execute(batch);
 /////////////////////////////////
 mvn -Dtest=ServiceServiceIntTest test
 ./mvnw.cmd -Pdev clean verify
+//////////////////////////////
+@Bean
+public JavaMailSender getJavaMailSender() {
+    JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+    mailSender.setHost("smtp.gmail.com");
+    mailSender.setPort(587);
+     
+    mailSender.setUsername("my.gmail@gmail.com");
+    mailSender.setPassword("password");
+     
+    Properties props = mailSender.getJavaMailProperties();
+    props.put("mail.transport.protocol", "smtp");
+    props.put("mail.smtp.auth", "true");
+    props.put("mail.smtp.starttls.enable", "true");
+    props.put("mail.debug", "true");
+     
+    return mailSender;
+}
+/////////////////////////////////
+@DirtiesContext(classMode = ClassMode.BEFORE_EACH_TEST_METHOD)
+///////////////////////////
+package com.jrtechnologies.rcms.service.util;
+
+/**
+ * Created by v.kasimatis on 15/3/2019.
+ */
+public class ScheduledTasks {
+//
+//    private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
+//
+//    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+//
+//    @Scheduled(fixedRate = 5000)
+//    public void reportCurrentTime() {
+//        log.info("The time is now {}", dateFormat.format(new Date()));
+//    }
+
+
+}
+////////////////////////////
+TimeZone.getTimeZone("PMST").toZoneId()
