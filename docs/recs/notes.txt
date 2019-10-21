@@ -2460,3 +2460,76 @@ $2,$1
 
 notepad++ replace
 //////////////////
+Server name: rcms-jrt.mysql.database.azure.com
+
+Username: vkasimatis@rcms-jrt
+
+Password:  qE39ZRhQ77J9EvBA
+/////////////////////
+admin@jrtechnologies.com
+Loading01!
+///////wifi: JRT@Guest#
+////////////////////////
+http://joelittlejohn.github.io/jsonschema2pojo/site/1.0.1/generate-mojo.html
+/////////////////////////
+https://stackoverflow.com/questions/48525546/how-to-export-a-swagger-json-yaml-file-from-swagger-ui
+swagger:
+http://localhost:8080/v2/api-docs
+
+JW0GR
+//////////////////////
+https://api-nul-rcms.jrtdev.com/v2/api-docs
+///////////////
+https://ebc2test.cybersource.com/ebc2/
+//////////////////////
+Cassandra:
+IP Address: 40.118.1.217
+DEV:
+Username: southern_airlines_developer
+Password: 5Rhq97d9z5XADpFD
+//////////////////////////
+Hostname: test-cbt-inselair.mysql.database.azure.com
+DEV:
+Username: 9x-cbt-developer@test-cbt-inselair
+Password: gU8NMQzTZrWevWyt
+Schemas: dev_9x_cbt, dev_9x_rcms
+/////cybersource southern:
+Org/Merchant ID: southernairwaysexpress
+Account ID: southernairwaysexpress_acct
+User: JRTechnologies_9x
+Password: zmiHctDka73!9Pi
+Recovery E-mail: ryan@jrtechnologies.com
+/////////////
+5 € off your next booking
+Use the promo code: KIWI5
+////
+schtasks /create /TN MyRestartTask /SC ONCE /ST 10:00 /TR "shutdown /f /s"
+////
+airline@admin.com
+Loading01!
+//////////
+
+<repositories>
+		<repository>
+			<id>jrtechnologies-visualstudio-com-jrtechnologies-9x</id>
+			<url>https://jrtechnologies.pkgs.visualstudio.com/_packaging/9x/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>jrtechnologies-visualstudio-com-jrtechnologies-9x</id>
+			<url>https://jrtechnologies.pkgs.visualstudio.com/_packaging/9x/maven/v1</url>
+			<!-- <releases>-->
+			<!-- <enabled>true</enabled>-->
+			<!-- </releases>-->
+			<!-- <snapshots>-->
+			<!-- <enabled>true</enabled>-->
+			<!-- </snapshots>-->
+		</repository>
+	</distributionManagement>

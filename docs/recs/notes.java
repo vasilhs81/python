@@ -3006,3 +3006,19 @@ public class ScheduledTasks {
 }
 ////////////////////////////
 TimeZone.getTimeZone("PMST").toZoneId()
+
+restServiceMockMvc.perform(get("/api/services")).andDo(print());
+////sorted:
+List<User> sortedList = users.stream()
+			.sorted(Comparator.comparingInt(User::getAge))
+			.collect(Collectors.toList());
+ 
+        sortedList.forEach(System.out::println);
+///////////        
+list.stream().sorted().forEachOrdered(System.out::println);
+friends.stream().sorted((aName, bName) -> aName.compareTo(bName))
+        .forEach(System.out::println);
+//////stream counting grouping
+        list.stream()
+  .collect(Collectors.groupingBy(foo -> foo.id, Collectors.counting()))
+  .forEach((id,count)->System.out.println(id+"\t"+count));

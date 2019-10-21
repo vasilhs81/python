@@ -38,12 +38,12 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="Threads" elementType="Argument">
             <stringProp name="Argument.name">Threads</stringProp>
-            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="Loop" elementType="Argument">
             <stringProp name="Argument.name">Loop</stringProp>
-            <stringProp name="Argument.value">4000</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -82,7 +82,7 @@
           </elementProp>
           <elementProp name="StartDate" elementType="Argument">
             <stringProp name="Argument.name">StartDate</stringProp>
-            <stringProp name="Argument.value">2019-04-06</stringProp>
+            <stringProp name="Argument.value">2019-08-06</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="EndDate" elementType="Argument">
@@ -8608,7 +8608,7 @@ xmlns=&quot;http://www.iata.org/IATA/EDIST&quot; xmlns:edis=&quot;http://www.iat
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
