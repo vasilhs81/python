@@ -356,7 +356,7 @@ public boolean hasCommonFactor(int v) {
 		}
 		
 //		print("Result="+Math.round(SUM));
-		return Math.round(SUM);
+		return java.lang.Math.round(SUM);
 	}
 	
 	/*
@@ -408,7 +408,7 @@ public boolean hasCommonFactor(int v) {
 			flag*=-1;
 		}
 		
-		return Math.round(SUM);
+		return java.lang.Math.round(SUM);
 	}
 	
 	

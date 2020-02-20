@@ -86,8 +86,8 @@ public class Euler81 {
         for(int i=N-1;i>=0;i--) {
             for(int j=N-1;j>=0;j--) {
                 int best = Integer.MAX_VALUE;
-                if(i<N-1)best = Math.min(best,dp[i+1][j]);
-                if(j<N-1)best = Math.min(best,dp[i][j+1]);
+                if(i<N-1)best = java.lang.Math.min(best,dp[i+1][j]);
+                if(j<N-1)best = java.lang.Math.min(best,dp[i][j+1]);
                 if(best==Integer.MAX_VALUE)best = 0;
                 dp[i][j]+=best;
             }

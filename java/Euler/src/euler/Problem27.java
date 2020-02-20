@@ -8,7 +8,7 @@ public class Problem27 extends utils.CAN {
 	public  void _findAllPrimesLess(int upperBound) {
 
 			set =new TreeSet<Integer>();
-		    int upperBoundSquareRoot = (int) Math.sqrt(upperBound);
+		    int upperBoundSquareRoot = (int) java.lang.Math.sqrt(upperBound);
 
 		    boolean[] isComposite = new boolean[upperBound + 1];
 

@@ -7,15 +7,12 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Random;
 import java.text.*;
 import java.io.*;
 import java.util.*;
 import java.awt.Toolkit;
 
 import java.util.regex.*;
-import java.io.InputStream;
-import java.net.*; 
 
 
 ////contains global static fields and methods 
@@ -808,7 +805,7 @@ return targetFormat.format(timeMillis);
 		char b;
 		for (int i = 0; i < binary.length(); i++) {
 			b = binary.charAt(i);
-			l += (b == '1' ? Math.pow(2, i) : 0);
+			l += (b == '1' ? java.lang.Math.pow(2, i) : 0);
 
 		}
 		return l;
@@ -840,7 +837,7 @@ public static boolean isPrime(int n) {
 
 	if (n%2==0) return false;
     //if not, then just check the odds
-	int m=(int)Math.sqrt(n);
+	int m=(int) java.lang.Math.sqrt(n);
    
     for(int i=3;i<=m;i+=2) {
         if(n%i==0)
@@ -933,7 +930,7 @@ static int []getDigits(long a){
 public static int[] findAllPrimesLessThan(int upperBound) {
 
 	ArrayList<Integer> list =new ArrayList<Integer>(upperBound);
-    int upperBoundSquareRoot = (int) Math.sqrt(upperBound);
+    int upperBoundSquareRoot = (int) java.lang.Math.sqrt(upperBound);
 
     boolean[] isComposite = new boolean[upperBound + 1];
 
@@ -963,7 +960,7 @@ public static int[] findAllPrimesLessThan(int upperBound) {
 public static int[] findAllPrimesLess(int upperBound) {
 
 	TreeSet<Integer> set =new TreeSet<Integer>();
-    int upperBoundSquareRoot = (int) Math.sqrt(upperBound);
+    int upperBoundSquareRoot = (int) java.lang.Math.sqrt(upperBound);
 
     boolean[] isComposite = new boolean[upperBound + 1];
 

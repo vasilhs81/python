@@ -1,7 +1,9 @@
 package utils;
-import java.util.*;
-import org.apache.commons.math.analysis.interpolation.* ;
-import org.apache.commons.math.analysis.polynomials.PolynomialFunctionNewtonForm;
+
+import org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator;
+import org.apache.commons.math3.analysis.polynomials.PolynomialFunctionNewtonForm;
+
+import java.util.ArrayList;
 
 
 
@@ -28,25 +30,25 @@ public class Distribution {
 	}
 	
 	public static int getPoisson(double lambda) {
-		double L = Math.exp(-lambda);
+		double L = java.lang.Math.exp(-lambda);
 		double p = 1.0;
 		int k = 0;
 
 		do {
 			k++;
-			p *= Math.random();
+			p *= java.lang.Math.random();
 		} while (p > L);
 
 		return k - 1;
 	}
 
 	public static int nextPoisson(double lambda) {
-		double elambda = Math.exp(-1 * lambda);
+		double elambda = java.lang.Math.exp(-1 * lambda);
 		double product = 1;
 		int count = 0;
 		int result = 0;
 		while (product >= elambda) {
-			product *= Math.random(); // nextDouble();
+			product *= java.lang.Math.random(); // nextDouble();
 			result = count;
 			count++; // keep result one behind
 		}
@@ -56,8 +58,8 @@ public class Distribution {
 	public static double nextExponential(double b) {
 		double randx;
 		double result;
-		randx = Math.random();// nextDouble();
-		result = -1 * b * Math.log(randx);
+		randx = java.lang.Math.random();// nextDouble();
+		result = -1 * b * java.lang.Math.log(randx);
 		return result;
 	}
 
@@ -128,7 +130,7 @@ public class Distribution {
 			return 0.0;
 		double tmp = 0.0;
 		for (double r : ar)
-			tmp += Math.pow(r, 2);
+			tmp += java.lang.Math.pow(r, 2);
 
 		return tmp;
 
@@ -139,7 +141,7 @@ public class Distribution {
 			return 0.0;
 		double tmp = 0.0;
 		for (int r : ar)
-			tmp += Math.pow(r, 2);
+			tmp += java.lang.Math.pow(r, 2);
 
 		return tmp;
 
@@ -298,7 +300,7 @@ public class Distribution {
 			sum += ((d - m) * (d - m));
 
 		}
-		return Math.sqrt(sum / ar.length);
+		return java.lang.Math.sqrt(sum / ar.length);
 
 	}
 
@@ -311,7 +313,7 @@ public class Distribution {
 			sum += ((d - m) * (d - m));
 
 		}
-		return Math.sqrt(sum / ar.length);
+		return java.lang.Math.sqrt(sum / ar.length);
 
 	}
 
@@ -323,7 +325,7 @@ public class Distribution {
 			sum += ((d - mean) * (d - mean));
 
 		}
-		return Math.sqrt(sum / ar.length);
+		return java.lang.Math.sqrt(sum / ar.length);
 
 	}
 
@@ -347,7 +349,7 @@ public class Distribution {
 			sum += ((d - mean) * (d - mean));
 
 		}
-		return Math.sqrt(sum / ar.length);
+		return java.lang.Math.sqrt(sum / ar.length);
 
 	}
 
@@ -359,7 +361,7 @@ public class Distribution {
 			sum += ((d - mean) * (d - mean));
 
 		}
-		return Math.sqrt(sum / ar.length);
+		return java.lang.Math.sqrt(sum / ar.length);
 
 	}
 
@@ -371,7 +373,7 @@ public class Distribution {
 			sum += ((d - mean) * (d - mean));
 
 		}
-		return Math.sqrt(sum / ar.length);
+		return java.lang.Math.sqrt(sum / ar.length);
 
 	}
 
@@ -380,7 +382,7 @@ public class Distribution {
 		for (double r : ar) {
 			if (r == 0)
 				r = SMALL;
-			tmp += Math.log(r);
+			tmp += java.lang.Math.log(r);
 		}
 		return tmp;
 
@@ -413,7 +415,7 @@ public class Distribution {
 	public static double[] powVectors(double[] ds, double p) {
 		double[] res = new double[ds.length];
 		for (int i = 0; i < res.length; i++)
-			res[i] = Math.pow(ds[i], p);
+			res[i] = java.lang.Math.pow(ds[i], p);
 
 		return res;
 	}
@@ -429,7 +431,7 @@ public class Distribution {
 	public static double[] logVectors(double[] ds) {
 		double[] res = new double[ds.length];
 		for (int i = 0; i < res.length; i++)
-			res[i] = Math.log(ds[i]);
+			res[i] = java.lang.Math.log(ds[i]);
 
 		return res;
 	}
@@ -505,7 +507,7 @@ public class Distribution {
 
 		public double[] getRealData(double min, double max, double step) {
 			// LinkedList <Double> list =new LinkedList<Double>();
-			int nn = (int) Math.ceil((max - min) / step);
+			int nn = (int) java.lang.Math.ceil((max - min) / step);
 			double[] res = new double[nn];
 
 			for (int i = 0; i < nn; i++)
@@ -573,7 +575,7 @@ public class Distribution {
 		public double[] getRealData(double[] dx) {
 			double[] res = new double[dx.length];
 			for (int i = 0; i < dx.length; i++) {
-				res[i] = A * Math.exp(B * dx[i]);
+				res[i] = A * java.lang.Math.exp(B * dx[i]);
 
 			}
 			return res;
@@ -628,9 +630,9 @@ public class Distribution {
 			double sumxlny = Sum(multVectors(x, lny));
 
 			B = (n * sumxlny - sumx * sumlny) / (n * sumx2 - sumx * sumx);
-			A = Math.exp((sumlny - B * sumx) / n);
+			A = java.lang.Math.exp((sumlny - B * sumx) / n);
 			r = (n * sumxlny - sumx * sumlny)
-					/ Math.sqrt((n * sumx2 - sumx * sumx)
+					/ java.lang.Math.sqrt((n * sumx2 - sumx * sumx)
 							* (n * Sum(squareVectors(lny)) - sumlny * sumlny));
 
 		}
@@ -649,7 +651,7 @@ public class Distribution {
 		public double[] getRealData(double[] dx) {
 			double[] res = new double[dx.length];
 			for (int i = 0; i < dx.length; i++) {
-				res[i] = A * Math.pow(dx[i], B);
+				res[i] = A * java.lang.Math.pow(dx[i], B);
 
 			}
 			return res;
@@ -692,9 +694,9 @@ public class Distribution {
 
 			B = (n * sumlnxlny - sumlnx * sumlny)
 					/ (n * sumlnx2 - sumlnx * sumlnx);
-			A = Math.exp((sumlny - B * sumlnx) / n);
+			A = java.lang.Math.exp((sumlny - B * sumlnx) / n);
 			r = (n * sumlnxlny - sumlnx * sumlny)
-					/ Math.sqrt((n * sumlnx2 - sumlnx * sumlnx)
+					/ java.lang.Math.sqrt((n * sumlnx2 - sumlnx * sumlnx)
 							* (n * Sum(squareVectors(lny)) - sumlny * sumlny));
 
 		}
@@ -759,7 +761,7 @@ public class Distribution {
 			B = (n * sumxy - sumx * sumy) / (n * sumx2 - sumx * sumx);
 			A = (sumy - B * sumx) / n;
 			r = (n * sumxy - sumx * sumy)
-					/ Math.sqrt((n * sumx2 - sumx * sumx)
+					/ java.lang.Math.sqrt((n * sumx2 - sumx * sumx)
 							* (n * Sum(squareVectors(y)) - sumy * sumy));
 
 		}
@@ -791,7 +793,7 @@ public class Distribution {
 		public double[] getRealData(double[] dx) {
 			double[] res = new double[dx.length];
 			for (int i = 0; i < dx.length; i++) {
-				res[i] = A + B * Math.log(dx[i]);
+				res[i] = A + B * java.lang.Math.log(dx[i]);
 
 			}
 			return res;
@@ -821,7 +823,7 @@ public class Distribution {
 			B = (n * sumlnxy - sumlnx * sumy) / (n * sumlnx2 - sumlnx * sumlnx);
 			A = (sumy - B * sumlnx) / n;
 			r = (n * sumlnxy - sumlnx * sumy)
-					/ Math.sqrt((n * sumlnx2 - sumlnx * sumlnx)
+					/ java.lang.Math.sqrt((n * sumlnx2 - sumlnx * sumlnx)
 							* (n * Sum(squareVectors(y)) - sumy * sumy));
 
 		}
